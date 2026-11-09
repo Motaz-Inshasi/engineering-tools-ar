@@ -18,7 +18,7 @@ export async function liveTools() {
 
 export function watch(page) {
   const problems = [];
-  page.on("console", (m) => { if (m.type() === "error") problems.push(`console: ${m.text()}`); });
+  page.on("console", (m) => { if (m.type() === "error") problems.push(`console: ${m.text()} @ ${m.location()?.url || ""}`); });
   page.on("pageerror", (e) => problems.push(`pageerror: ${e.message}`));
   page.on("requestfailed", (r) => problems.push(`requestfailed: ${r.url()} ${r.failure()?.errorText}`));
   page.on("response", (r) => { if (r.status() >= 400) problems.push(`http ${r.status()}: ${r.url()}`); });

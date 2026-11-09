@@ -284,6 +284,7 @@ function notFoundPage() {
 <title>الصفحة غير موجودة | ${esc(SITE)}</title>
 <meta name="description" content="الصفحة المطلوبة غير موجودة في ${esc(SITE)}.">
 <meta name="robots" content="noindex">
+<link rel="icon" href="data:,">
 <style>
 :root{--bg:#f7f8fa;--text:#1a1f29;--muted:#545e6e;--accent:#0b5cad;color-scheme:light}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1318;--text:#e7ebf0;--muted:#a5afbd;--accent:#6cb2f5;color-scheme:dark}}
