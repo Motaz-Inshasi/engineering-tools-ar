@@ -4,14 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>تصميم مقسم جهد للحساس | عُدّة المهندس</title>
-<meta name="description" content="تصميم مقسم جهد للحساس: أداة قيد الإعداد.">
-<meta name="robots" content="noindex">
+<meta name="description" content="صمّم مقسم جهد لحساس مقاومي (ثرمستور، LDR، مقياس جهد): أفضل مقاومة ثابتة لأكبر مدى خرج، ومدى الجهد والحساسية، مع منحنى الخرج مقابل مقاومة الحساس.">
 <link rel="canonical" href="./">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_AR">
 <meta property="og:site_name" content="عُدّة المهندس">
 <meta property="og:title" content="تصميم مقسم جهد للحساس | عُدّة المهندس">
-<meta property="og:description" content="تصميم مقسم جهد للحساس: أداة قيد الإعداد.">
+<meta property="og:description" content="صمّم مقسم جهد لحساس مقاومي (ثرمستور، LDR، مقياس جهد): أفضل مقاومة ثابتة لأكبر مدى خرج، ومدى الجهد والحساسية، مع منحنى الخرج مقابل مقاومة الحساس.">
 <meta name="theme-color" content="#0b5cad">
 <link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../../vendor/katex/katex.min.css">
@@ -19,8 +18,9 @@
 <script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
 <script defer src="../../vendor/katex/katex.min.js"></script>
 <script type="module" src="../../assets/js/app.js"></script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebApplication","name":"تصميم مقسم جهد للحساس","description":"صمّم مقسم جهد لحساس مقاومي (ثرمستور، LDR، مقياس جهد): أفضل مقاومة ثابتة لأكبر مدى خرج، ومدى الجهد والحساسية، مع منحنى الخرج مقابل مقاومة الحساس.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"ar","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}]</script>
 </head>
-<body>
+<body data-tool="sensor-divider" data-category="sensors">
 <a class="skip" href="#main">تخطَّ إلى المحتوى</a>
 <header class="site-header"><div class="wrap">
 <a class="brand" href="../../">عُدّة <span>المهندس</span></a>
@@ -28,7 +28,52 @@
 <button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
 </div></header>
 <nav class="cats" aria-label="التصنيفات"><ul><li><a href="../../category/calculus/">التفاضل والتكامل</a></li><li><a href="../../category/algebra/">الجبر والرياضيات</a></li><li><a href="../../category/signals/">لابلاس والإشارات</a></li><li><a href="../../category/dc-circuits/">دوائر التيار المستمر</a></li><li><a href="../../category/ac-circuits/">دوائر التيار المتردد</a></li><li><a href="../../category/electronics/">الإلكترونيات</a></li><li><a href="../../category/digital/">المنطق الرقمي</a></li><li><a href="../../category/sensors/" aria-current="page">الحساسات والربط</a></li><li><a href="../../category/control/">أنظمة التحكم</a></li><li><a href="../../category/units/">الوحدات والمراجع</a></li></ul></nav>
-<main id="main"><div class="wrap"><h1>تصميم مقسم جهد للحساس</h1><p class="note">هذه الأداة قيد الإعداد.</p></div></main>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="../../">عُدّة المهندس</a></li><li><a href="../../category/sensors/">الحساسات والربط</a></li><li aria-current="page">تصميم مقسم جهد للحساس</li></ol></nav>
+<h1>تصميم مقسم جهد للحساس</h1>
+<p class="lead">صمّم مقسم جهد لحساس مقاومي (ثرمستور، LDR، مقياس جهد): أفضل مقاومة ثابتة لأكبر مدى خرج، ومدى الجهد والحساسية، مع منحنى الخرج مقابل مقاومة الحساس.</p>
+
+<section class="card formulas" aria-labelledby="h-formulas"><h2 id="h-formulas">القوانين المستخدمة</h2>
+<div class="formula"><div class="formula-label">الحساس في الأسفل</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>V</mi><mrow><mi>c</mi><mi>c</mi></mrow></msub><mfrac><msub><mi>R</mi><mi>s</mi></msub><mrow><msub><mi>R</mi><mi>s</mi></msub><mo>+</mo><mi>R</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">V_{out} = V_{cc}\frac{R_s}{R_s + R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.1963em;vertical-align:-0.836em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">cc</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.0077em;">R</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.836em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div>
+<div class="formula"><div class="formula-label">المقاومة المثلى لأكبر مدى</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>R</mi><mrow><mi>o</mi><mi>p</mi><mi>t</mi></mrow></msub><mo>=</mo><msqrt><mrow><msub><mi>R</mi><mrow><mi>s</mi><mo separator="true">,</mo><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><msub><mi>R</mi><mrow><mi>s</mi><mo separator="true">,</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow></msqrt></mrow><annotation encoding="application/x-tex">R_{opt} = \sqrt{R_{s,min} R_{s,max}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">pt</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.24em;vertical-align:-0.3075em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9325em;"><span class="svg-align" style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord" style="padding-left:1em;"><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">s</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">min</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">s</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">ma</span><span class="mord mathnormal mtight">x</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.8925em;"><span class="pstrut" style="height:3.2em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.28em" viewBox="0 0 400000 1296" preserveAspectRatio="xMinYMin slice"><path d="M263,681c0.7,0,18,39.7,52,119
+c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
+c340,-704.7,510.7,-1060.3,512,-1067
+l0 -0
+c4.7,-7.3,11,-11,19,-11
+H40000v40H1012.3
+s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
+c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
+s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
+c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
+M1001 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3075em;"><span></span></span></span></span></span></span></span></span></span></div>
+</section>
+<section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">المدخلات</h2>
+<form id="tool-form" class="tool-form" novalidate>
+<div class="field"><label for="in-Rmin">أقل مقاومة للحساس <span class="unit">(Ω)</span></label><input id="in-Rmin" name="Rmin" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="1k"></div>
+<div class="field"><label for="in-Rmax">أكبر مقاومة للحساس <span class="unit">(Ω)</span></label><input id="in-Rmax" name="Rmax" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="100k"></div>
+<div class="field"><label for="in-Vcc">جهد التغذية <span class="unit">(V)</span></label><input id="in-Vcc" name="Vcc" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="5"></div>
+<div class="field"><label for="in-pos">موضع الحساس</label><select id="in-pos" name="pos"><option value="bottom" selected>في الأسفل (بين الخرج والأرضي)</option><option value="top">في الأعلى (بين التغذية والخرج)</option></select></div>
+<div class="field"><label for="in-R">المقاومة الثابتة (اختياري، وإلا تُحسب المثلى) <span class="unit">(Ω)</span></label><input id="in-R" name="R" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value=""></div>
+<p class="example-note">مثال: LDR يتغير من 1 kΩ إلى 100 kΩ.</p>
+<div class="actions"><button class="btn primary" type="submit">احسب</button><button class="btn" type="button" id="example-btn">مثال محلول</button><button class="btn" type="reset">مسح</button></div>
+</form>
+
+</section>
+<section id="output" class="card" aria-live="polite" tabindex="-1" hidden>
+<div id="out-error" class="error" role="alert" hidden></div>
+<div id="out-success" hidden>
+<div class="out-head"><h2>النتيجة</h2><div><button class="btn" type="button" id="copy-btn">نسخ النتيجة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
+<dl id="out-results" class="results"></dl>
+<div id="out-blocks"></div>
+<div id="steps-wrap"><h2>الحل خطوة بخطوة</h2><ol id="out-steps" class="steps"></ol></div>
+</div>
+</section>
+<noscript><p class="note warn">هذه الأداة تحتاج تفعيل JavaScript لإجراء الحسابات.</p></noscript>
+
+
+<section class="related" aria-labelledby="h-related"><h2 id="h-related">أدوات ذات صلة</h2><ul><li><a href="../../tools/voltage-current-divider/">مقسم الجهد ومقسم التيار</a></li><li><a href="../../tools/thermistor/">الثرمستور (Beta و Steinhart-Hart)</a></li><li><a href="../../tools/adc/">دقة المحول ADC والتحجيم</a></li><li><a href="../../tools/level-shifter/">مقسم جهد لتحويل المستوى</a></li><li><a href="../../tools/rtd/">حساس الحرارة RTD</a></li></ul></section>
+
+</div></main>
 <footer class="site-footer"><div class="wrap">
 <p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
 <p>عُدّة المهندس موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="../../">كل الأدوات</a></p>

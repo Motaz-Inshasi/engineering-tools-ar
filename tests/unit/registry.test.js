@@ -35,7 +35,7 @@ test("كل أداة جاهزة لها بيانات كاملة وأسماء حق�
     assert.equal(new Set(ids).size, ids.length, `${t.slug}: duplicate input ids`);
     for (const id of ids) {
       assert.ok(!["q", "site-q", "home-search"].includes(id), `${t.slug}: input id «${id}» is reserved`);
-      assert.match(id, /^[A-Za-z][A-Za-z0-9]*$/, `${t.slug}: input id «${id}»`);
+      assert.match(id, /^[A-Za-z][A-Za-z0-9_]*$/, `${t.slug}: input id «${id}»`);
     }
     for (const r of m.related || []) assert.ok(tools.some((x) => x.slug === r), `${t.slug}: related «${r}» not in registry`);
   }

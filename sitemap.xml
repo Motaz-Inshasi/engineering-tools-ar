@@ -61,8 +61,21 @@
   <url><loc>tools/logic-gates/</loc></url>
   <url><loc>tools/binary-twos-complement/</loc></url>
   <url><loc>tools/flip-flops/</loc></url>
+  <url><loc>tools/adc/</loc></url>
+  <url><loc>tools/sensor-divider/</loc></url>
+  <url><loc>tools/thermistor/</loc></url>
+  <url><loc>tools/rtd/</loc></url>
+  <url><loc>tools/strain-gauge-bridge/</loc></url>
+  <url><loc>tools/pwm-servo/</loc></url>
+  <url><loc>tools/shunt-resistor/</loc></url>
+  <url><loc>tools/level-shifter/</loc></url>
+  <url><loc>tools/sample-rate-resolution/</loc></url>
   <url><loc>tools/step-response/</loc></url>
   <url><loc>tools/routh-hurwitz/</loc></url>
   <url><loc>tools/bode-plot/</loc></url>
   <url><loc>tools/steady-state-error/</loc></url>
+  <url><loc>tools/unit-converter/</loc></url>
+  <url><loc>tools/engineering-notation/</loc></url>
+  <url><loc>tools/formulas-constants/</loc></url>
+  <url><loc>tools/standard-resistor-values/</loc></url>
 </urlset>
