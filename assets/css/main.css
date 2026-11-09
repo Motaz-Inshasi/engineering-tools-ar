@@ -227,6 +227,10 @@ figure.plot figcaption { font-size: .9rem; color: var(--muted); margin-top: 4px;
 
 .site-footer { border-top: 1px solid var(--border); background: var(--surface); color: var(--muted); font-size: .9rem; padding: 18px 0; }
 .site-footer p { margin: 4px 0; }
+.donate { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 12px 14px; margin-bottom: 12px; background: var(--accent-soft); border-radius: var(--radius); color: var(--text); }
+.donate p { margin: 0; flex: 1 1 260px; }
+.donate-btn { background: var(--accent); border-color: var(--accent); color: var(--accent-text); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+.donate-btn span[aria-hidden] { color: #e91e63; }
 
 @media print {
   .site-header, .cats, .site-footer, .actions, .tool-form { display: none; }

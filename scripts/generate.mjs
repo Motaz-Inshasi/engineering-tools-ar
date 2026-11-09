@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { createRequire } from "node:module";
+import { donateHtml } from "./site-parts.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
@@ -86,7 +87,7 @@ function header(root, activeCat) {
 
 function footer(root) {
   return `<footer class="site-footer"><div class="wrap">
-<p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
+${donateHtml(config)}<p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
 <p>${esc(SITE)} موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="${root}">كل الأدوات</a></p>
 </div></footer>`;
 }
