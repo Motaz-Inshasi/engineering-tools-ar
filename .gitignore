@@ -1,0 +1,15 @@
+node_modules/
+test-results/
+playwright-report/
+blob-report/
+tests/screenshots/
+.cache/
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+__pycache__/

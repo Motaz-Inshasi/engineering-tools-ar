@@ -1,0 +1,19 @@
+{
+  "siteName": "عُدّة المهندس",
+  "siteNameShort": "عُدّة",
+  "tagline": "أدوات هندسية مجانية مع الحل خطوة بخطوة",
+  "language": "ar",
+  "direction": "rtl",
+  "siteUrl": "",
+  "basePath": "",
+  "ads": {
+    "enabled": false,
+    "provider": "",
+    "clientId": "",
+    "slots": {
+      "header": "",
+      "inContent": "",
+      "footer": ""
+    }
+  }
+}
