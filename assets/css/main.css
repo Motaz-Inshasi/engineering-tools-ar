@@ -199,7 +199,8 @@ th, td { border: 1px solid var(--border); padding: 6px 10px; text-align: center;
 th { background: var(--surface-2); }
 td.swatch { min-width: 80px; font-weight: 600; }
 
-figure.plot { margin: 12px 0; }
+figure.plot { margin: 12px auto; max-width: 760px; }
+figure.plot svg text { direction: ltr; unicode-bidi: bidi-override; }
 figure.plot svg { width: 100%; height: auto; display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
 figure.plot figcaption { font-size: .9rem; color: var(--muted); margin-top: 4px; }
 .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: .9rem; margin-top: 4px; }
