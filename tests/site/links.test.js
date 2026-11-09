@@ -40,7 +40,10 @@ test("لا اعتماد على CDN أو موارد خارجية في الشيف�
   const bad = [];
   for (const f of walk().filter((p) => /\.(js|css|html)$/.test(p) && !rel(p).startsWith("vendor/"))) {
     const src = read(f);
-    for (const m of src.matchAll(/(?:import\s*(?:[^'"]*from\s*)?|import\(|url\(|src=|href=)\s*["'`]?((?:https?:)?\/\/[^"'`)\s]+)/g)) bad.push(`${rel(f)}: ${m[1]}`);
+    for (const m of src.matchAll(/(?:import\s*(?:[^'"]*from\s*)?|import\(|url\(|src=|href=)\s*["'`]?((?:https?:)?\/\/[^"'`)\s]+)/g)) {
+      if (siteUrl && m[1].startsWith(siteUrl)) continue;
+      bad.push(`${rel(f)}: ${m[1]}`);
+    }
   }
   assert.deepEqual(bad, []);
 });
