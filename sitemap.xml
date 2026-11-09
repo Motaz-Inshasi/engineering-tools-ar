@@ -12,4 +12,9 @@
   <url><loc>category/control/</loc></url>
   <url><loc>category/units/</loc></url>
   <url><loc>tools/derivative/</loc></url>
+  <url><loc>tools/integral/</loc></url>
+  <url><loc>tools/limit/</loc></url>
+  <url><loc>tools/taylor-series/</loc></url>
+  <url><loc>tools/root-finding/</loc></url>
+  <url><loc>tools/function-plotter/</loc></url>
 </urlset>
