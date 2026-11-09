@@ -4,8 +4,8 @@
   "tagline": "أدوات هندسية مجانية مع الحل خطوة بخطوة",
   "language": "ar",
   "direction": "rtl",
-  "siteUrl": "",
-  "basePath": "",
+  "siteUrl": "https://motaz-inshasi.github.io/engineering-tools-ar",
+  "basePath": "/engineering-tools-ar/",
   "ads": {
     "enabled": false,
     "provider": "",
