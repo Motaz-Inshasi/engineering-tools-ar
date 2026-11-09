@@ -56,7 +56,7 @@ export function plotRange(series, opts = {}) {
 }
 
 export function renderPlot(block) {
-  const W = 640, H = 380, ml = 62, mr = 18, mt = 16, mb = 48;
+  const W = 640, H = 400, ml = 70, mr = 18, mt = 16, mb = 54;
   const logX = !!block.logX;
   const series = block.series.map((s) => ({ ...s, points: logX ? s.points.filter(([x]) => x > 0).map(([x, y]) => [Math.log10(x), y]) : s.points }));
   const r = plotRange(series, {
@@ -73,11 +73,11 @@ export function renderPlot(block) {
   const Y = (y) => mt + ((r.yMax - y) / (r.yMax - r.yMin)) * (H - mt - mb);
   const span = r.yMax - r.yMin;
   const parts = [];
-  const xt = logX ? Array.from({ length: Math.floor(r.xMax) - Math.ceil(r.xMin) + 1 }, (_, i) => Math.ceil(r.xMin) + i) : niceTicks(r.xMin, r.xMax, 7);
-  const yt = niceTicks(r.yMin, r.yMax, 6);
+  const xt = logX ? Array.from({ length: Math.floor(r.xMax) - Math.ceil(r.xMin) + 1 }, (_, i) => Math.ceil(r.xMin) + i) : niceTicks(r.xMin, r.xMax, 6);
+  const yt = niceTicks(r.yMin, r.yMax, 5);
   for (const t of xt) {
     parts.push(`<line x1="${X(t).toFixed(1)}" y1="${mt}" x2="${X(t).toFixed(1)}" y2="${H - mb}" style="stroke:var(--plot-grid)"/>`);
-    parts.push(`<text x="${X(t).toFixed(1)}" y="${H - mb + 18}" text-anchor="middle" font-size="12" style="fill:var(--muted)">${logX ? escapeHtml(label(Math.pow(10, t))) : escapeHtml(label(t))}</text>`);
+    parts.push(`<text x="${X(t).toFixed(1)}" y="${H - mb + 20}" text-anchor="middle" font-size="15" style="fill:var(--muted)">${logX ? escapeHtml(label(Math.pow(10, t))) : escapeHtml(label(t))}</text>`);
   }
   if (logX) {
     for (let d = Math.floor(r.xMin); d < r.xMax; d++) for (let k = 2; k < 10; k++) {
@@ -87,7 +87,7 @@ export function renderPlot(block) {
   }
   for (const t of yt) {
     parts.push(`<line x1="${ml}" y1="${Y(t).toFixed(1)}" x2="${W - mr}" y2="${Y(t).toFixed(1)}" style="stroke:var(--plot-grid)"/>`);
-    parts.push(`<text x="${ml - 6}" y="${(Y(t) + 4).toFixed(1)}" text-anchor="end" font-size="12" style="fill:var(--muted)">${escapeHtml(label(t))}</text>`);
+    parts.push(`<text x="${ml - 6}" y="${(Y(t) + 4).toFixed(1)}" text-anchor="end" font-size="15" style="fill:var(--muted)">${escapeHtml(label(t))}</text>`);
   }
   if (r.yMin < 0 && r.yMax > 0) parts.push(`<line x1="${ml}" y1="${Y(0).toFixed(1)}" x2="${W - mr}" y2="${Y(0).toFixed(1)}" style="stroke:var(--muted);stroke-width:1.2"/>`);
   if (!logX && r.xMin < 0 && r.xMax > 0) parts.push(`<line x1="${X(0).toFixed(1)}" y1="${mt}" x2="${X(0).toFixed(1)}" y2="${H - mb}" style="stroke:var(--muted);stroke-width:1.2"/>`);
@@ -123,8 +123,8 @@ export function renderPlot(block) {
     }
     if (d) parts.push(`<path d="${d}" fill="none" clip-path="url(#${clipId})" style="stroke:${color};stroke-width:${s.width || 2.2}${s.dashed ? ";stroke-dasharray:7 5" : ""}"/>`);
   });
-  if (block.xLabel) parts.push(`<text x="${(ml + W - mr) / 2}" y="${H - 8}" text-anchor="middle" font-size="13" style="fill:var(--text)">${escapeHtml(block.xLabel)}</text>`);
-  if (block.yLabel) parts.push(`<text x="14" y="${(mt + H - mb) / 2}" text-anchor="middle" font-size="13" transform="rotate(-90 14 ${(mt + H - mb) / 2})" style="fill:var(--text)">${escapeHtml(block.yLabel)}</text>`);
+  if (block.xLabel) parts.push(`<text x="${(ml + W - mr) / 2}" y="${H - 8}" text-anchor="middle" font-size="16" style="fill:var(--text)">${escapeHtml(block.xLabel)}</text>`);
+  if (block.yLabel) parts.push(`<text x="14" y="${(mt + H - mb) / 2}" text-anchor="middle" font-size="16" transform="rotate(-90 14 ${(mt + H - mb) / 2})" style="fill:var(--text)">${escapeHtml(block.yLabel)}</text>`);
   const title = block.title || "رسم بياني";
   const svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${escapeHtml(title)}" dir="ltr" xmlns="http://www.w3.org/2000/svg">${parts.join("")}</svg>`;
   const legend = series.length > 1 || series.some((s) => s.name)

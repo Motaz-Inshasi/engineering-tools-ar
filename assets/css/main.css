@@ -106,7 +106,8 @@ a:hover { text-decoration-thickness: 2px; }
 .site-header .wrap { display: flex; align-items: center; gap: 10px; padding-top: 10px; padding-bottom: 10px; flex-wrap: wrap; }
 .brand { font-weight: 800; font-size: 1.2rem; color: var(--text); text-decoration: none; margin-inline-end: auto; }
 .brand span { color: var(--accent); }
-.search-mini { flex: 1 1 180px; max-width: 320px; }
+.search-mini { order: 3; flex: 1 1 100%; }
+@media (min-width: 640px) { .search-mini { order: 0; flex: 0 1 320px; } }
 .search-mini input { width: 100%; }
 
 .icon-btn {
