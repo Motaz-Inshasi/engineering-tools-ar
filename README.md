@@ -1,6 +1,8 @@
 # عُدّة المهندس
 
-موقع عربي مجاني ثابت يضم أدوات هندسية لطلاب الهندسة والفنيين، مع حل خطوة بخطوة لكل أداة.
+موقع عربي مجاني ثابت يضم 67 أداة هندسية لطلاب الهندسة والفنيين، مع حل خطوة بخطوة لكل أداة.
+
+**الموقع:** https://motaz-inshasi.github.io/engineering-tools-ar/
 
 ## المبادئ
 
@@ -59,6 +61,37 @@ npm test
 - `npm run test:unit`: اختبارات الوحدات والتحققات المستقلة.
 - `npm run test:site`: فحص الروابط و SEO والمسار الفرعي.
 - `npm run test:browser`: اختبارات Playwright على Chrome المثبت، بعرض الهاتف والحاسوب، مع لقطات شاشة في `tests/screenshots/`.
+
+## إضافة أداة جديدة
+
+1. أضف سطراً في `assets/js/registry.js` فيه `slug` (اسم إنجليزي قصير) و `category` و `title`.
+2. أنشئ `lib/<التصنيف>/<slug>.js` يصدّر:
+   - `meta`: الوصف، والقوانين بصيغة LaTeX، والمدخلات، والمثال المحلول مع النص المتوقع، ومثالاً لمدخلات خاطئة.
+   - `solve(input)`: تُرجع `results` و `steps`، ويمكن أن تُرجع `blocks` للجداول والرسوم. يُستخدم `fail(رسالة، حقل)` للأخطاء.
+3. أنشئ `tests/unit/<التصنيف>/<slug>.test.js` فيه 5 تحققات على الأقل، أولها `checkExample(mod)`.
+4. شغّل `npm run generate` ثم `npm test`. اختبارات المتصفح والموقع تشمل الأداة الجديدة تلقائياً.
+
+أسهل طريقة: انسخ أداة مشابهة (مثل `lib/dc-circuits/ohms-law.js`) وعدّلها.
+
+## نشر التعديلات
+
+بعد نجاح `npm test`:
+
+```bash
+git add -A
+git commit -m "وصف التعديل"
+git push
+```
+
+يعيد GitHub Pages النشر تلقائياً خلال دقيقة أو اثنتين. لاختبار الموقع الحي:
+
+```bash
+LIVE_URL=https://motaz-inshasi.github.io/engineering-tools-ar/ npx playwright test
+```
+
+## الإعلانات (معطلة)
+
+في `site.config.json` يوجد خيار `ads.enabled: false`. عند تفعيله يضع المولّد أماكن فارغة للإعلانات فقط، ولا يضيف أي سكربت.
 
 ## تنبيه
 
