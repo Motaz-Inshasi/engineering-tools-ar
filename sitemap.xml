@@ -26,4 +26,11 @@
   <url><loc>tools/number-bases/</loc></url>
   <url><loc>tools/trigonometry/</loc></url>
   <url><loc>tools/laplace/</loc></url>
+  <url><loc>tools/fourier-series/</loc></url>
+  <url><loc>tools/sampling-nyquist/</loc></url>
+  <url><loc>tools/transfer-function/</loc></url>
+  <url><loc>tools/step-response/</loc></url>
+  <url><loc>tools/routh-hurwitz/</loc></url>
+  <url><loc>tools/bode-plot/</loc></url>
+  <url><loc>tools/steady-state-error/</loc></url>
 </urlset>
