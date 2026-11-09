@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الصفحة غير موجودة | عُدّة المهندس</title>
+<meta name="description" content="الصفحة المطلوبة غير موجودة في عُدّة المهندس.">
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#f7f8fa;--text:#1a1f29;--muted:#545e6e;--accent:#0b5cad;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1318;--text:#e7ebf0;--muted:#a5afbd;--accent:#6cb2f5;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1318;--text:#e7ebf0;--muted:#a5afbd;--accent:#6cb2f5;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,"Segoe UI",Tahoma,sans-serif;line-height:1.7}
+main{max-width:640px;margin:0 auto;padding:48px 16px}
+a{color:var(--accent);font-weight:600}
+p{color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<h1>الصفحة غير موجودة</h1>
+<p>ربما تغيّر الرابط أو كُتب بشكل غير صحيح.</p>
+<p><a id="home-link" href="./">العودة إلى كل الأدوات في عُدّة المهندس</a></p>
+</main>
+<script>
+(function(){var b=null;if(!b){var s=location.pathname.split("/").filter(Boolean);b=/\.github\.io$/.test(location.hostname)&&s.length>1?"/"+s[0]+"/":"/";}document.getElementById("home-link").setAttribute("href",b);try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}})();
+</script>
+</body>
+</html>
