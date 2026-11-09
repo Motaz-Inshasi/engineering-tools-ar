@@ -46,6 +46,21 @@
   <url><loc>tools/transformer/</loc></url>
   <url><loc>tools/rc-rl-transient/</loc></url>
   <url><loc>tools/passive-filter/</loc></url>
+  <url><loc>tools/resistor-color-code/</loc></url>
+  <url><loc>tools/led-resistor/</loc></url>
+  <url><loc>tools/rectifier-ripple/</loc></url>
+  <url><loc>tools/zener-regulator/</loc></url>
+  <url><loc>tools/bjt-bias/</loc></url>
+  <url><loc>tools/mosfet/</loc></url>
+  <url><loc>tools/op-amp/</loc></url>
+  <url><loc>tools/timer-555/</loc></url>
+  <url><loc>tools/capacitor-inductor-combination/</loc></url>
+  <url><loc>tools/voltage-regulator/</loc></url>
+  <url><loc>tools/truth-table/</loc></url>
+  <url><loc>tools/boolean-simplifier/</loc></url>
+  <url><loc>tools/logic-gates/</loc></url>
+  <url><loc>tools/binary-twos-complement/</loc></url>
+  <url><loc>tools/flip-flops/</loc></url>
   <url><loc>tools/step-response/</loc></url>
   <url><loc>tools/routh-hurwitz/</loc></url>
   <url><loc>tools/bode-plot/</loc></url>

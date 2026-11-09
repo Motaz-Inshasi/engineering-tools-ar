@@ -17,6 +17,8 @@ for (const t of list) {
       await expect(page.locator("#output")).toBeVisible();
       await expect(page.locator("#out-error")).toBeHidden();
       await expect(page.locator("#out-results > div").first()).toBeVisible();
+      const shown = await page.locator("#output").innerText();
+      expect(shown).not.toMatch(/&#\d+;|&amp;|&lt;|&gt;|undefined|NaN|\[object/);
       if (info.project.name === "desktop") {
         await context.grantPermissions(["clipboard-read", "clipboard-write"]);
         await page.click("#copy-btn");
@@ -36,7 +38,7 @@ for (const t of list) {
       await page.goto(`tools/${t.slug}/`);
       await expect(page.locator("body[data-ready='1']")).toHaveCount(1);
       for (const [k, v] of Object.entries(t.meta.invalid.values)) {
-        const el = page.locator(`[name="${k}"]`);
+        const el = page.locator(`#tool-form [name="${k}"]`);
         const tag = await el.evaluate((e) => e.tagName + ":" + (e.type || ""));
         if (tag.startsWith("SELECT")) await el.selectOption(String(v));
         else if (tag.endsWith("checkbox")) await el.setChecked(!!v);
