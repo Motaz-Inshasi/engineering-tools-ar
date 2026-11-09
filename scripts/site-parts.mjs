@@ -14,5 +14,5 @@ export function donateHtml(config) {
   if (!url) return "";
   const label = config.donate.label || "ادعم الموقع";
   const text = config.donate.text || "";
-  return `<div class="donate">${text ? `<p>${esc(text)}</p>` : ""}<a class="btn donate-btn" href="${esc(url)}" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">♥</span> ${esc(label)}<span class="sr-only"> (يفتح في نافذة جديدة)</span></a></div>`;
+  return `<a class="donate-top" href="${esc(url)}" target="_blank" rel="noopener noreferrer"${text ? ` title="${esc(text)}"` : ""}><span class="heart" aria-hidden="true">♥</span> ${esc(label)}<span class="sr-only"> (يفتح في نافذة جديدة)</span></a>`;
 }
