@@ -29,14 +29,36 @@
 ## التشغيل محلياً
 
 ```bash
+npm install
 npm run serve
 ```
+
+ثم افتح `http://localhost:8080/`. ولتجربة المسار الفرعي كما في GitHub Pages:
+
+```bash
+node scripts/serve.mjs --base /test-repo/
+```
+
+## توليد الصفحات
+
+صفحات HTML تُكتب مسبقاً من `assets/js/registry.js` وبيانات `meta` في كل وحدة داخل `lib/`. بعد أي تعديل:
+
+```bash
+npm run generate
+```
+
+الملفات الناتجة تُحفظ في المستودع، فالموقع يعمل كما هو بلا خطوة بناء عند النشر.
 
 ## الاختبارات
 
 ```bash
 npm test
 ```
+
+يشغّل بالترتيب:
+- `npm run test:unit`: اختبارات الوحدات والتحققات المستقلة.
+- `npm run test:site`: فحص الروابط و SEO والمسار الفرعي.
+- `npm run test:browser`: اختبارات Playwright على Chrome المثبت، بعرض الهاتف والحاسوب، مع لقطات شاشة في `tests/screenshots/`.
 
 ## تنبيه
 

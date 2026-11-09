@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import { assert, close, rng } from "../helpers.js";
 import { C, cabs } from "../../../lib/core/complex.js";
-import { roots, distinctRoots, pmul, pdivmod, padd, pderiv, peval, fromRoots, toTex, toRational, sameRoots, factorTex } from "../../../lib/core/polynomial.js";
+import { roots, distinctRoots, pmul, pdivmod, padd, pderiv, peval, fromRoots, toTex, toRational, sameRoots, factorTex, cancelCommon } from "../../../lib/core/polynomial.js";
 import { decompose, evalDecomposition, realForm } from "../../../lib/core/partial.js";
 import { parse } from "../../../lib/core/parser.js";
 
@@ -39,6 +39,16 @@ test("تحقق عشوائي: جذور كثيرة حدود مبنية من جذو
     const p = fromRoots(rs);
     assert.ok(sameRoots(roots(p), rs, 1e-6), `roots of ${JSON.stringify(rs)}`);
   }
+});
+
+test("إلغاء العوامل المشتركة لا يحذف جذراً قريباً من جذر مكرر (خطأ اكتشفه اختبار عشوائي)", () => {
+  const D1 = [-5, 4, 1], D2 = [17576, 20280, 9828, 2560, 378, 30, 1];
+  const num = padd(pmul([3], D2), pmul([592, 240, 24], D1)), den = pmul(D1, D2);
+  const c = cancelCommon(num, den);
+  assert.equal(c.den.length - 1, 8);
+  const same = cancelCommon(pmul([2, 1], [1, 3]), pmul([2, 1], [5, 0, 1]));
+  assert.equal(same.den.length - 1, 2);
+  assert.equal(same.num.length - 1, 1);
 });
 
 test("toRational", () => {
