@@ -4,14 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>تبسيط التعابير المنطقية (كارنو وكواين) | عُدّة المهندس</title>
-<meta name="description" content="تبسيط التعابير المنطقية (كارنو وكواين): أداة قيد الإعداد.">
-<meta name="robots" content="noindex">
+<meta name="description" content="بسّط أي دالة منطقية إلى أقل مجموع ضرب بطريقة كواين-ماكلاسكي (حتى 8 متغيرات) مع خريطة كارنو لـ 2 إلى 4 متغيرات، والحدود الأولية والأساسية، ودعم الحالات المهملة (don&#39;t care).">
 <link rel="canonical" href="./">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_AR">
 <meta property="og:site_name" content="عُدّة المهندس">
 <meta property="og:title" content="تبسيط التعابير المنطقية (كارنو وكواين) | عُدّة المهندس">
-<meta property="og:description" content="تبسيط التعابير المنطقية (كارنو وكواين): أداة قيد الإعداد.">
+<meta property="og:description" content="بسّط أي دالة منطقية إلى أقل مجموع ضرب بطريقة كواين-ماكلاسكي (حتى 8 متغيرات) مع خريطة كارنو لـ 2 إلى 4 متغيرات، والحدود الأولية والأساسية، ودعم الحالات المهملة (don&#39;t care).">
 <meta name="theme-color" content="#0b5cad">
 <link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../../vendor/katex/katex.min.css">
@@ -19,8 +18,9 @@
 <script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
 <script defer src="../../vendor/katex/katex.min.js"></script>
 <script type="module" src="../../assets/js/app.js"></script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebApplication","name":"تبسيط التعابير المنطقية (كارنو وكواين)","description":"بسّط أي دالة منطقية إلى أقل مجموع ضرب بطريقة كواين-ماكلاسكي (حتى 8 متغيرات) مع خريطة كارنو لـ 2 إلى 4 متغيرات، والحدود الأولية والأساسية، ودعم الحالات المهملة (don't care).","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"ar","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}]</script>
 </head>
-<body>
+<body data-tool="boolean-simplifier" data-category="digital">
 <a class="skip" href="#main">تخطَّ إلى المحتوى</a>
 <header class="site-header"><div class="wrap">
 <a class="brand" href="../../">عُدّة <span>المهندس</span></a>
@@ -28,7 +28,42 @@
 <button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
 </div></header>
 <nav class="cats" aria-label="التصنيفات"><ul><li><a href="../../category/calculus/">التفاضل والتكامل</a></li><li><a href="../../category/algebra/">الجبر والرياضيات</a></li><li><a href="../../category/signals/">لابلاس والإشارات</a></li><li><a href="../../category/dc-circuits/">دوائر التيار المستمر</a></li><li><a href="../../category/ac-circuits/">دوائر التيار المتردد</a></li><li><a href="../../category/electronics/">الإلكترونيات</a></li><li><a href="../../category/digital/" aria-current="page">المنطق الرقمي</a></li><li><a href="../../category/sensors/">الحساسات والربط</a></li><li><a href="../../category/control/">أنظمة التحكم</a></li><li><a href="../../category/units/">الوحدات والمراجع</a></li></ul></nav>
-<main id="main"><div class="wrap"><h1>تبسيط التعابير المنطقية (كارنو وكواين)</h1><p class="note">هذه الأداة قيد الإعداد.</p></div></main>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="../../">عُدّة المهندس</a></li><li><a href="../../category/digital/">المنطق الرقمي</a></li><li aria-current="page">تبسيط التعابير المنطقية (كارنو وكواين)</li></ol></nav>
+<h1>تبسيط التعابير المنطقية (كارنو وكواين)</h1>
+<p class="lead">بسّط أي دالة منطقية إلى أقل مجموع ضرب بطريقة كواين-ماكلاسكي (حتى 8 متغيرات) مع خريطة كارنو لـ 2 إلى 4 متغيرات، والحدود الأولية والأساسية، ودعم الحالات المهملة (don&#39;t care).</p>
+
+<section class="card formulas" aria-labelledby="h-formulas"><h2 id="h-formulas">القوانين المستخدمة</h2>
+<div class="formula"><div class="formula-label">قاعدة الدمج (التجاور)</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mi>B</mi><mo>+</mo><mi>A</mi><mover accent="true"><mi>B</mi><mo stretchy="true">‾</mo></mover><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">AB + A\overline{B} = A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8833em;"></span><span class="mord mathnormal">A</span><span class="mord katex-overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0502em;">B</span></span></span><span style="top:-3.8033em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></span></div>
+<div class="formula"><div class="formula-label">الهدف</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mo>∑</mo><mi>m</mi><mo stretchy="false">(</mo><mo>…</mo><mtext> </mtext><mo stretchy="false">)</mo><mo>+</mo><mi>d</mi><mo stretchy="false">(</mo><mo>…</mo><mtext> </mtext><mo stretchy="false">)</mo><mtext>  </mtext><mo>→</mo><mtext>  </mtext><mtext>minimum SOP</mtext></mrow><annotation encoding="application/x-tex">F = \sum m(\dots) + d(\dots) \;\to\; \text{minimum SOP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.6em;vertical-align:-0.55em;"></span><span class="mop op-symbol large-op" style="position:relative;top:0em;">∑</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">m</span><span class="mopen">(</span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">minimum SOP</span></span></span></span></span></span></div>
+</section>
+<section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">المدخلات</h2>
+<form id="tool-form" class="tool-form" novalidate>
+<div class="field"><label for="in-mode">طريقة الإدخال</label><select id="in-mode" name="mode"><option value="minterms" selected>حدود صغرى</option><option value="expr">تعبير منطقي</option></select></div>
+<div class="field" data-when='{&quot;mode&quot;:[&quot;minterms&quot;]}'><label for="in-n">عدد المتغيرات</label><input id="in-n" name="n" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="4"></div>
+<div class="field" data-when='{&quot;mode&quot;:[&quot;minterms&quot;]}'><label for="in-m">الحدود الصغرى</label><input id="in-m" name="m" type="text" dir="auto" autocomplete="off" spellcheck="false" value="0, 1, 2, 5, 6, 7, 8, 9, 10, 14"></div>
+<div class="field" data-when='{&quot;mode&quot;:[&quot;minterms&quot;]}'><label for="in-d">الحالات المهملة (اختياري)</label><input id="in-d" name="d" type="text" dir="auto" autocomplete="off" spellcheck="false" value=""></div>
+<div class="field wide" data-when='{&quot;mode&quot;:[&quot;expr&quot;]}'><label for="in-expr">التعبير المنطقي</label><input id="in-expr" name="expr" type="text" dir="ltr" autocomplete="off" spellcheck="false" value="A&#39;B&#39;C&#39; + A&#39;B&#39;C + AB&#39;C&#39; + AB&#39;C" aria-describedby="help-expr"><small class="help" id="help-expr">المتغيرات حروف إنجليزية مفردة. AND: AB أو A·B أو A&amp;B. OR: A+B. NOT: A&#39; أو !A. XOR: A^B. يمكن كتابة AND و OR و NOT و XOR كلمات.</small></div>
+<p class="example-note">مثال كتابي شهير بأربعة متغيرات.</p>
+<div class="actions"><button class="btn primary" type="submit">احسب</button><button class="btn" type="button" id="example-btn">مثال محلول</button><button class="btn" type="reset">مسح</button></div>
+</form>
+
+</section>
+<section id="output" class="card" aria-live="polite" tabindex="-1" hidden>
+<div id="out-error" class="error" role="alert" hidden></div>
+<div id="out-success" hidden>
+<div class="out-head"><h2>النتيجة</h2><div><button class="btn" type="button" id="copy-btn">نسخ النتيجة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
+<dl id="out-results" class="results"></dl>
+<div id="out-blocks"></div>
+<div id="steps-wrap"><h2>الحل خطوة بخطوة</h2><ol id="out-steps" class="steps"></ol></div>
+</div>
+</section>
+<noscript><p class="note warn">هذه الأداة تحتاج تفعيل JavaScript لإجراء الحسابات.</p></noscript>
+
+
+<section class="related" aria-labelledby="h-related"><h2 id="h-related">أدوات ذات صلة</h2><ul><li><a href="../../tools/truth-table/">مولّد جدول الحقيقة</a></li><li><a href="../../tools/logic-gates/">حاسبة البوابات المنطقية</a></li><li><a href="../../tools/flip-flops/">مرجع القلابات (Flip-Flops)</a></li><li><a href="../../tools/binary-twos-complement/">الثنائي والست عشري والمتمم الثنائي</a></li></ul></section>
+
+</div></main>
 <footer class="site-footer"><div class="wrap">
 <p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
 <p>عُدّة المهندس موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="../../">كل الأدوات</a></p>

@@ -4,14 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>مرجع القلابات (Flip-Flops) | عُدّة المهندس</title>
-<meta name="description" content="مرجع القلابات (Flip-Flops): أداة قيد الإعداد.">
-<meta name="robots" content="noindex">
+<meta name="description" content="مرجع وحاسبة القلابات (Flip-Flops) من أنواع SR و D و JK و T: المعادلة المميزة وجدول الخصائص وجدول الإثارة، والحالة التالية لأي مدخلات، وجدول توقيت لسلسلة نبضات ساعة.">
 <link rel="canonical" href="./">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_AR">
 <meta property="og:site_name" content="عُدّة المهندس">
 <meta property="og:title" content="مرجع القلابات (Flip-Flops) | عُدّة المهندس">
-<meta property="og:description" content="مرجع القلابات (Flip-Flops): أداة قيد الإعداد.">
+<meta property="og:description" content="مرجع وحاسبة القلابات (Flip-Flops) من أنواع SR و D و JK و T: المعادلة المميزة وجدول الخصائص وجدول الإثارة، والحالة التالية لأي مدخلات، وجدول توقيت لسلسلة نبضات ساعة.">
 <meta name="theme-color" content="#0b5cad">
 <link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../../vendor/katex/katex.min.css">
@@ -19,8 +18,9 @@
 <script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
 <script defer src="../../vendor/katex/katex.min.js"></script>
 <script type="module" src="../../assets/js/app.js"></script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebApplication","name":"مرجع القلابات (Flip-Flops)","description":"مرجع وحاسبة القلابات (Flip-Flops) من أنواع SR و D و JK و T: المعادلة المميزة وجدول الخصائص وجدول الإثارة، والحالة التالية لأي مدخلات، وجدول توقيت لسلسلة نبضات ساعة.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"ar","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}]</script>
 </head>
-<body>
+<body data-tool="flip-flops" data-category="digital">
 <a class="skip" href="#main">تخطَّ إلى المحتوى</a>
 <header class="site-header"><div class="wrap">
 <a class="brand" href="../../">عُدّة <span>المهندس</span></a>
@@ -28,7 +28,44 @@
 <button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
 </div></header>
 <nav class="cats" aria-label="التصنيفات"><ul><li><a href="../../category/calculus/">التفاضل والتكامل</a></li><li><a href="../../category/algebra/">الجبر والرياضيات</a></li><li><a href="../../category/signals/">لابلاس والإشارات</a></li><li><a href="../../category/dc-circuits/">دوائر التيار المستمر</a></li><li><a href="../../category/ac-circuits/">دوائر التيار المتردد</a></li><li><a href="../../category/electronics/">الإلكترونيات</a></li><li><a href="../../category/digital/" aria-current="page">المنطق الرقمي</a></li><li><a href="../../category/sensors/">الحساسات والربط</a></li><li><a href="../../category/control/">أنظمة التحكم</a></li><li><a href="../../category/units/">الوحدات والمراجع</a></li></ul></nav>
-<main id="main"><div class="wrap"><h1>مرجع القلابات (Flip-Flops)</h1><p class="note">هذه الأداة قيد الإعداد.</p></div></main>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="../../">عُدّة المهندس</a></li><li><a href="../../category/digital/">المنطق الرقمي</a></li><li aria-current="page">مرجع القلابات (Flip-Flops)</li></ol></nav>
+<h1>مرجع القلابات (Flip-Flops)</h1>
+<p class="lead">مرجع وحاسبة القلابات (Flip-Flops) من أنواع SR و D و JK و T: المعادلة المميزة وجدول الخصائص وجدول الإثارة، والحالة التالية لأي مدخلات، وجدول توقيت لسلسلة نبضات ساعة.</p>
+
+<section class="card formulas" aria-labelledby="h-formulas"><h2 id="h-formulas">القوانين المستخدمة</h2>
+<div class="formula"><div class="formula-label">المعادلات المميزة</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>D</mi><mo>:</mo><msup><mi>Q</mi><mo>+</mo></msup><mo>=</mo><mi>D</mi><mo separator="true">,</mo><mspace width="1em"/><mi>T</mi><mo>:</mo><msup><mi>Q</mi><mo>+</mo></msup><mo>=</mo><mi>T</mi><mo>⊕</mo><mi>Q</mi><mo separator="true">,</mo><mspace width="1em"/><mi>J</mi><mi>K</mi><mo>:</mo><msup><mi>Q</mi><mo>+</mo></msup><mo>=</mo><mi>J</mi><mover accent="true"><mi>Q</mi><mo stretchy="true">‾</mo></mover><mo>+</mo><mover accent="true"><mi>K</mi><mo stretchy="true">‾</mo></mover><mi>Q</mi></mrow><annotation encoding="application/x-tex">D: Q^+ = D,\quad T: Q^+ = T \oplus Q,\quad JK: Q^+ = J\overline{Q} + \overline{K}Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0158em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8213em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mpunct">,</span><span class="mspace" style="margin-right:1em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">T</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0158em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8213em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">T</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊕</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span><span class="mpunct">,</span><span class="mspace" style="margin-right:1em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0962em;">J</span><span class="mord mathnormal" style="margin-right:0.0715em;">K</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0158em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8213em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0962em;">J</span><span class="mord katex-overline"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8833em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">Q</span></span></span><span style="top:-3.8033em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0778em;vertical-align:-0.1944em;"></span><span class="mord katex-overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">K</span></span></span><span style="top:-3.8033em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mord mathnormal">Q</span></span></span></span></span></div>
+<div class="formula"><div class="formula-label">SR (مع S·R = 0)</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>Q</mi><mo>+</mo></msup><mo>=</mo><mi>S</mi><mo>+</mo><mover accent="true"><mi>R</mi><mo stretchy="true">‾</mo></mover><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q^+ = S + \overline{R}Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.0158em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8213em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0778em;vertical-align:-0.1944em;"></span><span class="mord katex-overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span></span></span><span style="top:-3.8033em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mord mathnormal">Q</span></span></span></span></span></div>
+</section>
+<section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">المدخلات</h2>
+<form id="tool-form" class="tool-form" novalidate>
+<div class="field"><label for="in-type">نوع القلاب</label><select id="in-type" name="type"><option value="SR">SR</option><option value="D">D</option><option value="JK" selected>JK</option><option value="T">T</option></select></div>
+<div class="field"><label for="in-q0">الحالة الحالية Q</label><select id="in-q0" name="q0"><option value="0" selected>0</option><option value="1">1</option></select></div>
+<div class="field wide"><label for="in-seq">المدخلات لكل نبضة ساعة</label><textarea id="in-seq" name="seq" dir="ltr" rows="4" spellcheck="false" aria-describedby="help-seq">1 0
+1 1
+0 0
+1 1
+0 1</textarea><small class="help" id="help-seq">سطر لكل نبضة. SR: «S R»، JK: «J K»، D: «D»، T: «T».</small></div>
+<p class="example-note">مثال: قلاب JK يبدأ من 0 مع خمس نبضات ساعة.</p>
+<div class="actions"><button class="btn primary" type="submit">احسب</button><button class="btn" type="button" id="example-btn">مثال محلول</button><button class="btn" type="reset">مسح</button></div>
+</form>
+
+</section>
+<section id="output" class="card" aria-live="polite" tabindex="-1" hidden>
+<div id="out-error" class="error" role="alert" hidden></div>
+<div id="out-success" hidden>
+<div class="out-head"><h2>النتيجة</h2><div><button class="btn" type="button" id="copy-btn">نسخ النتيجة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
+<dl id="out-results" class="results"></dl>
+<div id="out-blocks"></div>
+<div id="steps-wrap"><h2>الحل خطوة بخطوة</h2><ol id="out-steps" class="steps"></ol></div>
+</div>
+</section>
+<noscript><p class="note warn">هذه الأداة تحتاج تفعيل JavaScript لإجراء الحسابات.</p></noscript>
+
+
+<section class="related" aria-labelledby="h-related"><h2 id="h-related">أدوات ذات صلة</h2><ul><li><a href="../../tools/logic-gates/">حاسبة البوابات المنطقية</a></li><li><a href="../../tools/truth-table/">مولّد جدول الحقيقة</a></li><li><a href="../../tools/boolean-simplifier/">تبسيط التعابير المنطقية (كارنو وكواين)</a></li><li><a href="../../tools/binary-twos-complement/">الثنائي والست عشري والمتمم الثنائي</a></li></ul></section>
+
+</div></main>
 <footer class="site-footer"><div class="wrap">
 <p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
 <p>عُدّة المهندس موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="../../">كل الأدوات</a></p>

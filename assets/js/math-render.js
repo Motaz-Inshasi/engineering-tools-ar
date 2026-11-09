@@ -18,10 +18,14 @@ function wrapNumbers(html) {
   return html.replace(NUM_RE, '<bdi dir="ltr" class="num">$1</bdi>');
 }
 
+function escapeText(s) {
+  return String(s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+}
+
 export function renderInline(text) {
   const parts = String(text).split(/(\$[^$]+\$)/g);
   return parts.map((p) => {
     if (p.length > 1 && p.startsWith("$") && p.endsWith("$")) return renderTex(p.slice(1, -1), false);
-    return wrapNumbers(escapeHtml(p));
+    return wrapNumbers(escapeText(p));
   }).join("");
 }
