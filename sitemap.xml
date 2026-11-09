@@ -29,6 +29,23 @@
   <url><loc>tools/fourier-series/</loc></url>
   <url><loc>tools/sampling-nyquist/</loc></url>
   <url><loc>tools/transfer-function/</loc></url>
+  <url><loc>tools/ohms-law/</loc></url>
+  <url><loc>tools/series-parallel-resistors/</loc></url>
+  <url><loc>tools/voltage-current-divider/</loc></url>
+  <url><loc>tools/nodal-analysis/</loc></url>
+  <url><loc>tools/mesh-analysis/</loc></url>
+  <url><loc>tools/thevenin-norton/</loc></url>
+  <url><loc>tools/max-power-transfer/</loc></url>
+  <url><loc>tools/wheatstone-bridge/</loc></url>
+  <url><loc>tools/impedance/</loc></url>
+  <url><loc>tools/rlc-circuit/</loc></url>
+  <url><loc>tools/resonance/</loc></url>
+  <url><loc>tools/phasor/</loc></url>
+  <url><loc>tools/complex-power/</loc></url>
+  <url><loc>tools/three-phase/</loc></url>
+  <url><loc>tools/transformer/</loc></url>
+  <url><loc>tools/rc-rl-transient/</loc></url>
+  <url><loc>tools/passive-filter/</loc></url>
   <url><loc>tools/step-response/</loc></url>
   <url><loc>tools/routh-hurwitz/</loc></url>
   <url><loc>tools/bode-plot/</loc></url>
