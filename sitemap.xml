@@ -1,3 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>./</loc></url>
+  <url><loc>category/calculus/</loc></url>
+  <url><loc>category/algebra/</loc></url>
+  <url><loc>category/signals/</loc></url>
+  <url><loc>category/dc-circuits/</loc></url>
+  <url><loc>category/ac-circuits/</loc></url>
+  <url><loc>category/electronics/</loc></url>
+  <url><loc>category/digital/</loc></url>
+  <url><loc>category/sensors/</loc></url>
+  <url><loc>category/control/</loc></url>
+  <url><loc>category/units/</loc></url>
+  <url><loc>tools/derivative/</loc></url>
 </urlset>

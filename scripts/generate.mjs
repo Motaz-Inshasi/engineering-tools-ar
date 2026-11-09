@@ -1,0 +1,347 @@
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
+import { dirname, join, resolve } from "node:path";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { createRequire } from "node:module";
+
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const require = createRequire(import.meta.url);
+const katex = require(join(ROOT, "vendor/katex/katex.min.js"));
+const config = JSON.parse(readFileSync(join(ROOT, "site.config.json"), "utf8"));
+const { categories, tools } = await import(pathToFileURL(join(ROOT, "assets/js/registry.js")).href);
+
+const CHECK = process.argv.includes("--check");
+const SITE = config.siteName;
+const siteUrl = (config.siteUrl || "").replace(/\/+$/, "");
+const changed = [];
+
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const tex = (t, display = true) => katex.renderToString(t, { displayMode: display, throwOnError: true, output: "htmlAndMathml", strict: false });
+
+function inline(text) {
+  return String(text).split(/(\$[^$]+\$)/g).map((p) => (p.length > 1 && p.startsWith("$") && p.endsWith("$") ? tex(p.slice(1, -1), false) : esc(p))).join("");
+}
+
+function write(rel, content) {
+  const p = join(ROOT, rel);
+  const old = existsSync(p) ? readFileSync(p, "utf8") : null;
+  if (old === content) return;
+  changed.push(rel);
+  if (CHECK) return;
+  mkdirSync(dirname(p), { recursive: true });
+  writeFileSync(p, content);
+}
+
+async function loadMeta(t) {
+  const p = join(ROOT, "lib", t.category, `${t.slug}.js`);
+  if (!existsSync(p) || readFileSync(p, "utf8").trim() === "") return null;
+  const mod = await import(pathToFileURL(p).href);
+  return mod.meta || null;
+}
+
+const metas = new Map();
+for (const t of tools) metas.set(t.slug, await loadMeta(t));
+const live = tools.filter((t) => metas.get(t.slug));
+const catTitle = Object.fromEntries(categories.map((c) => [c.slug, c.title]));
+
+function absUrl(path) {
+  return siteUrl ? `${siteUrl}/${path}` : null;
+}
+
+function head({ title, description, path, root, jsonld, noindex }) {
+  const url = absUrl(path);
+  const canonical = url || (path === "" ? "./" : "./");
+  return `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(description)}">
+${noindex ? '<meta name="robots" content="noindex">\n' : ""}<link rel="canonical" href="${esc(canonical)}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="${esc(SITE)}">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(description)}">
+${url ? `<meta property="og:url" content="${esc(url)}">\n` : ""}<meta name="theme-color" content="#0b5cad">
+<link rel="icon" href="${root}assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="${root}vendor/katex/katex.min.css">
+<link rel="stylesheet" href="${root}assets/css/main.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script defer src="${root}vendor/katex/katex.min.js"></script>
+<script type="module" src="${root}assets/js/app.js"></script>
+${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>\n` : ""}</head>`;
+}
+
+function header(root, activeCat) {
+  const nav = categories.map((c) => `<li><a href="${root}category/${c.slug}/"${c.slug === activeCat ? ' aria-current="page"' : ""}>${esc(c.title)}</a></li>`).join("");
+  return `<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="${root}">${esc(SITE.replace("المهندس", ""))}<span>المهندس</span></a>
+<form class="search-mini" action="${root}" method="get" role="search"><label class="sr-only" for="site-q">ابحث عن أداة</label><input id="site-q" name="q" type="search" placeholder="ابحث عن أداة…" autocomplete="off"></form>
+<button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
+</div></header>
+<nav class="cats" aria-label="التصنيفات"><ul>${nav}</ul></nav>`;
+}
+
+function footer(root) {
+  return `<footer class="site-footer"><div class="wrap">
+<p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
+<p>${esc(SITE)} موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="${root}">كل الأدوات</a></p>
+</div></footer>`;
+}
+
+function adSlot(name) {
+  if (!config.ads || !config.ads.enabled) return "";
+  return `<div class="ad-slot" data-slot="${esc(name)}" aria-hidden="true"></div>`;
+}
+
+function crumbs(root, items) {
+  return `<nav class="crumbs" aria-label="مسار التنقل"><ol>${items.map((it, i) => (i === items.length - 1 ? `<li aria-current="page">${esc(it.title)}</li>` : `<li><a href="${it.href}">${esc(it.title)}</a></li>`)).join("")}</ol></nav>`;
+}
+
+function fieldHtml(inp) {
+  const id = `in-${inp.id}`;
+  const type = inp.type || "number";
+  const unit = inp.unit ? ` <span class="unit">(${esc(inp.unit)})</span>` : "";
+  const help = inp.help ? `<small class="help" id="help-${inp.id}">${inline(inp.help)}</small>` : "";
+  const desc = inp.help ? ` aria-describedby="help-${inp.id}"` : "";
+  const when = inp.when ? ` data-when='${esc(JSON.stringify(inp.when))}'` : "";
+  const wide = inp.wide || type === "textarea" || type === "expr" ? " wide" : "";
+  const def = inp.default ?? "";
+  let control;
+  if (type === "select") {
+    control = `<select id="${id}" name="${inp.id}"${desc}>${inp.options.map(([v, l]) => `<option value="${esc(v)}"${String(v) === String(def) ? " selected" : ""}>${esc(l)}</option>`).join("")}</select>`;
+  } else if (type === "textarea") {
+    control = `<textarea id="${id}" name="${inp.id}" dir="ltr" rows="${inp.rows || 4}" spellcheck="false"${inp.placeholder ? ` placeholder="${esc(inp.placeholder)}"` : ""}${desc}>${esc(def)}</textarea>`;
+  } else if (type === "checkbox") {
+    return `<div class="field check${wide}"${when}><input id="${id}" name="${inp.id}" type="checkbox"${def ? " checked" : ""}${desc}><label for="${id}">${esc(inp.label)}</label>${help}</div>`;
+  } else {
+    const dir = type === "text" ? "auto" : "ltr";
+    control = `<input id="${id}" name="${inp.id}" type="text" dir="${dir}" autocomplete="off" spellcheck="false"${type === "number" ? ' inputmode="text"' : ""}${inp.placeholder ? ` placeholder="${esc(inp.placeholder)}"` : ""} value="${esc(def)}"${desc}>`;
+  }
+  return `<div class="field${wide}"${when}><label for="${id}">${esc(inp.label)}${unit}</label>${control}${help}</div>`;
+}
+
+function relatedFor(t, meta) {
+  const list = (meta.related || []).filter((s) => metas.get(s) && s !== t.slug);
+  for (const o of live) {
+    if (list.length >= 5) break;
+    if (o.category === t.category && o.slug !== t.slug && !list.includes(o.slug)) list.push(o.slug);
+  }
+  return list.map((s) => tools.find((x) => x.slug === s));
+}
+
+function jsonldTool(t, meta) {
+  const data = [{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: t.title,
+    description: meta.description,
+    applicationCategory: "EducationalApplication",
+    operatingSystem: "Any",
+    inLanguage: "ar",
+    isAccessibleForFree: true,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }
+  }];
+  const u = absUrl(`tools/${t.slug}/`);
+  if (u) {
+    data[0].url = u;
+    data.push({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: SITE, item: absUrl("") },
+        { "@type": "ListItem", position: 2, name: catTitle[t.category], item: absUrl(`category/${t.category}/`) },
+        { "@type": "ListItem", position: 3, name: t.title, item: u }
+      ]
+    });
+  }
+  return data;
+}
+
+function toolPage(t, meta) {
+  const root = "../../";
+  const formulas = (meta.formulas || []).map((f) => `<div class="formula">${f.label ? `<div class="formula-label">${inline(f.label)}</div>` : ""}${tex(f.tex)}</div>`).join("\n");
+  const fields = meta.inputs.map(fieldHtml).join("\n");
+  const rel = relatedFor(t, meta);
+  const exampleNote = meta.example?.note ? `<p class="example-note">${inline(meta.example.note)}</p>` : "";
+  return `${head({ title: `${t.title} | ${SITE}`, description: meta.description, path: `tools/${t.slug}/`, root, jsonld: jsonldTool(t, meta) })}
+<body data-tool="${t.slug}" data-category="${t.category}">
+${header(root, t.category)}
+<main id="main"><div class="wrap">
+${crumbs(root, [{ title: SITE, href: root }, { title: catTitle[t.category], href: `${root}category/${t.category}/` }, { title: t.title }])}
+<h1>${esc(t.title)}</h1>
+<p class="lead">${inline(meta.intro || meta.description)}</p>
+${adSlot("header")}
+${formulas ? `<section class="card formulas" aria-labelledby="h-formulas"><h2 id="h-formulas">القوانين المستخدمة</h2>\n${formulas}\n</section>` : ""}
+<section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">المدخلات</h2>
+<form id="tool-form" class="tool-form" novalidate>
+${fields}
+${exampleNote}
+<div class="actions"><button class="btn primary" type="submit">${esc(meta.submitLabel || "احسب")}</button><button class="btn" type="button" id="example-btn">مثال محلول</button><button class="btn" type="reset">مسح</button></div>
+</form>
+${meta.inputHelp ? `<p class="help">${inline(meta.inputHelp)}</p>` : ""}
+</section>
+<section id="output" class="card" aria-live="polite" tabindex="-1" hidden>
+<div id="out-error" class="error" role="alert" hidden></div>
+<div id="out-success" hidden>
+<div class="out-head"><h2>النتيجة</h2><div><button class="btn" type="button" id="copy-btn">نسخ النتيجة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
+<dl id="out-results" class="results"></dl>
+<div id="out-blocks"></div>
+<div id="steps-wrap"><h2>الحل خطوة بخطوة</h2><ol id="out-steps" class="steps"></ol></div>
+</div>
+</section>
+<noscript><p class="note warn">هذه الأداة تحتاج تفعيل JavaScript لإجراء الحسابات.</p></noscript>
+${adSlot("inContent")}
+${meta.notes ? `<section class="card" aria-labelledby="h-notes"><h2 id="h-notes">ملاحظات</h2>${meta.notes.map((n) => `<p>${inline(n)}</p>`).join("")}</section>` : ""}
+${rel.length ? `<section class="related" aria-labelledby="h-related"><h2 id="h-related">أدوات ذات صلة</h2><ul>${rel.map((r) => `<li><a href="${root}tools/${r.slug}/">${esc(r.title)}</a></li>`).join("")}</ul></section>` : ""}
+${adSlot("footer")}
+</div></main>
+${footer(root)}
+</body>
+</html>
+`;
+}
+
+function toolCard(t, root) {
+  const m = metas.get(t.slug);
+  const search = [t.title, m.description, ...(m.keywords || []), catTitle[t.category], t.slug.replace(/-/g, " ")].join(" ");
+  return `<li data-search="${esc(search)}"><a href="${root}tools/${t.slug}/"><strong>${esc(t.title)}</strong><small>${esc(m.description)}</small></a></li>`;
+}
+
+function homePage() {
+  const root = "";
+  const sections = categories.map((c) => {
+    const list = live.filter((t) => t.category === c.slug);
+    if (!list.length) return "";
+    return `<section class="cat-section" aria-labelledby="cat-${c.slug}"><h2 id="cat-${c.slug}"><a href="category/${c.slug}/">${esc(c.title)}</a></h2><ul class="tool-grid">${list.map((t) => toolCard(t, root)).join("")}</ul></section>`;
+  }).join("\n");
+  const description = `${live.length} أداة هندسية مجانية بالعربية لطلاب الهندسة والفنيين: تفاضل وتكامل، مصفوفات، لابلاس، دوائر كهربائية، إلكترونيات، منطق رقمي، حساسات وتحكم، مع الحل خطوة بخطوة.`;
+  const jsonld = { "@context": "https://schema.org", "@type": "WebSite", name: SITE, description, inLanguage: "ar" };
+  if (siteUrl) jsonld.url = absUrl("");
+  return `${head({ title: `${SITE} | أدوات هندسية مجانية مع الحل خطوة بخطوة`, description, path: "", root: "", jsonld }).replace(/href="(?:\.\.\/\.\.\/)?(vendor|assets)/g, 'href="$1')}
+<body>
+${header("", null)}
+<main id="main"><div class="wrap">
+<div class="hero">
+<h1>${esc(SITE)}: أدوات هندسية مع الحل خطوة بخطوة</h1>
+<p class="lead">${live.length} أداة مجانية لطلاب الهندسة والفنيين. كل أداة تعرض القانون والحل المفصّل بالعربية ومثالاً محلولاً.</p>
+<form id="home-search-form" class="search-big" role="search"><label class="sr-only" for="home-search">ابحث في كل الأدوات</label><input id="home-search" type="search" placeholder="اكتب اسم الأداة، مثل: مشتقة، مقاومة، لابلاس…" autocomplete="off"></form>
+<p id="search-count" class="search-count" role="status"></p>
+</div>
+${adSlot("header")}
+${sections}
+</div></main>
+${footer("")}
+</body>
+</html>
+`;
+}
+
+function categoryPage(c) {
+  const root = "../../";
+  const list = live.filter((t) => t.category === c.slug);
+  const description = `${c.title}: ${c.description}`;
+  const jsonld = { "@context": "https://schema.org", "@type": "CollectionPage", name: c.title, description, inLanguage: "ar" };
+  if (siteUrl) jsonld.url = absUrl(`category/${c.slug}/`);
+  const others = categories.filter((o) => o.slug !== c.slug).map((o) => `<li><a href="${root}category/${o.slug}/">${esc(o.title)}</a></li>`).join("");
+  return `${head({ title: `${c.title} | ${SITE}`, description, path: `category/${c.slug}/`, root, jsonld })}
+<body>
+${header(root, c.slug)}
+<main id="main"><div class="wrap">
+${crumbs(root, [{ title: SITE, href: root }, { title: c.title }])}
+<h1>${esc(c.title)}</h1>
+<p class="lead">${esc(c.description)}</p>
+${list.length ? `<ul class="tool-grid">${list.map((t) => toolCard(t, root)).join("")}</ul>` : `<p class="note">الأدوات في هذا التصنيف قيد الإعداد.</p>`}
+<section class="related" aria-labelledby="h-other"><h2 id="h-other">تصنيفات أخرى</h2><ul>${others}</ul></section>
+</div></main>
+${footer(root)}
+</body>
+</html>
+`;
+}
+
+function pendingPage(t) {
+  const root = "../../";
+  return `${head({ title: `${t.title} | ${SITE}`, description: `${t.title}: أداة قيد الإعداد.`, path: `tools/${t.slug}/`, root, noindex: true })}
+<body>
+${header(root, t.category)}
+<main id="main"><div class="wrap"><h1>${esc(t.title)}</h1><p class="note">هذه الأداة قيد الإعداد.</p></div></main>
+${footer(root)}
+</body>
+</html>
+`;
+}
+
+function notFoundPage() {
+  const base = config.basePath ? JSON.stringify(config.basePath) : "null";
+  return `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الصفحة غير موجودة | ${esc(SITE)}</title>
+<meta name="description" content="الصفحة المطلوبة غير موجودة في ${esc(SITE)}.">
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#f7f8fa;--text:#1a1f29;--muted:#545e6e;--accent:#0b5cad;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1318;--text:#e7ebf0;--muted:#a5afbd;--accent:#6cb2f5;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1318;--text:#e7ebf0;--muted:#a5afbd;--accent:#6cb2f5;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,"Segoe UI",Tahoma,sans-serif;line-height:1.7}
+main{max-width:640px;margin:0 auto;padding:48px 16px}
+a{color:var(--accent);font-weight:600}
+p{color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<h1>الصفحة غير موجودة</h1>
+<p>ربما تغيّر الرابط أو كُتب بشكل غير صحيح.</p>
+<p><a id="home-link" href="./">العودة إلى كل الأدوات في ${esc(SITE)}</a></p>
+</main>
+<script>
+(function(){var b=${base};if(!b){var s=location.pathname.split("/").filter(Boolean);b=/\\.github\\.io$/.test(location.hostname)&&s.length>1?"/"+s[0]+"/":"/";}document.getElementById("home-link").setAttribute("href",b);try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}})();
+</script>
+</body>
+</html>
+`;
+}
+
+function sitemap() {
+  const paths = ["", ...categories.map((c) => `category/${c.slug}/`), ...live.map((t) => `tools/${t.slug}/`)];
+  const loc = (p) => (siteUrl ? `${siteUrl}/${p}` : p || "./");
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${paths.map((p) => `  <url><loc>${esc(loc(p))}</loc></url>`).join("\n")}
+</urlset>
+`;
+}
+
+function robots() {
+  return `User-agent: *\nAllow: /\n${siteUrl ? `\nSitemap: ${siteUrl}/sitemap.xml\n` : ""}`;
+}
+
+const ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0b5cad"/><path d="M14 44 L26 20 L38 44 M20 34 H32 M42 20 V44 M42 20 H52 M42 32 H50" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+`;
+
+write("index.html", homePage());
+for (const c of categories) write(`category/${c.slug}/index.html`, categoryPage(c));
+for (const t of tools) {
+  const m = metas.get(t.slug);
+  write(`tools/${t.slug}/index.html`, m ? toolPage(t, m) : pendingPage(t));
+}
+write("404.html", notFoundPage());
+write("sitemap.xml", sitemap());
+write("robots.txt", robots());
+write("assets/icon.svg", ICON);
+
+if (CHECK) {
+  if (changed.length) {
+    console.error(`الصفحات غير محدّثة (${changed.length}): ${changed.slice(0, 10).join(", ")}`);
+    process.exit(1);
+  }
+  console.log("كل الصفحات محدّثة.");
+} else {
+  console.log(`تم توليد الصفحات: ${changed.length} ملف تغيّر، ${live.length} أداة جاهزة من ${tools.length}.`);
+}
