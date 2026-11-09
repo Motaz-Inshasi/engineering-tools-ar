@@ -6,6 +6,11 @@
   "direction": "rtl",
   "siteUrl": "https://motaz-inshasi.github.io/engineering-tools-ar",
   "basePath": "/engineering-tools-ar/",
+  "donate": {
+    "url": "",
+    "label": "ادعم الموقع",
+    "text": "هل أفادتك الأداة؟ الموقع مجاني بلا إعلانات مزعجة، ودعمك يساعد على استمراره وإضافة أدوات جديدة."
+  },
   "ads": {
     "enabled": false,
     "provider": "",
