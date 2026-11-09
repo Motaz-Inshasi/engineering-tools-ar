@@ -80,14 +80,14 @@ function header(root, activeCat) {
 <header class="site-header"><div class="wrap">
 <a class="brand" href="${root}">${esc(SITE.replace("المهندس", ""))}<span>المهندس</span></a>
 <form class="search-mini" action="${root}" method="get" role="search"><label class="sr-only" for="site-q">ابحث عن أداة</label><input id="site-q" name="q" type="search" placeholder="ابحث عن أداة…" autocomplete="off"></form>
-<button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
+${donateHtml(config)}<button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
 </div></header>
 <nav class="cats" aria-label="التصنيفات"><ul>${nav}</ul></nav>`;
 }
 
 function footer(root) {
   return `<footer class="site-footer"><div class="wrap">
-${donateHtml(config)}<p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
+<p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
 <p>${esc(SITE)} موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="${root}">كل الأدوات</a></p>
 </div></footer>`;
 }

@@ -89,6 +89,15 @@ git push
 LIVE_URL=https://motaz-inshasi.github.io/engineering-tools-ar/ npx playwright test
 ```
 
+## زر التبرع (مخفي)
+
+الزر جاهز في أعلى كل صفحة، لكنه مخفي ما دام `donate.url` فارغاً في `site.config.json`. لإظهاره:
+
+1. ضع رابط صفحة التبرع (يجب أن يبدأ بـ `https://`)، مثل `"url": "https://ko-fi.com/اسمك"`.
+2. شغّل `npm run generate` ثم `npm test`، ثم انشر التعديل.
+
+يمكن تغيير نص الزر من `donate.label`، والجملة التي تظهر عند مرور الفأرة من `donate.text`.
+
 ## الإعلانات (معطلة)
 
 في `site.config.json` يوجد خيار `ads.enabled: false`. عند تفعيله يضع المولّد أماكن فارغة للإعلانات فقط، ولا يضيف أي سكربت.

@@ -19,7 +19,8 @@ test("زر التبرع يظهر برابط آمن عند إضافة الراب�
   assert.match(html, /target="_blank" rel="noopener noreferrer"/);
   assert.match(html, /ادعم الموقع/);
   assert.match(html, /class="sr-only"> \(يفتح في نافذة جديدة\)/);
-  assert.match(html, /<p>نص<\/p>/);
+  assert.match(html, /^<a class="donate-top"/);
+  assert.match(html, /title="نص"/);
 });
 
 test("روابط غير آمنة تُرفض برسالة واضحة، والنصوص تُهرَّب", () => {
@@ -30,10 +31,15 @@ test("روابط غير آمنة تُرفض برسالة واضحة، والنص
   assert.ok(html.includes("&amp;b=2") && html.includes("&lt;b&gt;x&lt;/b&gt;") && !html.includes("<b>x"));
 });
 
-test("حالة الصفحات المولّدة تطابق الإعداد الحالي", () => {
+test("حالة الصفحات المولّدة تطابق الإعداد الحالي، والزر في رأس الصفحة", () => {
   const config = JSON.parse(read(join(ROOT, "site.config.json")));
   const has = !!(config.donate?.url || "").trim();
   for (const f of htmlFiles().filter((p) => !rel(p).startsWith("vendor/") && rel(p) !== "404.html")) {
-    assert.equal(read(f).includes('class="donate"'), has, rel(f));
+    const html = read(f);
+    assert.equal(html.includes('class="donate-top"'), has, rel(f));
+    if (has) {
+      const header = html.slice(html.indexOf('<header class="site-header"'), html.indexOf("</header>"));
+      assert.ok(header.includes('class="donate-top"'), `${rel(f)}: button must be inside the header`);
+    }
   }
 });
