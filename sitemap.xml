@@ -17,4 +17,12 @@
   <url><loc>tools/taylor-series/</loc></url>
   <url><loc>tools/root-finding/</loc></url>
   <url><loc>tools/function-plotter/</loc></url>
+  <url><loc>tools/linear-system/</loc></url>
+  <url><loc>tools/matrix/</loc></url>
+  <url><loc>tools/complex-numbers/</loc></url>
+  <url><loc>tools/polynomial-roots/</loc></url>
+  <url><loc>tools/partial-fractions/</loc></url>
+  <url><loc>tools/quadratic/</loc></url>
+  <url><loc>tools/number-bases/</loc></url>
+  <url><loc>tools/trigonometry/</loc></url>
 </urlset>
