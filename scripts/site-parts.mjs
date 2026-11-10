@@ -43,6 +43,24 @@ export function donateHtml(config, root = "") {
   return `<a class="donate-top" href="${root}support/"${info.text ? ` title="${esc(info.text)}"` : ""}><span class="heart" aria-hidden="true">♥</span> ${esc(info.label)}</a>`;
 }
 
+const LTR_RUN = /[A-Za-z0-9(\[|][A-Za-z0-9^=+\-−*/()\[\]|.,:'’_ ]*/g;
+
+export function isolateLtr(text) {
+  const s = String(text ?? "");
+  let out = "", last = 0;
+  for (const m of s.matchAll(LTR_RUN)) {
+    let run = m[0];
+    const trail = run.match(/[\s.,:]+$/);
+    const tail = trail ? trail[0] : "";
+    run = run.slice(0, run.length - tail.length);
+    out += esc(s.slice(last, m.index));
+    out += run ? `<bdi dir="ltr">${esc(run)}</bdi>` : "";
+    out += esc(tail);
+    last = m.index + m[0].length;
+  }
+  return out + esc(s.slice(last));
+}
+
 export function verificationMeta(config) {
   const token = String(config?.googleSiteVerification ?? "").trim();
   if (!token) return "";
