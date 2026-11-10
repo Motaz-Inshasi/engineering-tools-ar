@@ -1,8 +1,8 @@
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { createRequire } from "node:module";
-import { donateHtml } from "./site-parts.mjs";
+import { donateHtml, donateInfo, qrSvg } from "./site-parts.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
@@ -80,7 +80,7 @@ function header(root, activeCat) {
 <header class="site-header"><div class="wrap">
 <a class="brand" href="${root}">${esc(SITE.replace("المهندس", ""))}<span>المهندس</span></a>
 <form class="search-mini" action="${root}" method="get" role="search"><label class="sr-only" for="site-q">ابحث عن أداة</label><input id="site-q" name="q" type="search" placeholder="ابحث عن أداة…" autocomplete="off"></form>
-${donateHtml(config)}<button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
+${donateHtml(config, root)}<button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
 </div></header>
 <nav class="cats" aria-label="التصنيفات"><ul>${nav}</ul></nav>`;
 }
@@ -275,6 +275,65 @@ ${footer(root)}
 `;
 }
 
+const donate = donateInfo(config);
+
+function supportPage() {
+  const root = "../";
+  const sections = [];
+  if (donate.usdt) {
+    sections.push(`<section class="card" aria-labelledby="h-usdt">
+<h2 id="h-usdt">التبرع بعملة USDT</h2>
+<p class="net-badge">الشبكة: <strong dir="ltr">TRON (TRC20)</strong> فقط</p>
+<div class="pay-grid">
+<figure class="qr-box">${qrSvg(donate.usdt, "رمز QR لعنوان محفظة USDT على شبكة TRC20")}<figcaption>امسح الرمز من تطبيق محفظتك</figcaption></figure>
+<div class="addr-box">
+<label for="usdt-address">عنوان المحفظة</label>
+<input id="usdt-address" class="addr" type="text" dir="ltr" readonly value="${esc(donate.usdt)}">
+<div class="actions"><button class="btn primary" type="button" data-copy="usdt-address">نسخ العنوان</button><span class="copied" role="status" data-copy-status="usdt-address"></span></div>
+</div>
+</div>
+<p class="note warn"><strong>مهم:</strong> أرسل عملة <strong>USDT</strong> على شبكة <strong dir="ltr">TRON (TRC20)</strong> فقط. الإرسال بعملة أخرى أو على شبكة أخرى (مثل BEP20 أو ERC20) قد يؤدي إلى ضياع المبلغ نهائياً.</p>
+<h3>كيف أتبرع من Binance؟</h3>
+<ol class="steps">
+<li>افتح <strong>Wallets</strong> ثم <strong>Withdraw</strong> (سحب) واختر <strong>USDT</strong>.</li>
+<li>الصق العنوان أعلاه أو امسح رمز QR.</li>
+<li>اختر الشبكة <strong dir="ltr">TRX – Tron (TRC20)</strong>.</li>
+<li>أدخل المبلغ وتحقق من العنوان ثم أكّد.</li>
+</ol>
+<p class="help">الخطوات مشابهة في أي محفظة أو منصة أخرى: المهم العملة USDT والشبكة TRC20.</p>
+</section>`);
+  }
+  if (donate.payId) {
+    sections.push(`<section class="card" aria-labelledby="h-pay">
+<h2 id="h-pay">Binance Pay</h2>
+<p>إن كان لديك حساب Binance يمكنك التحويل مجاناً وفوراً عبر Binance Pay إلى المعرّف:</p>
+<div class="addr-box"><label for="pay-id">Binance Pay ID</label><input id="pay-id" class="addr" type="text" dir="ltr" readonly value="${esc(donate.payId)}">
+<div class="actions"><button class="btn" type="button" data-copy="pay-id">نسخ المعرّف</button><span class="copied" role="status" data-copy-status="pay-id"></span></div></div>
+</section>`);
+  }
+  if (donate.url) {
+    sections.push(`<section class="card" aria-labelledby="h-link"><h2 id="h-link">طريقة أخرى</h2><p><a class="btn" href="${esc(donate.url)}" target="_blank" rel="noopener noreferrer">صفحة التبرع<span class="sr-only"> (يفتح في نافذة جديدة)</span></a></p></section>`);
+  }
+  const description = `ادعم ${SITE}: موقع أدوات هندسية مجاني بالعربية. يمكنك التبرع بعملة USDT على شبكة TRC20.`;
+  return `${head({ title: `ادعم الموقع | ${SITE}`, description, path: "support/", root, jsonld: { "@context": "https://schema.org", "@type": "WebPage", name: "ادعم الموقع", description, inLanguage: "ar" } })}
+<body>
+${header(root, null)}
+<main id="main"><div class="wrap">
+${crumbs(root, [{ title: SITE, href: root }, { title: "ادعم الموقع" }])}
+<h1>ادعم ${esc(SITE)}</h1>
+<p class="lead">${esc(donate.text)}</p>
+${sections.join("\n")}
+<section class="card" aria-labelledby="h-notes"><h2 id="h-notes">ملاحظات</h2>
+<p>شكراً لك! كل تبرع، مهما كان صغيراً، يساعد على إبقاء الموقع مجانياً وإضافة أدوات جديدة.</p>
+<p class="help">التحويلات بالعملات الرقمية لا يمكن استرجاعها، وتظهر علناً على سلسلة الكتل. تأكد من العنوان والشبكة قبل الإرسال.</p>
+</section>
+</div></main>
+${footer(root)}
+</body>
+</html>
+`;
+}
+
 function notFoundPage() {
   const base = config.basePath ? JSON.stringify(config.basePath) : "null";
   return `<!doctype html>
@@ -311,7 +370,7 @@ p{color:var(--muted)}
 }
 
 function sitemap() {
-  const paths = ["", ...categories.map((c) => `category/${c.slug}/`), ...live.map((t) => `tools/${t.slug}/`)];
+  const paths = ["", ...categories.map((c) => `category/${c.slug}/`), ...live.map((t) => `tools/${t.slug}/`), ...(donate.enabled ? ["support/"] : [])];
   const loc = (p) => (siteUrl ? `${siteUrl}/${p}` : p || "./");
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -334,6 +393,11 @@ for (const t of tools) {
   write(`tools/${t.slug}/index.html`, m ? toolPage(t, m) : pendingPage(t));
 }
 write("404.html", notFoundPage());
+if (donate.enabled) write("support/index.html", supportPage());
+else if (existsSync(join(ROOT, "support", "index.html"))) {
+  changed.push("support/index.html (removed)");
+  if (!CHECK) rmSync(join(ROOT, "support"), { recursive: true, force: true });
+}
 write("sitemap.xml", sitemap());
 write("robots.txt", robots());
 write("assets/icon.svg", ICON);

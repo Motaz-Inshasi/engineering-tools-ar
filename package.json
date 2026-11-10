@@ -13,6 +13,8 @@
   },
   "devDependencies": {
     "@playwright/test": "1.65.0",
-    "katex": "0.19.1"
+    "jsqr": "1.4.0",
+    "katex": "0.19.1",
+    "qrcode-generator": "2.0.4"
   }
 }
