@@ -7,7 +7,7 @@
   "siteUrl": "https://motaz-inshasi.github.io/engineering-tools-ar",
   "basePath": "/engineering-tools-ar/",
   "donate": {
-    "enabled": false,
+    "enabled": true,
     "label": "ادعم الموقع",
     "text": "هل أفادتك الأداة؟ الموقع مجاني بلا إعلانات مزعجة، ودعمك يساعد على استمراره وإضافة أدوات جديدة.",
     "usdtTrc20": "TPJ43BMAikPH6H1cZyAakXPk57GEag4Ujo",
