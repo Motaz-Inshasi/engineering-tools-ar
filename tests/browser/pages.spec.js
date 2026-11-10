@@ -62,6 +62,7 @@ test("صفحة الدعم (عند تفعيلها): تعمل والنسخ يعط�
   const cfg = JSON.parse(readFileSync(join(ROOT, "site.config.json"), "utf8"));
   const problems = watch(page);
   await page.goto("./");
+  await page.waitForLoadState("networkidle");
   await page.click(".donate-top");
   await expect(page).toHaveURL(/\/support\/$/);
   await expect(page.locator("h1")).toContainText("ادعم");
