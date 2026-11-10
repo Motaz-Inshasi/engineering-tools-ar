@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync } from "node
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { createRequire } from "node:module";
-import { donateHtml, donateInfo, qrSvg, verificationMeta } from "./site-parts.mjs";
+import { donateHtml, donateInfo, qrSvg, verificationMeta, isolateLtr } from "./site-parts.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
@@ -19,7 +19,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "
 const tex = (t, display = true) => katex.renderToString(t, { displayMode: display, throwOnError: true, output: "htmlAndMathml", strict: false });
 
 function inline(text) {
-  return String(text).split(/(\$[^$]+\$)/g).map((p) => (p.length > 1 && p.startsWith("$") && p.endsWith("$") ? tex(p.slice(1, -1), false) : esc(p))).join("");
+  return String(text).split(/(\$[^$]+\$)/g).map((p) => (p.length > 1 && p.startsWith("$") && p.endsWith("$") ? tex(p.slice(1, -1), false) : isolateLtr(p))).join("");
 }
 
 function write(rel, content) {

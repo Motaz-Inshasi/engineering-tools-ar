@@ -41,11 +41,11 @@
 <section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">المدخلات</h2>
 <form id="tool-form" class="tool-form" novalidate>
 <div class="field"><label for="in-mode">المطلوب</label><select id="in-mode" name="mode"><option value="angle" selected>قيم الدوال لزاوية</option><option value="inverse">الزاوية من قيمة الدالة</option></select></div>
-<div class="field" data-when='{&quot;mode&quot;:[&quot;angle&quot;]}'><label for="in-theta">الزاوية</label><input id="in-theta" name="theta" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="150" aria-describedby="help-theta"><small class="help" id="help-theta">يمكن كتابة تعبير مثل pi/6 عند اختيار الراديان.</small></div>
+<div class="field" data-when='{&quot;mode&quot;:[&quot;angle&quot;]}'><label for="in-theta">الزاوية</label><input id="in-theta" name="theta" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="150" aria-describedby="help-theta"><small class="help" id="help-theta">يمكن كتابة تعبير مثل <bdi dir="ltr">pi/6</bdi> عند اختيار الراديان.</small></div>
 <div class="field" data-when='{&quot;mode&quot;:[&quot;angle&quot;]}'><label for="in-unit">الوحدة</label><select id="in-unit" name="unit"><option value="deg" selected>درجات</option><option value="rad">راديان</option></select></div>
 <div class="field" data-when='{&quot;mode&quot;:[&quot;inverse&quot;]}'><label for="in-fn">الدالة</label><select id="in-fn" name="fn"><option value="sin" selected>sin</option><option value="cos">cos</option><option value="tan">tan</option></select></div>
 <div class="field" data-when='{&quot;mode&quot;:[&quot;inverse&quot;]}'><label for="in-val">قيمة الدالة</label><input id="in-val" name="val" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="0.5"></div>
-<p class="example-note">مثال: الزاوية 150° في الربع الثاني وزاويتها المرجعية 30°.</p>
+<p class="example-note">مثال: الزاوية <bdi dir="ltr">150</bdi>° في الربع الثاني وزاويتها المرجعية <bdi dir="ltr">30</bdi>°.</p>
 <div class="actions"><button class="btn primary" type="submit">احسب</button><button class="btn" type="button" id="example-btn">مثال محلول</button><button class="btn" type="reset">مسح</button></div>
 </form>
 

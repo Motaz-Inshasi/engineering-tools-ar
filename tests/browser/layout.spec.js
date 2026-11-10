@@ -13,6 +13,16 @@ test("لوحة المفاتيح: يمكن الوصول إلى زر الحساب 
   await expect(page.locator("#out-success")).toBeVisible();
 });
 
+test("الأمثلة الإنجليزية داخل نص المساعدة تُعرض من اليسار لليمين", async ({ page }) => {
+  await page.goto("tools/polynomial-roots/");
+  const r = await page.evaluate(() => {
+    const pos = (el, sub) => { const t = el.firstChild; const i = t.textContent.indexOf(sub); const rg = document.createRange(); rg.setStart(t, i); rg.setEnd(t, i + sub.length); return rg.getBoundingClientRect().left; };
+    const b = [...document.querySelectorAll("#help-c bdi")];
+    return { count: b.length, a: pos(b[0], "x^7") < pos(b[0], "x^5"), c: pos(b[2], "2x^3") < pos(b[2], "8x") };
+  });
+  expect(r).toEqual({ count: 4, a: true, c: true });
+});
+
 test("كل حقول الإدخال لها تسمية", async ({ page }) => {
   for (const t of list) {
     await page.goto(`tools/${t.slug}/`);
