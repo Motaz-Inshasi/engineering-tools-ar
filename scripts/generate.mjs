@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync } from "node
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { createRequire } from "node:module";
-import { donateHtml, donateInfo, qrSvg } from "./site-parts.mjs";
+import { donateHtml, donateInfo, qrSvg, verificationMeta } from "./site-parts.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
@@ -58,7 +58,7 @@ function head({ title, description, path, root, jsonld, noindex }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
-${noindex ? '<meta name="robots" content="noindex">\n' : ""}<link rel="canonical" href="${esc(canonical)}">
+${noindex ? '<meta name="robots" content="noindex">\n' : ""}${path === "" ? verificationMeta(config) : ""}<link rel="canonical" href="${esc(canonical)}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_AR">
 <meta property="og:site_name" content="${esc(SITE)}">

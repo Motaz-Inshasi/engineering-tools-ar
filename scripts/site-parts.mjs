@@ -43,6 +43,13 @@ export function donateHtml(config, root = "") {
   return `<a class="donate-top" href="${root}support/"${info.text ? ` title="${esc(info.text)}"` : ""}><span class="heart" aria-hidden="true">♥</span> ${esc(info.label)}</a>`;
 }
 
+export function verificationMeta(config) {
+  const token = String(config?.googleSiteVerification ?? "").trim();
+  if (!token) return "";
+  if (!/^[A-Za-z0-9_-]{20,100}$/.test(token)) throw new Error("رمز تحقق Google غير صالح في site.config.json: ضع قيمة content فقط من الوسم، بلا علامات اقتباس أو وسوم.");
+  return `<meta name="google-site-verification" content="${token}">\n`;
+}
+
 export function qrMatrix(text) {
   const q = qrcode(0, "M");
   q.addData(text);
