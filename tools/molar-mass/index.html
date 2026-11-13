@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حاسبة الكتلة المولية | عُدّة المهندس</title>
+<meta name="description" content="احسب الكتلة المولية لأي مركب كيميائي من صيغته، مع النسبة المئوية الكتلية لكل عنصر، وحوّل بين الكتلة وعدد المولات وعدد الجزيئات.">
+<link rel="canonical" href="https://motaz-inshasi.github.io/engineering-tools-ar/tools/molar-mass/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="عُدّة المهندس">
+<meta property="og:title" content="حاسبة الكتلة المولية | عُدّة المهندس">
+<meta property="og:description" content="احسب الكتلة المولية لأي مركب كيميائي من صيغته، مع النسبة المئوية الكتلية لكل عنصر، وحوّل بين الكتلة وعدد المولات وعدد الجزيئات.">
+<meta property="og:url" content="https://motaz-inshasi.github.io/engineering-tools-ar/tools/molar-mass/">
+<meta name="theme-color" content="#0b5cad">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../../assets/css/main.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script defer src="../../vendor/katex/katex.min.js"></script>
+<script type="module" src="../../assets/js/app.js"></script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة الكتلة المولية","description":"احسب الكتلة المولية لأي مركب كيميائي من صيغته، مع النسبة المئوية الكتلية لكل عنصر، وحوّل بين الكتلة وعدد المولات وعدد الجزيئات.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"ar","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://motaz-inshasi.github.io/engineering-tools-ar/tools/molar-mass/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عُدّة المهندس","item":"https://motaz-inshasi.github.io/engineering-tools-ar/"},{"@type":"ListItem","position":2,"name":"الكيمياء","item":"https://motaz-inshasi.github.io/engineering-tools-ar/category/chemistry/"},{"@type":"ListItem","position":3,"name":"حاسبة الكتلة المولية","item":"https://motaz-inshasi.github.io/engineering-tools-ar/tools/molar-mass/"}]}]</script>
+</head>
+<body data-tool="molar-mass" data-category="chemistry">
+<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="../../">عُدّة <span>المهندس</span></a>
+<form class="search-mini" action="../../" method="get" role="search"><label class="sr-only" for="site-q">ابحث عن أداة</label><input id="site-q" name="q" type="search" placeholder="ابحث عن أداة…" autocomplete="off"></form>
+<a class="donate-top" href="../../support/" title="هل أفادتك الأداة؟ الموقع مجاني بلا إعلانات مزعجة، ودعمك يساعد على استمراره وإضافة أدوات جديدة."><span class="heart" aria-hidden="true">♥</span> ادعم الموقع</a><button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
+</div></header>
+<nav class="cats" aria-label="التصنيفات"><ul><li><a href="../../category/calculus/">التفاضل والتكامل</a></li><li><a href="../../category/algebra/">الجبر والرياضيات</a></li><li><a href="../../category/signals/">لابلاس والإشارات</a></li><li><a href="../../category/dc-circuits/">دوائر التيار المستمر</a></li><li><a href="../../category/ac-circuits/">دوائر التيار المتردد</a></li><li><a href="../../category/electronics/">الإلكترونيات</a></li><li><a href="../../category/digital/">المنطق الرقمي</a></li><li><a href="../../category/sensors/">الحساسات والربط</a></li><li><a href="../../category/control/">أنظمة التحكم</a></li><li><a href="../../category/units/">الوحدات والمراجع</a></li><li><a href="../../category/physics/">الفيزياء</a></li><li><a href="../../category/chemistry/" aria-current="page">الكيمياء</a></li><li><a href="../../category/biology/">الأحياء</a></li><li><a href="../../category/statistics/">الإحصاء والاحتمالات</a></li><li><a href="../../category/medicine/">الطب والصيدلة والتمريض</a></li><li><a href="../../category/economics/">الاقتصاد والمحاسبة</a></li><li><a href="../../category/computing/">علوم الحاسوب والشبكات</a></li><li><a href="../../category/architecture/">العمارة والتخطيط</a></li><li><a href="../../category/earth-environment/">الجيولوجيا والبيئة</a></li><li><a href="../../category/agriculture-nutrition/">الزراعة والتغذية</a></li><li><a href="../../category/student/">أدوات الطالب</a></li></ul></nav>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="../../">عُدّة المهندس</a></li><li><a href="../../category/chemistry/">الكيمياء</a></li><li aria-current="page">حاسبة الكتلة المولية</li></ol></nav>
+<h1>حاسبة الكتلة المولية</h1>
+<p class="lead">احسب الكتلة المولية لأي مركب كيميائي من صيغته، مع النسبة المئوية الكتلية لكل عنصر، وحوّل بين الكتلة وعدد المولات وعدد الجزيئات.</p>
+
+<section class="card formulas" aria-labelledby="h-formulas"><h2 id="h-formulas">القوانين المستخدمة</h2>
+<div class="formula"><div class="formula-label">الكتلة المولية</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>M</mi><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>n</mi><mi>i</mi></msub><mtext> </mtext><msub><mi>A</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">M = \sum_i n_i \, A_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.3277em;vertical-align:-1.2777em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></div>
+<div class="formula"><div class="formula-label">المولات وعدد الجسيمات</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mi>m</mi><mi>M</mi></mfrac><mo separator="true">,</mo><mspace width="2em"/><mi>N</mi><mo>=</mo><mi>n</mi><mtext> </mtext><msub><mi>N</mi><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">n = \frac{m}{M},\qquad N = n\,N_A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.7936em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1076em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">M</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></div>
+</section>
+<section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">المدخلات</h2>
+<form id="tool-form" class="tool-form" novalidate>
+<div class="field"><label for="in-formula">الصيغة الكيميائية</label><input id="in-formula" name="formula" type="text" dir="auto" autocomplete="off" spellcheck="false" value="C6H12O6" aria-describedby="help-formula"><small class="help" id="help-formula">اكتب الرموز بحرف أول كبير، مثل <bdi dir="ltr">H2SO4</bdi> أو <bdi dir="ltr">Ca(OH)2</bdi> أو <bdi dir="ltr">CuSO4</bdi>·<bdi dir="ltr">5H2O</bdi> أو <bdi dir="ltr">K4[Fe(CN)6]</bdi>.</small></div>
+<div class="field"><label for="in-mode">تحويل إضافي</label><select id="in-mode" name="mode"><option value="none" selected>بدون</option><option value="mass">لدي كتلة (g)</option><option value="mol">لدي عدد مولات</option></select></div>
+<div class="field" data-when='{&quot;mode&quot;:[&quot;mass&quot;]}'><label for="in-mass">الكتلة <span class="unit">(g)</span></label><input id="in-mass" name="mass" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="90"></div>
+<div class="field" data-when='{&quot;mode&quot;:[&quot;mol&quot;]}'><label for="in-moles">عدد المولات <span class="unit">(mol)</span></label><input id="in-moles" name="moles" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="0.5"></div>
+<p class="example-note">مثال: الكتلة المولية لحمض الكبريتيك وعدد مولات <bdi dir="ltr">49 g</bdi> منه.</p>
+<div class="actions"><button class="btn primary" type="submit">احسب</button><button class="btn" type="button" id="example-btn">مثال محلول</button><button class="btn" type="reset">مسح</button></div>
+</form>
+
+</section>
+<section id="output" class="card" aria-live="polite" tabindex="-1" hidden>
+<div id="out-error" class="error" role="alert" hidden></div>
+<div id="out-success" hidden>
+<div class="out-head"><h2>النتيجة</h2><div><button class="btn" type="button" id="copy-btn">نسخ النتيجة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
+<dl id="out-results" class="results"></dl>
+<div id="out-blocks"></div>
+<div id="steps-wrap"><h2>الحل خطوة بخطوة</h2><ol id="out-steps" class="steps"></ol></div>
+</div>
+</section>
+<noscript><p class="note warn">هذه الأداة تحتاج تفعيل JavaScript لإجراء الحسابات.</p></noscript>
+
+
+<section class="related" aria-labelledby="h-related"><h2 id="h-related">أدوات ذات صلة</h2><ul><li><a href="../../tools/stoichiometry/">الحسابات الكيميائية والمادة المحددة</a></li><li><a href="../../tools/empirical-formula/">الصيغة الأولية والجزيئية</a></li><li><a href="../../tools/solutions/">التركيز والتخفيف</a></li><li><a href="../../tools/periodic-table/">الجدول الدوري</a></li><li><a href="../../tools/equation-balancer/">موازنة المعادلات الكيميائية</a></li></ul></section>
+
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
+<p>عُدّة المهندس موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="../../">كل الأدوات</a></p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حاسبة الشبكات الفرعية IPv4 | عُدّة المهندس</title>
+<meta name="description" content="احسب تفاصيل شبكة IPv4 من العنوان والقناع: عنوان الشبكة والبث وأول وآخر مضيف وعدد المضيفين والقناع العكسي والفئة، مع التمثيل الثنائي وتقسيم الشبكة إلى شبكات فرعية.">
+<link rel="canonical" href="https://motaz-inshasi.github.io/engineering-tools-ar/tools/subnet-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="عُدّة المهندس">
+<meta property="og:title" content="حاسبة الشبكات الفرعية IPv4 | عُدّة المهندس">
+<meta property="og:description" content="احسب تفاصيل شبكة IPv4 من العنوان والقناع: عنوان الشبكة والبث وأول وآخر مضيف وعدد المضيفين والقناع العكسي والفئة، مع التمثيل الثنائي وتقسيم الشبكة إلى شبكات فرعية.">
+<meta property="og:url" content="https://motaz-inshasi.github.io/engineering-tools-ar/tools/subnet-calculator/">
+<meta name="theme-color" content="#0b5cad">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../../assets/css/main.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script defer src="../../vendor/katex/katex.min.js"></script>
+<script type="module" src="../../assets/js/app.js"></script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة الشبكات الفرعية IPv4","description":"احسب تفاصيل شبكة IPv4 من العنوان والقناع: عنوان الشبكة والبث وأول وآخر مضيف وعدد المضيفين والقناع العكسي والفئة، مع التمثيل الثنائي وتقسيم الشبكة إلى شبكات فرعية.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"ar","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://motaz-inshasi.github.io/engineering-tools-ar/tools/subnet-calculator/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عُدّة المهندس","item":"https://motaz-inshasi.github.io/engineering-tools-ar/"},{"@type":"ListItem","position":2,"name":"علوم الحاسوب والشبكات","item":"https://motaz-inshasi.github.io/engineering-tools-ar/category/computing/"},{"@type":"ListItem","position":3,"name":"حاسبة الشبكات الفرعية IPv4","item":"https://motaz-inshasi.github.io/engineering-tools-ar/tools/subnet-calculator/"}]}]</script>
+</head>
+<body data-tool="subnet-calculator" data-category="computing">
+<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="../../">عُدّة <span>المهندس</span></a>
+<form class="search-mini" action="../../" method="get" role="search"><label class="sr-only" for="site-q">ابحث عن أداة</label><input id="site-q" name="q" type="search" placeholder="ابحث عن أداة…" autocomplete="off"></form>
+<a class="donate-top" href="../../support/" title="هل أفادتك الأداة؟ الموقع مجاني بلا إعلانات مزعجة، ودعمك يساعد على استمراره وإضافة أدوات جديدة."><span class="heart" aria-hidden="true">♥</span> ادعم الموقع</a><button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
+</div></header>
+<nav class="cats" aria-label="التصنيفات"><ul><li><a href="../../category/calculus/">التفاضل والتكامل</a></li><li><a href="../../category/algebra/">الجبر والرياضيات</a></li><li><a href="../../category/signals/">لابلاس والإشارات</a></li><li><a href="../../category/dc-circuits/">دوائر التيار المستمر</a></li><li><a href="../../category/ac-circuits/">دوائر التيار المتردد</a></li><li><a href="../../category/electronics/">الإلكترونيات</a></li><li><a href="../../category/digital/">المنطق الرقمي</a></li><li><a href="../../category/sensors/">الحساسات والربط</a></li><li><a href="../../category/control/">أنظمة التحكم</a></li><li><a href="../../category/units/">الوحدات والمراجع</a></li><li><a href="../../category/physics/">الفيزياء</a></li><li><a href="../../category/chemistry/">الكيمياء</a></li><li><a href="../../category/biology/">الأحياء</a></li><li><a href="../../category/statistics/">الإحصاء والاحتمالات</a></li><li><a href="../../category/medicine/">الطب والصيدلة والتمريض</a></li><li><a href="../../category/economics/">الاقتصاد والمحاسبة</a></li><li><a href="../../category/computing/" aria-current="page">علوم الحاسوب والشبكات</a></li><li><a href="../../category/architecture/">العمارة والتخطيط</a></li><li><a href="../../category/earth-environment/">الجيولوجيا والبيئة</a></li><li><a href="../../category/agriculture-nutrition/">الزراعة والتغذية</a></li><li><a href="../../category/student/">أدوات الطالب</a></li></ul></nav>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="../../">عُدّة المهندس</a></li><li><a href="../../category/computing/">علوم الحاسوب والشبكات</a></li><li aria-current="page">حاسبة الشبكات الفرعية IPv4</li></ol></nav>
+<h1>حاسبة الشبكات الفرعية IPv4</h1>
+<p class="lead">احسب تفاصيل شبكة <bdi dir="ltr">IPv4</bdi> من العنوان والقناع: عنوان الشبكة والبث وأول وآخر مضيف وعدد المضيفين والقناع العكسي والفئة، مع التمثيل الثنائي وتقسيم الشبكة إلى شبكات فرعية.</p>
+
+<section class="card formulas" aria-labelledby="h-formulas"><h2 id="h-formulas">القوانين المستخدمة</h2>
+<div class="formula"><div class="formula-label">عنوان الشبكة والبث</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Network</mtext><mo>=</mo><mi>I</mi><mi>P</mi><mo>∧</mo><mi>M</mi><mi>a</mi><mi>s</mi><mi>k</mi><mo separator="true">,</mo><mspace width="2em"/><mtext>Broadcast</mtext><mo>=</mo><mi>N</mi><mi>e</mi><mi>t</mi><mi>w</mi><mi>o</mi><mi>r</mi><mi>k</mi><mo>∨</mo><mover accent="true"><mrow><mi>M</mi><mi>a</mi><mi>s</mi><mi>k</mi></mrow><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\text{Network} = IP \wedge Mask,\qquad \text{Broadcast} = Network \vee \overline{Mask}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord text"><span class="mord">Network</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">M</span><span class="mord mathnormal">a</span><span class="mord mathnormal">s</span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord text"><span class="mord">Broadcast</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.0269em;">tw</span><span class="mord mathnormal" style="margin-right:0.0278em;">or</span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8944em;"></span><span class="mord katex-overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8944em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">M</span><span class="mord mathnormal">a</span><span class="mord mathnormal">s</span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span><span style="top:-3.8144em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span></span></span></span></span></div>
+<div class="formula"><div class="formula-label">عدد المضيفين</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>N</mi><mrow><mi>h</mi><mi>o</mi><mi>s</mi><mi>t</mi><mi>s</mi></mrow></msub><mo>=</mo><msup><mn>2</mn><mrow><mn>32</mn><mo>−</mo><mi>p</mi></mrow></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">N_{hosts} = 2^{32 - p} - 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">h</span><span class="mord mathnormal mtight">os</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.9474em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">32</span><span class="mbin mtight">−</span><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></span></div>
+</section>
+<section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">المدخلات</h2>
+<form id="tool-form" class="tool-form" novalidate>
+<div class="field"><label for="in-ip">عنوان IP</label><input id="in-ip" name="ip" type="text" dir="auto" autocomplete="off" spellcheck="false" value="192.168.10.77/26" aria-describedby="help-ip"><small class="help" id="help-ip">اكتب العنوان مع البادئة مثل <bdi dir="ltr">10.0.5.9/20</bdi>، أو العنوان وحده وأدخل القناع في الحقل التالي.</small></div>
+<div class="field"><label for="in-mask">القناع (اختياري)</label><input id="in-mask" name="mask" type="text" dir="auto" autocomplete="off" spellcheck="false" value="" aria-describedby="help-mask"><small class="help" id="help-mask">مثل <bdi dir="ltr">24</bdi> أو <bdi dir="ltr">255.255.255.0</bdi>.</small></div>
+<div class="field"><label for="in-subnets">قسّم إلى عدد شبكات فرعية (اختياري)</label><input id="in-subnets" name="subnets" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value=""></div>
+<p class="example-note">مثال: العنوان <bdi dir="ltr">192.168.10.77</bdi> في شبكة /<bdi dir="ltr">26</bdi>.</p>
+<div class="actions"><button class="btn primary" type="submit">احسب</button><button class="btn" type="button" id="example-btn">مثال محلول</button><button class="btn" type="reset">مسح</button></div>
+</form>
+
+</section>
+<section id="output" class="card" aria-live="polite" tabindex="-1" hidden>
+<div id="out-error" class="error" role="alert" hidden></div>
+<div id="out-success" hidden>
+<div class="out-head"><h2>النتيجة</h2><div><button class="btn" type="button" id="copy-btn">نسخ النتيجة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
+<dl id="out-results" class="results"></dl>
+<div id="out-blocks"></div>
+<div id="steps-wrap"><h2>الحل خطوة بخطوة</h2><ol id="out-steps" class="steps"></ol></div>
+</div>
+</section>
+<noscript><p class="note warn">هذه الأداة تحتاج تفعيل JavaScript لإجراء الحسابات.</p></noscript>
+
+
+<section class="related" aria-labelledby="h-related"><h2 id="h-related">أدوات ذات صلة</h2><ul><li><a href="../../tools/number-bases/">تحويل الأنظمة العددية</a></li><li><a href="../../tools/binary-twos-complement/">الثنائي والست عشري والمتمم الثنائي</a></li><li><a href="../../tools/data-transfer/">أحجام البيانات وزمن النقل</a></li><li><a href="../../tools/logic-gates/">حاسبة البوابات المنطقية</a></li><li><a href="../../tools/ieee754/">تمثيل الأعداد العشرية IEEE-754</a></li></ul></section>
+
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
+<p>عُدّة المهندس موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="../../">كل الأدوات</a></p>
+</div></footer>
+</body>
+</html>

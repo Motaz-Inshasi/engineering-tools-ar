@@ -218,16 +218,16 @@ function homePage() {
     if (!list.length) return "";
     return `<section class="cat-section" aria-labelledby="cat-${c.slug}"><h2 id="cat-${c.slug}"><a href="category/${c.slug}/">${esc(c.title)}</a></h2><ul class="tool-grid">${list.map((t) => toolCard(t, root)).join("")}</ul></section>`;
   }).join("\n");
-  const description = `${live.length} أداة هندسية مجانية بالعربية لطلاب الهندسة والفنيين: تفاضل وتكامل، مصفوفات، لابلاس، دوائر كهربائية، إلكترونيات، منطق رقمي، حساسات وتحكم، مع الحل خطوة بخطوة.`;
+  const description = `${live.length} أداة مجانية بالعربية لطلاب الهندسة والعلوم والجامعة: رياضيات ودوائر وإلكترونيات، فيزياء وكيمياء وأحياء، إحصاء، طب وصيدلة، اقتصاد، حاسوب وشبكات، عمارة وبيئة، مع الحل خطوة بخطوة.`;
   const jsonld = { "@context": "https://schema.org", "@type": "WebSite", name: SITE, description, inLanguage: "ar" };
   if (siteUrl) jsonld.url = absUrl("");
-  return `${head({ title: `${SITE} | أدوات هندسية مجانية مع الحل خطوة بخطوة`, description, path: "", root: "", jsonld }).replace(/href="(?:\.\.\/\.\.\/)?(vendor|assets)/g, 'href="$1')}
+  return `${head({ title: `${SITE} | أدوات مجانية لطلاب الهندسة والعلوم مع الحل خطوة بخطوة`, description, path: "", root: "", jsonld }).replace(/href="(?:\.\.\/\.\.\/)?(vendor|assets)/g, 'href="$1')}
 <body>
 ${header("", null)}
 <main id="main"><div class="wrap">
 <div class="hero">
-<h1>${esc(SITE)}: أدوات هندسية مع الحل خطوة بخطوة</h1>
-<p class="lead">${live.length} أداة مجانية لطلاب الهندسة والفنيين. كل أداة تعرض القانون والحل المفصّل بالعربية ومثالاً محلولاً.</p>
+<h1>${esc(SITE)}: أدوات علمية وهندسية مع الحل خطوة بخطوة</h1>
+<p class="lead">${live.length} أداة مجانية لطلاب الهندسة والعلوم وكل التخصصات الجامعية. كل أداة تعرض القانون والحل المفصّل بالعربية ومثالاً محلولاً.</p>
 <form id="home-search-form" class="search-big" role="search"><label class="sr-only" for="home-search">ابحث في كل الأدوات</label><input id="home-search" type="search" placeholder="اكتب اسم الأداة، مثل: مشتقة، مقاومة، لابلاس…" autocomplete="off"></form>
 <p id="search-count" class="search-count" role="status"></p>
 </div>
@@ -314,7 +314,7 @@ function supportPage() {
   if (donate.url) {
     sections.push(`<section class="card" aria-labelledby="h-link"><h2 id="h-link">طريقة أخرى</h2><p><a class="btn" href="${esc(donate.url)}" target="_blank" rel="noopener noreferrer">صفحة التبرع<span class="sr-only"> (يفتح في نافذة جديدة)</span></a></p></section>`);
   }
-  const description = `ادعم ${SITE}: موقع أدوات هندسية مجاني بالعربية. يمكنك التبرع بعملة USDT على شبكة TRC20.`;
+  const description = `ادعم ${SITE}: موقع أدوات علمية وهندسية مجاني بالعربية. يمكنك التبرع بعملة USDT على شبكة TRC20.`;
   return `${head({ title: `ادعم الموقع | ${SITE}`, description, path: "support/", root, jsonld: { "@context": "https://schema.org", "@type": "WebPage", name: "ادعم الموقع", description, inLanguage: "ar" } })}
 <body>
 ${header(root, null)}
