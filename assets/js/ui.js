@@ -118,28 +118,61 @@ export async function initTool() {
 
   const clearInvalid = () => form.querySelectorAll("[aria-invalid]").forEach((el) => el.removeAttribute("aria-invalid"));
 
-  function showError(message, field) {
+  const shareBtn = document.getElementById("share-btn");
+  const printBtn = document.getElementById("print-btn");
+  const liveHint = document.getElementById("live-hint");
+  let live = false;
+  let timer = null;
+
+  function showError(message, field, focus = true) {
     out.hidden = false;
     success.hidden = true;
     err.hidden = false;
     err.textContent = message;
     if (field) {
       const el = form.querySelector(`[name="${CSS.escape(field)}"]`);
-      if (el) { el.setAttribute("aria-invalid", "true"); el.focus(); }
+      if (el) { el.setAttribute("aria-invalid", "true"); if (focus) el.focus(); }
     }
   }
 
-  function compute() {
+  function stateQuery() {
+    const p = new URLSearchParams();
+    for (const el of form.querySelectorAll("[name]")) {
+      if (el.closest("[hidden]")) continue;
+      const v = el.type === "checkbox" ? (el.checked ? "1" : "") : el.value;
+      if (v !== "") p.set(el.name, v);
+    }
+    return p.toString();
+  }
+
+  function remember() {
+    try {
+      const h1 = document.querySelector("h1");
+      const item = { slug: document.body.dataset.tool, title: h1 ? h1.textContent.trim() : document.title };
+      let list = JSON.parse(localStorage.getItem("recentTools") || "[]");
+      if (!Array.isArray(list)) list = [];
+      list = [item, ...list.filter((x) => x && x.slug !== item.slug)].slice(0, 8);
+      localStorage.setItem("recentTools", JSON.stringify(list));
+    } catch {}
+  }
+
+  function compute(opts = {}) {
+    const quiet = !!opts.quiet;
     clearInvalid();
-    copyStatus.textContent = "";
+    if (!quiet) copyStatus.textContent = "";
     let res;
     try {
       res = mod.solve(readValues(form));
     } catch (e) {
-      if (e && e.name === "InputError") showError(e.message, e.field);
-      else { console.error(e); showError("حدث خطأ غير متوقع أثناء الحساب. تحقّق من المدخلات وحاول مجدداً."); }
+      if (e && e.name === "InputError") showError(e.message, e.field, !quiet);
+      else { console.error(e); showError("حدث خطأ غير متوقع أثناء الحساب. تحقّق من المدخلات وحاول مجدداً.", null, !quiet); }
       return;
     }
+    if (!live) { live = true; if (liveHint) liveHint.hidden = false; }
+    try { history.replaceState(null, "", `${location.pathname}${location.search}#${stateQuery()}`); } catch {}
+    out.classList.remove("flash");
+    void out.offsetWidth;
+    out.classList.add("flash");
     err.hidden = true;
     success.hidden = false;
     out.hidden = false;
@@ -150,13 +183,31 @@ export async function initTool() {
     stepsWrap.hidden = !steps;
     lastCopy = copyText(res);
     out.dataset.state = "done";
-    out.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    if (!quiet) out.scrollIntoView({ block: "nearest", behavior: "smooth" });
   }
 
-  form.addEventListener("input", () => applyWhen(form));
-  form.addEventListener("change", () => applyWhen(form));
-  form.addEventListener("submit", (e) => { e.preventDefault(); compute(); });
-  form.addEventListener("reset", () => setTimeout(() => { applyWhen(form); clearInvalid(); out.hidden = true; }, 0));
+  const schedule = () => {
+    if (!live) return;
+    clearTimeout(timer);
+    timer = setTimeout(() => compute({ quiet: true }), 450);
+  };
+  form.addEventListener("input", () => { applyWhen(form); schedule(); });
+  form.addEventListener("change", () => { applyWhen(form); schedule(); });
+  form.addEventListener("submit", (e) => { e.preventDefault(); clearTimeout(timer); compute(); });
+  form.addEventListener("reset", () => setTimeout(() => {
+    applyWhen(form); clearInvalid(); out.hidden = true; live = false; clearTimeout(timer);
+    if (liveHint) liveHint.hidden = true;
+    try { history.replaceState(null, "", `${location.pathname}${location.search}`); } catch {}
+  }, 0));
+  shareBtn?.addEventListener("click", async () => {
+    const url = `${location.origin}${location.pathname}#${stateQuery()}`;
+    if (navigator.share && matchMedia("(pointer: coarse)").matches) {
+      try { await navigator.share({ title: document.title, url }); return; } catch {}
+    }
+    const ok = await copyToClipboard(url);
+    copyStatus.textContent = ok ? "تم نسخ رابط الحل بمدخلاتك" : "تعذر النسخ، انسخ الرابط من شريط العنوان";
+  });
+  printBtn?.addEventListener("click", () => window.print());
   document.getElementById("example-btn")?.addEventListener("click", () => {
     fill(form, mod.meta.example.values);
     applyWhen(form);
@@ -167,5 +218,20 @@ export async function initTool() {
     copyStatus.textContent = ok ? "تم النسخ" : "تعذر النسخ، حدّد النص يدوياً";
   });
   applyWhen(form);
+  remember();
+  if (location.hash.length > 1) {
+    try {
+      const p = new URLSearchParams(location.hash.slice(1));
+      const names = new Set([...form.querySelectorAll("[name]")].map((el) => el.name));
+      const vals = {};
+      for (const [k, v] of p) if (names.has(k)) vals[k] = v;
+      if (Object.keys(vals).length) {
+        for (const el of form.querySelectorAll("input[type=checkbox][name]")) if (!(el.name in vals)) vals[el.name] = "";
+        fill(form, vals);
+        applyWhen(form);
+        compute({ quiet: true });
+      }
+    } catch {}
+  }
   document.body.dataset.ready = "1";
 }
