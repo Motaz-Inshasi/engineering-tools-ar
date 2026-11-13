@@ -1,5 +1,8 @@
 export const categories = [
   { slug: "calculus", title: "التفاضل والتكامل", description: "المشتقات والتكاملات والنهايات ومتسلسلة تايلور وإيجاد الجذور ورسم الدوال مع الحل خطوة بخطوة." },
+  { slug: "differential-equations", title: "المعادلات التفاضلية", description: "حل المعادلات التفاضلية من الرتبة الأولى والثانية بمعاملات ثابتة خطوة بخطوة، والحل العددي بطرق أويلر ورونغ-كوتا مع الرسم." },
+  { slug: "elementary-math", title: "الرياضيات الأساسية", description: "الكسور والنسب المئوية والقاسم والمضاعف المشترك والتحليل إلى العوامل الأولية والتناسب الطردي والعكسي." },
+  { slug: "geometry", title: "الهندسة الرياضية", description: "مساحات الأشكال ومحيطاتها وحجوم المجسمات وحل المثلثات وفيثاغورس والدائرة والهندسة التحليلية." },
   { slug: "algebra", title: "الجبر والرياضيات", description: "المصفوفات والأنظمة الخطية والأعداد المركبة وكثيرات الحدود والكسور الجزئية والأنظمة العددية والمثلثات." },
   { slug: "signals", title: "لابلاس والإشارات", description: "تحويل لابلاس وعكسه ومتسلسلة فورييه وأخذ العينات وأقطاب وأصفار دوال التحويل." },
   { slug: "dc-circuits", title: "دوائر التيار المستمر", description: "قانون أوم والمقاومات ومقسمات الجهد والتيار وتحليل العقد والحلقات وثيفينين ونورتن." },
@@ -9,16 +12,20 @@ export const categories = [
   { slug: "sensors", title: "الحساسات والربط", description: "المحول ADC ومقسمات الحساسات والثرمستور و RTD ومقياس الانفعال و PWM والشنت وتحويل المستوى." },
   { slug: "control", title: "أنظمة التحكم", description: "استجابة الخطوة ومعيار روث-هورفيتز ومخطط بود وخطأ الحالة المستقرة." },
   { slug: "units", title: "الوحدات والمراجع", description: "تحويل الوحدات والصيغة الهندسية والقوانين والثوابت والقيم القياسية للمقاومات." },
+  { slug: "materials", title: "المواد والمقاومة", description: "الإجهاد والانفعال ومعامل يونغ وانحناء الكمرات والعزوم وجدول خصائص المواد الهندسية الشائعة." },
   { slug: "physics", title: "الفيزياء", description: "الحركة والمقذوفات والقوى والطاقة والتصادمات والحركة الدائرية والاهتزازات والموجات والبصريات والغازات والحرارة." },
   { slug: "chemistry", title: "الكيمياء", description: "الكتلة المولية وموازنة المعادلات والحسابات الكيميائية والمحاليل و pH والصيغة الأولية والجدول الدوري وسرعة التفاعل." },
   { slug: "biology", title: "الأحياء", description: "الوراثة المندلية ومربع بانيت وهاردي-واينبرغ وأدوات DNA و RNA ونمو الجماهير والتخفيف المتسلسل والمجهر." },
   { slug: "statistics", title: "الإحصاء والاحتمالات", description: "الإحصاء الوصفي والتوزيعات الاحتمالية والانحدار والارتباط واختبارات الفرضيات والأرقام المعنوية وانتشار الخطأ." },
   { slug: "medicine", title: "الطب والصيدلة والتمريض", description: "جرعات الأدوية وسرعة التنقيط الوريدي ومؤشر كتلة الجسم وتصفية الكرياتينين وتحويل وحدات المختبر واحتياج السوائل. للتعليم فقط." },
   { slug: "economics", title: "الاقتصاد والمحاسبة", description: "الفائدة المركبة وجدول سداد القرض وصافي القيمة الحالية ومعدل العائد الداخلي ونقطة التعادل والاستهلاك والمرونة والنسب المالية." },
+  { slug: "personal-finance", title: "المالية الشخصية والزكاة", description: "حساب الزكاة ونصابها بالذهب والفضة، وتوزيع الميزانية الشهرية، والادخار للوصول إلى هدف مالي." },
   { slug: "computing", title: "علوم الحاسوب والشبكات", description: "الشبكات الفرعية وعناوين IP وتمثيل الأعداد العشرية IEEE-754 والترميز وتعقيد الخوارزميات وأحجام البيانات وزمن النقل." },
   { slug: "architecture", title: "العمارة والتخطيط", description: "تصميم الدرج ومساحة المضلعات من الإحداثيات ونسبة البناء ومعامل الاستغلال وموقع الشمس وطول الظل." },
   { slug: "earth-environment", title: "الجيولوجيا والبيئة", description: "التأريخ بالنظائر المشعة وقوة الزلازل وطاقتها والبصمة الكربونية ومؤشر جودة الهواء." },
   { slug: "agriculture-nutrition", title: "الزراعة والتغذية", description: "حساب الأسمدة NPK والاحتياج اليومي من السعرات والعناصر الغذائية واحتياج الري." },
+  { slug: "dates-calendar", title: "التواريخ والتقويم", description: "التحويل بين التاريخ الهجري والميلادي، والفرق بين تاريخين، وحساب العمر بدقة." },
+  { slug: "everyday-math", title: "رياضيات الحياة اليومية", description: "الخصومات والضريبة وتقسيم الفاتورة، وتكلفة الوقود للرحلة، والسرعة والمسافة والزمن، وكميات الدهان والبلاط." },
   { slug: "student", title: "أدوات الطالب", description: "المعدل التراكمي والدرجة المطلوبة في الامتحان النهائي وتوليد المراجع وعدّ الكلمات وخطة المذاكرة." }
 ];
 
@@ -29,6 +36,23 @@ export const tools = [
   { slug: "taylor-series", category: "calculus", title: "متسلسلة تايلور وماكلورين" },
   { slug: "root-finding", category: "calculus", title: "إيجاد الجذور عددياً" },
   { slug: "function-plotter", category: "calculus", title: "رسم الدوال" },
+
+  { slug: "ode-first-order", category: "differential-equations", title: "المعادلة التفاضلية الخطية من الرتبة الأولى" },
+  { slug: "ode-second-order", category: "differential-equations", title: "المعادلة التفاضلية من الرتبة الثانية" },
+  { slug: "ode-numerical", category: "differential-equations", title: "الحل العددي للمعادلات التفاضلية (أويلر ورونغ-كوتا)" },
+
+  { slug: "fractions", category: "elementary-math", title: "حاسبة الكسور" },
+  { slug: "percentage", category: "elementary-math", title: "حاسبة النسبة المئوية" },
+  { slug: "gcd-lcm", category: "elementary-math", title: "القاسم المشترك الأكبر والمضاعف المشترك الأصغر" },
+  { slug: "prime-factorization", category: "elementary-math", title: "التحليل إلى العوامل الأولية والقواسم" },
+  { slug: "ratio-proportion", category: "elementary-math", title: "النسبة والتناسب" },
+
+  { slug: "plane-shapes", category: "geometry", title: "مساحة الأشكال ومحيطها" },
+  { slug: "solids", category: "geometry", title: "حجوم المجسمات ومساحاتها السطحية" },
+  { slug: "triangle-solver", category: "geometry", title: "حل المثلث (قانون الجيب وجيب التمام)" },
+  { slug: "pythagoras", category: "geometry", title: "نظرية فيثاغورس والمثلث القائم" },
+  { slug: "circle-geometry", category: "geometry", title: "الدائرة: القوس والوتر والقطاع" },
+  { slug: "coordinate-geometry", category: "geometry", title: "الهندسة التحليلية: المسافة والميل والمستقيم" },
 
   { slug: "linear-system", category: "algebra", title: "حل أنظمة المعادلات الخطية" },
   { slug: "matrix", category: "algebra", title: "حاسبة المصفوفات" },
@@ -100,6 +124,10 @@ export const tools = [
   { slug: "formulas-constants", category: "units", title: "القوانين والثوابت الشائعة" },
   { slug: "standard-resistor-values", category: "units", title: "القيم القياسية E12 و E24 و E96" },
 
+  { slug: "stress-strain", category: "materials", title: "الإجهاد والانفعال ومعامل يونغ" },
+  { slug: "beam-deflection", category: "materials", title: "انحناء الكمرات والعزوم" },
+  { slug: "material-properties", category: "materials", title: "خصائص المواد الهندسية" },
+
   { slug: "kinematics", category: "physics", title: "معادلات الحركة بتسارع ثابت" },
   { slug: "projectile-motion", category: "physics", title: "حركة المقذوفات" },
   { slug: "inclined-plane", category: "physics", title: "المستوى المائل والاحتكاك" },
@@ -148,6 +176,10 @@ export const tools = [
   { slug: "price-elasticity", category: "economics", title: "المرونة السعرية" },
   { slug: "financial-ratios", category: "economics", title: "النسب المالية" },
 
+  { slug: "zakat", category: "personal-finance", title: "حاسبة الزكاة" },
+  { slug: "budget-planner", category: "personal-finance", title: "توزيع الميزانية الشهرية" },
+  { slug: "savings-goal", category: "personal-finance", title: "الادخار لهدف مالي" },
+
   { slug: "subnet-calculator", category: "computing", title: "حاسبة الشبكات الفرعية IPv4" },
   { slug: "ieee754", category: "computing", title: "تمثيل الأعداد العشرية IEEE-754" },
   { slug: "text-encoding", category: "computing", title: "الترميز: ASCII و UTF-8 و Base64" },
@@ -167,6 +199,15 @@ export const tools = [
   { slug: "fertilizer-npk", category: "agriculture-nutrition", title: "حساب الأسمدة NPK" },
   { slug: "calorie-needs", category: "agriculture-nutrition", title: "الاحتياج اليومي من السعرات" },
   { slug: "irrigation", category: "agriculture-nutrition", title: "احتياج الري" },
+
+  { slug: "hijri-converter", category: "dates-calendar", title: "تحويل التاريخ الهجري والميلادي" },
+  { slug: "date-difference", category: "dates-calendar", title: "الفرق بين تاريخين وإضافة الأيام" },
+  { slug: "age-calculator", category: "dates-calendar", title: "حاسبة العمر" },
+
+  { slug: "discount-tax", category: "everyday-math", title: "الخصم والضريبة وتقسيم الفاتورة" },
+  { slug: "fuel-cost", category: "everyday-math", title: "تكلفة الوقود للرحلة" },
+  { slug: "speed-distance-time", category: "everyday-math", title: "السرعة والمسافة والزمن" },
+  { slug: "paint-tiles", category: "everyday-math", title: "كمية الدهان والبلاط" },
 
   { slug: "gpa-calculator", category: "student", title: "حاسبة المعدل التراكمي" },
   { slug: "final-grade", category: "student", title: "الدرجة المطلوبة في الامتحان النهائي" },
