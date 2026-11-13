@@ -7,6 +7,14 @@
   "siteUrl": "https://motaz-inshasi.github.io/engineering-tools-ar",
   "basePath": "/engineering-tools-ar/",
   "googleSiteVerification": "IgFVG7OU2YDaMgPPn0c-tw_xevHkEPV_X6GNGBHIrWo",
+  "author": {
+    "name": "معتز إنشاصي",
+    "nameEn": "Motaz Inshasi",
+    "role": "مطوّر برمجيات ومصمم أدوات تعليمية",
+    "bio": "أنا مطوّر هذا الموقع. أبني أدوات تعليمية مجانية بالعربية تساعد طلاب الجامعات على فهم طريقة الحل خطوة بخطوة، لا على الوصول إلى الناتج فقط. صمّمتُ الموقع وبرمجته كاملاً: من محركات الحساب الرياضي والرمزي، إلى الواجهة والاختبارات الآلية لكل أداة.",
+    "email": "motazinshace@gmail.com",
+    "github": "https://github.com/Motaz-Inshasi"
+  },
   "donate": {
     "enabled": true,
     "label": "ادعم الموقع",

@@ -83,3 +83,14 @@ export function qrSvg(text, label) {
   m.forEach((row, r) => row.forEach((dark, c) => { if (dark) d += `M${c + q} ${r + q}h1v1h-1z`; }));
   return `<svg class="qr" viewBox="0 0 ${size} ${size}" role="img" aria-label="${esc(label)}" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg"><rect width="${size}" height="${size}" fill="#ffffff"/><path d="${d}" fill="#000000"/></svg>`;
 }
+
+export function isEmail(s) {
+  return /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(String(s || ""));
+}
+
+export function emailHtml(email) {
+  if (!isEmail(email)) return "";
+  const [user, domain] = email.split("@");
+  const rev = (s) => [...s].reverse().join("");
+  return `<a class="email-link" href="#" data-u="${esc(rev(user))}" data-d="${esc(rev(domain))}" dir="ltr"><span class="email-text">${esc(user)}<span aria-hidden="true">&#8203;</span> [at] ${esc(domain.replace(/\./g, " [dot] "))}</span></a>`;
+}

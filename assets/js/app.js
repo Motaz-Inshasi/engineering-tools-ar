@@ -24,6 +24,33 @@ for (const btn of document.querySelectorAll("[data-copy]")) {
   });
 }
 
+const rev = (s) => [...(s || "")].reverse().join("");
+for (const a of document.querySelectorAll("[data-u][data-d]")) {
+  const mail = `${rev(a.dataset.u)}@${rev(a.dataset.d)}`;
+  a.href = `mailto:${mail}`;
+  const t = a.querySelector(".email-text");
+  if (t) t.textContent = mail;
+}
+
+const recentEl = document.getElementById("recent");
+if (recentEl) {
+  let list = [];
+  try { list = JSON.parse(localStorage.getItem("recentTools") || "[]"); } catch { list = []; }
+  list = Array.isArray(list) ? list.filter((x) => x && /^[a-z0-9-]+$/.test(x.slug) && typeof x.title === "string").slice(0, 8) : [];
+  if (list.length) {
+    const ul = recentEl.querySelector("ul");
+    for (const x of list) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = `tools/${x.slug}/`;
+      a.textContent = x.title;
+      li.appendChild(a);
+      ul.appendChild(li);
+    }
+    recentEl.hidden = false;
+  }
+}
+
 if (document.getElementById("home-search")) {
   import("./search.js").then((m) => m.initSearch());
 }
