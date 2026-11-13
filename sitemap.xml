@@ -11,6 +11,17 @@
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/sensors/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/control/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/units/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/physics/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/chemistry/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/biology/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/statistics/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/medicine/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/economics/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/computing/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/architecture/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/earth-environment/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/agriculture-nutrition/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/student/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/derivative/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/integral/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/limit/</loc></url>
@@ -78,5 +89,68 @@
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/engineering-notation/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/formulas-constants/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/standard-resistor-values/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/kinematics/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/projectile-motion/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/inclined-plane/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/work-energy/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/collisions/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/circular-gravitation/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/harmonic-motion/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/waves-doppler/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/optics/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/gas-heat/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/molar-mass/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/equation-balancer/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/stoichiometry/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/solutions/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/ph-calculator/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/empirical-formula/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/periodic-table/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/reaction-kinetics/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/punnett-square/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/hardy-weinberg/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/dna-tools/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/population-growth/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/serial-dilution/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/microscopy/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/descriptive-stats/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/probability-distributions/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/linear-regression/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/hypothesis-tests/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/significant-figures/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/drug-dosage/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/iv-drip-rate/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/bmi-bsa/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/creatinine-clearance/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/lab-units/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/fluid-requirements/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/compound-interest/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/loan-amortization/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/npv-irr/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/break-even/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/depreciation/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/price-elasticity/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/financial-ratios/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/subnet-calculator/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/ieee754/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/text-encoding/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/big-o/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/data-transfer/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/stair-design/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/polygon-area/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/far-coverage/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/sun-position/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/radiometric-dating/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/earthquake-magnitude/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/carbon-footprint/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/air-quality-index/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/fertilizer-npk/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/calorie-needs/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/irrigation/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/gpa-calculator/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/final-grade/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/citation-generator/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/word-counter/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/study-planner/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/support/</loc></url>
 </urlset>

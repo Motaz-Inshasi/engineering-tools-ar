@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>النسب المالية | عُدّة المهندس</title>
+<meta name="description" content="احسب النسب المالية الأساسية (السيولة والمديونية والربحية وكفاءة الأصول) من البيانات المتوفرة فقط، مع جدول يوضح كل نسبة وصيغتها وتفسيرها المختصر.">
+<link rel="canonical" href="https://motaz-inshasi.github.io/engineering-tools-ar/tools/financial-ratios/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="عُدّة المهندس">
+<meta property="og:title" content="النسب المالية | عُدّة المهندس">
+<meta property="og:description" content="احسب النسب المالية الأساسية (السيولة والمديونية والربحية وكفاءة الأصول) من البيانات المتوفرة فقط، مع جدول يوضح كل نسبة وصيغتها وتفسيرها المختصر.">
+<meta property="og:url" content="https://motaz-inshasi.github.io/engineering-tools-ar/tools/financial-ratios/">
+<meta name="theme-color" content="#0b5cad">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../../assets/css/main.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script defer src="../../vendor/katex/katex.min.js"></script>
+<script type="module" src="../../assets/js/app.js"></script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebApplication","name":"النسب المالية","description":"احسب النسب المالية الأساسية (السيولة والمديونية والربحية وكفاءة الأصول) من البيانات المتوفرة فقط، مع جدول يوضح كل نسبة وصيغتها وتفسيرها المختصر.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"ar","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://motaz-inshasi.github.io/engineering-tools-ar/tools/financial-ratios/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عُدّة المهندس","item":"https://motaz-inshasi.github.io/engineering-tools-ar/"},{"@type":"ListItem","position":2,"name":"الاقتصاد والمحاسبة","item":"https://motaz-inshasi.github.io/engineering-tools-ar/category/economics/"},{"@type":"ListItem","position":3,"name":"النسب المالية","item":"https://motaz-inshasi.github.io/engineering-tools-ar/tools/financial-ratios/"}]}]</script>
+</head>
+<body data-tool="financial-ratios" data-category="economics">
+<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="../../">عُدّة <span>المهندس</span></a>
+<form class="search-mini" action="../../" method="get" role="search"><label class="sr-only" for="site-q">ابحث عن أداة</label><input id="site-q" name="q" type="search" placeholder="ابحث عن أداة…" autocomplete="off"></form>
+<a class="donate-top" href="../../support/" title="هل أفادتك الأداة؟ الموقع مجاني بلا إعلانات مزعجة، ودعمك يساعد على استمراره وإضافة أدوات جديدة."><span class="heart" aria-hidden="true">♥</span> ادعم الموقع</a><button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
+</div></header>
+<nav class="cats" aria-label="التصنيفات"><ul><li><a href="../../category/calculus/">التفاضل والتكامل</a></li><li><a href="../../category/algebra/">الجبر والرياضيات</a></li><li><a href="../../category/signals/">لابلاس والإشارات</a></li><li><a href="../../category/dc-circuits/">دوائر التيار المستمر</a></li><li><a href="../../category/ac-circuits/">دوائر التيار المتردد</a></li><li><a href="../../category/electronics/">الإلكترونيات</a></li><li><a href="../../category/digital/">المنطق الرقمي</a></li><li><a href="../../category/sensors/">الحساسات والربط</a></li><li><a href="../../category/control/">أنظمة التحكم</a></li><li><a href="../../category/units/">الوحدات والمراجع</a></li><li><a href="../../category/physics/">الفيزياء</a></li><li><a href="../../category/chemistry/">الكيمياء</a></li><li><a href="../../category/biology/">الأحياء</a></li><li><a href="../../category/statistics/">الإحصاء والاحتمالات</a></li><li><a href="../../category/medicine/">الطب والصيدلة والتمريض</a></li><li><a href="../../category/economics/" aria-current="page">الاقتصاد والمحاسبة</a></li><li><a href="../../category/computing/">علوم الحاسوب والشبكات</a></li><li><a href="../../category/architecture/">العمارة والتخطيط</a></li><li><a href="../../category/earth-environment/">الجيولوجيا والبيئة</a></li><li><a href="../../category/agriculture-nutrition/">الزراعة والتغذية</a></li><li><a href="../../category/student/">أدوات الطالب</a></li></ul></nav>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="../../">عُدّة المهندس</a></li><li><a href="../../category/economics/">الاقتصاد والمحاسبة</a></li><li aria-current="page">النسب المالية</li></ol></nav>
+<h1>النسب المالية</h1>
+<p class="lead">احسب النسب المالية الأساسية <bdi dir="ltr">(</bdi>السيولة والمديونية والربحية وكفاءة الأصول) من البيانات المتوفرة فقط، مع جدول يوضح كل نسبة وصيغتها وتفسيرها المختصر.</p>
+
+<section class="card formulas" aria-labelledby="h-formulas"><h2 id="h-formulas">القوانين المستخدمة</h2>
+<div class="formula"><div class="formula-label">النسبة الجارية</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mtext>الأصول المتداولة</mtext><mtext>الخصوم المتداولة</mtext></mfrac></mrow><annotation encoding="application/x-tex">\frac{\text{الأصول المتداولة}}{\text{الخصوم المتداولة}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.363em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.677em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">الخصوم المتداولة</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">الأصول المتداولة</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div>
+<div class="formula"><div class="formula-label">العائد على حقوق الملكية</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mi>O</mi><mi>E</mi><mo>=</mo><mfrac><mrow><mi>N</mi><mi>I</mi></mrow><mi>E</mi></mfrac></mrow><annotation encoding="application/x-tex">ROE = \frac{NI}{E}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="mord mathnormal" style="margin-right:0.0278em;">O</span><span class="mord mathnormal" style="margin-right:0.0576em;">E</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.0463em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">E</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div>
+<div class="formula"><div class="formula-label">العائد على الأصول</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mi>O</mi><mi>A</mi><mo>=</mo><mfrac><mrow><mi>N</mi><mi>I</mi></mrow><mrow><mi>T</mi><mi>A</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">ROA = \frac{NI}{TA}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="mord mathnormal" style="margin-right:0.0278em;">O</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.0463em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">T</span><span class="mord mathnormal">A</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div>
+</section>
+<section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">المدخلات</h2>
+<form id="tool-form" class="tool-form" novalidate>
+<div class="field"><label for="in-CA">الأصول المتداولة</label><input id="in-CA" name="CA" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value=""></div>
+<div class="field"><label for="in-CL">الخصوم المتداولة</label><input id="in-CL" name="CL" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value=""></div>
+<div class="field"><label for="in-inv">المخزون</label><input id="in-inv" name="inv" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value=""></div>
+<div class="field"><label for="in-TA">إجمالي الأصول</label><input id="in-TA" name="TA" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value=""></div>
+<div class="field"><label for="in-TL">إجمالي الخصوم</label><input id="in-TL" name="TL" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value=""></div>
+<div class="field"><label for="in-equity">حقوق الملكية</label><input id="in-equity" name="equity" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value=""></div>
+<div class="field"><label for="in-rev">الإيرادات</label><input id="in-rev" name="rev" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value=""></div>
+<div class="field"><label for="in-cogs">تكلفة البضاعة المباعة</label><input id="in-cogs" name="cogs" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value=""></div>
+<div class="field"><label for="in-ni">صافي الدخل</label><input id="in-ni" name="ni" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="" aria-describedby="help-ni"><small class="help" id="help-ni">جميع الحقول اختيارية، وتُحسب كل نسبة تتوفر بياناتها فقط.</small></div>
+<p class="example-note">مثال: شركة بأصول متداولة <bdi dir="ltr">500,000</bdi> وخصوم متداولة <bdi dir="ltr">250,000</bdi> وبيانات الأصول والإيرادات المذكورة.</p>
+<div class="actions"><button class="btn primary" type="submit">احسب</button><button class="btn" type="button" id="example-btn">مثال محلول</button><button class="btn" type="reset">مسح</button></div>
+</form>
+
+</section>
+<section id="output" class="card" aria-live="polite" tabindex="-1" hidden>
+<div id="out-error" class="error" role="alert" hidden></div>
+<div id="out-success" hidden>
+<div class="out-head"><h2>النتيجة</h2><div><button class="btn" type="button" id="copy-btn">نسخ النتيجة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
+<dl id="out-results" class="results"></dl>
+<div id="out-blocks"></div>
+<div id="steps-wrap"><h2>الحل خطوة بخطوة</h2><ol id="out-steps" class="steps"></ol></div>
+</div>
+</section>
+<noscript><p class="note warn">هذه الأداة تحتاج تفعيل JavaScript لإجراء الحسابات.</p></noscript>
+
+
+<section class="related" aria-labelledby="h-related"><h2 id="h-related">أدوات ذات صلة</h2><ul><li><a href="../../tools/compound-interest/">الفائدة البسيطة والمركبة</a></li><li><a href="../../tools/loan-amortization/">جدول سداد القرض</a></li><li><a href="../../tools/npv-irr/">صافي القيمة الحالية ومعدل العائد الداخلي</a></li><li><a href="../../tools/break-even/">نقطة التعادل</a></li><li><a href="../../tools/depreciation/">الاستهلاك (الإهلاك)</a></li><li><a href="../../tools/price-elasticity/">المرونة السعرية</a></li></ul></section>
+
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
+<p>عُدّة المهندس موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="../../">كل الأدوات</a></p>
+</div></footer>
+</body>
+</html>

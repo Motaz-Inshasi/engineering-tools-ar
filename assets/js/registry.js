@@ -8,7 +8,18 @@ export const categories = [
   { slug: "digital", title: "المنطق الرقمي", description: "جداول الحقيقة وتبسيط التعابير المنطقية بخريطة كارنو وكواين والبوابات والمتمم الثنائي والقلابات." },
   { slug: "sensors", title: "الحساسات والربط", description: "المحول ADC ومقسمات الحساسات والثرمستور و RTD ومقياس الانفعال و PWM والشنت وتحويل المستوى." },
   { slug: "control", title: "أنظمة التحكم", description: "استجابة الخطوة ومعيار روث-هورفيتز ومخطط بود وخطأ الحالة المستقرة." },
-  { slug: "units", title: "الوحدات والمراجع", description: "تحويل الوحدات والصيغة الهندسية والقوانين والثوابت والقيم القياسية للمقاومات." }
+  { slug: "units", title: "الوحدات والمراجع", description: "تحويل الوحدات والصيغة الهندسية والقوانين والثوابت والقيم القياسية للمقاومات." },
+  { slug: "physics", title: "الفيزياء", description: "الحركة والمقذوفات والقوى والطاقة والتصادمات والحركة الدائرية والاهتزازات والموجات والبصريات والغازات والحرارة." },
+  { slug: "chemistry", title: "الكيمياء", description: "الكتلة المولية وموازنة المعادلات والحسابات الكيميائية والمحاليل و pH والصيغة الأولية والجدول الدوري وسرعة التفاعل." },
+  { slug: "biology", title: "الأحياء", description: "الوراثة المندلية ومربع بانيت وهاردي-واينبرغ وأدوات DNA و RNA ونمو الجماهير والتخفيف المتسلسل والمجهر." },
+  { slug: "statistics", title: "الإحصاء والاحتمالات", description: "الإحصاء الوصفي والتوزيعات الاحتمالية والانحدار والارتباط واختبارات الفرضيات والأرقام المعنوية وانتشار الخطأ." },
+  { slug: "medicine", title: "الطب والصيدلة والتمريض", description: "جرعات الأدوية وسرعة التنقيط الوريدي ومؤشر كتلة الجسم وتصفية الكرياتينين وتحويل وحدات المختبر واحتياج السوائل. للتعليم فقط." },
+  { slug: "economics", title: "الاقتصاد والمحاسبة", description: "الفائدة المركبة وجدول سداد القرض وصافي القيمة الحالية ومعدل العائد الداخلي ونقطة التعادل والاستهلاك والمرونة والنسب المالية." },
+  { slug: "computing", title: "علوم الحاسوب والشبكات", description: "الشبكات الفرعية وعناوين IP وتمثيل الأعداد العشرية IEEE-754 والترميز وتعقيد الخوارزميات وأحجام البيانات وزمن النقل." },
+  { slug: "architecture", title: "العمارة والتخطيط", description: "تصميم الدرج ومساحة المضلعات من الإحداثيات ونسبة البناء ومعامل الاستغلال وموقع الشمس وطول الظل." },
+  { slug: "earth-environment", title: "الجيولوجيا والبيئة", description: "التأريخ بالنظائر المشعة وقوة الزلازل وطاقتها والبصمة الكربونية ومؤشر جودة الهواء." },
+  { slug: "agriculture-nutrition", title: "الزراعة والتغذية", description: "حساب الأسمدة NPK والاحتياج اليومي من السعرات والعناصر الغذائية واحتياج الري." },
+  { slug: "student", title: "أدوات الطالب", description: "المعدل التراكمي والدرجة المطلوبة في الامتحان النهائي وتوليد المراجع وعدّ الكلمات وخطة المذاكرة." }
 ];
 
 export const tools = [
@@ -87,5 +98,79 @@ export const tools = [
   { slug: "unit-converter", category: "units", title: "محوّل الوحدات" },
   { slug: "engineering-notation", category: "units", title: "الصيغة الهندسية والبادئات" },
   { slug: "formulas-constants", category: "units", title: "القوانين والثوابت الشائعة" },
-  { slug: "standard-resistor-values", category: "units", title: "القيم القياسية E12 و E24 و E96" }
+  { slug: "standard-resistor-values", category: "units", title: "القيم القياسية E12 و E24 و E96" },
+
+  { slug: "kinematics", category: "physics", title: "معادلات الحركة بتسارع ثابت" },
+  { slug: "projectile-motion", category: "physics", title: "حركة المقذوفات" },
+  { slug: "inclined-plane", category: "physics", title: "المستوى المائل والاحتكاك" },
+  { slug: "work-energy", category: "physics", title: "الشغل والطاقة والقدرة" },
+  { slug: "collisions", category: "physics", title: "الزخم والتصادمات" },
+  { slug: "circular-gravitation", category: "physics", title: "الحركة الدائرية والجاذبية والمدارات" },
+  { slug: "harmonic-motion", category: "physics", title: "الحركة التوافقية والبندول والنابض" },
+  { slug: "waves-doppler", category: "physics", title: "الموجات والصوت وظاهرة دوبلر" },
+  { slug: "optics", category: "physics", title: "العدسات والمرايا وقانون سنل" },
+  { slug: "gas-heat", category: "physics", title: "الغاز المثالي والحرارة" },
+
+  { slug: "molar-mass", category: "chemistry", title: "حاسبة الكتلة المولية" },
+  { slug: "equation-balancer", category: "chemistry", title: "موازنة المعادلات الكيميائية" },
+  { slug: "stoichiometry", category: "chemistry", title: "الحسابات الكيميائية والمادة المحددة" },
+  { slug: "solutions", category: "chemistry", title: "التركيز والتخفيف" },
+  { slug: "ph-calculator", category: "chemistry", title: "حاسبة pH للأحماض والقواعد" },
+  { slug: "empirical-formula", category: "chemistry", title: "الصيغة الأولية والجزيئية" },
+  { slug: "periodic-table", category: "chemistry", title: "الجدول الدوري" },
+  { slug: "reaction-kinetics", category: "chemistry", title: "سرعة التفاعل وعمر النصف" },
+
+  { slug: "punnett-square", category: "biology", title: "مربع بانيت والوراثة المندلية" },
+  { slug: "hardy-weinberg", category: "biology", title: "اتزان هاردي-واينبرغ" },
+  { slug: "dna-tools", category: "biology", title: "أدوات DNA و RNA" },
+  { slug: "population-growth", category: "biology", title: "نمو الجماهير" },
+  { slug: "serial-dilution", category: "biology", title: "التخفيف المتسلسل وعدّ الخلايا" },
+  { slug: "microscopy", category: "biology", title: "التكبير والقياس بالمجهر" },
+
+  { slug: "descriptive-stats", category: "statistics", title: "الإحصاء الوصفي" },
+  { slug: "probability-distributions", category: "statistics", title: "التوزيعات الاحتمالية" },
+  { slug: "linear-regression", category: "statistics", title: "الانحدار الخطي والارتباط" },
+  { slug: "hypothesis-tests", category: "statistics", title: "اختبارات الفرضيات" },
+  { slug: "significant-figures", category: "statistics", title: "الأرقام المعنوية وانتشار الخطأ" },
+
+  { slug: "drug-dosage", category: "medicine", title: "حساب جرعات الأدوية" },
+  { slug: "iv-drip-rate", category: "medicine", title: "سرعة التنقيط الوريدي" },
+  { slug: "bmi-bsa", category: "medicine", title: "مؤشر كتلة الجسم ومساحة سطحه" },
+  { slug: "creatinine-clearance", category: "medicine", title: "تصفية الكرياتينين ووظائف الكلى" },
+  { slug: "lab-units", category: "medicine", title: "تحويل وحدات المختبر" },
+  { slug: "fluid-requirements", category: "medicine", title: "احتياج السوائل اليومي" },
+
+  { slug: "compound-interest", category: "economics", title: "الفائدة البسيطة والمركبة" },
+  { slug: "loan-amortization", category: "economics", title: "جدول سداد القرض" },
+  { slug: "npv-irr", category: "economics", title: "صافي القيمة الحالية ومعدل العائد الداخلي" },
+  { slug: "break-even", category: "economics", title: "نقطة التعادل" },
+  { slug: "depreciation", category: "economics", title: "الاستهلاك (الإهلاك)" },
+  { slug: "price-elasticity", category: "economics", title: "المرونة السعرية" },
+  { slug: "financial-ratios", category: "economics", title: "النسب المالية" },
+
+  { slug: "subnet-calculator", category: "computing", title: "حاسبة الشبكات الفرعية IPv4" },
+  { slug: "ieee754", category: "computing", title: "تمثيل الأعداد العشرية IEEE-754" },
+  { slug: "text-encoding", category: "computing", title: "الترميز: ASCII و UTF-8 و Base64" },
+  { slug: "big-o", category: "computing", title: "مقارنة تعقيد الخوارزميات" },
+  { slug: "data-transfer", category: "computing", title: "أحجام البيانات وزمن النقل" },
+
+  { slug: "stair-design", category: "architecture", title: "تصميم الدرج" },
+  { slug: "polygon-area", category: "architecture", title: "مساحة مضلع من الإحداثيات" },
+  { slug: "far-coverage", category: "architecture", title: "نسبة البناء ومعامل الاستغلال" },
+  { slug: "sun-position", category: "architecture", title: "موقع الشمس وطول الظل" },
+
+  { slug: "radiometric-dating", category: "earth-environment", title: "التأريخ بالنظائر المشعة" },
+  { slug: "earthquake-magnitude", category: "earth-environment", title: "قوة الزلزال وطاقته" },
+  { slug: "carbon-footprint", category: "earth-environment", title: "البصمة الكربونية" },
+  { slug: "air-quality-index", category: "earth-environment", title: "مؤشر جودة الهواء AQI" },
+
+  { slug: "fertilizer-npk", category: "agriculture-nutrition", title: "حساب الأسمدة NPK" },
+  { slug: "calorie-needs", category: "agriculture-nutrition", title: "الاحتياج اليومي من السعرات" },
+  { slug: "irrigation", category: "agriculture-nutrition", title: "احتياج الري" },
+
+  { slug: "gpa-calculator", category: "student", title: "حاسبة المعدل التراكمي" },
+  { slug: "final-grade", category: "student", title: "الدرجة المطلوبة في الامتحان النهائي" },
+  { slug: "citation-generator", category: "student", title: "مولّد المراجع APA و IEEE و MLA" },
+  { slug: "word-counter", category: "student", title: "عدّاد الكلمات ووقت القراءة" },
+  { slug: "study-planner", category: "student", title: "خطة المذاكرة والعد التنازلي للامتحان" }
 ];

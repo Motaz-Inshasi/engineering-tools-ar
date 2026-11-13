@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>موقع الشمس وطول الظل | عُدّة المهندس</title>
+<meta name="description" content="احسب ارتفاع الشمس وزاوية سمتها لأي موقع وتاريخ ووقت، وأوقات الشروق والزوال والغروب وطول النهار، وطول الظل واتجاهه لأي جسم، لتوجيه المباني وتصميم كاسرات الشمس.">
+<link rel="canonical" href="https://motaz-inshasi.github.io/engineering-tools-ar/tools/sun-position/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="عُدّة المهندس">
+<meta property="og:title" content="موقع الشمس وطول الظل | عُدّة المهندس">
+<meta property="og:description" content="احسب ارتفاع الشمس وزاوية سمتها لأي موقع وتاريخ ووقت، وأوقات الشروق والزوال والغروب وطول النهار، وطول الظل واتجاهه لأي جسم، لتوجيه المباني وتصميم كاسرات الشمس.">
+<meta property="og:url" content="https://motaz-inshasi.github.io/engineering-tools-ar/tools/sun-position/">
+<meta name="theme-color" content="#0b5cad">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../vendor/katex/katex.min.css">
+<link rel="stylesheet" href="../../assets/css/main.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script defer src="../../vendor/katex/katex.min.js"></script>
+<script type="module" src="../../assets/js/app.js"></script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebApplication","name":"موقع الشمس وطول الظل","description":"احسب ارتفاع الشمس وزاوية سمتها لأي موقع وتاريخ ووقت، وأوقات الشروق والزوال والغروب وطول النهار، وطول الظل واتجاهه لأي جسم، لتوجيه المباني وتصميم كاسرات الشمس.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"ar","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://motaz-inshasi.github.io/engineering-tools-ar/tools/sun-position/"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عُدّة المهندس","item":"https://motaz-inshasi.github.io/engineering-tools-ar/"},{"@type":"ListItem","position":2,"name":"العمارة والتخطيط","item":"https://motaz-inshasi.github.io/engineering-tools-ar/category/architecture/"},{"@type":"ListItem","position":3,"name":"موقع الشمس وطول الظل","item":"https://motaz-inshasi.github.io/engineering-tools-ar/tools/sun-position/"}]}]</script>
+</head>
+<body data-tool="sun-position" data-category="architecture">
+<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="../../">عُدّة <span>المهندس</span></a>
+<form class="search-mini" action="../../" method="get" role="search"><label class="sr-only" for="site-q">ابحث عن أداة</label><input id="site-q" name="q" type="search" placeholder="ابحث عن أداة…" autocomplete="off"></form>
+<a class="donate-top" href="../../support/" title="هل أفادتك الأداة؟ الموقع مجاني بلا إعلانات مزعجة، ودعمك يساعد على استمراره وإضافة أدوات جديدة."><span class="heart" aria-hidden="true">♥</span> ادعم الموقع</a><button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
+</div></header>
+<nav class="cats" aria-label="التصنيفات"><ul><li><a href="../../category/calculus/">التفاضل والتكامل</a></li><li><a href="../../category/algebra/">الجبر والرياضيات</a></li><li><a href="../../category/signals/">لابلاس والإشارات</a></li><li><a href="../../category/dc-circuits/">دوائر التيار المستمر</a></li><li><a href="../../category/ac-circuits/">دوائر التيار المتردد</a></li><li><a href="../../category/electronics/">الإلكترونيات</a></li><li><a href="../../category/digital/">المنطق الرقمي</a></li><li><a href="../../category/sensors/">الحساسات والربط</a></li><li><a href="../../category/control/">أنظمة التحكم</a></li><li><a href="../../category/units/">الوحدات والمراجع</a></li><li><a href="../../category/physics/">الفيزياء</a></li><li><a href="../../category/chemistry/">الكيمياء</a></li><li><a href="../../category/biology/">الأحياء</a></li><li><a href="../../category/statistics/">الإحصاء والاحتمالات</a></li><li><a href="../../category/medicine/">الطب والصيدلة والتمريض</a></li><li><a href="../../category/economics/">الاقتصاد والمحاسبة</a></li><li><a href="../../category/computing/">علوم الحاسوب والشبكات</a></li><li><a href="../../category/architecture/" aria-current="page">العمارة والتخطيط</a></li><li><a href="../../category/earth-environment/">الجيولوجيا والبيئة</a></li><li><a href="../../category/agriculture-nutrition/">الزراعة والتغذية</a></li><li><a href="../../category/student/">أدوات الطالب</a></li></ul></nav>
+<main id="main"><div class="wrap">
+<nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="../../">عُدّة المهندس</a></li><li><a href="../../category/architecture/">العمارة والتخطيط</a></li><li aria-current="page">موقع الشمس وطول الظل</li></ol></nav>
+<h1>موقع الشمس وطول الظل</h1>
+<p class="lead">احسب ارتفاع الشمس وزاوية سمتها لأي موقع وتاريخ ووقت، وأوقات الشروق والزوال والغروب وطول النهار، وطول الظل واتجاهه لأي جسم، لتوجيه المباني وتصميم كاسرات الشمس.</p>
+
+<section class="card formulas" aria-labelledby="h-formulas"><h2 id="h-formulas">القوانين المستخدمة</h2>
+<div class="formula"><div class="formula-label">زاوية الارتفاع</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>α</mi><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>φ</mi><mi>sin</mi><mo>⁡</mo><mi>δ</mi><mo>+</mo><mi>cos</mi><mo>⁡</mo><mi>φ</mi><mi>cos</mi><mo>⁡</mo><mi>δ</mi><mi>cos</mi><mo>⁡</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">\sin\alpha = \sin\varphi\sin\delta + \cos\varphi\cos\delta\cos h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6679em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">h</span></span></span></span></span></div>
+<div class="formula"><div class="formula-label">طول الظل</div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>L</mi><mo>=</mo><mfrac><mi>H</mi><mrow><mi>tan</mi><mo>⁡</mo><mi>α</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">L = \frac{H}{\tan\alpha}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.0463em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">tan</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0813em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div>
+</section>
+<section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">المدخلات</h2>
+<form id="tool-form" class="tool-form" novalidate>
+<div class="field"><label for="in-lat">خط العرض φ <span class="unit">(°)</span></label><input id="in-lat" name="lat" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="24.71" aria-describedby="help-lat"><small class="help" id="help-lat">شمالاً موجب وجنوباً سالب. مثلاً الرياض <bdi dir="ltr">24.71</bdi>، القاهرة <bdi dir="ltr">30.04</bdi>، غزة <bdi dir="ltr">31.5</bdi>.</small></div>
+<div class="field"><label for="in-lon">خط الطول <span class="unit">(°)</span></label><input id="in-lon" name="lon" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="46.68" aria-describedby="help-lon"><small class="help" id="help-lon">شرقاً موجب وغرباً سالب.</small></div>
+<div class="field"><label for="in-date">التاريخ</label><input id="in-date" name="date" type="text" dir="auto" autocomplete="off" spellcheck="false" value="2026-06-21" aria-describedby="help-date"><small class="help" id="help-date">بالصيغة <bdi dir="ltr">YYYY-MM-DD</bdi>.</small></div>
+<div class="field"><label for="in-time">الوقت المحلي</label><input id="in-time" name="time" type="text" dir="auto" autocomplete="off" spellcheck="false" value="15:00" aria-describedby="help-time"><small class="help" id="help-time">بالصيغة <bdi dir="ltr">HH:MM (</bdi>نظام <bdi dir="ltr">24</bdi> ساعة).</small></div>
+<div class="field"><label for="in-tz">فرق التوقيت عن UTC <span class="unit">(h)</span></label><input id="in-tz" name="tz" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="3" aria-describedby="help-tz"><small class="help" id="help-tz">الرياض +<bdi dir="ltr">3</bdi>، القاهرة +<bdi dir="ltr">2</bdi> أو +<bdi dir="ltr">3</bdi> صيفاً، لندن <bdi dir="ltr">0</bdi> أو +<bdi dir="ltr">1</bdi> صيفاً.</small></div>
+<div class="field"><label for="in-height">ارتفاع الجسم (لحساب الظل) <span class="unit">(m)</span></label><input id="in-height" name="height" type="text" dir="ltr" autocomplete="off" spellcheck="false" inputmode="text" value="10"></div>
+<p class="example-note">مثال: لندن في الانقلاب الصيفي.</p>
+<div class="actions"><button class="btn primary" type="submit">احسب</button><button class="btn" type="button" id="example-btn">مثال محلول</button><button class="btn" type="reset">مسح</button></div>
+</form>
+
+</section>
+<section id="output" class="card" aria-live="polite" tabindex="-1" hidden>
+<div id="out-error" class="error" role="alert" hidden></div>
+<div id="out-success" hidden>
+<div class="out-head"><h2>النتيجة</h2><div><button class="btn" type="button" id="copy-btn">نسخ النتيجة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
+<dl id="out-results" class="results"></dl>
+<div id="out-blocks"></div>
+<div id="steps-wrap"><h2>الحل خطوة بخطوة</h2><ol id="out-steps" class="steps"></ol></div>
+</div>
+</section>
+<noscript><p class="note warn">هذه الأداة تحتاج تفعيل JavaScript لإجراء الحسابات.</p></noscript>
+
+
+<section class="related" aria-labelledby="h-related"><h2 id="h-related">أدوات ذات صلة</h2><ul><li><a href="../../tools/stair-design/">تصميم الدرج</a></li><li><a href="../../tools/far-coverage/">نسبة البناء ومعامل الاستغلال</a></li><li><a href="../../tools/polygon-area/">مساحة مضلع من الإحداثيات</a></li><li><a href="../../tools/trigonometry/">المثلثات ودائرة الوحدة</a></li></ul></section>
+
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
+<p>عُدّة المهندس موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="../../">كل الأدوات</a></p>
+</div></footer>
+</body>
+</html>
