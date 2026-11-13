@@ -37,8 +37,11 @@ for (const t of list) {
       const problems = watch(page);
       await page.goto(`tools/${t.slug}/`);
       await expect(page.locator("body[data-ready='1']")).toHaveCount(1);
-      for (const [k, v] of Object.entries(t.meta.invalid.values)) {
+      const entries = Object.entries(t.meta.invalid.values);
+      const isSelect = (k) => t.meta.inputs.find((i) => i.id === k)?.type === "select";
+      for (const [k, v] of [...entries.filter(([k]) => isSelect(k)), ...entries.filter(([k]) => !isSelect(k))]) {
         const el = page.locator(`#tool-form [name="${k}"]`);
+        if (!(await el.isVisible())) continue;
         const tag = await el.evaluate((e) => e.tagName + ":" + (e.type || ""));
         if (tag.startsWith("SELECT")) await el.selectOption(String(v));
         else if (tag.endsWith("checkbox")) await el.setChecked(!!v);
