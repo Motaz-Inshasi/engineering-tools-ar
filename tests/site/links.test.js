@@ -7,7 +7,9 @@ import { htmlFiles, attrs, resolveTarget, read, rel, walk, ROOT } from "./helper
 const config = JSON.parse(read(join(ROOT, "site.config.json")));
 const siteUrl = (config.siteUrl || "").replace(/\/+$/, "");
 const donate = (config.donate?.url || "").trim();
-const allowed = (u) => (siteUrl && u.startsWith(siteUrl)) || (donate && u === new URL(donate).href);
+const github = (config.author?.github || "").replace(/\/+$/, "");
+const allowed = (u) => (siteUrl && u.startsWith(siteUrl)) || (donate && u === new URL(donate).href) || (github && /^https:\/\/github\.com\//.test(github) && (u === github || u.startsWith(`${github}/`)));
+const authorEmail = (config.author?.email || "").toLowerCase();
 
 test("لا توجد روابط داخلية مكسورة في أي صفحة", () => {
   const broken = [];
@@ -54,7 +56,7 @@ test("استيرادات الوحدات في JavaScript نسبية فقط", () =
   const bad = [];
   for (const f of walk().filter((p) => p.endsWith(".js") && /^(lib|assets)\//.test(rel(p)))) {
     const src = read(f);
-    const specs = [...src.matchAll(/^\s*(?:import|export)\b[^;]*?\bfrom\s*["']([^"']+)["']/gm), ...src.matchAll(/\bimport\(\s*[`"']([^`"']+)[`"']/g)].map((m) => m[1]);
+    const specs = [...src.matchAll(/^\s*(?:import|export)\b[^;]*?(?<=[\s}])from\s*["']([^"']+)["']/gm), ...src.matchAll(/\bimport\(\s*[`"']([^`"']+)[`"']/g)].map((m) => m[1]);
     for (const s of specs) if (!s.startsWith(".")) bad.push(`${rel(f)}: ${s}`);
     if (f.endsWith("ui.js")) assert.ok(specs.length >= 3, "import scan should find imports in ui.js");
   }
@@ -67,7 +69,8 @@ test("لا ملفات حساسة أو بيانات شخصية في المستو�
     const r = rel(f);
     if (/(^|\/)\.env|\.pem$|\.key$|id_rsa/.test(r)) bad.push(r);
     if (/\.(js|html|json|md|css)$/.test(r) && !r.startsWith("vendor/")) {
-      const s = read(f);
+      let s = read(f);
+      if (r === "site.config.json" && authorEmail) s = s.split(`"email": "${authorEmail}"`).join("");
       if (/@gmail\.com|@hotmail\.com|password\s*[:=]|api[_-]?key\s*[:=]\s*["'][A-Za-z0-9]/i.test(s)) bad.push(`${r} (محتوى)`);
     }
   }

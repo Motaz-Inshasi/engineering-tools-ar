@@ -35,10 +35,10 @@ test("مقارنة مادتين تعطي نسبة المقاومة النوعي�
   assert.ok(res.blocks[0].head.length === 5);
 });
 
-test("مقارنة المادة بنفسها تعطي نسبة 1", () => {
-  const res = mod.solve({ mat: "copper", cmp: "copper" });
-  assert.ok(res.copy.includes("نسبة المقاومة النوعية = 1"), res.copy);
-  assert.ok(res.copy.includes("نسبة المعامل النوعي = 1"), res.copy);
+test("مقارنة المادة بنفسها مرفوضة برسالة واضحة", () => {
+  throwsInput(() => mod.solve({ mat: "copper", cmp: "copper" }), "cmp");
+  const res = mod.solve({ mat: "copper", cmp: "a36" });
+  assert.ok(res.copy.includes("نسبة المقاومة النوعية"), res.copy);
 });
 
 test("القيم غير المنطبقة تظهر بوضوح مع ملاحظة", () => {

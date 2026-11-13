@@ -8,6 +8,7 @@ import { tools, categories } from "../../assets/js/registry.js";
 import { donateInfo } from "../../scripts/site-parts.mjs";
 
 const supportOn = donateInfo(JSON.parse(read(join(ROOT, "site.config.json")))).enabled;
+const aboutOn = !!JSON.parse(read(join(ROOT, "site.config.json"))).author;
 
 const pages = htmlFiles().filter((f) => !rel(f).startsWith("vendor/") && rel(f) !== "404.html");
 const get = (html, re) => (html.match(re) || [])[1];
@@ -32,7 +33,7 @@ test("كل صفحة لها lang و dir وعنوان ووصف و canonical و Ope
     assert.ok(!descs.has(desc), `${r}: duplicate description with ${descs.get(desc)}`);
     titles.set(title, r); descs.set(desc, r);
   }
-  assert.equal(pages.length, 1 + categories.length + tools.length + (supportOn ? 1 : 0));
+  assert.equal(pages.length, 1 + categories.length + tools.length + (supportOn ? 1 : 0) + (aboutOn ? 1 : 0));
 });
 
 test("بيانات JSON-LD صالحة في كل صفحة", () => {
@@ -52,7 +53,7 @@ test("كل صفحة في sitemap، وكل رابط في sitemap يشير إلى 
   const config = JSON.parse(read(join(ROOT, "site.config.json")));
   const base = (config.siteUrl || "").replace(/\/+$/, "");
   const paths = locs.map((l) => (base ? l.slice(base.length + 1) : l === "./" ? "" : l));
-  const expected = ["", ...categories.map((c) => `category/${c.slug}/`), ...tools.map((t) => `tools/${t.slug}/`), ...(supportOn ? ["support/"] : [])];
+  const expected = ["", ...categories.map((c) => `category/${c.slug}/`), ...tools.map((t) => `tools/${t.slug}/`), ...(supportOn ? ["support/"] : []), ...(aboutOn ? ["about/"] : [])];
   assert.deepEqual([...paths].sort(), [...expected].sort());
   for (const p of paths) assert.ok(existsSync(join(ROOT, p, "index.html")), p);
 });
