@@ -2,7 +2,8 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync } from "node
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { createRequire } from "node:module";
-import { donateHtml, donateInfo, qrSvg, verificationMeta, isolateLtr } from "./site-parts.mjs";
+import { donateHtml, donateInfo, qrSvg, verificationMeta, isolateLtr, emailHtml } from "./site-parts.mjs";
+import { catIcon, GROUPS, groupOf } from "./icons.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
@@ -74,13 +75,15 @@ ${url ? `<meta property="og:url" content="${esc(url)}">\n` : ""}<meta name="them
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>\n` : ""}</head>`;
 }
 
+const author = config.author || null;
+
 function header(root, activeCat) {
-  const nav = categories.map((c) => `<li><a href="${root}category/${c.slug}/"${c.slug === activeCat ? ' aria-current="page"' : ""}>${esc(c.title)}</a></li>`).join("");
+  const nav = GROUPS.flatMap((g) => g.cats).map((slug) => categories.find((c) => c.slug === slug)).filter(Boolean).map((c) => `<li><a class="g-${groupOf(c.slug)}" href="${root}category/${c.slug}/"${c.slug === activeCat ? ' aria-current="page"' : ""}>${catIcon(c.slug)}<span>${esc(c.title)}</span></a></li>`).join("");
   return `<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
 <header class="site-header"><div class="wrap">
-<a class="brand" href="${root}">${esc(SITE.replace("المهندس", ""))}<span>المهندس</span></a>
-<form class="search-mini" action="${root}" method="get" role="search"><label class="sr-only" for="site-q">ابحث عن أداة</label><input id="site-q" name="q" type="search" placeholder="ابحث عن أداة…" autocomplete="off"></form>
-${donateHtml(config, root)}<button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
+<a class="brand" href="${root}"><span class="logo" aria-hidden="true">∑</span>${esc(SITE.replace("المهندس", ""))}<span>المهندس</span></a>
+<form class="search-mini" action="${root}" method="get" role="search"><label class="sr-only" for="site-q">ابحث عن أداة</label><input id="site-q" name="q" type="search" placeholder="ابحث في ${live.length} أداة…" autocomplete="off"></form>
+${author ? `<a class="about-top" href="${root}about/">تواصل معي</a>` : ""}${donateHtml(config, root)}<button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
 </div></header>
 <nav class="cats" aria-label="التصنيفات"><ul>${nav}</ul></nav>`;
 }
@@ -88,7 +91,8 @@ ${donateHtml(config, root)}<button class="icon-btn theme-toggle" type="button" a
 function footer(root) {
   return `<footer class="site-footer"><div class="wrap">
 <p><strong>تنبيه:</strong> النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ.</p>
-<p>${esc(SITE)} موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="${root}">كل الأدوات</a></p>
+<p>${esc(SITE)} موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع. <a href="${root}">كل الأدوات</a>${author ? ` · <a href="${root}about/">عن الموقع والتواصل</a>` : ""}</p>
+${author ? `<p>صُمّم وطُوّر بواسطة <a href="${root}about/">${esc(author.name)}</a>${author.email ? ` · ${emailHtml(author.email)}` : ""}</p>` : ""}
 </div></footer>`;
 }
 
@@ -172,22 +176,22 @@ function toolPage(t, meta) {
 ${header(root, t.category)}
 <main id="main"><div class="wrap">
 ${crumbs(root, [{ title: SITE, href: root }, { title: catTitle[t.category], href: `${root}category/${t.category}/` }, { title: t.title }])}
-<h1>${esc(t.title)}</h1>
-<p class="lead">${inline(meta.intro || meta.description)}</p>
+<div class="page-head g-${groupOf(t.category)}"><a class="badge-ic" href="${root}category/${t.category}/" aria-label="${esc(catTitle[t.category])}" title="${esc(catTitle[t.category])}">${catIcon(t.category)}</a><div><h1>${esc(t.title)}</h1>
+<p class="lead">${inline(meta.intro || meta.description)}</p></div></div>
 ${adSlot("header")}
 ${formulas ? `<section class="card formulas" aria-labelledby="h-formulas"><h2 id="h-formulas">القوانين المستخدمة</h2>\n${formulas}\n</section>` : ""}
 <section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">المدخلات</h2>
 <form id="tool-form" class="tool-form" novalidate>
 ${fields}
 ${exampleNote}
-<div class="actions"><button class="btn primary" type="submit">${esc(meta.submitLabel || "احسب")}</button><button class="btn" type="button" id="example-btn">مثال محلول</button><button class="btn" type="reset">مسح</button></div>
+<div class="actions"><button class="btn primary" type="submit">${esc(meta.submitLabel || "احسب")}</button><button class="btn" type="button" id="example-btn">مثال محلول</button><button class="btn" type="reset">مسح</button><span class="live-hint" id="live-hint" hidden>⚡ يتحدّث الناتج تلقائياً عند تعديل المدخلات</span></div>
 </form>
 ${meta.inputHelp ? `<p class="help">${inline(meta.inputHelp)}</p>` : ""}
 </section>
 <section id="output" class="card" aria-live="polite" tabindex="-1" hidden>
 <div id="out-error" class="error" role="alert" hidden></div>
 <div id="out-success" hidden>
-<div class="out-head"><h2>النتيجة</h2><div><button class="btn" type="button" id="copy-btn">نسخ النتيجة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
+<div class="out-head"><h2>النتيجة</h2><div class="out-actions"><button class="btn" type="button" id="copy-btn">نسخ النتيجة</button><button class="btn" type="button" id="share-btn">مشاركة الرابط</button><button class="btn" type="button" id="print-btn">طباعة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
 <dl id="out-results" class="results"></dl>
 <div id="out-blocks"></div>
 <div id="steps-wrap"><h2>الحل خطوة بخطوة</h2><ol id="out-steps" class="steps"></ol></div>
@@ -208,16 +212,25 @@ ${footer(root)}
 function toolCard(t, root) {
   const m = metas.get(t.slug);
   const search = [t.title, m.description, ...(m.keywords || []), catTitle[t.category], t.slug.replace(/-/g, " ")].join(" ");
-  return `<li data-search="${esc(search)}"><a href="${root}tools/${t.slug}/"><strong>${esc(t.title)}</strong><small>${esc(m.description)}</small></a></li>`;
+  return `<li data-search="${esc(search)}"><a class="g-${groupOf(t.category)}" href="${root}tools/${t.slug}/">${catIcon(t.category, "ic card-ic")}<strong>${esc(t.title)}</strong><small>${esc(m.description)}</small></a></li>`;
+}
+
+const countOf = (slug) => live.filter((t) => t.category === slug).length;
+const toolsWord = (n) => (n === 1 ? "أداة واحدة" : n === 2 ? "أداتان" : n <= 10 ? `${n} أدوات` : `${n} أداة`);
+
+function catTiles(root) {
+  return GROUPS.map((g) => `<section class="group g-${g.id}" aria-labelledby="grp-${g.id}"><h3 id="grp-${g.id}">${esc(g.title)}</h3><ul class="cat-tiles">${g.cats.map((slug) => categories.find((c) => c.slug === slug)).filter((c) => c && countOf(c.slug)).map((c) => `<li><a href="${root}category/${c.slug}/"><span class="tile-ic">${catIcon(c.slug)}</span><span class="tile-t">${esc(c.title)}</span><span class="tile-n">${toolsWord(countOf(c.slug))}</span></a></li>`).join("")}</ul></section>`).join("\n");
 }
 
 function homePage() {
   const root = "";
-  const sections = categories.map((c) => {
+  const order = GROUPS.flatMap((g) => g.cats).map((s) => categories.find((c) => c.slug === s)).filter(Boolean);
+  const sections = order.map((c) => {
     const list = live.filter((t) => t.category === c.slug);
     if (!list.length) return "";
-    return `<section class="cat-section" aria-labelledby="cat-${c.slug}"><h2 id="cat-${c.slug}"><a href="category/${c.slug}/">${esc(c.title)}</a></h2><ul class="tool-grid">${list.map((t) => toolCard(t, root)).join("")}</ul></section>`;
+    return `<section class="cat-section g-${groupOf(c.slug)}" aria-labelledby="cat-${c.slug}"><h2 id="cat-${c.slug}"><a href="category/${c.slug}/">${catIcon(c.slug, "ic h-ic")}${esc(c.title)}</a></h2><ul class="tool-grid">${list.map((t) => toolCard(t, root)).join("")}</ul></section>`;
   }).join("\n");
+  const nCats = categories.filter((c) => countOf(c.slug)).length;
   const description = `${live.length} أداة مجانية بالعربية لطلاب الهندسة والعلوم والجامعة: رياضيات ودوائر وإلكترونيات، فيزياء وكيمياء وأحياء، إحصاء، طب وصيدلة، اقتصاد، حاسوب وشبكات، عمارة وبيئة، مع الحل خطوة بخطوة.`;
   const jsonld = { "@context": "https://schema.org", "@type": "WebSite", name: SITE, description, inLanguage: "ar" };
   if (siteUrl) jsonld.url = absUrl("");
@@ -226,12 +239,19 @@ function homePage() {
 ${header("", null)}
 <main id="main"><div class="wrap">
 <div class="hero">
-<h1>${esc(SITE)}: أدوات علمية وهندسية مع الحل خطوة بخطوة</h1>
-<p class="lead">${live.length} أداة مجانية لطلاب الهندسة والعلوم وكل التخصصات الجامعية. كل أداة تعرض القانون والحل المفصّل بالعربية ومثالاً محلولاً.</p>
-<form id="home-search-form" class="search-big" role="search"><label class="sr-only" for="home-search">ابحث في كل الأدوات</label><input id="home-search" type="search" placeholder="اكتب اسم الأداة، مثل: مشتقة، مقاومة، لابلاس…" autocomplete="off"></form>
+<p class="eyebrow">مجاني بالكامل · بالعربية · بلا تسجيل</p>
+<h1>${esc(SITE)}: أدوات علمية وهندسية <span class="hl">مع الحل خطوة بخطوة</span></h1>
+<p class="lead">${live.length} أداة لطلاب الهندسة والعلوم وكل التخصصات الجامعية. كل أداة تعرض القانون والحل المفصّل بالعربية ومثالاً محلولاً، ويتحدّث الناتج فور تعديل المدخلات.</p>
+<form id="home-search-form" class="search-big" role="search"><label class="sr-only" for="home-search">ابحث في كل الأدوات</label><input id="home-search" type="search" placeholder="ماذا تريد أن تحسب؟ مثل: مشتقة، زكاة، تاريخ هجري، pH…" autocomplete="off"></form>
 <p id="search-count" class="search-count" role="status"></p>
+<ul class="stats" aria-label="إحصاءات الموقع"><li><b>${live.length}</b> أداة</li><li><b>${nCats}</b> قسماً</li><li><b>100%</b> مجاني</li><li><b>0</b> تتبع</li></ul>
 </div>
+<section id="recent" class="recent" aria-labelledby="h-recent" hidden><h2 id="h-recent">آخر الأدوات التي استخدمتها</h2><ul class="chips"></ul></section>
+<section id="browse" class="browse" aria-labelledby="h-browse"><h2 id="h-browse">تصفّح الأقسام</h2>
+${catTiles(root)}
+</section>
 ${adSlot("header")}
+<h2 class="all-title" id="h-all">كل الأدوات</h2>
 ${sections}
 </div></main>
 ${footer("")}
@@ -252,8 +272,7 @@ function categoryPage(c) {
 ${header(root, c.slug)}
 <main id="main"><div class="wrap">
 ${crumbs(root, [{ title: SITE, href: root }, { title: c.title }])}
-<h1>${esc(c.title)}</h1>
-<p class="lead">${esc(c.description)}</p>
+<div class="page-head g-${groupOf(c.slug)}"><span class="badge-ic">${catIcon(c.slug)}</span><div><h1>${esc(c.title)}</h1><p class="lead">${esc(c.description)} <span class="count-pill">${toolsWord(list.length)}</span></p></div></div>
 ${list.length ? `<ul class="tool-grid">${list.map((t) => toolCard(t, root)).join("")}</ul>` : `<p class="note">الأدوات في هذا التصنيف قيد الإعداد.</p>`}
 <section class="related" aria-labelledby="h-other"><h2 id="h-other">تصنيفات أخرى</h2><ul>${others}</ul></section>
 </div></main>
@@ -334,6 +353,54 @@ ${footer(root)}
 `;
 }
 
+function aboutPage() {
+  const root = "../";
+  const a = author;
+  const repo = a.github ? `${a.github.replace(/\/+$/, "")}/engineering-tools-ar` : "";
+  const description = `${SITE}: موقع أدوات علمية وهندسية مجاني بالعربية من تطوير ${a.name}. تعرّف على الموقع وتواصل معي.`;
+  const jsonld = { "@context": "https://schema.org", "@type": "AboutPage", name: `عن ${SITE}`, inLanguage: "ar", about: { "@type": "Person", name: a.nameEn || a.name, alternateName: a.name, jobTitle: a.role, ...(a.github ? { sameAs: [a.github] } : {}) } };
+  const initial = [...a.name.trim()][0];
+  const groups = GROUPS.map((g) => `<li class="g-${g.id}"><b>${esc(g.title)}</b>: ${g.cats.map((s) => categories.find((c) => c.slug === s)).filter((c) => c && countOf(c.slug)).map((c) => esc(c.title)).join("، ")}.</li>`).join("");
+  return `${head({ title: `عن الموقع والتواصل | ${SITE}`, description, path: "about/", root, jsonld })}
+<body>
+${header(root, null)}
+<main id="main"><div class="wrap">
+${crumbs(root, [{ title: SITE, href: root }, { title: "عن الموقع والتواصل" }])}
+<section class="profile card">
+<div class="avatar" aria-hidden="true">${esc(initial)}</div>
+<div class="profile-body">
+<h1>${esc(a.name)}${a.nameEn ? ` <small dir="ltr">${esc(a.nameEn)}</small>` : ""}</h1>
+<p class="role">${esc(a.role || "")}</p>
+<p>${esc(a.bio || "")}</p>
+<div class="contact-row">
+${a.email ? `<a class="btn primary contact-btn email-btn" href="#" data-u="${esc([...a.email.split("@")[0]].reverse().join(""))}" data-d="${esc([...a.email.split("@")[1]].reverse().join(""))}">✉ راسلني عبر البريد</a>` : ""}
+${a.github ? `<a class="btn contact-btn" href="${esc(a.github)}" rel="noopener" target="_blank">GitHub</a>` : ""}
+</div>
+${a.email ? `<p class="email-line">البريد: ${emailHtml(a.email)}</p>` : ""}
+<p class="help">يسعدني تواصلك للاقتراحات، أو الإبلاغ عن خطأ في أداة، أو اقتراح أداة جديدة، أو للتعاون في مشاريع البرمجة والأدوات التعليمية.</p>
+</div>
+</section>
+<section class="card" aria-labelledby="h-site"><h2 id="h-site">عن ${esc(SITE)}</h2>
+<ul class="stats"><li><b>${live.length}</b> أداة</li><li><b>${categories.filter((c) => countOf(c.slug)).length}</b> قسماً</li><li><b>100%</b> مجاني</li><li><b>0</b> تتبع</li></ul>
+<p>موقع عربي مجاني يجمع أدوات حساب لطلاب الهندسة والعلوم وكل التخصصات الجامعية. كل أداة تعرض القانون المستخدم، والحل المفصّل خطوة بخطوة، ومثالاً محلولاً، ويمكن نسخ نتيجتها أو مشاركة رابطها.</p>
+<ul class="group-list">${groups}</ul>
+</section>
+<section class="card" aria-labelledby="h-how"><h2 id="h-how">كيف بُني الموقع</h2>
+<ul class="features">
+<li><b>يعمل بالكامل في متصفحك:</b> كل الحسابات تجري على جهازك، فلا تُرسل مدخلاتك إلى أي خادم.</li>
+<li><b>بلا حسابات ولا تتبع:</b> لا ملفات تعريف ارتباط، ولا أدوات تحليل، ولا إعلانات مزعجة.</li>
+<li><b>دقة مختبرة آلياً:</b> لكل أداة اختبارات تتحقق من نتائجها بقيم مرجعية معروفة، واختبارات متصفح تتحقق من عمل كل صفحة على الحاسوب والجوال.</li>
+<li><b>تقنيات مفتوحة:</b> HTML و CSS و JavaScript دون أطر ثقيلة، و KaTeX لعرض المعادلات${repo ? `، والشيفرة المصدرية متاحة على <a href="${esc(repo)}" rel="noopener" target="_blank">GitHub</a>` : ""}.</li>
+</ul>
+</section>
+${donate.enabled ? `<p class="center"><a class="donate-top" href="${root}support/"><span class="heart" aria-hidden="true">♥</span> ${esc(donate.label || "ادعم الموقع")}</a></p>` : ""}
+</div></main>
+${footer(root)}
+</body>
+</html>
+`;
+}
+
 function notFoundPage() {
   const base = config.basePath ? JSON.stringify(config.basePath) : "null";
   return `<!doctype html>
@@ -370,7 +437,7 @@ p{color:var(--muted)}
 }
 
 function sitemap() {
-  const paths = ["", ...categories.map((c) => `category/${c.slug}/`), ...live.map((t) => `tools/${t.slug}/`), ...(donate.enabled ? ["support/"] : [])];
+  const paths = ["", ...categories.map((c) => `category/${c.slug}/`), ...live.map((t) => `tools/${t.slug}/`), ...(donate.enabled ? ["support/"] : []), ...(author ? ["about/"] : [])];
   const loc = (p) => (siteUrl ? `${siteUrl}/${p}` : p || "./");
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -393,6 +460,7 @@ for (const t of tools) {
   write(`tools/${t.slug}/index.html`, m ? toolPage(t, m) : pendingPage(t));
 }
 write("404.html", notFoundPage());
+if (author) write("about/index.html", aboutPage());
 if (donate.enabled) write("support/index.html", supportPage());
 else if (existsSync(join(ROOT, "support", "index.html"))) {
   changed.push("support/index.html (removed)");
