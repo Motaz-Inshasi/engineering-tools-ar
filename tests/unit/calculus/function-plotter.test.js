@@ -31,6 +31,20 @@ test("المجال الواسع لا يُسقط الجذور المتقاربة 
   assert.deepEqual(mod.findRoots(Math.tan, -1.5, 1.5), [0]);
 });
 
+test("جذر log(x) يبقى موجوداً عند توسيع المجال قرب حدّ مجال التعريف", () => {
+  for (const [a, b] of [[-10, 10], [-1000, 1000], [-1e5, 1e5], [0, 1e6], [-999999, 1], [-0.001, 999999]]) {
+    assert.equal(run("log(x)", a, b).results[1].value, "x = 1", `${a}..${b}`);
+    assert.equal(run("ln(x)", a, b).results[1].value, "x = 1", `${a}..${b}`);
+  }
+  assert.equal(run("ln(x+0.5)", -999999, 1).results[1].value, "x = 0.5");
+  assert.equal(run("sqrt(x-2)-1", -5e5, 5e5).results[1].value, "x = 3");
+  assert.equal(run("ln(abs(x))", -999990, 10).results[1].value, "x = -1، x = 1");
+  assert.equal(run("1/x", -1e5, 1e5).results[0].value, "0");
+  const s = run("sqrt(sin(x)) - 0.5", -5e5, 5e5);
+  assert.match(s.results[0].value, /كثيرة جداً/);
+  assert.match(s.results[1].value, /x = 0\.25268026/);
+});
+
 test("الجذور الكثيرة تُختصر: العدد وأقربها إلى الصفر ونمط التكرار", () => {
   const r = run("sin(x)", -1000, 1000);
   assert.equal(r.results[0].value, "637");
