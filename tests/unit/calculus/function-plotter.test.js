@@ -74,3 +74,20 @@ test("أخطاء الإدخال", () => {
   throwsInput(() => mod.solve({ f1: "x", f2: "x+", xmin: "0", xmax: "1" }), "f2");
   throwsInput(() => mod.solve({ f1: "x", xmin: "0", xmax: "1e9" }), "xmax");
 });
+
+test("دالة أكبر عدد صحيح: الجذور فترة كاملة، والرسم مقطوع عند القفزات", () => {
+  const r = run("[x]", -5, 5);
+  assert.match(r.results[0].value, /لا نهائي/);
+  assert.equal(r.results[1].value, "0 ≤ x < 1");
+  assert.equal(run("[x]", -1000, 1000).results[1].value, "0 ≤ x < 1");
+  assert.equal(run("[x]-2", -5, 5).results[1].value, "2 ≤ x < 3");
+  assert.equal(run("[x]^2-4", -5, 5).results[1].value, "-2 ≤ x < -1، 2 ≤ x < 3");
+  assert.equal(run("ceil(x)", -5, 5).results[1].value, "-1 < x ≤ 0");
+  assert.equal(run("[x/2]", -5, 5).results[1].value, "0 ≤ x < 2");
+  assert.equal(run("[x]-0.5", -5, 5).results[0].value, "0");
+  assert.equal(run("x-[x]", -3, 3).results[1].value, "x = -3، x = -2، x = -1، x = 0، x = 1، x = 2، x = 3");
+  const pts = r.blocks[0].series[0].points;
+  const gaps = pts.filter((p) => p[1] === null).length;
+  assert.equal(gaps, 10);
+  assert.ok(r.blocks[0].series.some((s) => s.name === "f = 0 على فترة"));
+});

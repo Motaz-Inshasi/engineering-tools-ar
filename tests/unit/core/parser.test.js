@@ -51,3 +51,24 @@ test("toTex و toText", () => {
   assert.deepEqual([...variables(parse("x*y+z"))].sort(), ["x", "y", "z"]);
   assert.match(toTex(parse("2 x sin(x)")), /2 x \\sin/);
 });
+
+test("دالة أكبر عدد صحيح [x] والسقف", () => {
+  assert.equal(ev("[x]", 2.7), 2);
+  assert.equal(ev("[x]", -2.3), -3);
+  assert.equal(ev("[x]", 3), 3);
+  assert.equal(ev("floor(x)", -0.5), -1);
+  assert.equal(ev("⌊x⌋", 4.9), 4);
+  assert.equal(ev("ceil(x)", 2.1), 3);
+  assert.equal(ev("⌈x⌉", -2.1), -2);
+  assert.equal(ev("[0.1*30]"), 3);
+  assert.equal(ev("2[x]+1", 2.5), 5);
+  assert.equal(ev("[x/2]^2", 5), 4);
+  assert.equal(ev("[|x|]", -2.5), 2);
+  assert.equal(ev("{x+1}^2", 2), 9);
+  assert.equal(toText(parse("[x+1]")), "[x + 1]");
+  assert.equal(toTex(parse("[x]")), String.raw`\left\lfloor x \right\rfloor`);
+  assert.equal(toTex(parse("ceil(x)")), String.raw`\left\lceil x \right\rceil`);
+  throwsInput(() => parse("[x"));
+  throwsInput(() => parse("x]"));
+  throwsInput(() => parse("[x)"));
+});
