@@ -23,6 +23,7 @@
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/economics/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/personal-finance/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/computing/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/programming/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/architecture/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/earth-environment/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/category/agriculture-nutrition/</loc></url>
@@ -163,6 +164,21 @@
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/text-encoding/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/big-o/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/data-transfer/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/error-explainer/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/js-checker/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/python-checker/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/bracket-checker/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/json-formatter/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/html-checker/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/regex-tester/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/sorting-trace/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/search-trace/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/bitwise-calculator/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/hash-generator/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/unix-timestamp/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/color-converter/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/chmod-calculator/</loc></url>
+  <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/cron-explainer/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/stair-design/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/polygon-area/</loc></url>
   <url><loc>https://motaz-inshasi.github.io/engineering-tools-ar/tools/far-coverage/</loc></url>

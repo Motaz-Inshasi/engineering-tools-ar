@@ -182,5 +182,20 @@ export const TOOL_EMOJI = {
   "final-grade": "📝",
   "citation-generator": "📚",
   "word-counter": "🔤",
-  "study-planner": "📅"
+  "study-planner": "📅",
+  "error-explainer": "💬",
+  "js-checker": "🐞",
+  "python-checker": "🐍",
+  "bracket-checker": "🧷",
+  "json-formatter": "🗂️",
+  "html-checker": "📄",
+  "regex-tester": "✳️",
+  "sorting-trace": "🔡",
+  "search-trace": "🔦",
+  "bitwise-calculator": "⚙️",
+  "hash-generator": "🔐",
+  "unix-timestamp": "🕐",
+  "color-converter": "🖌️",
+  "chmod-calculator": "🗝️",
+  "cron-explainer": "⏲️"
 };

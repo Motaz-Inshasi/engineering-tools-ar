@@ -1,6 +1,6 @@
 export const GROUPS = [
   { id: "math", title: "الرياضيات", cats: ["elementary-math", "algebra", "geometry", "calculus", "differential-equations", "statistics"] },
-  { id: "eng", title: "الهندسة والتقنية", cats: ["dc-circuits", "ac-circuits", "electronics", "digital", "sensors", "signals", "control", "materials", "computing", "architecture", "units"] },
+  { id: "eng", title: "الهندسة والتقنية", cats: ["dc-circuits", "ac-circuits", "electronics", "digital", "sensors", "signals", "control", "materials", "computing", "programming", "architecture", "units"] },
   { id: "sci", title: "العلوم", cats: ["physics", "chemistry", "biology", "earth-environment"] },
   { id: "life", title: "الصحة والمال والحياة", cats: ["medicine", "agriculture-nutrition", "economics", "personal-finance", "everyday-math", "dates-calendar", "student"] }
 ];
@@ -30,6 +30,7 @@ const P = {
   economics: '<path d="M3 20.5h18"/><path d="M4 16.5l5-5 4 3 7-7"/><path d="M15 7.5h5v5"/>',
   "personal-finance": '<rect x="2.5" y="6" width="19" height="13.5" rx="2.6"/><path d="M2.5 10.5h19M6 3.5h11"/><circle cx="16.8" cy="15" r="1.4"/>',
   computing: '<rect x="2.5" y="4" width="19" height="12.5" rx="1.6"/><path d="M8.5 20.5h7M12 16.5v4M9.8 8.2 7.6 10.3l2.2 2.1M14.2 8.2l2.2 2.1-2.2 2.1"/>',
+  programming: '<path d="M8 6.5 2.5 12 8 17.5M16 6.5l5.5 5.5-5.5 5.5M13.6 4l-3.2 16"/>',
   architecture: '<path d="M3.5 21V8.5l8.5-5.5 8.5 5.5V21"/><path d="M9 21v-6.5h6V21M8 10.5h2M14 10.5h2M2 21h20"/>',
   "dates-calendar": '<rect x="3" y="5" width="18" height="16" rx="2.2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M14.2 12.8a3.3 3.3 0 1 0 2.1 5.3 2.6 2.6 0 1 1-2.1-5.3z"/>',
   "everyday-math": '<rect x="5" y="2.8" width="14" height="18.4" rx="2.2"/><path d="M8 6.5h8"/><path d="M8.6 11.5v.01M12 11.5v.01M15.4 11.5v.01M8.6 15v.01M12 15v.01M15.4 15v.01M8.6 18.4v.01M12 18.4v.01M15.4 18.4v.01" stroke-width="2.6"/>',
