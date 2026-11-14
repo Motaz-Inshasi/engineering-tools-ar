@@ -3,7 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { createRequire } from "node:module";
 import { donateHtml, donateInfo, qrSvg, verificationMeta, isolateLtr, emailHtml } from "./site-parts.mjs";
-import { catIcon, GROUPS, groupOf } from "./icons.mjs";
+import { catIcon, GROUPS, groupOf, TOOL_SVG } from "./icons.mjs";
 import { existsSync as fileExists } from "node:fs";
 const TOOL_EMOJI = fileExists(new URL("./tool-emoji.mjs", import.meta.url)) ? (await import("./tool-emoji.mjs")).TOOL_EMOJI : {};
 
@@ -220,7 +220,7 @@ function toolCard(t, root) {
 }
 
 function toolPic(t, cls = "pic") {
-  const e = TOOL_EMOJI[t.slug];
+  const e = TOOL_SVG[t.slug] || TOOL_EMOJI[t.slug];
   return e ? `<span class="${cls}" aria-hidden="true">${e}</span>` : `<span class="${cls}" aria-hidden="true">${catIcon(t.category)}</span>`;
 }
 

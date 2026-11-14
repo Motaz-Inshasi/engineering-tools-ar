@@ -46,3 +46,7 @@ export function groupOf(slug) {
 }
 
 export const ICON_SLUGS = Object.keys(P);
+
+const RESISTOR = `<svg class="tool-svg" viewBox="0 0 48 24" aria-hidden="true" focusable="false"><path d="M1 12h10M37 12h10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><rect x="10" y="4.5" width="28" height="15" rx="7" fill="#d8c29a"/><rect x="14" y="4.5" width="3" height="15" fill="#7a4a24"/><rect x="19.5" y="4.5" width="3" height="15" fill="#2b2b2b"/><rect x="25" y="4.5" width="3" height="15" fill="#c0392b"/><rect x="31.5" y="4.5" width="3" height="15" fill="#c9a227"/></svg>`;
+
+export const TOOL_SVG = { "resistor-color-code": RESISTOR };

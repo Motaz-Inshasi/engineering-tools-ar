@@ -56,7 +56,7 @@ export const TOOL_EMOJI = {
   "rc-rl-transient": "⏳",
   "passive-filter": "🎚️",
 
-  "resistor-color-code": "🌈",
+  "resistor-color-code": "🎚️",
   "led-resistor": "💡",
   "rectifier-ripple": "〰️",
   "zener-regulator": "🛡️",
