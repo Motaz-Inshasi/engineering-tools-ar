@@ -12,6 +12,7 @@ for (const t of list) {
       await page.goto(`tools/${t.slug}/`);
       await expect(page.locator("h1")).toHaveText(t.title);
       await expect(page.locator("body[data-ready='1']")).toHaveCount(1);
+      await page.click(".formulas summary");
       await expect(page.locator(".formula .katex").first()).toBeVisible();
       await page.click("#example-btn");
       await expect(page.locator("#output")).toBeVisible();
