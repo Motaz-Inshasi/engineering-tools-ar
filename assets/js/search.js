@@ -17,7 +17,8 @@ export function initSearch() {
     }
     for (const s of sections) s.hidden = !s.querySelector("[data-search]:not([hidden])");
     const searching = !!q.trim();
-    for (const id of ["browse", "h-all"]) { const el = document.getElementById(id); if (el) el.hidden = searching; }
+    const browse = document.getElementById("browse"); if (browse) browse.hidden = searching;
+    const all = document.getElementById("all-tools"); if (all) all.hidden = !searching;
     const rc = document.getElementById("recent");
     if (rc && rc.querySelector("li")) rc.hidden = searching;
     count.textContent = q.trim() ? (shown ? `${shown} أداة مطابقة` : "لا توجد أداة مطابقة، جرّب كلمة أخرى") : "";

@@ -93,10 +93,11 @@ test("صفحة التواصل تعمل والبريد يصبح رابط mailto �
   expect(problems).toEqual([]);
 });
 
-test("كل صفحة أداة تعرض أيقونة قسمها وأزرار المشاركة والطباعة", async ({ page }) => {
+test("كل صفحة أداة تعرض رمزها الصوري وأزرار المشاركة والطباعة", async ({ page }) => {
   for (const t of list.slice(0, 12)) {
     await page.goto(`tools/${t.slug}/`);
-    await expect(page.locator(".page-head .badge-ic svg")).toHaveCount(1);
+    await expect(page.locator(".page-head .badge-ic .pic-lg")).toHaveCount(1);
+    expect((await page.locator(".page-head .badge-ic .pic-lg").innerText()).trim().length).toBeGreaterThan(0);
     await expect(page.locator("#share-btn")).toHaveCount(1);
     await expect(page.locator("#print-btn")).toHaveCount(1);
   }

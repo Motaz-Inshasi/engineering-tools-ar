@@ -4,6 +4,8 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { createRequire } from "node:module";
 import { donateHtml, donateInfo, qrSvg, verificationMeta, isolateLtr, emailHtml } from "./site-parts.mjs";
 import { catIcon, GROUPS, groupOf } from "./icons.mjs";
+import { existsSync as fileExists } from "node:fs";
+const TOOL_EMOJI = fileExists(new URL("./tool-emoji.mjs", import.meta.url)) ? (await import("./tool-emoji.mjs")).TOOL_EMOJI : {};
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
@@ -81,7 +83,7 @@ function header(root, activeCat) {
   const nav = GROUPS.flatMap((g) => g.cats).map((slug) => categories.find((c) => c.slug === slug)).filter(Boolean).map((c) => `<li><a class="g-${groupOf(c.slug)}" href="${root}category/${c.slug}/"${c.slug === activeCat ? ' aria-current="page"' : ""}>${catIcon(c.slug)}<span>${esc(c.title)}</span></a></li>`).join("");
   return `<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
 <header class="site-header"><div class="wrap">
-<a class="brand" href="${root}"><span class="logo" aria-hidden="true">∑</span>${esc(SITE.replace("المهندس", ""))}<span>المهندس</span></a>
+<a class="brand" href="${root}"><span class="logo" aria-hidden="true">∑</span><span class="brand-name">${esc(SITE)}</span></a>
 <form class="search-mini" action="${root}" method="get" role="search"><label class="sr-only" for="site-q">ابحث عن أداة</label><input id="site-q" name="q" type="search" placeholder="ابحث في ${live.length} أداة…" autocomplete="off"></form>
 ${author ? `<a class="about-top" href="${root}about/">تواصل معي</a>` : ""}${donateHtml(config, root)}<button class="icon-btn theme-toggle" type="button" aria-label="تبديل الوضع الداكن">☾</button>
 </div></header>
@@ -176,11 +178,13 @@ function toolPage(t, meta) {
 ${header(root, t.category)}
 <main id="main"><div class="wrap">
 ${crumbs(root, [{ title: SITE, href: root }, { title: catTitle[t.category], href: `${root}category/${t.category}/` }, { title: t.title }])}
-<div class="page-head g-${groupOf(t.category)}"><a class="badge-ic" href="${root}category/${t.category}/" aria-label="${esc(catTitle[t.category])}" title="${esc(catTitle[t.category])}">${catIcon(t.category)}</a><div><h1>${esc(t.title)}</h1>
-<p class="lead">${inline(meta.intro || meta.description)}</p></div></div>
+<div class="page-head g-${groupOf(t.category)}"><a class="badge-ic" href="${root}category/${t.category}/" aria-label="${esc(catTitle[t.category])}" title="${esc(catTitle[t.category])}">${toolPic(t, "pic-lg")}</a><div><h1>${esc(t.title)}</h1>
+<p class="lead clamp">${inline(meta.intro || meta.description)}</p></div></div>
 ${adSlot("header")}
-${formulas ? `<section class="card formulas" aria-labelledby="h-formulas"><h2 id="h-formulas">القوانين المستخدمة</h2>\n${formulas}\n</section>` : ""}
-<section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">المدخلات</h2>
+${formulas ? `<details class="card formulas"><summary><h2 id="h-formulas">📘 القانون المستخدم</h2><span class="sum-hint">اضغط للعرض</span></summary>
+${formulas}
+</details>` : ""}
+<section class="card" aria-labelledby="h-inputs"><h2 id="h-inputs">✏️ المدخلات</h2>
 <form id="tool-form" class="tool-form" novalidate>
 ${fields}
 ${exampleNote}
@@ -191,16 +195,16 @@ ${meta.inputHelp ? `<p class="help">${inline(meta.inputHelp)}</p>` : ""}
 <section id="output" class="card" aria-live="polite" tabindex="-1" hidden>
 <div id="out-error" class="error" role="alert" hidden></div>
 <div id="out-success" hidden>
-<div class="out-head"><h2>النتيجة</h2><div class="out-actions"><button class="btn" type="button" id="copy-btn">نسخ النتيجة</button><button class="btn" type="button" id="share-btn">مشاركة الرابط</button><button class="btn" type="button" id="print-btn">طباعة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
+<div class="out-head"><h2>✅ النتيجة</h2><div class="out-actions"><button class="btn" type="button" id="copy-btn">📋 نسخ</button><button class="btn" type="button" id="share-btn">🔗 مشاركة</button><button class="btn" type="button" id="print-btn">🖨️ طباعة</button> <span id="copy-status" class="copied" role="status"></span></div></div>
 <dl id="out-results" class="results"></dl>
 <div id="out-blocks"></div>
-<div id="steps-wrap"><h2>الحل خطوة بخطوة</h2><ol id="out-steps" class="steps"></ol></div>
+<div id="steps-wrap"><h2>🪜 الحل خطوة بخطوة</h2><ol id="out-steps" class="steps"></ol></div>
 </div>
 </section>
 <noscript><p class="note warn">هذه الأداة تحتاج تفعيل JavaScript لإجراء الحسابات.</p></noscript>
 ${adSlot("inContent")}
 ${meta.notes ? `<section class="card" aria-labelledby="h-notes"><h2 id="h-notes">ملاحظات</h2>${meta.notes.map((n) => `<p>${inline(n)}</p>`).join("")}</section>` : ""}
-${rel.length ? `<section class="related" aria-labelledby="h-related"><h2 id="h-related">أدوات ذات صلة</h2><ul>${rel.map((r) => `<li><a href="${root}tools/${r.slug}/">${esc(r.title)}</a></li>`).join("")}</ul></section>` : ""}
+${rel.length ? `<section class="related" aria-labelledby="h-related"><h2 id="h-related">🔗 أدوات ذات صلة</h2><ul class="chips">${rel.map((r) => `<li><a href="${root}tools/${r.slug}/">${toolPic(r, "pic-sm")}${esc(r.title)}</a></li>`).join("")}</ul></section>` : ""}
 ${adSlot("footer")}
 </div></main>
 ${footer(root)}
@@ -212,7 +216,12 @@ ${footer(root)}
 function toolCard(t, root) {
   const m = metas.get(t.slug);
   const search = [t.title, m.description, ...(m.keywords || []), catTitle[t.category], t.slug.replace(/-/g, " ")].join(" ");
-  return `<li data-search="${esc(search)}"><a class="g-${groupOf(t.category)}" href="${root}tools/${t.slug}/">${catIcon(t.category, "ic card-ic")}<strong>${esc(t.title)}</strong><small>${esc(m.description)}</small></a></li>`;
+  return `<li data-search="${esc(search)}"><a class="g-${groupOf(t.category)}" href="${root}tools/${t.slug}/" title="${esc(m.description)}">${toolPic(t)}<strong>${esc(t.title)}</strong></a></li>`;
+}
+
+function toolPic(t, cls = "pic") {
+  const e = TOOL_EMOJI[t.slug];
+  return e ? `<span class="${cls}" aria-hidden="true">${e}</span>` : `<span class="${cls}" aria-hidden="true">${catIcon(t.category)}</span>`;
 }
 
 const countOf = (slug) => live.filter((t) => t.category === slug).length;
@@ -230,29 +239,30 @@ function homePage() {
     if (!list.length) return "";
     return `<section class="cat-section g-${groupOf(c.slug)}" aria-labelledby="cat-${c.slug}"><h2 id="cat-${c.slug}"><a href="category/${c.slug}/">${catIcon(c.slug, "ic h-ic")}${esc(c.title)}</a></h2><ul class="tool-grid">${list.map((t) => toolCard(t, root)).join("")}</ul></section>`;
   }).join("\n");
-  const nCats = categories.filter((c) => countOf(c.slug)).length;
   const description = `${live.length} أداة مجانية بالعربية لطلاب الهندسة والعلوم والجامعة: رياضيات ودوائر وإلكترونيات، فيزياء وكيمياء وأحياء، إحصاء، طب وصيدلة، اقتصاد، حاسوب وشبكات، عمارة وبيئة، مع الحل خطوة بخطوة.`;
   const jsonld = { "@context": "https://schema.org", "@type": "WebSite", name: SITE, description, inLanguage: "ar" };
   if (siteUrl) jsonld.url = absUrl("");
-  return `${head({ title: `${SITE} | أدوات مجانية لطلاب الهندسة والعلوم مع الحل خطوة بخطوة`, description, path: "", root: "", jsonld }).replace(/href="(?:\.\.\/\.\.\/)?(vendor|assets)/g, 'href="$1')}
+  return `${head({ title: `${SITE} | ${config.tagline} — أدوات مجانية للطلاب`, description, path: "", root: "", jsonld }).replace(/href="(?:\.\.\/\.\.\/)?(vendor|assets)/g, 'href="$1')}
 <body>
 ${header("", null)}
 <main id="main"><div class="wrap">
 <div class="hero">
-<p class="eyebrow">مجاني بالكامل · بالعربية · بلا تسجيل</p>
-<h1>${esc(SITE)}: أدوات علمية وهندسية <span class="hl">مع الحل خطوة بخطوة</span></h1>
-<p class="lead">${live.length} أداة لطلاب الهندسة والعلوم وكل التخصصات الجامعية. كل أداة تعرض القانون والحل المفصّل بالعربية ومثالاً محلولاً، ويتحدّث الناتج فور تعديل المدخلات.</p>
-<form id="home-search-form" class="search-big" role="search"><label class="sr-only" for="home-search">ابحث في كل الأدوات</label><input id="home-search" type="search" placeholder="ماذا تريد أن تحسب؟ مثل: مشتقة، زكاة، تاريخ هجري، pH…" autocomplete="off"></form>
+<h1 class="brand-h1"><span class="logo-lg" aria-hidden="true">∑</span>${esc(SITE)}</h1>
+<p class="tagline">${esc(config.tagline || "")}</p>
+<p class="lead">${live.length} أداة مجانية بالعربية، مع الشرح.</p>
+<form id="home-search-form" class="search-big" role="search"><label class="sr-only" for="home-search">ابحث في كل الأدوات</label><input id="home-search" type="search" placeholder="🔍 ماذا تريد أن تحسب؟" autocomplete="off"></form>
 <p id="search-count" class="search-count" role="status"></p>
-<ul class="stats" aria-label="إحصاءات الموقع"><li><b>${live.length}</b> أداة</li><li><b>${nCats}</b> قسماً</li><li><b>100%</b> مجاني</li><li><b>0</b> تتبع</li></ul>
+<ul class="perks" aria-label="مزايا الموقع"><li>✅ مجاني</li><li>🔒 بلا تسجيل</li><li>🪜 حل خطوة بخطوة</li><li>📱 يعمل على الجوال</li></ul>
 </div>
-<section id="recent" class="recent" aria-labelledby="h-recent" hidden><h2 id="h-recent">آخر الأدوات التي استخدمتها</h2><ul class="chips"></ul></section>
-<section id="browse" class="browse" aria-labelledby="h-browse"><h2 id="h-browse">تصفّح الأقسام</h2>
+<section id="recent" class="recent" aria-labelledby="h-recent" hidden><h2 id="h-recent">🕘 استخدمتها مؤخراً</h2><ul class="chips"></ul></section>
+<section id="browse" class="browse" aria-labelledby="h-browse"><h2 id="h-browse" class="sr-only">الأقسام</h2>
 ${catTiles(root)}
 </section>
 ${adSlot("header")}
-<h2 class="all-title" id="h-all">كل الأدوات</h2>
+<div id="all-tools" hidden>
+<h2 class="all-title" id="h-all">نتائج البحث</h2>
 ${sections}
+</div>
 </div></main>
 ${footer("")}
 </body>
@@ -266,7 +276,7 @@ function categoryPage(c) {
   const description = `${c.title}: ${c.description}`;
   const jsonld = { "@context": "https://schema.org", "@type": "CollectionPage", name: c.title, description, inLanguage: "ar" };
   if (siteUrl) jsonld.url = absUrl(`category/${c.slug}/`);
-  const others = categories.filter((o) => o.slug !== c.slug).map((o) => `<li><a href="${root}category/${o.slug}/">${esc(o.title)}</a></li>`).join("");
+  const others = categories.filter((o) => o.slug !== c.slug).map((o) => `<li><a class="g-${groupOf(o.slug)}" href="${root}category/${o.slug}/">${catIcon(o.slug, "ic chip-ic")}${esc(o.title)}</a></li>`).join("");
   return `${head({ title: `${c.title} | ${SITE}`, description, path: `category/${c.slug}/`, root, jsonld })}
 <body>
 ${header(root, c.slug)}
@@ -274,7 +284,7 @@ ${header(root, c.slug)}
 ${crumbs(root, [{ title: SITE, href: root }, { title: c.title }])}
 <div class="page-head g-${groupOf(c.slug)}"><span class="badge-ic">${catIcon(c.slug)}</span><div><h1>${esc(c.title)}</h1><p class="lead">${esc(c.description)} <span class="count-pill">${toolsWord(list.length)}</span></p></div></div>
 ${list.length ? `<ul class="tool-grid">${list.map((t) => toolCard(t, root)).join("")}</ul>` : `<p class="note">الأدوات في هذا التصنيف قيد الإعداد.</p>`}
-<section class="related" aria-labelledby="h-other"><h2 id="h-other">تصنيفات أخرى</h2><ul>${others}</ul></section>
+<section class="related" aria-labelledby="h-other"><h2 id="h-other">🧭 أقسام أخرى</h2><ul class="chips">${others}</ul></section>
 </div></main>
 ${footer(root)}
 </body>
