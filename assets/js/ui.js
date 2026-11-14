@@ -32,7 +32,7 @@ export function blockHtml(b) {
   if (b.type === "table") {
     const head = b.head ? `<thead><tr>${b.head.map((h) => cellHtml(h, "th")).join("")}</tr></thead>` : "";
     const rows = b.rows.map((r) => `<tr>${r.map((c, i) => cellHtml(c, b.rowHeaders && i === 0 ? "th" : "td")).join("")}</tr>`).join("");
-    return `<div class="table-wrap"${b.ltr ? ' dir="ltr"' : ""}><table>${b.caption ? `<caption>${renderInline(b.caption)}</caption>` : ""}${head}<tbody>${rows}</tbody></table></div>`;
+    return `<div class="table-wrap"${b.ltr ? ' dir="ltr"' : ""}><table${b.wrap ? ' class="wrap"' : ""}>${b.caption ? `<caption>${renderInline(b.caption)}</caption>` : ""}${head}<tbody>${rows}</tbody></table></div>`;
   }
   if (b.type === "plot") return renderPlot(b);
   if (b.type === "note") return `<p class="note${b.tone === "warn" ? " warn" : ""}">${renderInline(b.text)}</p>`;
@@ -140,6 +140,7 @@ export async function initTool() {
     for (const el of form.querySelectorAll("[name]")) {
       if (el.closest("[hidden]")) continue;
       const v = el.type === "checkbox" ? (el.checked ? "1" : "") : el.value;
+      if (el.tagName === "TEXTAREA" && v.length > 2000) continue;
       if (v !== "") p.set(el.name, v);
     }
     return p.toString();
