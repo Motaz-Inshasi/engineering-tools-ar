@@ -287,6 +287,21 @@ input.addr { font-family: ui-monospace, Consolas, monospace; font-size: .95rem; 
   border: 1px solid var(--border); color: var(--text); text-decoration: none; font-weight: 600; font-size: .95rem; white-space: nowrap;
 }
 .about-top:hover { border-color: var(--accent); color: var(--accent); }
+.lang-menu { position: relative; }
+.lang-menu summary {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px; border-radius: 999px; cursor: pointer; list-style: none;
+  border: 1px solid var(--border); color: var(--text); font-weight: 600; font-size: .92rem; white-space: nowrap;
+}
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary:hover, .lang-menu[open] summary { border-color: var(--accent); color: var(--accent); }
+.lang-menu ul {
+  position: absolute; inset-inline-end: 0; top: calc(100% + 6px); z-index: 30; margin: 0; padding: 6px; list-style: none; min-width: 190px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, .16);
+}
+.lang-menu li a { display: block; padding: 9px 12px; border-radius: 8px; color: var(--text); text-decoration: none; }
+.lang-menu li a:hover { background: var(--surface-2); }
+.lang-menu li a[aria-current] { font-weight: 700; color: var(--accent); }
+@media (max-width: 560px) { .lang-menu summary span { display: none; } }
 
 .cats a { display: inline-flex; align-items: center; gap: 6px; }
 .cats a .ic { color: var(--gc, var(--muted)); width: 1.1em; height: 1.1em; }

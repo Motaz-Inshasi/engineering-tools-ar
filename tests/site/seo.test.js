@@ -6,6 +6,18 @@ import { execFileSync } from "node:child_process";
 import { htmlFiles, read, rel, ROOT } from "./helpers.js";
 import { tools, categories } from "../../assets/js/registry.js";
 import { donateInfo } from "../../scripts/site-parts.mjs";
+import { LANGS, RTL } from "../../scripts/i18n.mjs";
+
+const releasedPath = join(ROOT, "i18n", "released.json");
+const released = existsSync(releasedPath) ? JSON.parse(read(releasedPath)) : {};
+const langs = LANGS.filter((l) => (released[l] || []).length);
+const langOf = (r) => { const m = r.match(/^([a-z]{2})\//); return m && langs.includes(m[1]) ? m[1] : "ar"; };
+const libExists = (l, t) => existsSync(join(ROOT, `lib-${l}`, t.category, `${t.slug}.js`));
+const langPaths = (l) => {
+  const ts = tools.filter((t) => released[l].includes(t.category) && libExists(l, t));
+  const cs = categories.filter((c) => ts.some((t) => t.category === c.slug));
+  return ["", ...cs.map((c) => `category/${c.slug}/`), ...ts.map((t) => `tools/${t.slug}/`), ...(supportOn ? ["support/"] : []), ...(aboutOn ? ["about/"] : [])].map((x) => `${l}/${x}`);
+};
 
 const supportOn = donateInfo(JSON.parse(read(join(ROOT, "site.config.json")))).enabled;
 const aboutOn = !!JSON.parse(read(join(ROOT, "site.config.json"))).author;
@@ -21,7 +33,12 @@ test("كل صفحة لها lang و dir وعنوان ووصف و canonical و Ope
   const titles = new Map(), descs = new Map();
   for (const f of pages) {
     const html = read(f), r = rel(f);
-    assert.match(html, /<html lang="ar" dir="rtl">/, r);
+    const l = langOf(r);
+    assert.ok(html.includes(`<html lang="${l}" dir="${RTL.has(l) ? "rtl" : "ltr"}">`), r);
+    if (l !== "ar") {
+      assert.match(html, /<link rel="alternate" hreflang="x-default"/, r);
+      assert.ok(html.includes(`hreflang="ar"`), r);
+    }
     const title = get(html, /<title>([^<]+)<\/title>/);
     const desc = get(html, /<meta name="description" content="([^"]+)">/);
     assert.ok(title && title.length >= 10 && title.length <= 90, `${r}: title «${title}»`);
@@ -29,11 +46,11 @@ test("كل صفحة لها lang و dir وعنوان ووصف و canonical و Ope
     assert.match(html, /<link rel="canonical" href="[^"]+">/, r);
     for (const p of ["og:title", "og:description", "og:type", "og:locale", "og:site_name"]) assert.ok(html.includes(`property="${p}"`), `${r}: ${p}`);
     assert.match(html, /<meta name="viewport"/, r);
-    assert.ok(!titles.has(title), `${r}: duplicate title with ${titles.get(title)}`);
-    assert.ok(!descs.has(desc), `${r}: duplicate description with ${descs.get(desc)}`);
-    titles.set(title, r); descs.set(desc, r);
+    assert.ok(!titles.has(l + title), `${r}: duplicate title with ${titles.get(l + title)}`);
+    assert.ok(!descs.has(l + desc), `${r}: duplicate description with ${descs.get(l + desc)}`);
+    titles.set(l + title, r); descs.set(l + desc, r);
   }
-  assert.equal(pages.length, 1 + categories.length + tools.length + (supportOn ? 1 : 0) + (aboutOn ? 1 : 0));
+  assert.equal(pages.length, 1 + categories.length + tools.length + (supportOn ? 1 : 0) + (aboutOn ? 1 : 0) + langs.reduce((n, l) => n + langPaths(l).length, 0));
 });
 
 test("بيانات JSON-LD صالحة في كل صفحة", () => {
@@ -53,7 +70,7 @@ test("كل صفحة في sitemap، وكل رابط في sitemap يشير إلى 
   const config = JSON.parse(read(join(ROOT, "site.config.json")));
   const base = (config.siteUrl || "").replace(/\/+$/, "");
   const paths = locs.map((l) => (base ? l.slice(base.length + 1) : l === "./" ? "" : l));
-  const expected = ["", ...categories.map((c) => `category/${c.slug}/`), ...tools.map((t) => `tools/${t.slug}/`), ...(supportOn ? ["support/"] : []), ...(aboutOn ? ["about/"] : [])];
+  const expected = ["", ...categories.map((c) => `category/${c.slug}/`), ...tools.map((t) => `tools/${t.slug}/`), ...(supportOn ? ["support/"] : []), ...(aboutOn ? ["about/"] : []), ...langs.flatMap(langPaths)];
   assert.deepEqual([...paths].sort(), [...expected].sort());
   for (const p of paths) assert.ok(existsSync(join(ROOT, p, "index.html")), p);
 });

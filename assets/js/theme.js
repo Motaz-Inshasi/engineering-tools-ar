@@ -1,3 +1,5 @@
+import { t } from "./strings.js";
+
 function current() {
   const t = document.documentElement.dataset.theme;
   if (t === "dark" || t === "light") return t;
@@ -6,7 +8,7 @@ function current() {
 
 function label(btn) {
   const dark = current() === "dark";
-  btn.setAttribute("aria-label", dark ? "التبديل إلى الوضع الفاتح" : "التبديل إلى الوضع الداكن");
+  btn.setAttribute("aria-label", dark ? t("التبديل إلى الوضع الفاتح") : t("التبديل إلى الوضع الداكن"));
   btn.setAttribute("aria-pressed", dark ? "true" : "false");
   btn.textContent = dark ? "☀" : "☾";
 }

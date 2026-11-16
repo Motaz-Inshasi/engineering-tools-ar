@@ -1,6 +1,9 @@
 import { renderTex, renderInline, escapeHtml } from "./math-render.js";
 import { renderPlot } from "./plot.js";
 import { fmt, eng } from "../../lib/core/format.js";
+import { t } from "./strings.js";
+
+export const recentKey = () => (document.documentElement.lang === "ar" ? "recentTools" : `recentTools-${document.documentElement.lang}`);
 
 export function displayValue(r) {
   if (r.display !== undefined) return String(r.display);
@@ -103,7 +106,8 @@ async function copyToClipboard(text) {
 
 export async function initTool() {
   const { tool, category } = document.body.dataset;
-  const mod = await import(`../../lib/${category}/${tool}.js`);
+  const lib = /^lib(-[a-z]{2})?$/.test(document.body.dataset.lib || "") ? document.body.dataset.lib : "lib";
+  const mod = await import(`../../${lib}/${category}/${tool}.js`);
   const form = document.getElementById("tool-form");
   const out = document.getElementById("output");
   const err = document.getElementById("out-error");
@@ -150,10 +154,10 @@ export async function initTool() {
     try {
       const h1 = document.querySelector("h1");
       const item = { slug: document.body.dataset.tool, title: h1 ? h1.textContent.trim() : document.title };
-      let list = JSON.parse(localStorage.getItem("recentTools") || "[]");
+      let list = JSON.parse(localStorage.getItem(recentKey()) || "[]");
       if (!Array.isArray(list)) list = [];
       list = [item, ...list.filter((x) => x && x.slug !== item.slug)].slice(0, 8);
-      localStorage.setItem("recentTools", JSON.stringify(list));
+      localStorage.setItem(recentKey(), JSON.stringify(list));
     } catch {}
   }
 
@@ -166,7 +170,7 @@ export async function initTool() {
       res = mod.solve(readValues(form));
     } catch (e) {
       if (e && e.name === "InputError") showError(e.message, e.field, !quiet);
-      else { console.error(e); showError("حدث خطأ غير متوقع أثناء الحساب. تحقّق من المدخلات وحاول مجدداً.", null, !quiet); }
+      else { console.error(e); showError(t("حدث خطأ غير متوقع أثناء الحساب. تحقّق من المدخلات وحاول مجدداً."), null, !quiet); }
       return;
     }
     if (!live) { live = true; if (liveHint) liveHint.hidden = false; }
@@ -206,7 +210,7 @@ export async function initTool() {
       try { await navigator.share({ title: document.title, url }); return; } catch {}
     }
     const ok = await copyToClipboard(url);
-    copyStatus.textContent = ok ? "تم نسخ رابط الحل بمدخلاتك" : "تعذر النسخ، انسخ الرابط من شريط العنوان";
+    copyStatus.textContent = ok ? t("تم نسخ رابط الحل بمدخلاتك") : t("تعذر النسخ، انسخ الرابط من شريط العنوان");
   });
   printBtn?.addEventListener("click", () => window.print());
   document.getElementById("example-btn")?.addEventListener("click", () => {
@@ -216,7 +220,7 @@ export async function initTool() {
   });
   copyBtn.addEventListener("click", async () => {
     const ok = await copyToClipboard(lastCopy);
-    copyStatus.textContent = ok ? "تم النسخ" : "تعذر النسخ، حدّد النص يدوياً";
+    copyStatus.textContent = ok ? t("تم النسخ") : t("تعذر النسخ، حدّد النص يدوياً");
   });
   applyWhen(form);
   remember();

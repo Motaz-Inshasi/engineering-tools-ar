@@ -1,4 +1,5 @@
 import { normalizeArabic, matches } from "../../lib/core/text.js";
+import { t } from "./strings.js";
 
 export { normalizeArabic, matches };
 
@@ -21,7 +22,7 @@ export function initSearch() {
     const all = document.getElementById("all-tools"); if (all) all.hidden = !searching;
     const rc = document.getElementById("recent");
     if (rc && rc.querySelector("li")) rc.hidden = searching;
-    count.textContent = q.trim() ? (shown ? `${shown} أداة مطابقة` : "لا توجد أداة مطابقة، جرّب كلمة أخرى") : "";
+    count.textContent = q.trim() ? (shown ? t("{0} أداة مطابقة", shown) : t("لا توجد أداة مطابقة، جرّب كلمة أخرى")) : "";
     try {
       const url = new URL(location.href);
       if (q.trim()) url.searchParams.set("q", q); else url.searchParams.delete("q");

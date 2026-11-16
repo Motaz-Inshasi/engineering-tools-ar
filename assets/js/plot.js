@@ -1,4 +1,5 @@
 import { escapeHtml } from "./math-render.js";
+import { t } from "./strings.js";
 
 const COLORS = ["var(--plot-1)", "var(--plot-2)", "var(--plot-3)", "var(--plot-4)"];
 
@@ -125,7 +126,7 @@ export function renderPlot(block) {
   });
   if (block.xLabel) parts.push(`<text x="${(ml + W - mr) / 2}" y="${H - 8}" text-anchor="middle" font-size="16" style="fill:var(--text)">${escapeHtml(block.xLabel)}</text>`);
   if (block.yLabel) parts.push(`<text x="14" y="${(mt + H - mb) / 2}" text-anchor="middle" font-size="16" transform="rotate(-90 14 ${(mt + H - mb) / 2})" style="fill:var(--text)">${escapeHtml(block.yLabel)}</text>`);
-  const title = block.title || "رسم بياني";
+  const title = block.title || t("رسم بياني");
   const svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${escapeHtml(title)}" dir="ltr" xmlns="http://www.w3.org/2000/svg">${parts.join("")}</svg>`;
   const legend = series.length > 1 || series.some((s) => s.name)
     ? `<div class="legend">${series.filter((s) => s.name).map((s, i) => `<span><i style="background:${s.color || COLORS[block.series.indexOf(block.series.find((b) => b.name === s.name)) % COLORS.length]}"></i>${escapeHtml(s.name)}</span>`).join("")}</div>`

@@ -1,4 +1,7 @@
 import { initTheme } from "./theme.js";
+import { t } from "./strings.js";
+
+const recentKey = document.documentElement.lang === "ar" ? "recentTools" : `recentTools-${document.documentElement.lang}`;
 
 initTheme();
 
@@ -20,7 +23,7 @@ for (const btn of document.querySelectorAll("[data-copy]")) {
       field.select();
       try { ok = document.execCommand("copy"); } catch { ok = false; }
     }
-    if (status) status.textContent = ok ? "تم النسخ" : "حدّد النص وانسخه يدوياً";
+    if (status) status.textContent = ok ? t("تم النسخ") : t("حدّد النص وانسخه يدوياً");
   });
 }
 
@@ -28,14 +31,14 @@ const rev = (s) => [...(s || "")].reverse().join("");
 for (const a of document.querySelectorAll("[data-u][data-d]")) {
   const mail = `${rev(a.dataset.u)}@${rev(a.dataset.d)}`;
   a.href = `mailto:${mail}`;
-  const t = a.querySelector(".email-text");
-  if (t) t.textContent = mail;
+  const span = a.querySelector(".email-text");
+  if (span) span.textContent = mail;
 }
 
 const recentEl = document.getElementById("recent");
 if (recentEl) {
   let list = [];
-  try { list = JSON.parse(localStorage.getItem("recentTools") || "[]"); } catch { list = []; }
+  try { list = JSON.parse(localStorage.getItem(recentKey) || "[]"); } catch { list = []; }
   list = Array.isArray(list) ? list.filter((x) => x && /^[a-z0-9-]+$/.test(x.slug) && typeof x.title === "string").slice(0, 8) : [];
   if (list.length) {
     const ul = recentEl.querySelector("ul");
