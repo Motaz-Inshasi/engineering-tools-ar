@@ -1,0 +1,22 @@
+{
+  "e6e65f097dcb": "Herhangi bir kimyasal denklemi, her elementin atom sayısını koruyan en küçük tam katsayıları bularak otomatik denkleştirin; iki taraftaki atomların kontrol tablosu ve cebirsel çözüm yöntemiyle.",
+  "7a6328ef0ce2": "denklem denkleştirme",
+  "632d157eab0b": "kimyasal denklemi denkleştirme",
+  "1dd63530b50e": "katsayılar",
+  "cd6b5d1ac63f": "kütlenin korunumu",
+  "363d68e354c7": "kimyasal tepkime",
+  "57970091eb7f": "Her element için atomların korunumu",
+  "9384f499153c": "Denklem",
+  "48baef80653e": "Maddeleri + ile ayırın, iki tarafı ok -> veya = ile birleştirin, örn. Fe + O2 -> Fe2O3. Girilen katsayılar yok sayılır.",
+  "dce7fc6386d8": "Örnek: potasyum permanganatın hidroklorik asitle tepkimesi.",
+  "e5afe53a081c": "Denkleştirilmiş denklem",
+  "53abdb460f44": "Her madde için bilinmeyen bir katsayı koyalım: {%0}.",
+  "ed8253e03a90": "{%0} önünde {%1}",
+  "808552636f1d": "Her element için atom korunumu denklemini yazalım:",
+  "2f8b548e6158": "Doğrusal sistemi çözer ve en küçük pozitif tam sayıları seçeriz:",
+  "7d0e49c36b3d": "Denkleştirilmiş denklem:",
+  "69e172a2a4bc": "Doğrulama: iki taraftaki atom sayıları",
+  "822741d8afd7": "Element",
+  "896d1ae5e97e": "Girenler",
+  "bc60a9a70e24": "Ürünler"
+}

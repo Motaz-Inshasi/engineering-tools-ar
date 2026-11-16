@@ -1,0 +1,22 @@
+{
+  "e6e65f097dcb": "Menyeimbangkan persamaan kimia apa pun secara otomatis dengan mencari koefisien bilangan bulat terkecil yang menjaga jumlah atom setiap unsur, dengan tabel pemeriksaan atom di kedua sisi dan metode penyelesaian aljabar.",
+  "7a6328ef0ce2": "Penyetaraan persamaan",
+  "632d157eab0b": "penyetaraan persamaan kimia",
+  "1dd63530b50e": "koefisien",
+  "cd6b5d1ac63f": "kekekalan massa",
+  "363d68e354c7": "reaksi kimia",
+  "57970091eb7f": "Kekekalan atom untuk setiap unsur",
+  "9384f499153c": "Persamaan",
+  "48baef80653e": "Pisahkan zat dengan +, dan kedua sisi dengan panah -> atau =, misalnya Fe + O2 -> Fe2O3. Koefisien yang sudah ada diabaikan.",
+  "dce7fc6386d8": "Contoh: reaksi kalium permanganat dengan asam klorida.",
+  "e5afe53a081c": "Persamaan seimbang",
+  "53abdb460f44": "Kita beri koefisien yang belum diketahui di depan setiap zat: {%0}.",
+  "ed8253e03a90": "{%0} di depan {%1}",
+  "808552636f1d": "Kita tulis persamaan kekekalan atom untuk setiap unsur:",
+  "2f8b548e6158": "Kita selesaikan sistem linear dan memilih bilangan bulat positif terkecil:",
+  "7d0e49c36b3d": "Persamaan seimbang:",
+  "69e172a2a4bc": "Pemeriksaan: jumlah atom di kedua sisi",
+  "822741d8afd7": "Unsur",
+  "896d1ae5e97e": "Pereaksi",
+  "bc60a9a70e24": "Produk"
+}

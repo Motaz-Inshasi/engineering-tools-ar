@@ -1,0 +1,18 @@
+{
+  "f77dce859ae3": "Kurung tidak berpasangan «{%0}».",
+  "38737506eb03": "Lambang «{%0}» bukan unsur yang dikenal. Ingat bahwa huruf pertama kapital dan huruf kedua kecil (misalnya Cl dan Na).",
+  "f19ca3c45005": "Huruf «{%0}» harus kapital di awal lambang unsur (misalnya {%1}).",
+  "0d0f0fdf62dd": "Lambang «{%0}» tidak dipahami dalam rumus.",
+  "99127c3577ff": "Ada kurung buka yang tidak ditutup.",
+  "9a1d3b80c600": "Rumus kosong.",
+  "b1a44876769e": "Rumus senyawa terhidrat tidak lengkap (misalnya CuSO4·5H2O).",
+  "6cc382077040": "Ada angka tanpa unsur dalam rumus.",
+  "b53d603b6479": "Rumus tidak mengandung unsur.",
+  "b276cf15a367": "Tulis persamaan dengan dua sisi yang dipisahkan satu panah, misalnya: H2 + O2 -> H2O",
+  "b0d50b3904ce": "Setiap sisi persamaan memerlukan setidaknya satu zat.",
+  "f3b5f815c4ef": "Pada «{%0}»: {%1}",
+  "77014093f678": "Unsur {%0} hanya muncul di satu sisi persamaan, sehingga persamaan tidak dapat diseimbangkan.",
+  "c5a95bd240b6": "Tidak ada koefisien positif yang menyeimbangkan persamaan ini. Periksa rumusnya.",
+  "17425898370a": "Persamaan ini memiliki lebih dari satu penyeimbangan independen (menggabungkan dua reaksi atau lebih). Pisahkan menjadi reaksi terpisah.",
+  "539097e83cff": "Tidak ada koefisien positif yang menyeimbangkan persamaan ini. Mungkin salah satu zat berada di sisi yang keliru."
+}

@@ -1,0 +1,42 @@
+export const CODONS = {
+"UUU": "F", "UUC": "F", "UUA": "L", "UUG": "L",
+"CUU": "L", "CUC": "L", "CUA": "L", "CUG": "L",
+"AUU": "I", "AUC": "I", "AUA": "I", "AUG": "M",
+"GUU": "V", "GUC": "V", "GUA": "V", "GUG": "V",
+"UCU": "S", "UCC": "S", "UCA": "S", "UCG": "S",
+"CCU": "P", "CCC": "P", "CCA": "P", "CCG": "P",
+"ACU": "T", "ACC": "T", "ACA": "T", "ACG": "T",
+"GCU": "A", "GCC": "A", "GCA": "A", "GCG": "A",
+"UAU": "Y", "UAC": "Y", "UAA": "*", "UAG": "*",
+"CAU": "H", "CAC": "H", "CAA": "Q", "CAG": "Q",
+"AAU": "N", "AAC": "N", "AAA": "K", "AAG": "K",
+"GAU": "D", "GAC": "D", "GAA": "E", "GAG": "E",
+"UGU": "C", "UGC": "C", "UGA": "*", "UGG": "W",
+"CGU": "R", "CGC": "R", "CGA": "R", "CGG": "R",
+"AGU": "S", "AGC": "S", "AGA": "R", "AGG": "R",
+"GGU": "G", "GGC": "G", "GGA": "G", "GGG": "G"
+};
+
+export const AMINO = {
+"A": { three: "Ala", en: "Alanine", ar: "الانین" },
+"R": { three: "Arg", en: "Arginine", ar: "آرجنین" },
+"N": { three: "Asn", en: "Asparagine", ar: "ایسپیراجین" },
+"D": { three: "Asp", en: "Aspartic acid", ar: "ایسپارٹک ایسڈ" },
+"C": { three: "Cys", en: "Cysteine", ar: "سسٹین" },
+"Q": { three: "Gln", en: "Glutamine", ar: "گلوٹامین" },
+"E": { three: "Glu", en: "Glutamic acid", ar: "گلوٹامک ایسڈ" },
+"G": { three: "Gly", en: "Glycine", ar: "گلائسین" },
+"H": { three: "His", en: "Histidine", ar: "ہسٹڈین" },
+"I": { three: "Ile", en: "Isoleucine", ar: "آئسولیوسین" },
+"L": { three: "Leu", en: "Leucine", ar: "لیوسین" },
+"K": { three: "Lys", en: "Lysine", ar: "لائسین" },
+"M": { three: "Met", en: "Methionine", ar: "میتھیونین" },
+"F": { three: "Phe", en: "Phenylalanine", ar: "فینائل الانین" },
+"P": { three: "Pro", en: "Proline", ar: "پرولین" },
+"S": { three: "Ser", en: "Serine", ar: "سیرین" },
+"T": { three: "Thr", en: "Threonine", ar: "تھریونین" },
+"W": { three: "Trp", en: "Tryptophan", ar: "ٹرپٹوفین" },
+"Y": { three: "Tyr", en: "Tyrosine", ar: "ٹائروسین" },
+"V": { three: "Val", en: "Valine", ar: "ویلین" },
+"*": { three: "Stop", en: "Stop", ar: "توقف" }
+};

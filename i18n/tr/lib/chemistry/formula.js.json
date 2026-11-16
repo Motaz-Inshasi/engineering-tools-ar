@@ -1,0 +1,18 @@
+{
+  "f77dce859ae3": "Eşleşmeyen parantez «{%0}».",
+  "38737506eb03": "«{%0}» tanınan bir element değil. İlk harfin büyük, ikincisinin küçük olduğunu unutmayın (örn. Cl ve Na).",
+  "f19ca3c45005": "«{%0}» harfi element sembolünün başında büyük olmalıdır (örn. {%1}).",
+  "0d0f0fdf62dd": "Formülde «{%0}» işareti anlaşılmadı.",
+  "99127c3577ff": "Kapanmamış bir parantez var.",
+  "9a1d3b80c600": "Formül boş.",
+  "b1a44876769e": "Kristal suyu formülü eksik (örn. CuSO4·5H2O).",
+  "6cc382077040": "Formülde elementsiz bir sayı var.",
+  "b53d603b6479": "Formül element içermiyor.",
+  "b276cf15a367": "Denklemi iki taraflı, aralarında tek ok olacak şekilde yazın, örn. H2 + O2 -> H2O",
+  "b0d50b3904ce": "Denklemin her tarafında en az bir madde olmalıdır.",
+  "f3b5f815c4ef": "«{%0}» içinde: {%1}",
+  "77014093f678": "{%0} elementi denklemin yalnızca bir tarafında var, bu nedenle denkleştirilemez.",
+  "c5a95bd240b6": "Bu denklemi dengeleyen pozitif bir katsayı kümesi yok. Formülleri kontrol edin.",
+  "17425898370a": "Denklem birden fazla bağımsız denkleştirmeye izin veriyor (iki veya daha fazla tepkimeyi birleştiriyor). Bunları ayrı tepkimelere ayırın.",
+  "539097e83cff": "Bu denklemi dengeleyen pozitif bir katsayı kümesi yok. Maddelerden biri belki yanlış tarafta."
+}
