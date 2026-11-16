@@ -44,7 +44,8 @@ function units(src) {
   walk(ast, null, (n, parent) => {
     if (n.type === "Literal" && typeof n.value === "string" && ARABIC_LETTER.test(n.value)) {
       if (parent && (parent.type === "ImportDeclaration" || parent.type === "ExportNamedDeclaration" || parent.type === "ExportAllDeclaration")) return;
-      found.push({ kind: "str", start: n.start, end: n.end, text: n.value });
+      const desc = parent && parent.type === "Property" && parent.value === n && !parent.computed && (parent.key.name || parent.key.value) === "description";
+      found.push({ kind: "str", start: n.start, end: n.end, text: n.value, desc });
       return;
     }
     if (n.type === "TemplateLiteral" && !(parent && parent.type === "TaggedTemplateExpression")) {
@@ -71,6 +72,7 @@ export function extract(file) {
     const ctx = src.slice(lineStart, lineEnd < 0 ? undefined : lineEnd).trim().slice(0, 160);
     const entry = { k, text: u.text };
     if (u.text.length < 40) entry.ctx = ctx;
+    if (u.desc) entry.max = file === "assets/js/registry.js" ? 230 : 300;
     seen.set(k, entry);
   }
   return [...seen.values()];
@@ -182,10 +184,31 @@ function cmdTodo(lang, prefix) {
     if (!existsSync(src)) continue;
     const list = JSON.parse(readFileSync(src, "utf8"));
     const dict = loadDict(lang, f);
-    const miss = list.filter((u) => (f === "ui" ? !validUi(u, dict[u.k]) : !validTranslation(u.text, dict[u.k])));
+    const miss = list.filter((u) => (f === "ui" ? !validUi(u, dict[u.k]) : !validTranslation(u.text, dict[u.k]) || (u.max && dict[u.k].length > u.max)));
     if (miss.length) out.push(`${f}\t${miss.length}\t${miss.reduce((s, u) => s + u.text.length, 0)}`);
   }
   console.log(out.join("\n") || "nothing to translate");
+}
+
+function cmdFixNums(lang) {
+  let fixed = 0;
+  for (const f of [...sourceFiles(), "ui"]) {
+    const src = join(ROOT, "i18n", "src", `${f}.json`);
+    const out = join(ROOT, "i18n", lang, `${f}.json`);
+    if (!existsSync(src) || !existsSync(out)) continue;
+    const list = JSON.parse(readFileSync(src, "utf8"));
+    const dict = loadDict(lang, f);
+    let changed = false;
+    for (const u of list) {
+      const tr = dict[u.k];
+      if (typeof tr !== "string") continue;
+      let next = tr;
+      for (const num of new Set(u.text.match(/\d+\.\d+/g) || [])) next = next.split(num.replace(".", ",")).join(num);
+      if (next !== tr) { dict[u.k] = next; changed = true; fixed++; }
+    }
+    if (changed) writeFileSync(out, JSON.stringify(dict, null, 1) + "\n");
+  }
+  console.log(`${lang}: ${fixed} strings restored to source decimal points`);
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
@@ -193,5 +216,6 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   if (cmd === "extract") cmdExtract();
   else if (cmd === "build") cmdBuild(args.length ? args : LANGS);
   else if (cmd === "todo") cmdTodo(args[0], args[1]);
+  else if (cmd === "fixnums") for (const l of args.length ? args : LANGS) cmdFixNums(l);
   else console.log("usage: node scripts/i18n.mjs extract | build [langs...] | todo <lang> [prefix]");
 }

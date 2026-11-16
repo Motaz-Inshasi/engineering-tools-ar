@@ -7,7 +7,7 @@ const N = (x) => fmt(x, 10);
 const P = (x) => `${fmt(x, 10)}%`;
 
 export const meta = {
-  description: "Calculate a percentage in seven modes: a percentage of a number, what percentage a number is of another, the percent change between two values, increasing or decreasing a value by a percentage, finding the original value before a change, or the difference between two percentages in percentage points.",
+  description: "Calculate percentages in seven modes: a percent of a number, what percent one number is of another, percent change between values, increasing or decreasing a value by a percent, the original value before a change, or the difference between two percentages in percentage points.",
   keywords: ["percentage", "percentage", "percent change", "increase by a percentage", "decrease by a percentage", "percentage points", "percentage points", "original value"],
   formulas: [
     { label: "Percentage of a number", tex: "P = \\frac{X}{100}\\, Y" },

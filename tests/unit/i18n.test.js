@@ -49,6 +49,15 @@ test("ملفات النصوص المستخرجة محدّثة مع الكود ا
   }
 });
 
+test("المتغيرات المسماة {name} في قاعدة شرح الأخطاء محفوظة في كل اللغات", () => {
+  const src = JSON.parse(readFileSync(join(ROOT, "i18n", "src", "lib", "programming", "error-db.js.json"), "utf8"));
+  const names = (s) => (String(s).match(/(?<![\\\w])\{[a-z]\w*\}/g) || []).sort().join(",");
+  for (const lang of LANGS) {
+    const dict = loadDict(lang, "lib/programming/error-db.js");
+    for (const u of src) if (dict[u.k] !== undefined) assert.equal(names(dict[u.k]), names(u.text), `${lang} ${u.k}: «${dict[u.k]}»`);
+  }
+});
+
 for (const lang of LANGS) {
   if (!existsSync(join(ROOT, `lib-${lang}`))) continue;
   test(`${lang}: نسخة الأدوات المبنية محدّثة مع الكود العربي والترجمات`, () => {

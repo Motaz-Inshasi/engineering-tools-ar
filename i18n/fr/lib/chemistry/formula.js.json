@@ -1,0 +1,18 @@
+{
+  "f77dce859ae3": "Parenthèse non appariée «{%0}».",
+  "38737506eb03": "Le symbole «{%0}» n'est pas un élément connu. Rappelez-vous que la première lettre est majuscule et la seconde minuscule (par exemple Cl et Na).",
+  "f19ca3c45005": "La lettre «{%0}» doit être majuscule au début d'un symbole d'élément (par exemple {%1}).",
+  "0d0f0fdf62dd": "Le symbole «{%0}» n'est pas compréhensible dans la formule.",
+  "99127c3577ff": "Une parenthèse ouverte n'a pas été fermée.",
+  "9a1d3b80c600": "La formule est vide.",
+  "b1a44876769e": "La formule de l'eau de cristallisation est incomplète (par exemple CuSO4·5H2O).",
+  "6cc382077040": "Un nombre apparaît dans la formule sans élément.",
+  "b53d603b6479": "La formule ne contient aucun élément.",
+  "b276cf15a367": "Écrivez l'équation avec deux membres séparés par une seule flèche, par exemple : H2 + O2 -> H2O",
+  "b0d50b3904ce": "Chaque membre de l'équation doit contenir au moins une substance.",
+  "f3b5f815c4ef": "Dans «{%0}» : {%1}",
+  "77014093f678": "L'élément {%0} n'apparaît que dans un seul membre de l'équation, elle ne peut donc pas être équilibrée.",
+  "c5a95bd240b6": "Aucun coefficient positif n'équilibre cette équation. Vérifiez les formules.",
+  "17425898370a": "L'équation admet plusieurs équilibrages indépendants (elle combine deux réactions ou plus). Séparez-la en réactions distinctes.",
+  "539097e83cff": "Aucun coefficient positif n'équilibre cette équation. Une des substances est peut-être du mauvais côté."
+}

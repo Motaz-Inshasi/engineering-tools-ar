@@ -1,0 +1,22 @@
+{
+  "297f5d2932de": "Les variables sont des lettres latines isolées. AND : AB, A·B ou A&B. OR : A+B. NOT : A' ou !A. XOR : A^B. AND, OR, NOT et XOR peuvent aussi s'écrire en toutes lettres.",
+  "2be107430d71": "Générez la table de vérité de toute expression logique jusqu'à 8 variables, avec les minterms, les maxterms et les formes canoniques en somme de produits (SOP) et produit de sommes (POS).",
+  "741327099653": "Table de vérité",
+  "446182fc4c2f": "Algèbre de Boole",
+  "734f64a2911b": "Logique",
+  "e252a998d7e3": "Minterms",
+  "8f737531962e": "Les deux formes canoniques",
+  "162e31eb56a8": "Priorité des opérations",
+  "94a7a130491b": "Expression logique",
+  "f60e5553aa68": "Exemple : $F = AB + \\overline{A}C$.",
+  "399da4424c94": "Expression",
+  "18780bf03f44": "Nombre maximal de variables : 8.",
+  "1c00c6757e78": "Variables : {%0}, donc le nombre de lignes est $2^{{%1}} = {%2}$.",
+  "4d9c94516aca": "Aucune (expression constante)",
+  "950eff060c07": "On évalue l'expression pour chaque combinaison selon la priorité : NOT, puis AND, puis XOR, puis OR (voir le tableau).",
+  "d9a9aafd2c4f": "Les lignes dont la sortie vaut 1 donnent les minterms ; chaque minterm est un produit de toutes les variables (la variable à 0 est niée) :",
+  "813a13e71e5e": "Les lignes dont la sortie vaut 0 donnent les maxterms (la variable à 1 est niée dans la somme) :",
+  "1aed83134453": "Minterms",
+  "243116b0e1d0": "Maxterms",
+  "a394b6db69cd": "Somme de produits canonique"
+}

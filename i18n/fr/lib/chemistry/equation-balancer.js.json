@@ -1,0 +1,22 @@
+{
+  "e6e65f097dcb": "Équilibre automatiquement toute équation chimique en trouvant les plus petits coefficients entiers qui conservent le nombre d'atomes de chaque élément, avec le tableau de vérification des atomes des deux côtés et la méthode algébrique de résolution.",
+  "7a6328ef0ce2": "équilibrage des équations",
+  "632d157eab0b": "équilibrer l'équation chimique",
+  "1dd63530b50e": "coefficients",
+  "cd6b5d1ac63f": "conservation de la masse",
+  "363d68e354c7": "réaction chimique",
+  "57970091eb7f": "Conservation des atomes de chaque élément",
+  "9384f499153c": "Équation",
+  "48baef80653e": "Séparez les substances par +, et les deux membres par une flèche -> ou =, par exemple Fe + O2 -> Fe2O3. Les coefficients existants sont ignorés.",
+  "dce7fc6386d8": "Exemple : réaction du permanganate de potassium avec l'acide chlorhydrique.",
+  "e5afe53a081c": "Équation équilibrée",
+  "53abdb460f44": "On place un coefficient inconnu devant chaque substance : {%0}.",
+  "ed8253e03a90": "{%0} devant {%1}",
+  "808552636f1d": "On écrit l'équation de conservation des atomes pour chaque élément :",
+  "2f8b548e6158": "On résout le système linéaire et on retient les plus petits entiers positifs :",
+  "7d0e49c36b3d": "Équation équilibrée :",
+  "69e172a2a4bc": "Vérification : nombre d'atomes des deux côtés",
+  "822741d8afd7": "Élément",
+  "896d1ae5e97e": "Réactifs",
+  "bc60a9a70e24": "Produits"
+}

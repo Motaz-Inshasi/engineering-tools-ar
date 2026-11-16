@@ -1,0 +1,8 @@
+{
+  "efe61db9c4a5": "Función de transferencia",
+  "42a87a2123cc": "{%0} debe ser una función racional de s (cociente de polinomios).",
+  "1d5c23e7cbe5": "{%0} es igual a cero.",
+  "e336d0460b95": "{%0} debe ser un polinomio, no una fracción.",
+  "6716e08fbdd5": "El denominador de {%0} debe contener s.",
+  "34e363f7e8a5": "El grado máximo es 12."
+}

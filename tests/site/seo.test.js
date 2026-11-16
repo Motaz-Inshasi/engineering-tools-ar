@@ -40,7 +40,7 @@ test("كل صفحة لها lang و dir وعنوان ووصف و canonical و Ope
       assert.ok(html.includes(`hreflang="ar"`), r);
     }
     const title = get(html, /<title>([^<]+)<\/title>/);
-    const desc = get(html, /<meta name="description" content="([^"]+)">/);
+    const desc = (get(html, /<meta name="description" content="([^"]+)">/) || "").replace(/&#39;|&quot;|&amp;|&lt;|&gt;/g, "x");
     assert.ok(title && title.length >= 10 && title.length <= 90, `${r}: title «${title}»`);
     assert.ok(desc && desc.length >= 50 && desc.length <= 320, `${r}: description length ${desc?.length}`);
     assert.match(html, /<link rel="canonical" href="[^"]+">/, r);

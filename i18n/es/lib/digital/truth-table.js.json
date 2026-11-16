@@ -1,0 +1,22 @@
+{
+ "297f5d2932de": "Las variables son letras latinas sueltas. AND: AB, A·B o A&B. OR: A+B. NOT: A' o !A. XOR: A^B. También se pueden escribir AND, OR, NOT y XOR como palabras.",
+ "2be107430d71": "Genera la tabla de verdad de cualquier expresión booleana de hasta 8 variables, con los minitérminos, los maxitérminos y las formas canónicas de suma de productos (SOP) y producto de sumas (POS).",
+ "741327099653": "Tabla de verdad",
+ "446182fc4c2f": "Álgebra de Boole",
+ "734f64a2911b": "Lógica",
+ "e252a998d7e3": "Minitérminos",
+ "8f737531962e": "Formas canónicas",
+ "162e31eb56a8": "Precedencia de operaciones",
+ "94a7a130491b": "Expresión booleana",
+ "f60e5553aa68": "Ejemplo: $F = AB + \\overline{A}C$.",
+ "399da4424c94": "Expresión",
+ "18780bf03f44": "El número máximo de variables es 8.",
+ "1c00c6757e78": "Variables: {%0}; por tanto, el número de filas es $2^{{%1}} = {%2}$.",
+ "4d9c94516aca": "Ninguna (expresión constante)",
+ "950eff060c07": "Evaluamos la expresión para cada combinación respetando la precedencia: NOT, luego AND, luego XOR y luego OR (véase la tabla).",
+ "d9a9aafd2c4f": "Las filas con salida 1 dan los minitérminos; cada minitérmino es un producto de todas las variables (la variable que vale 0 se niega):",
+ "813a13e71e5e": "Las filas con salida 0 dan los maxitérminos (la variable que vale 1 se niega en la suma):",
+ "1aed83134453": "Minitérminos",
+ "243116b0e1d0": "Maxitérminos",
+ "a394b6db69cd": "Suma de productos canónica"
+}
