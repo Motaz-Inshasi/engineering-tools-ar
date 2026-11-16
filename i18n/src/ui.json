@@ -414,5 +414,9 @@
  {
   "k": "@tools",
   "text": "PLURAL FORMS for counting tools, e.g. \"1 tool\", \"5 tools\". Return a JSON object (not a string) with keys from Intl.PluralRules of the language (\"one\", \"other\", and \"few\"/\"many\" if the language has them) and values using {0} for the number, e.g. {\"one\":\"{0} tool\",\"other\":\"{0} tools\"}."
+ },
+ {
+  "k": "جميع الحقوق محفوظة.",
+  "text": "جميع الحقوق محفوظة."
  }
 ]

@@ -166,6 +166,7 @@ ${author ? `<a class="about-top" href="${root}about/">${esc(T("تواصل معي
 <p><strong>${esc(T("تنبيه:"))}</strong> ${esc(T("النتائج للاستخدام التعليمي فقط. تحقّق من النتائج الحرجة قبل الاعتماد عليها في التصميم أو التنفيذ."))}</p>
 <p>${esc(T("{0} موقع مجاني بلا حسابات ولا ملفات تعريف ارتباط ولا تتبع.", SITE))} <a href="${root}">${esc(T("كل الأدوات"))}</a>${author ? ` · <a href="${root}about/">${esc(T("عن الموقع والتواصل"))}</a>` : ""}</p>
 ${author ? `<p>${esc(T("صُمّم وطُوّر بواسطة"))} <a href="${root}about/">${esc(author.name)}</a>${author.email ? ` · ${emailHtml(author.email)}` : ""}</p>` : ""}
+<p>© 2026 ${esc(SITE)}. ${esc(T("جميع الحقوق محفوظة."))}</p>
 </div></footer>`;
   }
 
