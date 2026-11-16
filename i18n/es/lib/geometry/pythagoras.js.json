@@ -1,5 +1,5 @@
 {
- "b5350cb65e15": "Calcule el lado desconocido de un triángulo rectángulo a partir de dos lados conocidos con el teorema de Pitágoras, junto con los ángulos, el área, el perímetro y la altura sobre la hipotenusa; o clasifique un triángulo por sus tres lados como rectángulo, acutángulo u obtusángulo, y reconozca las ternas pitagóricas.",
+ "b5350cb65e15": "Calcula el cateto o la hipotenusa desconocidos con el teorema de Pitágoras, junto con los ángulos, el área, el perímetro y la altura sobre la hipotenusa; o clasifica un triángulo por sus lados como rectángulo, acutángulo u obtusángulo, y reconoce las ternas pitagóricas.",
  "b508b2460d6e": "Pitágoras",
  "0ac274fc0a30": "Triángulo rectángulo",
  "6dad754edc8e": "Hipotenusa",
@@ -53,5 +53,8 @@
  "05aca4dfcc12": "Semiperímetro y área de Herón:",
  "c7cca4a8a9e2": "Triángulo",
  "23a005ff83d4": "Triángulo {%0}, área = {%1}, perímetro = {%2}",
- "5191fd52a8f3": "Gráfico del triángulo"
+ "5191fd52a8f3": "Gráfico del triángulo",
+ "ab5e01273d69": "Cateto a",
+ "381e77410987": "Cateto b",
+ "205b419a1427": "Hipotenusa c"
 }

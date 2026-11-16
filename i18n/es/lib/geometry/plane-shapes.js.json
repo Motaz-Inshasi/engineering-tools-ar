@@ -53,6 +53,7 @@
  "c780b7d33b74": "Primera diagonal d1",
  "ab3b9a09d969": "Segunda diagonal d2",
  "dced4d4fa607": "Número de lados n",
+ "c7869459ad59": "Radio r",
  "330502aef7d2": "Ángulo θ (en grados)",
  "b0501cf31a1f": "De 0 a 360 grados.",
  "34268e9cf3be": "Ejemplo: rectángulo de 8 cm de largo y 5 cm de ancho.",
@@ -101,9 +102,14 @@
  "c868d66e62f2": "Radio de la circunferencia inscrita:",
  "f73670016bdc": "Radio de la circunferencia circunscrita:",
  "454e10b205f4": "Ángulo θ",
+ "a65642702d4e": "Longitud del arco",
  "ac1ccab99367": "Ángulo en radianes",
+ "aaab355389a1": "Ángulo en radianes:",
+ "a1ab06de15a6": "Longitud del arco:",
  "2b2418e718c7": "Perímetro (dos radios y el arco):",
+ "b1fdbf9e0bd0": "Área",
  "3349c253863d": "Área = {%0}",
+ "41f5efd4fdc9": "Perímetro",
  "00d0ccf10eec": "Perímetro = {%0}",
  "ab84b3924a76": "Gráfico de {%0}"
 }

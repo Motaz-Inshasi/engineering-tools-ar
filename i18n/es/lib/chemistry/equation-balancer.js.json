@@ -1,0 +1,22 @@
+{
+  "e6e65f097dcb": "Ajusta automáticamente cualquier ecuación química hallando los coeficientes enteros más pequeños que conservan el número de átomos de cada elemento, con una tabla de comprobación de átomos en ambos lados y el método de solución algebraica.",
+  "7a6328ef0ce2": "Ajuste de ecuaciones",
+  "632d157eab0b": "ajuste de una ecuación química",
+  "1dd63530b50e": "coeficientes",
+  "cd6b5d1ac63f": "conservación de la masa",
+  "363d68e354c7": "reacción química",
+  "57970091eb7f": "Conservación de los átomos de cada elemento",
+  "9384f499153c": "Ecuación",
+  "48baef80653e": "Separa las sustancias con + y los dos lados con una flecha -> o =, como Fe + O2 -> Fe2O3. Los coeficientes existentes se ignoran.",
+  "dce7fc6386d8": "Ejemplo: la reacción del permanganato de potasio con el ácido clorhídrico.",
+  "e5afe53a081c": "Ecuación ajustada",
+  "53abdb460f44": "Colocamos un coeficiente desconocido delante de cada sustancia: {%0}.",
+  "ed8253e03a90": "{%0} delante de {%1}",
+  "808552636f1d": "Escribimos la ecuación de conservación de los átomos para cada elemento:",
+  "2f8b548e6158": "Resolvemos el sistema lineal y elegimos los enteros positivos más pequeños:",
+  "7d0e49c36b3d": "Ecuación ajustada:",
+  "69e172a2a4bc": "Comprobación: número de átomos en ambos lados",
+  "822741d8afd7": "Elemento",
+  "896d1ae5e97e": "Reactivos",
+  "bc60a9a70e24": "Productos"
+}

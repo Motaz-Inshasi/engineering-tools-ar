@@ -1562,5 +1562,3915 @@
    "total": 82,
    "done": 82
   }
+ },
+ "es": {
+  "assets/js/registry.js": {
+   "total": 230,
+   "done": 230
+  },
+  "lib/ac-circuits/common.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/ac-circuits/complex-power.js": {
+   "total": 56,
+   "done": 56
+  },
+  "lib/ac-circuits/impedance.js": {
+   "total": 33,
+   "done": 33
+  },
+  "lib/ac-circuits/passive-filter.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/ac-circuits/phasor.js": {
+   "total": 35,
+   "done": 35
+  },
+  "lib/ac-circuits/rc-rl-transient.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/ac-circuits/resonance.js": {
+   "total": 28,
+   "done": 28
+  },
+  "lib/ac-circuits/rlc-circuit.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/ac-circuits/three-phase.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/ac-circuits/transformer.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/agriculture-nutrition/calorie-needs.js": {
+   "total": 61,
+   "done": 61
+  },
+  "lib/agriculture-nutrition/fertilizer-npk.js": {
+   "total": 94,
+   "done": 94
+  },
+  "lib/agriculture-nutrition/irrigation.js": {
+   "total": 63,
+   "done": 63
+  },
+  "lib/algebra/complex-numbers.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/algebra/linear-system.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/algebra/matrix.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/algebra/number-bases.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/algebra/partial-fractions.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/algebra/polynomial-roots.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/algebra/quadratic.js": {
+   "total": 29,
+   "done": 29
+  },
+  "lib/algebra/trigonometry.js": {
+   "total": 54,
+   "done": 54
+  },
+  "lib/architecture/far-coverage.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/architecture/polygon-area.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/architecture/stair-design.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/architecture/sun-position.js": {
+   "total": 77,
+   "done": 77
+  },
+  "lib/biology/codons.js": {
+   "total": 21,
+   "done": 21
+  },
+  "lib/biology/dna-tools.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/biology/hardy-weinberg.js": {
+   "total": 73,
+   "done": 73
+  },
+  "lib/biology/microscopy.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/biology/population-growth.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/biology/punnett-square.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/biology/serial-dilution.js": {
+   "total": 73,
+   "done": 73
+  },
+  "lib/calculus/common.js": {
+   "total": 3,
+   "done": 3
+  },
+  "lib/calculus/derivative.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/calculus/function-plotter.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/calculus/integral.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/calculus/limit.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/calculus/root-finding.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/calculus/taylor-series.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/chemistry/elements.js": {
+   "total": 118,
+   "done": 118
+  },
+  "lib/chemistry/empirical-formula.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/chemistry/equation-balancer.js": {
+   "total": 21,
+   "done": 21
+  },
+  "lib/chemistry/formula.js": {
+   "total": 16,
+   "done": 16
+  },
+  "lib/chemistry/molar-mass.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/chemistry/periodic-table.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/chemistry/ph-calculator.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/chemistry/reaction-kinetics.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/chemistry/solutions.js": {
+   "total": 70,
+   "done": 70
+  },
+  "lib/chemistry/stoichiometry.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/computing/big-o.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/computing/data-transfer.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/computing/ieee754.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/computing/subnet-calculator.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/computing/text-encoding.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/control/bode-plot.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/control/routh-hurwitz.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/control/steady-state-error.js": {
+   "total": 25,
+   "done": 25
+  },
+  "lib/control/step-response.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/core/boolean.js": {
+   "total": 10,
+   "done": 10
+  },
+  "lib/core/cinput.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/circuit.js": {
+   "total": 12,
+   "done": 12
+  },
+  "lib/core/format.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/matrix.js": {
+   "total": 5,
+   "done": 5
+  },
+  "lib/core/numexpr.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/parser.js": {
+   "total": 15,
+   "done": 15
+  },
+  "lib/core/partial.js": {
+   "total": 2,
+   "done": 2
+  },
+  "lib/core/polynomial.js": {
+   "total": 4,
+   "done": 4
+  },
+  "lib/core/symbolic.js": {
+   "total": 64,
+   "done": 64
+  },
+  "lib/core/text.js": {
+   "total": 6,
+   "done": 6
+  },
+  "lib/core/validate.js": {
+   "total": 22,
+   "done": 22
+  },
+  "lib/dates-calendar/age-calculator.js": {
+   "total": 33,
+   "done": 33
+  },
+  "lib/dates-calendar/calendar.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/dates-calendar/date-difference.js": {
+   "total": 55,
+   "done": 55
+  },
+  "lib/dates-calendar/hijri-converter.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/dc-circuits/max-power-transfer.js": {
+   "total": 25,
+   "done": 25
+  },
+  "lib/dc-circuits/mesh-analysis.js": {
+   "total": 33,
+   "done": 33
+  },
+  "lib/dc-circuits/nodal-analysis.js": {
+   "total": 28,
+   "done": 28
+  },
+  "lib/dc-circuits/ohms-law.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/dc-circuits/series-parallel-resistors.js": {
+   "total": 37,
+   "done": 37
+  },
+  "lib/dc-circuits/thevenin-norton.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/dc-circuits/voltage-current-divider.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/dc-circuits/wheatstone-bridge.js": {
+   "total": 30,
+   "done": 30
+  },
+  "lib/differential-equations/ode-first-order.js": {
+   "total": 76,
+   "done": 76
+  },
+  "lib/differential-equations/ode-numerical.js": {
+   "total": 44,
+   "done": 44
+  },
+  "lib/differential-equations/ode-second-order.js": {
+   "total": 57,
+   "done": 57
+  },
+  "lib/digital/binary-twos-complement.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/digital/boolean-simplifier.js": {
+   "total": 39,
+   "done": 39
+  },
+  "lib/digital/flip-flops.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/digital/logic-gates.js": {
+   "total": 30,
+   "done": 30
+  },
+  "lib/digital/truth-table.js": {
+   "total": 21,
+   "done": 21
+  },
+  "lib/earth-environment/air-quality-index.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/earth-environment/carbon-footprint.js": {
+   "total": 64,
+   "done": 64
+  },
+  "lib/earth-environment/earthquake-magnitude.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/earth-environment/radiometric-dating.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/economics/break-even.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/economics/compound-interest.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/economics/depreciation.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/economics/financial-ratios.js": {
+   "total": 74,
+   "done": 74
+  },
+  "lib/economics/loan-amortization.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/economics/npv-irr.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/economics/price-elasticity.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/electronics/bjt-bias.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/capacitor-inductor-combination.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/electronics/led-resistor.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/mosfet.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/op-amp.js": {
+   "total": 54,
+   "done": 54
+  },
+  "lib/electronics/rectifier-ripple.js": {
+   "total": 45,
+   "done": 45
+  },
+  "lib/electronics/resistor-color-code.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/electronics/timer-555.js": {
+   "total": 29,
+   "done": 29
+  },
+  "lib/electronics/voltage-regulator.js": {
+   "total": 45,
+   "done": 45
+  },
+  "lib/electronics/zener-regulator.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/elementary-math/fractions.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/elementary-math/gcd-lcm.js": {
+   "total": 27,
+   "done": 27
+  },
+  "lib/elementary-math/percentage.js": {
+   "total": 91,
+   "done": 91
+  },
+  "lib/elementary-math/prime-factorization.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/elementary-math/ratio-proportion.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/everyday-math/discount-tax.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/everyday-math/fuel-cost.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/everyday-math/paint-tiles.js": {
+   "total": 95,
+   "done": 95
+  },
+  "lib/everyday-math/speed-distance-time.js": {
+   "total": 101,
+   "done": 101
+  },
+  "lib/geometry/circle-geometry.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/geometry/coordinate-geometry.js": {
+   "total": 84,
+   "done": 84
+  },
+  "lib/geometry/plane-shapes.js": {
+   "total": 185,
+   "done": 185
+  },
+  "lib/geometry/pythagoras.js": {
+   "total": 66,
+   "done": 66
+  },
+  "lib/geometry/solids.js": {
+   "total": 119,
+   "done": 119
+  },
+  "lib/geometry/triangle-solver.js": {
+   "total": 52,
+   "done": 52
+  },
+  "lib/materials/beam-deflection.js": {
+   "total": 79,
+   "done": 79
+  },
+  "lib/materials/data.js": {
+   "total": 26,
+   "done": 26
+  },
+  "lib/materials/material-properties.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/materials/stress-strain.js": {
+   "total": 70,
+   "done": 70
+  },
+  "lib/medicine/bmi-bsa.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/medicine/creatinine-clearance.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/medicine/drug-dosage.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/medicine/fluid-requirements.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/medicine/iv-drip-rate.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/medicine/lab-units.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/personal-finance/budget-planner.js": {
+   "total": 55,
+   "done": 55
+  },
+  "lib/personal-finance/savings-goal.js": {
+   "total": 75,
+   "done": 75
+  },
+  "lib/personal-finance/zakat.js": {
+   "total": 81,
+   "done": 81
+  },
+  "lib/physics/circular-gravitation.js": {
+   "total": 79,
+   "done": 79
+  },
+  "lib/physics/collisions.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/physics/gas-heat.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/physics/harmonic-motion.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/physics/inclined-plane.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/physics/kinematics.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/physics/optics.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/physics/projectile-motion.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/physics/waves-doppler.js": {
+   "total": 68,
+   "done": 68
+  },
+  "lib/physics/work-energy.js": {
+   "total": 65,
+   "done": 65
+  },
+  "lib/programming/bitwise-calculator.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/programming/bracket-checker.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/programming/chmod-calculator.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/programming/code-view.js": {
+   "total": 27,
+   "done": 27
+  },
+  "lib/programming/color-converter.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/programming/cron-explainer.js": {
+   "total": 111,
+   "done": 111
+  },
+  "lib/programming/error-db.js": {
+   "total": 745,
+   "done": 745
+  },
+  "lib/programming/error-explainer.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/programming/hash-generator.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/programming/html-checker.js": {
+   "total": 66,
+   "done": 66
+  },
+  "lib/programming/js-checker.js": {
+   "total": 157,
+   "done": 157
+  },
+  "lib/programming/json-formatter.js": {
+   "total": 133,
+   "done": 133
+  },
+  "lib/programming/python-checker.js": {
+   "total": 107,
+   "done": 107
+  },
+  "lib/programming/regex-tester.js": {
+   "total": 108,
+   "done": 108
+  },
+  "lib/programming/search-trace.js": {
+   "total": 63,
+   "done": 63
+  },
+  "lib/programming/sorting-trace.js": {
+   "total": 84,
+   "done": 84
+  },
+  "lib/programming/unix-timestamp.js": {
+   "total": 96,
+   "done": 96
+  },
+  "lib/sensors/adc.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/sensors/level-shifter.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/sensors/pwm-servo.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/sensors/rtd.js": {
+   "total": 28,
+   "done": 28
+  },
+  "lib/sensors/sample-rate-resolution.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/sensors/sensor-divider.js": {
+   "total": 33,
+   "done": 33
+  },
+  "lib/sensors/shunt-resistor.js": {
+   "total": 28,
+   "done": 28
+  },
+  "lib/sensors/strain-gauge-bridge.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/sensors/thermistor.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/signals/common.js": {
+   "total": 6,
+   "done": 6
+  },
+  "lib/signals/fourier-series.js": {
+   "total": 52,
+   "done": 52
+  },
+  "lib/signals/laplace.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/signals/sampling-nyquist.js": {
+   "total": 35,
+   "done": 35
+  },
+  "lib/signals/transfer-function.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/statistics/descriptive-stats.js": {
+   "total": 61,
+   "done": 61
+  },
+  "lib/statistics/hypothesis-tests.js": {
+   "total": 127,
+   "done": 127
+  },
+  "lib/statistics/linear-regression.js": {
+   "total": 63,
+   "done": 63
+  },
+  "lib/statistics/probability-distributions.js": {
+   "total": 75,
+   "done": 75
+  },
+  "lib/statistics/significant-figures.js": {
+   "total": 77,
+   "done": 77
+  },
+  "lib/student/citation-generator.js": {
+   "total": 57,
+   "done": 57
+  },
+  "lib/student/final-grade.js": {
+   "total": 35,
+   "done": 35
+  },
+  "lib/student/gpa-calculator.js": {
+   "total": 57,
+   "done": 57
+  },
+  "lib/student/study-planner.js": {
+   "total": 74,
+   "done": 74
+  },
+  "lib/student/word-counter.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/units/engineering-notation.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/units/formulas-constants.js": {
+   "total": 74,
+   "done": 74
+  },
+  "lib/units/standard-resistor-values.js": {
+   "total": 24,
+   "done": 24
+  },
+  "lib/units/unit-converter.js": {
+   "total": 82,
+   "done": 82
+  }
+ },
+ "tr": {
+  "assets/js/registry.js": {
+   "total": 230,
+   "done": 230
+  },
+  "lib/ac-circuits/common.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/ac-circuits/complex-power.js": {
+   "total": 56,
+   "done": 56
+  },
+  "lib/ac-circuits/impedance.js": {
+   "total": 33,
+   "done": 33
+  },
+  "lib/ac-circuits/passive-filter.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/ac-circuits/phasor.js": {
+   "total": 35,
+   "done": 35
+  },
+  "lib/ac-circuits/rc-rl-transient.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/ac-circuits/resonance.js": {
+   "total": 28,
+   "done": 28
+  },
+  "lib/ac-circuits/rlc-circuit.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/ac-circuits/three-phase.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/ac-circuits/transformer.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/agriculture-nutrition/calorie-needs.js": {
+   "total": 61,
+   "done": 61
+  },
+  "lib/agriculture-nutrition/fertilizer-npk.js": {
+   "total": 94,
+   "done": 94
+  },
+  "lib/agriculture-nutrition/irrigation.js": {
+   "total": 63,
+   "done": 63
+  },
+  "lib/algebra/complex-numbers.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/algebra/linear-system.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/algebra/matrix.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/algebra/number-bases.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/algebra/partial-fractions.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/algebra/polynomial-roots.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/algebra/quadratic.js": {
+   "total": 29,
+   "done": 29
+  },
+  "lib/algebra/trigonometry.js": {
+   "total": 54,
+   "done": 54
+  },
+  "lib/architecture/far-coverage.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/architecture/polygon-area.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/architecture/stair-design.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/architecture/sun-position.js": {
+   "total": 77,
+   "done": 77
+  },
+  "lib/biology/codons.js": {
+   "total": 21,
+   "done": 21
+  },
+  "lib/biology/dna-tools.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/biology/hardy-weinberg.js": {
+   "total": 73,
+   "done": 73
+  },
+  "lib/biology/microscopy.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/biology/population-growth.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/biology/punnett-square.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/biology/serial-dilution.js": {
+   "total": 73,
+   "done": 73
+  },
+  "lib/calculus/common.js": {
+   "total": 3,
+   "done": 3
+  },
+  "lib/calculus/derivative.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/calculus/function-plotter.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/calculus/integral.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/calculus/limit.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/calculus/root-finding.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/calculus/taylor-series.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/chemistry/elements.js": {
+   "total": 118,
+   "done": 118
+  },
+  "lib/chemistry/empirical-formula.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/chemistry/equation-balancer.js": {
+   "total": 21,
+   "done": 21
+  },
+  "lib/chemistry/formula.js": {
+   "total": 16,
+   "done": 16
+  },
+  "lib/chemistry/molar-mass.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/chemistry/periodic-table.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/chemistry/ph-calculator.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/chemistry/reaction-kinetics.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/chemistry/solutions.js": {
+   "total": 70,
+   "done": 70
+  },
+  "lib/chemistry/stoichiometry.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/computing/big-o.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/computing/data-transfer.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/computing/ieee754.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/computing/subnet-calculator.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/computing/text-encoding.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/control/bode-plot.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/control/routh-hurwitz.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/control/steady-state-error.js": {
+   "total": 25,
+   "done": 25
+  },
+  "lib/control/step-response.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/core/boolean.js": {
+   "total": 10,
+   "done": 10
+  },
+  "lib/core/cinput.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/circuit.js": {
+   "total": 12,
+   "done": 12
+  },
+  "lib/core/format.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/matrix.js": {
+   "total": 5,
+   "done": 5
+  },
+  "lib/core/numexpr.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/parser.js": {
+   "total": 15,
+   "done": 15
+  },
+  "lib/core/partial.js": {
+   "total": 2,
+   "done": 2
+  },
+  "lib/core/polynomial.js": {
+   "total": 4,
+   "done": 4
+  },
+  "lib/core/symbolic.js": {
+   "total": 64,
+   "done": 64
+  },
+  "lib/core/text.js": {
+   "total": 6,
+   "done": 6
+  },
+  "lib/core/validate.js": {
+   "total": 22,
+   "done": 22
+  },
+  "lib/dates-calendar/age-calculator.js": {
+   "total": 33,
+   "done": 0
+  },
+  "lib/dates-calendar/calendar.js": {
+   "total": 53,
+   "done": 0
+  },
+  "lib/dates-calendar/date-difference.js": {
+   "total": 55,
+   "done": 0
+  },
+  "lib/dates-calendar/hijri-converter.js": {
+   "total": 42,
+   "done": 0
+  },
+  "lib/dc-circuits/max-power-transfer.js": {
+   "total": 25,
+   "done": 0
+  },
+  "lib/dc-circuits/mesh-analysis.js": {
+   "total": 33,
+   "done": 0
+  },
+  "lib/dc-circuits/nodal-analysis.js": {
+   "total": 28,
+   "done": 0
+  },
+  "lib/dc-circuits/ohms-law.js": {
+   "total": 43,
+   "done": 0
+  },
+  "lib/dc-circuits/series-parallel-resistors.js": {
+   "total": 37,
+   "done": 0
+  },
+  "lib/dc-circuits/thevenin-norton.js": {
+   "total": 34,
+   "done": 0
+  },
+  "lib/dc-circuits/voltage-current-divider.js": {
+   "total": 36,
+   "done": 0
+  },
+  "lib/dc-circuits/wheatstone-bridge.js": {
+   "total": 30,
+   "done": 0
+  },
+  "lib/differential-equations/ode-first-order.js": {
+   "total": 76,
+   "done": 0
+  },
+  "lib/differential-equations/ode-numerical.js": {
+   "total": 44,
+   "done": 0
+  },
+  "lib/differential-equations/ode-second-order.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/digital/binary-twos-complement.js": {
+   "total": 42,
+   "done": 0
+  },
+  "lib/digital/boolean-simplifier.js": {
+   "total": 39,
+   "done": 0
+  },
+  "lib/digital/flip-flops.js": {
+   "total": 48,
+   "done": 0
+  },
+  "lib/digital/logic-gates.js": {
+   "total": 30,
+   "done": 0
+  },
+  "lib/digital/truth-table.js": {
+   "total": 21,
+   "done": 0
+  },
+  "lib/earth-environment/air-quality-index.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/earth-environment/carbon-footprint.js": {
+   "total": 64,
+   "done": 0
+  },
+  "lib/earth-environment/earthquake-magnitude.js": {
+   "total": 58,
+   "done": 0
+  },
+  "lib/earth-environment/radiometric-dating.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/economics/break-even.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/economics/compound-interest.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/economics/depreciation.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/economics/financial-ratios.js": {
+   "total": 74,
+   "done": 74
+  },
+  "lib/economics/loan-amortization.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/economics/npv-irr.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/economics/price-elasticity.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/electronics/bjt-bias.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/capacitor-inductor-combination.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/electronics/led-resistor.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/mosfet.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/op-amp.js": {
+   "total": 54,
+   "done": 54
+  },
+  "lib/electronics/rectifier-ripple.js": {
+   "total": 45,
+   "done": 45
+  },
+  "lib/electronics/resistor-color-code.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/electronics/timer-555.js": {
+   "total": 29,
+   "done": 29
+  },
+  "lib/electronics/voltage-regulator.js": {
+   "total": 45,
+   "done": 45
+  },
+  "lib/electronics/zener-regulator.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/elementary-math/fractions.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/elementary-math/gcd-lcm.js": {
+   "total": 27,
+   "done": 27
+  },
+  "lib/elementary-math/percentage.js": {
+   "total": 91,
+   "done": 91
+  },
+  "lib/elementary-math/prime-factorization.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/elementary-math/ratio-proportion.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/everyday-math/discount-tax.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/everyday-math/fuel-cost.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/everyday-math/paint-tiles.js": {
+   "total": 95,
+   "done": 95
+  },
+  "lib/everyday-math/speed-distance-time.js": {
+   "total": 101,
+   "done": 101
+  },
+  "lib/geometry/circle-geometry.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/geometry/coordinate-geometry.js": {
+   "total": 84,
+   "done": 84
+  },
+  "lib/geometry/plane-shapes.js": {
+   "total": 185,
+   "done": 185
+  },
+  "lib/geometry/pythagoras.js": {
+   "total": 66,
+   "done": 66
+  },
+  "lib/geometry/solids.js": {
+   "total": 119,
+   "done": 119
+  },
+  "lib/geometry/triangle-solver.js": {
+   "total": 52,
+   "done": 52
+  },
+  "lib/materials/beam-deflection.js": {
+   "total": 79,
+   "done": 79
+  },
+  "lib/materials/data.js": {
+   "total": 26,
+   "done": 26
+  },
+  "lib/materials/material-properties.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/materials/stress-strain.js": {
+   "total": 70,
+   "done": 70
+  },
+  "lib/medicine/bmi-bsa.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/medicine/creatinine-clearance.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/medicine/drug-dosage.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/medicine/fluid-requirements.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/medicine/iv-drip-rate.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/medicine/lab-units.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/personal-finance/budget-planner.js": {
+   "total": 55,
+   "done": 0
+  },
+  "lib/personal-finance/savings-goal.js": {
+   "total": 75,
+   "done": 0
+  },
+  "lib/personal-finance/zakat.js": {
+   "total": 81,
+   "done": 0
+  },
+  "lib/physics/circular-gravitation.js": {
+   "total": 79,
+   "done": 0
+  },
+  "lib/physics/collisions.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/physics/gas-heat.js": {
+   "total": 59,
+   "done": 0
+  },
+  "lib/physics/harmonic-motion.js": {
+   "total": 51,
+   "done": 0
+  },
+  "lib/physics/inclined-plane.js": {
+   "total": 46,
+   "done": 0
+  },
+  "lib/physics/kinematics.js": {
+   "total": 60,
+   "done": 0
+  },
+  "lib/physics/optics.js": {
+   "total": 71,
+   "done": 0
+  },
+  "lib/physics/projectile-motion.js": {
+   "total": 38,
+   "done": 0
+  },
+  "lib/physics/waves-doppler.js": {
+   "total": 68,
+   "done": 0
+  },
+  "lib/physics/work-energy.js": {
+   "total": 65,
+   "done": 0
+  },
+  "lib/programming/bitwise-calculator.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/programming/bracket-checker.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/programming/chmod-calculator.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/programming/code-view.js": {
+   "total": 27,
+   "done": 27
+  },
+  "lib/programming/color-converter.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/programming/cron-explainer.js": {
+   "total": 111,
+   "done": 111
+  },
+  "lib/programming/error-db.js": {
+   "total": 745,
+   "done": 745
+  },
+  "lib/programming/error-explainer.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/programming/hash-generator.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/programming/html-checker.js": {
+   "total": 66,
+   "done": 66
+  },
+  "lib/programming/js-checker.js": {
+   "total": 157,
+   "done": 157
+  },
+  "lib/programming/json-formatter.js": {
+   "total": 133,
+   "done": 133
+  },
+  "lib/programming/python-checker.js": {
+   "total": 107,
+   "done": 107
+  },
+  "lib/programming/regex-tester.js": {
+   "total": 108,
+   "done": 108
+  },
+  "lib/programming/search-trace.js": {
+   "total": 63,
+   "done": 63
+  },
+  "lib/programming/sorting-trace.js": {
+   "total": 84,
+   "done": 84
+  },
+  "lib/programming/unix-timestamp.js": {
+   "total": 96,
+   "done": 96
+  },
+  "lib/sensors/adc.js": {
+   "total": 41,
+   "done": 0
+  },
+  "lib/sensors/level-shifter.js": {
+   "total": 31,
+   "done": 0
+  },
+  "lib/sensors/pwm-servo.js": {
+   "total": 51,
+   "done": 0
+  },
+  "lib/sensors/rtd.js": {
+   "total": 28,
+   "done": 0
+  },
+  "lib/sensors/sample-rate-resolution.js": {
+   "total": 34,
+   "done": 0
+  },
+  "lib/sensors/sensor-divider.js": {
+   "total": 33,
+   "done": 0
+  },
+  "lib/sensors/shunt-resistor.js": {
+   "total": 28,
+   "done": 0
+  },
+  "lib/sensors/strain-gauge-bridge.js": {
+   "total": 43,
+   "done": 0
+  },
+  "lib/sensors/thermistor.js": {
+   "total": 38,
+   "done": 0
+  },
+  "lib/signals/common.js": {
+   "total": 6,
+   "done": 0
+  },
+  "lib/signals/fourier-series.js": {
+   "total": 52,
+   "done": 0
+  },
+  "lib/signals/laplace.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/signals/sampling-nyquist.js": {
+   "total": 35,
+   "done": 0
+  },
+  "lib/signals/transfer-function.js": {
+   "total": 38,
+   "done": 0
+  },
+  "lib/statistics/descriptive-stats.js": {
+   "total": 61,
+   "done": 0
+  },
+  "lib/statistics/hypothesis-tests.js": {
+   "total": 127,
+   "done": 0
+  },
+  "lib/statistics/linear-regression.js": {
+   "total": 63,
+   "done": 0
+  },
+  "lib/statistics/probability-distributions.js": {
+   "total": 75,
+   "done": 0
+  },
+  "lib/statistics/significant-figures.js": {
+   "total": 77,
+   "done": 0
+  },
+  "lib/student/citation-generator.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/student/final-grade.js": {
+   "total": 35,
+   "done": 0
+  },
+  "lib/student/gpa-calculator.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/student/study-planner.js": {
+   "total": 74,
+   "done": 0
+  },
+  "lib/student/word-counter.js": {
+   "total": 46,
+   "done": 0
+  },
+  "lib/units/engineering-notation.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/units/formulas-constants.js": {
+   "total": 74,
+   "done": 0
+  },
+  "lib/units/standard-resistor-values.js": {
+   "total": 24,
+   "done": 0
+  },
+  "lib/units/unit-converter.js": {
+   "total": 82,
+   "done": 0
+  }
+ },
+ "id": {
+  "assets/js/registry.js": {
+   "total": 230,
+   "done": 230
+  },
+  "lib/ac-circuits/common.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/ac-circuits/complex-power.js": {
+   "total": 56,
+   "done": 56
+  },
+  "lib/ac-circuits/impedance.js": {
+   "total": 33,
+   "done": 33
+  },
+  "lib/ac-circuits/passive-filter.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/ac-circuits/phasor.js": {
+   "total": 35,
+   "done": 35
+  },
+  "lib/ac-circuits/rc-rl-transient.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/ac-circuits/resonance.js": {
+   "total": 28,
+   "done": 28
+  },
+  "lib/ac-circuits/rlc-circuit.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/ac-circuits/three-phase.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/ac-circuits/transformer.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/agriculture-nutrition/calorie-needs.js": {
+   "total": 61,
+   "done": 61
+  },
+  "lib/agriculture-nutrition/fertilizer-npk.js": {
+   "total": 94,
+   "done": 94
+  },
+  "lib/agriculture-nutrition/irrigation.js": {
+   "total": 63,
+   "done": 63
+  },
+  "lib/algebra/complex-numbers.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/algebra/linear-system.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/algebra/matrix.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/algebra/number-bases.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/algebra/partial-fractions.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/algebra/polynomial-roots.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/algebra/quadratic.js": {
+   "total": 29,
+   "done": 29
+  },
+  "lib/algebra/trigonometry.js": {
+   "total": 54,
+   "done": 54
+  },
+  "lib/architecture/far-coverage.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/architecture/polygon-area.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/architecture/stair-design.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/architecture/sun-position.js": {
+   "total": 77,
+   "done": 77
+  },
+  "lib/biology/codons.js": {
+   "total": 21,
+   "done": 21
+  },
+  "lib/biology/dna-tools.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/biology/hardy-weinberg.js": {
+   "total": 73,
+   "done": 73
+  },
+  "lib/biology/microscopy.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/biology/population-growth.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/biology/punnett-square.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/biology/serial-dilution.js": {
+   "total": 73,
+   "done": 73
+  },
+  "lib/calculus/common.js": {
+   "total": 3,
+   "done": 3
+  },
+  "lib/calculus/derivative.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/calculus/function-plotter.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/calculus/integral.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/calculus/limit.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/calculus/root-finding.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/calculus/taylor-series.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/chemistry/elements.js": {
+   "total": 118,
+   "done": 118
+  },
+  "lib/chemistry/empirical-formula.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/chemistry/equation-balancer.js": {
+   "total": 21,
+   "done": 21
+  },
+  "lib/chemistry/formula.js": {
+   "total": 16,
+   "done": 16
+  },
+  "lib/chemistry/molar-mass.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/chemistry/periodic-table.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/chemistry/ph-calculator.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/chemistry/reaction-kinetics.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/chemistry/solutions.js": {
+   "total": 70,
+   "done": 70
+  },
+  "lib/chemistry/stoichiometry.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/computing/big-o.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/computing/data-transfer.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/computing/ieee754.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/computing/subnet-calculator.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/computing/text-encoding.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/control/bode-plot.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/control/routh-hurwitz.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/control/steady-state-error.js": {
+   "total": 25,
+   "done": 25
+  },
+  "lib/control/step-response.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/core/boolean.js": {
+   "total": 10,
+   "done": 10
+  },
+  "lib/core/cinput.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/circuit.js": {
+   "total": 12,
+   "done": 12
+  },
+  "lib/core/format.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/matrix.js": {
+   "total": 5,
+   "done": 5
+  },
+  "lib/core/numexpr.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/parser.js": {
+   "total": 15,
+   "done": 15
+  },
+  "lib/core/partial.js": {
+   "total": 2,
+   "done": 2
+  },
+  "lib/core/polynomial.js": {
+   "total": 4,
+   "done": 4
+  },
+  "lib/core/symbolic.js": {
+   "total": 64,
+   "done": 64
+  },
+  "lib/core/text.js": {
+   "total": 6,
+   "done": 6
+  },
+  "lib/core/validate.js": {
+   "total": 22,
+   "done": 22
+  },
+  "lib/dates-calendar/age-calculator.js": {
+   "total": 33,
+   "done": 33
+  },
+  "lib/dates-calendar/calendar.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/dates-calendar/date-difference.js": {
+   "total": 55,
+   "done": 55
+  },
+  "lib/dates-calendar/hijri-converter.js": {
+   "total": 42,
+   "done": 0
+  },
+  "lib/dc-circuits/max-power-transfer.js": {
+   "total": 25,
+   "done": 0
+  },
+  "lib/dc-circuits/mesh-analysis.js": {
+   "total": 33,
+   "done": 0
+  },
+  "lib/dc-circuits/nodal-analysis.js": {
+   "total": 28,
+   "done": 0
+  },
+  "lib/dc-circuits/ohms-law.js": {
+   "total": 43,
+   "done": 0
+  },
+  "lib/dc-circuits/series-parallel-resistors.js": {
+   "total": 37,
+   "done": 0
+  },
+  "lib/dc-circuits/thevenin-norton.js": {
+   "total": 34,
+   "done": 0
+  },
+  "lib/dc-circuits/voltage-current-divider.js": {
+   "total": 36,
+   "done": 0
+  },
+  "lib/dc-circuits/wheatstone-bridge.js": {
+   "total": 30,
+   "done": 0
+  },
+  "lib/differential-equations/ode-first-order.js": {
+   "total": 76,
+   "done": 0
+  },
+  "lib/differential-equations/ode-numerical.js": {
+   "total": 44,
+   "done": 0
+  },
+  "lib/differential-equations/ode-second-order.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/digital/binary-twos-complement.js": {
+   "total": 42,
+   "done": 0
+  },
+  "lib/digital/boolean-simplifier.js": {
+   "total": 39,
+   "done": 0
+  },
+  "lib/digital/flip-flops.js": {
+   "total": 48,
+   "done": 0
+  },
+  "lib/digital/logic-gates.js": {
+   "total": 30,
+   "done": 0
+  },
+  "lib/digital/truth-table.js": {
+   "total": 21,
+   "done": 0
+  },
+  "lib/earth-environment/air-quality-index.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/earth-environment/carbon-footprint.js": {
+   "total": 64,
+   "done": 0
+  },
+  "lib/earth-environment/earthquake-magnitude.js": {
+   "total": 58,
+   "done": 0
+  },
+  "lib/earth-environment/radiometric-dating.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/economics/break-even.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/economics/compound-interest.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/economics/depreciation.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/economics/financial-ratios.js": {
+   "total": 74,
+   "done": 74
+  },
+  "lib/economics/loan-amortization.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/economics/npv-irr.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/economics/price-elasticity.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/electronics/bjt-bias.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/capacitor-inductor-combination.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/electronics/led-resistor.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/mosfet.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/op-amp.js": {
+   "total": 54,
+   "done": 54
+  },
+  "lib/electronics/rectifier-ripple.js": {
+   "total": 45,
+   "done": 45
+  },
+  "lib/electronics/resistor-color-code.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/electronics/timer-555.js": {
+   "total": 29,
+   "done": 29
+  },
+  "lib/electronics/voltage-regulator.js": {
+   "total": 45,
+   "done": 45
+  },
+  "lib/electronics/zener-regulator.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/elementary-math/fractions.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/elementary-math/gcd-lcm.js": {
+   "total": 27,
+   "done": 27
+  },
+  "lib/elementary-math/percentage.js": {
+   "total": 91,
+   "done": 91
+  },
+  "lib/elementary-math/prime-factorization.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/elementary-math/ratio-proportion.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/everyday-math/discount-tax.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/everyday-math/fuel-cost.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/everyday-math/paint-tiles.js": {
+   "total": 95,
+   "done": 95
+  },
+  "lib/everyday-math/speed-distance-time.js": {
+   "total": 101,
+   "done": 101
+  },
+  "lib/geometry/circle-geometry.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/geometry/coordinate-geometry.js": {
+   "total": 84,
+   "done": 84
+  },
+  "lib/geometry/plane-shapes.js": {
+   "total": 185,
+   "done": 185
+  },
+  "lib/geometry/pythagoras.js": {
+   "total": 66,
+   "done": 66
+  },
+  "lib/geometry/solids.js": {
+   "total": 119,
+   "done": 119
+  },
+  "lib/geometry/triangle-solver.js": {
+   "total": 52,
+   "done": 52
+  },
+  "lib/materials/beam-deflection.js": {
+   "total": 79,
+   "done": 79
+  },
+  "lib/materials/data.js": {
+   "total": 26,
+   "done": 26
+  },
+  "lib/materials/material-properties.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/materials/stress-strain.js": {
+   "total": 70,
+   "done": 70
+  },
+  "lib/medicine/bmi-bsa.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/medicine/creatinine-clearance.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/medicine/drug-dosage.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/medicine/fluid-requirements.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/medicine/iv-drip-rate.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/medicine/lab-units.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/personal-finance/budget-planner.js": {
+   "total": 55,
+   "done": 55
+  },
+  "lib/personal-finance/savings-goal.js": {
+   "total": 75,
+   "done": 75
+  },
+  "lib/personal-finance/zakat.js": {
+   "total": 81,
+   "done": 81
+  },
+  "lib/physics/circular-gravitation.js": {
+   "total": 79,
+   "done": 79
+  },
+  "lib/physics/collisions.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/physics/gas-heat.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/physics/harmonic-motion.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/physics/inclined-plane.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/physics/kinematics.js": {
+   "total": 60,
+   "done": 0
+  },
+  "lib/physics/optics.js": {
+   "total": 71,
+   "done": 0
+  },
+  "lib/physics/projectile-motion.js": {
+   "total": 38,
+   "done": 0
+  },
+  "lib/physics/waves-doppler.js": {
+   "total": 68,
+   "done": 0
+  },
+  "lib/physics/work-energy.js": {
+   "total": 65,
+   "done": 0
+  },
+  "lib/programming/bitwise-calculator.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/programming/bracket-checker.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/programming/chmod-calculator.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/programming/code-view.js": {
+   "total": 27,
+   "done": 27
+  },
+  "lib/programming/color-converter.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/programming/cron-explainer.js": {
+   "total": 111,
+   "done": 111
+  },
+  "lib/programming/error-db.js": {
+   "total": 745,
+   "done": 745
+  },
+  "lib/programming/error-explainer.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/programming/hash-generator.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/programming/html-checker.js": {
+   "total": 66,
+   "done": 66
+  },
+  "lib/programming/js-checker.js": {
+   "total": 157,
+   "done": 157
+  },
+  "lib/programming/json-formatter.js": {
+   "total": 133,
+   "done": 133
+  },
+  "lib/programming/python-checker.js": {
+   "total": 107,
+   "done": 107
+  },
+  "lib/programming/regex-tester.js": {
+   "total": 108,
+   "done": 108
+  },
+  "lib/programming/search-trace.js": {
+   "total": 63,
+   "done": 63
+  },
+  "lib/programming/sorting-trace.js": {
+   "total": 84,
+   "done": 84
+  },
+  "lib/programming/unix-timestamp.js": {
+   "total": 96,
+   "done": 96
+  },
+  "lib/sensors/adc.js": {
+   "total": 41,
+   "done": 0
+  },
+  "lib/sensors/level-shifter.js": {
+   "total": 31,
+   "done": 0
+  },
+  "lib/sensors/pwm-servo.js": {
+   "total": 51,
+   "done": 0
+  },
+  "lib/sensors/rtd.js": {
+   "total": 28,
+   "done": 0
+  },
+  "lib/sensors/sample-rate-resolution.js": {
+   "total": 34,
+   "done": 0
+  },
+  "lib/sensors/sensor-divider.js": {
+   "total": 33,
+   "done": 0
+  },
+  "lib/sensors/shunt-resistor.js": {
+   "total": 28,
+   "done": 0
+  },
+  "lib/sensors/strain-gauge-bridge.js": {
+   "total": 43,
+   "done": 0
+  },
+  "lib/sensors/thermistor.js": {
+   "total": 38,
+   "done": 0
+  },
+  "lib/signals/common.js": {
+   "total": 6,
+   "done": 0
+  },
+  "lib/signals/fourier-series.js": {
+   "total": 52,
+   "done": 0
+  },
+  "lib/signals/laplace.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/signals/sampling-nyquist.js": {
+   "total": 35,
+   "done": 0
+  },
+  "lib/signals/transfer-function.js": {
+   "total": 38,
+   "done": 0
+  },
+  "lib/statistics/descriptive-stats.js": {
+   "total": 61,
+   "done": 0
+  },
+  "lib/statistics/hypothesis-tests.js": {
+   "total": 127,
+   "done": 0
+  },
+  "lib/statistics/linear-regression.js": {
+   "total": 63,
+   "done": 0
+  },
+  "lib/statistics/probability-distributions.js": {
+   "total": 75,
+   "done": 0
+  },
+  "lib/statistics/significant-figures.js": {
+   "total": 77,
+   "done": 0
+  },
+  "lib/student/citation-generator.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/student/final-grade.js": {
+   "total": 35,
+   "done": 0
+  },
+  "lib/student/gpa-calculator.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/student/study-planner.js": {
+   "total": 74,
+   "done": 0
+  },
+  "lib/student/word-counter.js": {
+   "total": 46,
+   "done": 0
+  },
+  "lib/units/engineering-notation.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/units/formulas-constants.js": {
+   "total": 74,
+   "done": 0
+  },
+  "lib/units/standard-resistor-values.js": {
+   "total": 24,
+   "done": 0
+  },
+  "lib/units/unit-converter.js": {
+   "total": 82,
+   "done": 0
+  }
+ },
+ "ur": {
+  "assets/js/registry.js": {
+   "total": 230,
+   "done": 230
+  },
+  "lib/ac-circuits/common.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/ac-circuits/complex-power.js": {
+   "total": 56,
+   "done": 56
+  },
+  "lib/ac-circuits/impedance.js": {
+   "total": 33,
+   "done": 33
+  },
+  "lib/ac-circuits/passive-filter.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/ac-circuits/phasor.js": {
+   "total": 35,
+   "done": 35
+  },
+  "lib/ac-circuits/rc-rl-transient.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/ac-circuits/resonance.js": {
+   "total": 28,
+   "done": 28
+  },
+  "lib/ac-circuits/rlc-circuit.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/ac-circuits/three-phase.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/ac-circuits/transformer.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/agriculture-nutrition/calorie-needs.js": {
+   "total": 61,
+   "done": 61
+  },
+  "lib/agriculture-nutrition/fertilizer-npk.js": {
+   "total": 94,
+   "done": 94
+  },
+  "lib/agriculture-nutrition/irrigation.js": {
+   "total": 63,
+   "done": 63
+  },
+  "lib/algebra/complex-numbers.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/algebra/linear-system.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/algebra/matrix.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/algebra/number-bases.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/algebra/partial-fractions.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/algebra/polynomial-roots.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/algebra/quadratic.js": {
+   "total": 29,
+   "done": 29
+  },
+  "lib/algebra/trigonometry.js": {
+   "total": 54,
+   "done": 54
+  },
+  "lib/architecture/far-coverage.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/architecture/polygon-area.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/architecture/stair-design.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/architecture/sun-position.js": {
+   "total": 77,
+   "done": 77
+  },
+  "lib/biology/codons.js": {
+   "total": 21,
+   "done": 21
+  },
+  "lib/biology/dna-tools.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/biology/hardy-weinberg.js": {
+   "total": 73,
+   "done": 73
+  },
+  "lib/biology/microscopy.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/biology/population-growth.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/biology/punnett-square.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/biology/serial-dilution.js": {
+   "total": 73,
+   "done": 73
+  },
+  "lib/calculus/common.js": {
+   "total": 3,
+   "done": 3
+  },
+  "lib/calculus/derivative.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/calculus/function-plotter.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/calculus/integral.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/calculus/limit.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/calculus/root-finding.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/calculus/taylor-series.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/chemistry/elements.js": {
+   "total": 118,
+   "done": 118
+  },
+  "lib/chemistry/empirical-formula.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/chemistry/equation-balancer.js": {
+   "total": 21,
+   "done": 21
+  },
+  "lib/chemistry/formula.js": {
+   "total": 16,
+   "done": 16
+  },
+  "lib/chemistry/molar-mass.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/chemistry/periodic-table.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/chemistry/ph-calculator.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/chemistry/reaction-kinetics.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/chemistry/solutions.js": {
+   "total": 70,
+   "done": 70
+  },
+  "lib/chemistry/stoichiometry.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/computing/big-o.js": {
+   "total": 40,
+   "done": 0
+  },
+  "lib/computing/data-transfer.js": {
+   "total": 36,
+   "done": 0
+  },
+  "lib/computing/ieee754.js": {
+   "total": 58,
+   "done": 0
+  },
+  "lib/computing/subnet-calculator.js": {
+   "total": 69,
+   "done": 0
+  },
+  "lib/computing/text-encoding.js": {
+   "total": 48,
+   "done": 0
+  },
+  "lib/control/bode-plot.js": {
+   "total": 42,
+   "done": 0
+  },
+  "lib/control/routh-hurwitz.js": {
+   "total": 32,
+   "done": 0
+  },
+  "lib/control/steady-state-error.js": {
+   "total": 25,
+   "done": 0
+  },
+  "lib/control/step-response.js": {
+   "total": 62,
+   "done": 0
+  },
+  "lib/core/boolean.js": {
+   "total": 10,
+   "done": 10
+  },
+  "lib/core/cinput.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/circuit.js": {
+   "total": 12,
+   "done": 12
+  },
+  "lib/core/format.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/matrix.js": {
+   "total": 5,
+   "done": 5
+  },
+  "lib/core/numexpr.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/parser.js": {
+   "total": 15,
+   "done": 15
+  },
+  "lib/core/partial.js": {
+   "total": 2,
+   "done": 2
+  },
+  "lib/core/polynomial.js": {
+   "total": 4,
+   "done": 4
+  },
+  "lib/core/symbolic.js": {
+   "total": 64,
+   "done": 64
+  },
+  "lib/core/text.js": {
+   "total": 6,
+   "done": 6
+  },
+  "lib/core/validate.js": {
+   "total": 22,
+   "done": 22
+  },
+  "lib/dates-calendar/age-calculator.js": {
+   "total": 33,
+   "done": 0
+  },
+  "lib/dates-calendar/calendar.js": {
+   "total": 53,
+   "done": 0
+  },
+  "lib/dates-calendar/date-difference.js": {
+   "total": 55,
+   "done": 0
+  },
+  "lib/dates-calendar/hijri-converter.js": {
+   "total": 42,
+   "done": 0
+  },
+  "lib/dc-circuits/max-power-transfer.js": {
+   "total": 25,
+   "done": 0
+  },
+  "lib/dc-circuits/mesh-analysis.js": {
+   "total": 33,
+   "done": 0
+  },
+  "lib/dc-circuits/nodal-analysis.js": {
+   "total": 28,
+   "done": 0
+  },
+  "lib/dc-circuits/ohms-law.js": {
+   "total": 43,
+   "done": 0
+  },
+  "lib/dc-circuits/series-parallel-resistors.js": {
+   "total": 37,
+   "done": 0
+  },
+  "lib/dc-circuits/thevenin-norton.js": {
+   "total": 34,
+   "done": 0
+  },
+  "lib/dc-circuits/voltage-current-divider.js": {
+   "total": 36,
+   "done": 0
+  },
+  "lib/dc-circuits/wheatstone-bridge.js": {
+   "total": 30,
+   "done": 0
+  },
+  "lib/differential-equations/ode-first-order.js": {
+   "total": 76,
+   "done": 0
+  },
+  "lib/differential-equations/ode-numerical.js": {
+   "total": 44,
+   "done": 0
+  },
+  "lib/differential-equations/ode-second-order.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/digital/binary-twos-complement.js": {
+   "total": 42,
+   "done": 0
+  },
+  "lib/digital/boolean-simplifier.js": {
+   "total": 39,
+   "done": 0
+  },
+  "lib/digital/flip-flops.js": {
+   "total": 48,
+   "done": 0
+  },
+  "lib/digital/logic-gates.js": {
+   "total": 30,
+   "done": 0
+  },
+  "lib/digital/truth-table.js": {
+   "total": 21,
+   "done": 0
+  },
+  "lib/earth-environment/air-quality-index.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/earth-environment/carbon-footprint.js": {
+   "total": 64,
+   "done": 0
+  },
+  "lib/earth-environment/earthquake-magnitude.js": {
+   "total": 58,
+   "done": 0
+  },
+  "lib/earth-environment/radiometric-dating.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/economics/break-even.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/economics/compound-interest.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/economics/depreciation.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/economics/financial-ratios.js": {
+   "total": 74,
+   "done": 74
+  },
+  "lib/economics/loan-amortization.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/economics/npv-irr.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/economics/price-elasticity.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/electronics/bjt-bias.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/capacitor-inductor-combination.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/electronics/led-resistor.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/mosfet.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/op-amp.js": {
+   "total": 54,
+   "done": 54
+  },
+  "lib/electronics/rectifier-ripple.js": {
+   "total": 45,
+   "done": 45
+  },
+  "lib/electronics/resistor-color-code.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/electronics/timer-555.js": {
+   "total": 29,
+   "done": 29
+  },
+  "lib/electronics/voltage-regulator.js": {
+   "total": 45,
+   "done": 45
+  },
+  "lib/electronics/zener-regulator.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/elementary-math/fractions.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/elementary-math/gcd-lcm.js": {
+   "total": 27,
+   "done": 27
+  },
+  "lib/elementary-math/percentage.js": {
+   "total": 91,
+   "done": 91
+  },
+  "lib/elementary-math/prime-factorization.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/elementary-math/ratio-proportion.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/everyday-math/discount-tax.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/everyday-math/fuel-cost.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/everyday-math/paint-tiles.js": {
+   "total": 95,
+   "done": 95
+  },
+  "lib/everyday-math/speed-distance-time.js": {
+   "total": 101,
+   "done": 101
+  },
+  "lib/geometry/circle-geometry.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/geometry/coordinate-geometry.js": {
+   "total": 84,
+   "done": 84
+  },
+  "lib/geometry/plane-shapes.js": {
+   "total": 185,
+   "done": 185
+  },
+  "lib/geometry/pythagoras.js": {
+   "total": 66,
+   "done": 66
+  },
+  "lib/geometry/solids.js": {
+   "total": 119,
+   "done": 119
+  },
+  "lib/geometry/triangle-solver.js": {
+   "total": 52,
+   "done": 52
+  },
+  "lib/materials/beam-deflection.js": {
+   "total": 79,
+   "done": 79
+  },
+  "lib/materials/data.js": {
+   "total": 26,
+   "done": 26
+  },
+  "lib/materials/material-properties.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/materials/stress-strain.js": {
+   "total": 70,
+   "done": 70
+  },
+  "lib/medicine/bmi-bsa.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/medicine/creatinine-clearance.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/medicine/drug-dosage.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/medicine/fluid-requirements.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/medicine/iv-drip-rate.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/medicine/lab-units.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/personal-finance/budget-planner.js": {
+   "total": 55,
+   "done": 55
+  },
+  "lib/personal-finance/savings-goal.js": {
+   "total": 75,
+   "done": 75
+  },
+  "lib/personal-finance/zakat.js": {
+   "total": 81,
+   "done": 81
+  },
+  "lib/physics/circular-gravitation.js": {
+   "total": 79,
+   "done": 79
+  },
+  "lib/physics/collisions.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/physics/gas-heat.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/physics/harmonic-motion.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/physics/inclined-plane.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/physics/kinematics.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/physics/optics.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/physics/projectile-motion.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/physics/waves-doppler.js": {
+   "total": 68,
+   "done": 68
+  },
+  "lib/physics/work-energy.js": {
+   "total": 65,
+   "done": 65
+  },
+  "lib/programming/bitwise-calculator.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/programming/bracket-checker.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/programming/chmod-calculator.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/programming/code-view.js": {
+   "total": 27,
+   "done": 27
+  },
+  "lib/programming/color-converter.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/programming/cron-explainer.js": {
+   "total": 111,
+   "done": 111
+  },
+  "lib/programming/error-db.js": {
+   "total": 745,
+   "done": 499
+  },
+  "lib/programming/error-explainer.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/programming/hash-generator.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/programming/html-checker.js": {
+   "total": 66,
+   "done": 66
+  },
+  "lib/programming/js-checker.js": {
+   "total": 157,
+   "done": 157
+  },
+  "lib/programming/json-formatter.js": {
+   "total": 133,
+   "done": 133
+  },
+  "lib/programming/python-checker.js": {
+   "total": 107,
+   "done": 107
+  },
+  "lib/programming/regex-tester.js": {
+   "total": 108,
+   "done": 108
+  },
+  "lib/programming/search-trace.js": {
+   "total": 63,
+   "done": 63
+  },
+  "lib/programming/sorting-trace.js": {
+   "total": 84,
+   "done": 84
+  },
+  "lib/programming/unix-timestamp.js": {
+   "total": 96,
+   "done": 96
+  },
+  "lib/sensors/adc.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/sensors/level-shifter.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/sensors/pwm-servo.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/sensors/rtd.js": {
+   "total": 28,
+   "done": 28
+  },
+  "lib/sensors/sample-rate-resolution.js": {
+   "total": 34,
+   "done": 0
+  },
+  "lib/sensors/sensor-divider.js": {
+   "total": 33,
+   "done": 0
+  },
+  "lib/sensors/shunt-resistor.js": {
+   "total": 28,
+   "done": 0
+  },
+  "lib/sensors/strain-gauge-bridge.js": {
+   "total": 43,
+   "done": 0
+  },
+  "lib/sensors/thermistor.js": {
+   "total": 38,
+   "done": 0
+  },
+  "lib/signals/common.js": {
+   "total": 6,
+   "done": 0
+  },
+  "lib/signals/fourier-series.js": {
+   "total": 52,
+   "done": 0
+  },
+  "lib/signals/laplace.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/signals/sampling-nyquist.js": {
+   "total": 35,
+   "done": 0
+  },
+  "lib/signals/transfer-function.js": {
+   "total": 38,
+   "done": 0
+  },
+  "lib/statistics/descriptive-stats.js": {
+   "total": 61,
+   "done": 0
+  },
+  "lib/statistics/hypothesis-tests.js": {
+   "total": 127,
+   "done": 0
+  },
+  "lib/statistics/linear-regression.js": {
+   "total": 63,
+   "done": 0
+  },
+  "lib/statistics/probability-distributions.js": {
+   "total": 75,
+   "done": 0
+  },
+  "lib/statistics/significant-figures.js": {
+   "total": 77,
+   "done": 0
+  },
+  "lib/student/citation-generator.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/student/final-grade.js": {
+   "total": 35,
+   "done": 0
+  },
+  "lib/student/gpa-calculator.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/student/study-planner.js": {
+   "total": 74,
+   "done": 0
+  },
+  "lib/student/word-counter.js": {
+   "total": 46,
+   "done": 0
+  },
+  "lib/units/engineering-notation.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/units/formulas-constants.js": {
+   "total": 74,
+   "done": 0
+  },
+  "lib/units/standard-resistor-values.js": {
+   "total": 24,
+   "done": 0
+  },
+  "lib/units/unit-converter.js": {
+   "total": 82,
+   "done": 0
+  }
+ },
+ "fa": {
+  "assets/js/registry.js": {
+   "total": 230,
+   "done": 230
+  },
+  "lib/ac-circuits/common.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/ac-circuits/complex-power.js": {
+   "total": 56,
+   "done": 56
+  },
+  "lib/ac-circuits/impedance.js": {
+   "total": 33,
+   "done": 33
+  },
+  "lib/ac-circuits/passive-filter.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/ac-circuits/phasor.js": {
+   "total": 35,
+   "done": 35
+  },
+  "lib/ac-circuits/rc-rl-transient.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/ac-circuits/resonance.js": {
+   "total": 28,
+   "done": 28
+  },
+  "lib/ac-circuits/rlc-circuit.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/ac-circuits/three-phase.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/ac-circuits/transformer.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/agriculture-nutrition/calorie-needs.js": {
+   "total": 61,
+   "done": 61
+  },
+  "lib/agriculture-nutrition/fertilizer-npk.js": {
+   "total": 94,
+   "done": 94
+  },
+  "lib/agriculture-nutrition/irrigation.js": {
+   "total": 63,
+   "done": 63
+  },
+  "lib/algebra/complex-numbers.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/algebra/linear-system.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/algebra/matrix.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/algebra/number-bases.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/algebra/partial-fractions.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/algebra/polynomial-roots.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/algebra/quadratic.js": {
+   "total": 29,
+   "done": 29
+  },
+  "lib/algebra/trigonometry.js": {
+   "total": 54,
+   "done": 54
+  },
+  "lib/architecture/far-coverage.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/architecture/polygon-area.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/architecture/stair-design.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/architecture/sun-position.js": {
+   "total": 77,
+   "done": 77
+  },
+  "lib/biology/codons.js": {
+   "total": 21,
+   "done": 21
+  },
+  "lib/biology/dna-tools.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/biology/hardy-weinberg.js": {
+   "total": 73,
+   "done": 73
+  },
+  "lib/biology/microscopy.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/biology/population-growth.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/biology/punnett-square.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/biology/serial-dilution.js": {
+   "total": 73,
+   "done": 73
+  },
+  "lib/calculus/common.js": {
+   "total": 3,
+   "done": 3
+  },
+  "lib/calculus/derivative.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/calculus/function-plotter.js": {
+   "total": 49,
+   "done": 49
+  },
+  "lib/calculus/integral.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/calculus/limit.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/calculus/root-finding.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/calculus/taylor-series.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/chemistry/elements.js": {
+   "total": 118,
+   "done": 118
+  },
+  "lib/chemistry/empirical-formula.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/chemistry/equation-balancer.js": {
+   "total": 21,
+   "done": 21
+  },
+  "lib/chemistry/formula.js": {
+   "total": 16,
+   "done": 16
+  },
+  "lib/chemistry/molar-mass.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/chemistry/periodic-table.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/chemistry/ph-calculator.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/chemistry/reaction-kinetics.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/chemistry/solutions.js": {
+   "total": 70,
+   "done": 70
+  },
+  "lib/chemistry/stoichiometry.js": {
+   "total": 46,
+   "done": 46
+  },
+  "lib/computing/big-o.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/computing/data-transfer.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/computing/ieee754.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/computing/subnet-calculator.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/computing/text-encoding.js": {
+   "total": 48,
+   "done": 48
+  },
+  "lib/control/bode-plot.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/control/routh-hurwitz.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/control/steady-state-error.js": {
+   "total": 25,
+   "done": 25
+  },
+  "lib/control/step-response.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/core/boolean.js": {
+   "total": 10,
+   "done": 10
+  },
+  "lib/core/cinput.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/circuit.js": {
+   "total": 12,
+   "done": 12
+  },
+  "lib/core/format.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/matrix.js": {
+   "total": 5,
+   "done": 5
+  },
+  "lib/core/numexpr.js": {
+   "total": 1,
+   "done": 1
+  },
+  "lib/core/parser.js": {
+   "total": 15,
+   "done": 15
+  },
+  "lib/core/partial.js": {
+   "total": 2,
+   "done": 2
+  },
+  "lib/core/polynomial.js": {
+   "total": 4,
+   "done": 4
+  },
+  "lib/core/symbolic.js": {
+   "total": 64,
+   "done": 64
+  },
+  "lib/core/text.js": {
+   "total": 6,
+   "done": 6
+  },
+  "lib/core/validate.js": {
+   "total": 22,
+   "done": 22
+  },
+  "lib/dates-calendar/age-calculator.js": {
+   "total": 33,
+   "done": 33
+  },
+  "lib/dates-calendar/calendar.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/dates-calendar/date-difference.js": {
+   "total": 55,
+   "done": 55
+  },
+  "lib/dates-calendar/hijri-converter.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/dc-circuits/max-power-transfer.js": {
+   "total": 25,
+   "done": 25
+  },
+  "lib/dc-circuits/mesh-analysis.js": {
+   "total": 33,
+   "done": 33
+  },
+  "lib/dc-circuits/nodal-analysis.js": {
+   "total": 28,
+   "done": 28
+  },
+  "lib/dc-circuits/ohms-law.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/dc-circuits/series-parallel-resistors.js": {
+   "total": 37,
+   "done": 37
+  },
+  "lib/dc-circuits/thevenin-norton.js": {
+   "total": 34,
+   "done": 34
+  },
+  "lib/dc-circuits/voltage-current-divider.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/dc-circuits/wheatstone-bridge.js": {
+   "total": 30,
+   "done": 30
+  },
+  "lib/differential-equations/ode-first-order.js": {
+   "total": 76,
+   "done": 0
+  },
+  "lib/differential-equations/ode-numerical.js": {
+   "total": 44,
+   "done": 0
+  },
+  "lib/differential-equations/ode-second-order.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/digital/binary-twos-complement.js": {
+   "total": 42,
+   "done": 0
+  },
+  "lib/digital/boolean-simplifier.js": {
+   "total": 39,
+   "done": 0
+  },
+  "lib/digital/flip-flops.js": {
+   "total": 48,
+   "done": 0
+  },
+  "lib/digital/logic-gates.js": {
+   "total": 30,
+   "done": 0
+  },
+  "lib/digital/truth-table.js": {
+   "total": 21,
+   "done": 0
+  },
+  "lib/earth-environment/air-quality-index.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/earth-environment/carbon-footprint.js": {
+   "total": 64,
+   "done": 0
+  },
+  "lib/earth-environment/earthquake-magnitude.js": {
+   "total": 58,
+   "done": 0
+  },
+  "lib/earth-environment/radiometric-dating.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/economics/break-even.js": {
+   "total": 42,
+   "done": 42
+  },
+  "lib/economics/compound-interest.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/economics/depreciation.js": {
+   "total": 51,
+   "done": 51
+  },
+  "lib/economics/financial-ratios.js": {
+   "total": 74,
+   "done": 74
+  },
+  "lib/economics/loan-amortization.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/economics/npv-irr.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/economics/price-elasticity.js": {
+   "total": 58,
+   "done": 58
+  },
+  "lib/electronics/bjt-bias.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/capacitor-inductor-combination.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/electronics/led-resistor.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/mosfet.js": {
+   "total": 31,
+   "done": 31
+  },
+  "lib/electronics/op-amp.js": {
+   "total": 54,
+   "done": 54
+  },
+  "lib/electronics/rectifier-ripple.js": {
+   "total": 45,
+   "done": 45
+  },
+  "lib/electronics/resistor-color-code.js": {
+   "total": 62,
+   "done": 62
+  },
+  "lib/electronics/timer-555.js": {
+   "total": 29,
+   "done": 29
+  },
+  "lib/electronics/voltage-regulator.js": {
+   "total": 45,
+   "done": 45
+  },
+  "lib/electronics/zener-regulator.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/elementary-math/fractions.js": {
+   "total": 53,
+   "done": 53
+  },
+  "lib/elementary-math/gcd-lcm.js": {
+   "total": 27,
+   "done": 27
+  },
+  "lib/elementary-math/percentage.js": {
+   "total": 91,
+   "done": 91
+  },
+  "lib/elementary-math/prime-factorization.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/elementary-math/ratio-proportion.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/everyday-math/discount-tax.js": {
+   "total": 60,
+   "done": 60
+  },
+  "lib/everyday-math/fuel-cost.js": {
+   "total": 43,
+   "done": 43
+  },
+  "lib/everyday-math/paint-tiles.js": {
+   "total": 95,
+   "done": 95
+  },
+  "lib/everyday-math/speed-distance-time.js": {
+   "total": 101,
+   "done": 101
+  },
+  "lib/geometry/circle-geometry.js": {
+   "total": 71,
+   "done": 71
+  },
+  "lib/geometry/coordinate-geometry.js": {
+   "total": 84,
+   "done": 84
+  },
+  "lib/geometry/plane-shapes.js": {
+   "total": 185,
+   "done": 185
+  },
+  "lib/geometry/pythagoras.js": {
+   "total": 66,
+   "done": 66
+  },
+  "lib/geometry/solids.js": {
+   "total": 119,
+   "done": 119
+  },
+  "lib/geometry/triangle-solver.js": {
+   "total": 52,
+   "done": 52
+  },
+  "lib/materials/beam-deflection.js": {
+   "total": 79,
+   "done": 79
+  },
+  "lib/materials/data.js": {
+   "total": 26,
+   "done": 26
+  },
+  "lib/materials/material-properties.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/materials/stress-strain.js": {
+   "total": 70,
+   "done": 70
+  },
+  "lib/medicine/bmi-bsa.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/medicine/creatinine-clearance.js": {
+   "total": 41,
+   "done": 41
+  },
+  "lib/medicine/drug-dosage.js": {
+   "total": 40,
+   "done": 40
+  },
+  "lib/medicine/fluid-requirements.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/medicine/iv-drip-rate.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/medicine/lab-units.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/personal-finance/budget-planner.js": {
+   "total": 55,
+   "done": 55
+  },
+  "lib/personal-finance/savings-goal.js": {
+   "total": 75,
+   "done": 75
+  },
+  "lib/personal-finance/zakat.js": {
+   "total": 81,
+   "done": 81
+  },
+  "lib/physics/circular-gravitation.js": {
+   "total": 79,
+   "done": 0
+  },
+  "lib/physics/collisions.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/physics/gas-heat.js": {
+   "total": 59,
+   "done": 0
+  },
+  "lib/physics/harmonic-motion.js": {
+   "total": 51,
+   "done": 0
+  },
+  "lib/physics/inclined-plane.js": {
+   "total": 46,
+   "done": 0
+  },
+  "lib/physics/kinematics.js": {
+   "total": 60,
+   "done": 0
+  },
+  "lib/physics/optics.js": {
+   "total": 71,
+   "done": 0
+  },
+  "lib/physics/projectile-motion.js": {
+   "total": 38,
+   "done": 0
+  },
+  "lib/physics/waves-doppler.js": {
+   "total": 68,
+   "done": 0
+  },
+  "lib/physics/work-energy.js": {
+   "total": 65,
+   "done": 0
+  },
+  "lib/programming/bitwise-calculator.js": {
+   "total": 59,
+   "done": 59
+  },
+  "lib/programming/bracket-checker.js": {
+   "total": 47,
+   "done": 47
+  },
+  "lib/programming/chmod-calculator.js": {
+   "total": 38,
+   "done": 38
+  },
+  "lib/programming/code-view.js": {
+   "total": 27,
+   "done": 27
+  },
+  "lib/programming/color-converter.js": {
+   "total": 69,
+   "done": 69
+  },
+  "lib/programming/cron-explainer.js": {
+   "total": 111,
+   "done": 111
+  },
+  "lib/programming/error-db.js": {
+   "total": 745,
+   "done": 745
+  },
+  "lib/programming/error-explainer.js": {
+   "total": 36,
+   "done": 36
+  },
+  "lib/programming/hash-generator.js": {
+   "total": 32,
+   "done": 32
+  },
+  "lib/programming/html-checker.js": {
+   "total": 66,
+   "done": 66
+  },
+  "lib/programming/js-checker.js": {
+   "total": 157,
+   "done": 157
+  },
+  "lib/programming/json-formatter.js": {
+   "total": 133,
+   "done": 133
+  },
+  "lib/programming/python-checker.js": {
+   "total": 107,
+   "done": 107
+  },
+  "lib/programming/regex-tester.js": {
+   "total": 108,
+   "done": 108
+  },
+  "lib/programming/search-trace.js": {
+   "total": 63,
+   "done": 63
+  },
+  "lib/programming/sorting-trace.js": {
+   "total": 84,
+   "done": 84
+  },
+  "lib/programming/unix-timestamp.js": {
+   "total": 96,
+   "done": 96
+  },
+  "lib/sensors/adc.js": {
+   "total": 41,
+   "done": 0
+  },
+  "lib/sensors/level-shifter.js": {
+   "total": 31,
+   "done": 0
+  },
+  "lib/sensors/pwm-servo.js": {
+   "total": 51,
+   "done": 0
+  },
+  "lib/sensors/rtd.js": {
+   "total": 28,
+   "done": 0
+  },
+  "lib/sensors/sample-rate-resolution.js": {
+   "total": 34,
+   "done": 0
+  },
+  "lib/sensors/sensor-divider.js": {
+   "total": 33,
+   "done": 0
+  },
+  "lib/sensors/shunt-resistor.js": {
+   "total": 28,
+   "done": 0
+  },
+  "lib/sensors/strain-gauge-bridge.js": {
+   "total": 43,
+   "done": 0
+  },
+  "lib/sensors/thermistor.js": {
+   "total": 38,
+   "done": 0
+  },
+  "lib/signals/common.js": {
+   "total": 6,
+   "done": 0
+  },
+  "lib/signals/fourier-series.js": {
+   "total": 52,
+   "done": 0
+  },
+  "lib/signals/laplace.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/signals/sampling-nyquist.js": {
+   "total": 35,
+   "done": 0
+  },
+  "lib/signals/transfer-function.js": {
+   "total": 38,
+   "done": 0
+  },
+  "lib/statistics/descriptive-stats.js": {
+   "total": 61,
+   "done": 0
+  },
+  "lib/statistics/hypothesis-tests.js": {
+   "total": 127,
+   "done": 0
+  },
+  "lib/statistics/linear-regression.js": {
+   "total": 63,
+   "done": 0
+  },
+  "lib/statistics/probability-distributions.js": {
+   "total": 75,
+   "done": 0
+  },
+  "lib/statistics/significant-figures.js": {
+   "total": 77,
+   "done": 0
+  },
+  "lib/student/citation-generator.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/student/final-grade.js": {
+   "total": 35,
+   "done": 0
+  },
+  "lib/student/gpa-calculator.js": {
+   "total": 57,
+   "done": 0
+  },
+  "lib/student/study-planner.js": {
+   "total": 74,
+   "done": 0
+  },
+  "lib/student/word-counter.js": {
+   "total": 46,
+   "done": 0
+  },
+  "lib/units/engineering-notation.js": {
+   "total": 49,
+   "done": 0
+  },
+  "lib/units/formulas-constants.js": {
+   "total": 74,
+   "done": 0
+  },
+  "lib/units/standard-resistor-values.js": {
+   "total": 24,
+   "done": 0
+  },
+  "lib/units/unit-converter.js": {
+   "total": 82,
+   "done": 0
+  }
  }
 }

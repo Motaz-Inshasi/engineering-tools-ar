@@ -14,6 +14,7 @@
  "230302cc1344": " y corriente de cada fuente de tensión ({%0})",
  "205a1a8f95b5": "Escribimos la ley de corrientes de Kirchhoff en cada nodo (suma de las corrientes salientes = 0):",
  "8d8856ddf39e": "Y la ecuación de la fuente de tensión {%0}:",
+ "4b412117b2b1": "En forma matricial:",
  "5249d37883b3": "Resolvemos el sistema por eliminación de Gauss y obtenemos las tensiones de nodo; de ellas, la corriente de cada elemento: $I = (V_a - V_b)/R$.",
  "44ba62426180": "Comprobación: mayor error de LCK en los nodos y suma de las potencias absorbidas (debe ser cero, porque la potencia generada es igual a la consumida):",
  "835b50149b01": "Genera",

@@ -1,0 +1,18 @@
+{
+  "f77dce859ae3": "Paréntesis no coincidente «{%0}».",
+  "38737506eb03": "El símbolo «{%0}» no es un elemento conocido. Recuerda que la primera letra es mayúscula y la segunda minúscula (como Cl y Na).",
+  "f19ca3c45005": "La letra «{%0}» debe ser mayúscula al inicio de un símbolo de elemento (como {%1}).",
+  "0d0f0fdf62dd": "El símbolo «{%0}» no se entiende en la fórmula.",
+  "99127c3577ff": "Hay un paréntesis abierto que no se cerró.",
+  "9a1d3b80c600": "La fórmula está vacía.",
+  "b1a44876769e": "La fórmula del compuesto hidratado está incompleta (como CuSO4·5H2O).",
+  "6cc382077040": "Hay un número sin elemento en la fórmula.",
+  "b53d603b6479": "La fórmula no contiene elementos.",
+  "b276cf15a367": "Escribe la ecuación con dos lados separados por una sola flecha, como: H2 + O2 -> H2O",
+  "b0d50b3904ce": "Cada lado de la ecuación necesita al menos una sustancia.",
+  "f3b5f815c4ef": "En «{%0}»: {%1}",
+  "77014093f678": "El elemento {%0} aparece en un solo lado de la ecuación, por lo que no se puede ajustar.",
+  "c5a95bd240b6": "No hay coeficientes positivos que ajusten esta ecuación. Revisa las fórmulas.",
+  "17425898370a": "La ecuación admite más de un ajuste independiente (combina dos o más reacciones). Sepárala en reacciones distintas.",
+  "539097e83cff": "No hay coeficientes positivos que ajusten esta ecuación. Quizá una de las sustancias está en el lado equivocado."
+}

@@ -1,0 +1,21 @@
+export const MATERIALS = [
+  { id: "a36", ar: "Acero estructural A36", en: "Structural steel A36", E: 200, yield: 250, uts: 400, density: 7850, alpha: 12, k: 50, poisson: 0.29 },
+  { id: "ss304", ar: "Acero inoxidable 304", en: "Stainless steel 304", E: 193, yield: 215, uts: 505, density: 8000, alpha: 17.3, k: 16.2, poisson: 0.29 },
+  { id: "al6061", ar: "Aluminio 6061-T6", en: "Aluminum 6061-T6", E: 69, yield: 276, uts: 310, density: 2700, alpha: 23.6, k: 167, poisson: 0.33 },
+  { id: "copper", ar: "Cobre", en: "Copper", E: 117, yield: 70, uts: 220, density: 8960, alpha: 16.5, k: 401, poisson: 0.34 },
+  { id: "brass", ar: "Latón amarillo (70/30)", en: "Brass 70/30", E: 100, yield: 120, uts: 340, density: 8530, alpha: 19, k: 120, poisson: 0.34 },
+  { id: "ti64", ar: "Titanio Ti-6Al-4V", en: "Titanium Ti-6Al-4V", E: 114, yield: 880, uts: 950, density: 4430, alpha: 8.6, k: 6.7, poisson: 0.34 },
+  { id: "castiron", ar: "Hierro fundido gris", en: "Gray cast iron", E: 100, yield: null, uts: 250, density: 7200, alpha: 10.5, k: 46, poisson: 0.26, note: "El valor de uts aquí es la resistencia aproximada a tracción; la resistencia a compresión es mucho mayor." },
+  { id: "concrete", ar: "Hormigón", en: "Concrete", E: 30, yield: null, uts: 30, density: 2400, alpha: 10, k: 1.7, poisson: 0.2, note: "El valor de uts aquí es la resistencia a compresión f'c, y el hormigón es débil a tracción." },
+  { id: "glass", ar: "Vidrio sodocálcico", en: "Soda-lime glass", E: 70, yield: null, uts: 50, density: 2500, alpha: 9, k: 1, poisson: 0.22, note: "El vidrio es frágil y no tiene un límite de fluencia práctico." },
+  { id: "pine", ar: "Madera de pino", en: "Pine wood (along grain)", E: 9, yield: null, uts: 90, density: 500, alpha: 4, k: 0.15, poisson: 0.35, note: "Los valores son solo en la dirección de las fibras." },
+  { id: "pvc", ar: "PVC rígido", en: "Rigid PVC", E: 3, yield: 45, uts: 50, density: 1400, alpha: 52, k: 0.17, poisson: 0.38 },
+  { id: "nylon", ar: "Nailon 6/6", en: "Nylon 6/6", E: 2.9, yield: 80, uts: 85, density: 1140, alpha: 80, k: 0.25, poisson: 0.39 },
+  { id: "hdpe", ar: "Polietileno de alta densidad HDPE", en: "HDPE", E: 0.9, yield: 26, uts: 33, density: 955, alpha: 120, k: 0.45, poisson: 0.42 },
+  { id: "rubber", ar: "Caucho natural", en: "Natural rubber", E: 0.01, yield: null, uts: 20, density: 1100, alpha: 180, k: 0.15, poisson: 0.49, note: "El módulo de elasticidad es aproximado y el comportamiento del caucho es no lineal." },
+  { id: "cfrp", ar: "Fibra de carbono reforzada con resina", en: "Carbon fiber composite", E: 70, yield: null, uts: 600, density: 1600, alpha: 2, k: 5, poisson: 0.3, note: "Valores aproximados que dependen de la dirección de las fibras y de la disposición de las capas." },
+  { id: "gold", ar: "Oro", en: "Gold", E: 79, yield: 100, uts: 120, density: 19300, alpha: 14.2, k: 318, poisson: 0.44 },
+  { id: "lead", ar: "Plomo", en: "Lead", E: 16, yield: 12, uts: 18, density: 11340, alpha: 29, k: 35, poisson: 0.44 },
+  { id: "magnesium", ar: "Magnesio AZ31", en: "Magnesium AZ31", E: 45, yield: 200, uts: 260, density: 1770, alpha: 26, k: 96, poisson: 0.35 },
+  { id: "tungsten", ar: "Tungsteno", en: "Tungsten", E: 411, yield: null, uts: 1000, density: 19250, alpha: 4.5, k: 173, poisson: 0.28, note: "Comportamiento frágil a temperatura ambiente; los valores son aproximados." }
+];
