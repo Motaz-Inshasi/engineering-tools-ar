@@ -12,3 +12,4 @@
 - Never put secrets or personal data in the repo.
 - Ask before deleting files, running anything outside the project folder, or pushing.
 - Keep commits small and meaningful.
+- Never add Co-Authored-By or any AI attribution lines to commit messages; the owner is the only contributor.
