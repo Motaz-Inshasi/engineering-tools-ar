@@ -1,0 +1,21 @@
+{
+ "f09b85ed1dbc": "Masukkan nilai {%0}.",
+ "beed0ab147c3": "Nilai {%0} bukan angka yang valid.",
+ "af786f267574": "Nilai {%0} harus berhingga.",
+ "a7e3feb9b40e": "{%0} harus berupa bilangan bulat.",
+ "ce967f218b65": "{%0} harus lebih besar dari nol.",
+ "1e0649a82ca7": "{%0} tidak boleh negatif.",
+ "527916a7c2ee": "{%0} tidak boleh sama dengan nol.",
+ "6792649ef421": "{%0} tidak boleh kurang dari {%1}.",
+ "f808cd5546fe": "{%0} tidak boleh lebih dari {%1}.",
+ "66b4682e84aa": "{%0} harus lebih kecil dari {%1}.",
+ "d5a3f2f8280d": "Masukkan {%0}.",
+ "adca16cb118e": "Pilih nilai yang benar untuk {%0}.",
+ "5d524875500e": "Nilai «{%0}» pada {%1} bukan angka yang valid.",
+ "cda49063483e": "Semua nilai pada {%0} harus lebih besar dari nol.",
+ "4d71f5ed26e0": "{%0} memerlukan minimal {%1} nilai.",
+ "af916b45c906": "{%0} menerima maksimal {%1} nilai.",
+ "4a13cb15b380": "Semua baris {%0} harus memiliki jumlah nilai yang sama.",
+ "19b4ff67b117": "{%0} harus berbentuk persegi.",
+ "546683c4c0bd": "Ukuran maksimum {%0} adalah {%1}×{%2}."
+}

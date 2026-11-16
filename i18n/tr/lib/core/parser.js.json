@@ -1,0 +1,17 @@
+{
+ "efb7954c90b2": "{%0}. konumda geçersiz sayı.",
+ "14d444c27751": "İfadede anlaşılmayan simge «{%0}».",
+ "f4bd11d452ee": "Bir matematiksel ifade girin.",
+ "99127c3577ff": "Kapanmamış bir açık parantez var.",
+ "1e34d9f5bdfd": "En büyük tam sayı fonksiyonunun açılan «[» parantezi «]» ile kapatılmamış.",
+ "400ae019a5b3": "Açılan «⌈» parantezi «⌉» ile kapatılmamış.",
+ "8e3e06fc7abd": "«{%0}» bekleniyordu.",
+ "6c2006c7ac8d": "Bu fonksiyon parantez içinde bir girdi gerektirir.",
+ "6be145579c85": "İfade eksik.",
+ "076b5feba452": "«{%0}» değişkeni burada kullanılamaz. İzin verilen değişkenler: {%1}.",
+ "62eeb57b4f17": "Fazla veya yanlış yerde bir kapanış parantezi var.",
+ "0fbb74035ae5": "«{%0}» simgesi yanlış yerde.",
+ "d2cc65ad8685": "Fazla bir kapanış parantezi var.",
+ "8c67e7f14643": "İfade tam olarak anlaşılamadı; yazımı kontrol edin.",
+ "457c5785aa5b": "«{%0}» değişkeninin değeri yok."
+}

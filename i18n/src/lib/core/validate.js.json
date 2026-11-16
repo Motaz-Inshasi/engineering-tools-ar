@@ -1,0 +1,94 @@
+[
+ {
+  "k": "f09b85ed1dbc",
+  "text": "أدخل قيمة {%0}.",
+  "ctx": "fail(`أدخل قيمة ${label}.`, key);"
+ },
+ {
+  "k": "beed0ab147c3",
+  "text": "قيمة {%0} ليست رقماً صحيحاً.",
+  "ctx": "if (Number.isNaN(v)) fail(`قيمة ${label} ليست رقماً صحيحاً.`, key);"
+ },
+ {
+  "k": "af786f267574",
+  "text": "قيمة {%0} يجب أن تكون محدودة.",
+  "ctx": "if (!opts.allowInfinity && !isFinite(v)) fail(`قيمة ${label} يجب أن تكون محدودة.`, key);"
+ },
+ {
+  "k": "a7e3feb9b40e",
+  "text": "{%0} يجب أن يكون عدداً صحيحاً.",
+  "ctx": "if (opts.integer && !Number.isInteger(v)) fail(`${label} يجب أن يكون عدداً صحيحاً.`, key);"
+ },
+ {
+  "k": "ce967f218b65",
+  "text": "{%0} يجب أن يكون أكبر من صفر.",
+  "ctx": "if (opts.positive && !(v > 0)) fail(`${label} يجب أن يكون أكبر من صفر.`, key);"
+ },
+ {
+  "k": "1e0649a82ca7",
+  "text": "{%0} لا يمكن أن يكون سالباً.",
+  "ctx": "if (opts.nonNegative && v < 0) fail(`${label} لا يمكن أن يكون سالباً.`, key);"
+ },
+ {
+  "k": "527916a7c2ee",
+  "text": "{%0} لا يمكن أن يساوي صفراً.",
+  "ctx": "if (opts.nonZero && v === 0) fail(`${label} لا يمكن أن يساوي صفراً.`, key);"
+ },
+ {
+  "k": "6792649ef421",
+  "text": "{%0} يجب ألا يقل عن {%1}.",
+  "ctx": "if (opts.min !== undefined && v < opts.min) fail(`${label} يجب ألا يقل عن ${opts.min}.`, key);"
+ },
+ {
+  "k": "f808cd5546fe",
+  "text": "{%0} يجب ألا يزيد عن {%1}.",
+  "ctx": "if (opts.max !== undefined && v > opts.max) fail(`${label} يجب ألا يزيد عن ${opts.max}.`, key);"
+ },
+ {
+  "k": "66b4682e84aa",
+  "text": "{%0} يجب أن يكون أقل من {%1}.",
+  "ctx": "if (opts.below !== undefined && !(v < opts.below)) fail(`${label} يجب أن يكون أقل من ${opts.below}.`, key);"
+ },
+ {
+  "k": "d5a3f2f8280d",
+  "text": "أدخل {%0}.",
+  "ctx": "fail(`أدخل ${label}.`, key);"
+ },
+ {
+  "k": "adca16cb118e",
+  "text": "اختر قيمة صحيحة لـ {%0}.",
+  "ctx": "if (!allowed.includes(raw)) fail(`اختر قيمة صحيحة لـ ${label}.`, key);"
+ },
+ {
+  "k": "5d524875500e",
+  "text": "القيمة «{%0}» في {%1} ليست رقماً صحيحاً."
+ },
+ {
+  "k": "cda49063483e",
+  "text": "كل القيم في {%0} يجب أن تكون أكبر من صفر."
+ },
+ {
+  "k": "4d71f5ed26e0",
+  "text": "{%0} يحتاج {%1} قيم على الأقل.",
+  "ctx": "if (opts.min && out.length < opts.min) fail(`${label} يحتاج ${opts.min} قيم على الأقل.`, key);"
+ },
+ {
+  "k": "af916b45c906",
+  "text": "{%0} يقبل {%1} قيم على الأكثر.",
+  "ctx": "if (opts.max && out.length > opts.max) fail(`${label} يقبل ${opts.max} قيم على الأكثر.`, key);"
+ },
+ {
+  "k": "4a13cb15b380",
+  "text": "كل صفوف {%0} يجب أن تحتوي العدد نفسه من القيم."
+ },
+ {
+  "k": "19b4ff67b117",
+  "text": "{%0} يجب أن تكون مربعة.",
+  "ctx": "if (opts.square && m.length !== cols) fail(`${label} يجب أن تكون مربعة.`, key);"
+ },
+ {
+  "k": "546683c4c0bd",
+  "text": "أقصى حجم لـ {%0} هو {%1}×{%2}.",
+  "ctx": "if (opts.maxSize && (m.length > opts.maxSize || cols > opts.maxSize)) fail(`أقصى حجم لـ ${label} هو ${opts.maxSize}×${opts.maxSize}.`, key);"
+ }
+]

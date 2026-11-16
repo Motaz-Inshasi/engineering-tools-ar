@@ -1,0 +1,17 @@
+{
+  "efb7954c90b2": "Número incorrecto en la posición {%0}.",
+  "14d444c27751": "Símbolo no reconocido «{%0}» en la expresión.",
+  "f4bd11d452ee": "Introduce una expresión matemática.",
+  "99127c3577ff": "Hay un paréntesis abierto que no se cerró.",
+  "1e34d9f5bdfd": "Hay un corchete «[» de la función de máximo entero que no se cerró con «]».",
+  "400ae019a5b3": "Hay un «⌈» que no se cerró con «⌉».",
+  "8e3e06fc7abd": "Se esperaba «{%0}».",
+  "6c2006c7ac8d": "La función necesita una entrada entre paréntesis.",
+  "6be145579c85": "La expresión está incompleta.",
+  "076b5feba452": "La variable «{%0}» no está permitida aquí. Variables permitidas: {%1}.",
+  "62eeb57b4f17": "Hay un paréntesis de cierre sobrante o mal ubicado.",
+  "0fbb74035ae5": "El símbolo «{%0}» está en una posición incorrecta.",
+  "d2cc65ad8685": "Hay un paréntesis de cierre sobrante.",
+  "8c67e7f14643": "No se pudo interpretar la expresión completa; revisa la sintaxis.",
+  "457c5785aa5b": "No hay valor para la variable «{%0}»."
+}

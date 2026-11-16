@@ -1,0 +1,1118 @@
+[
+ {
+  "k": "3bfc63c63017",
+  "text": "التفاضل والتكامل",
+  "ctx": "{ slug: \"calculus\", title: \"التفاضل والتكامل\", description: \"المشتقات والتكاملات والنهايات ومتسلسلة تايلور وإيجاد الجذور ورسم الدوال مع الحل خطوة بخطوة.\" },"
+ },
+ {
+  "k": "dcff55a93a28",
+  "text": "المشتقات والتكاملات والنهايات ومتسلسلة تايلور وإيجاد الجذور ورسم الدوال مع الحل خطوة بخطوة."
+ },
+ {
+  "k": "c141522d4137",
+  "text": "المعادلات التفاضلية",
+  "ctx": "{ slug: \"differential-equations\", title: \"المعادلات التفاضلية\", description: \"حل المعادلات التفاضلية من الرتبة الأولى والثانية بمعاملات ثابتة خطوة بخطوة، والحل "
+ },
+ {
+  "k": "c46937089811",
+  "text": "حل المعادلات التفاضلية من الرتبة الأولى والثانية بمعاملات ثابتة خطوة بخطوة، والحل العددي بطرق أويلر ورونغ-كوتا مع الرسم."
+ },
+ {
+  "k": "18ed991295aa",
+  "text": "الرياضيات الأساسية",
+  "ctx": "{ slug: \"elementary-math\", title: \"الرياضيات الأساسية\", description: \"الكسور والنسب المئوية والقاسم والمضاعف المشترك والتحليل إلى العوامل الأولية والتناسب الطرد"
+ },
+ {
+  "k": "ad330368cec4",
+  "text": "الكسور والنسب المئوية والقاسم والمضاعف المشترك والتحليل إلى العوامل الأولية والتناسب الطردي والعكسي."
+ },
+ {
+  "k": "842aa64b36ec",
+  "text": "الهندسة الرياضية",
+  "ctx": "{ slug: \"geometry\", title: \"الهندسة الرياضية\", description: \"مساحات الأشكال ومحيطاتها وحجوم المجسمات وحل المثلثات وفيثاغورس والدائرة والهندسة التحليلية.\" },"
+ },
+ {
+  "k": "22fd3e079ec0",
+  "text": "مساحات الأشكال ومحيطاتها وحجوم المجسمات وحل المثلثات وفيثاغورس والدائرة والهندسة التحليلية."
+ },
+ {
+  "k": "1795f15b095a",
+  "text": "الجبر والرياضيات",
+  "ctx": "{ slug: \"algebra\", title: \"الجبر والرياضيات\", description: \"المصفوفات والأنظمة الخطية والأعداد المركبة وكثيرات الحدود والكسور الجزئية والأنظمة العددية والمثلثات"
+ },
+ {
+  "k": "bcb412f33f41",
+  "text": "المصفوفات والأنظمة الخطية والأعداد المركبة وكثيرات الحدود والكسور الجزئية والأنظمة العددية والمثلثات."
+ },
+ {
+  "k": "7cb49d14513c",
+  "text": "لابلاس والإشارات",
+  "ctx": "{ slug: \"signals\", title: \"لابلاس والإشارات\", description: \"تحويل لابلاس وعكسه ومتسلسلة فورييه وأخذ العينات وأقطاب وأصفار دوال التحويل.\" },"
+ },
+ {
+  "k": "816c4139ee99",
+  "text": "تحويل لابلاس وعكسه ومتسلسلة فورييه وأخذ العينات وأقطاب وأصفار دوال التحويل."
+ },
+ {
+  "k": "19669a0086e9",
+  "text": "دوائر التيار المستمر",
+  "ctx": "{ slug: \"dc-circuits\", title: \"دوائر التيار المستمر\", description: \"قانون أوم والمقاومات ومقسمات الجهد والتيار وتحليل العقد والحلقات وثيفينين ونورتن.\" },"
+ },
+ {
+  "k": "81aa3627fa92",
+  "text": "قانون أوم والمقاومات ومقسمات الجهد والتيار وتحليل العقد والحلقات وثيفينين ونورتن."
+ },
+ {
+  "k": "f91a7aa9fdce",
+  "text": "دوائر التيار المتردد",
+  "ctx": "{ slug: \"ac-circuits\", title: \"دوائر التيار المتردد\", description: \"الممانعة ودوائر RLC والرنين والطور والقدرة المركبة والأنظمة ثلاثية الطور والمحولات والمرشحات"
+ },
+ {
+  "k": "57a4b47e0258",
+  "text": "الممانعة ودوائر RLC والرنين والطور والقدرة المركبة والأنظمة ثلاثية الطور والمحولات والمرشحات."
+ },
+ {
+  "k": "a867642d194c",
+  "text": "الإلكترونيات",
+  "ctx": "{ slug: \"electronics\", title: \"الإلكترونيات\", description: \"ألوان المقاومات والـ LED والمقومات وزينر والترانزستورات ومكبرات العمليات والمؤقت 555 ومنظمات الجهد.\""
+ },
+ {
+  "k": "f1d60d55e4cb",
+  "text": "ألوان المقاومات والـ LED والمقومات وزينر والترانزستورات ومكبرات العمليات والمؤقت 555 ومنظمات الجهد."
+ },
+ {
+  "k": "1a790c34683b",
+  "text": "المنطق الرقمي",
+  "ctx": "{ slug: \"digital\", title: \"المنطق الرقمي\", description: \"جداول الحقيقة وتبسيط التعابير المنطقية بخريطة كارنو وكواين والبوابات والمتمم الثنائي والقلابات.\" },"
+ },
+ {
+  "k": "98fc987a2f0d",
+  "text": "جداول الحقيقة وتبسيط التعابير المنطقية بخريطة كارنو وكواين والبوابات والمتمم الثنائي والقلابات."
+ },
+ {
+  "k": "2b0c5935b0df",
+  "text": "الحساسات والربط",
+  "ctx": "{ slug: \"sensors\", title: \"الحساسات والربط\", description: \"المحول ADC ومقسمات الحساسات والثرمستور و RTD ومقياس الانفعال و PWM والشنت وتحويل المستوى.\" },"
+ },
+ {
+  "k": "f9373871b2a6",
+  "text": "المحول ADC ومقسمات الحساسات والثرمستور و RTD ومقياس الانفعال و PWM والشنت وتحويل المستوى."
+ },
+ {
+  "k": "a13b47808911",
+  "text": "أنظمة التحكم",
+  "ctx": "{ slug: \"control\", title: \"أنظمة التحكم\", description: \"استجابة الخطوة ومعيار روث-هورفيتز ومخطط بود وخطأ الحالة المستقرة.\" },"
+ },
+ {
+  "k": "ed4a444a9797",
+  "text": "استجابة الخطوة ومعيار روث-هورفيتز ومخطط بود وخطأ الحالة المستقرة."
+ },
+ {
+  "k": "6decdc0a58f3",
+  "text": "الوحدات والمراجع",
+  "ctx": "{ slug: \"units\", title: \"الوحدات والمراجع\", description: \"تحويل الوحدات والصيغة الهندسية والقوانين والثوابت والقيم القياسية للمقاومات.\" },"
+ },
+ {
+  "k": "9c3553f993d3",
+  "text": "تحويل الوحدات والصيغة الهندسية والقوانين والثوابت والقيم القياسية للمقاومات."
+ },
+ {
+  "k": "e587cae28700",
+  "text": "المواد والمقاومة",
+  "ctx": "{ slug: \"materials\", title: \"المواد والمقاومة\", description: \"الإجهاد والانفعال ومعامل يونغ وانحناء الكمرات والعزوم وجدول خصائص المواد الهندسية الشائعة.\" },"
+ },
+ {
+  "k": "ba92c30eb9da",
+  "text": "الإجهاد والانفعال ومعامل يونغ وانحناء الكمرات والعزوم وجدول خصائص المواد الهندسية الشائعة."
+ },
+ {
+  "k": "81f1d571624a",
+  "text": "الفيزياء",
+  "ctx": "{ slug: \"physics\", title: \"الفيزياء\", description: \"الحركة والمقذوفات والقوى والطاقة والتصادمات والحركة الدائرية والاهتزازات والموجات والبصريات والغازات والحرار"
+ },
+ {
+  "k": "eadb6606a492",
+  "text": "الحركة والمقذوفات والقوى والطاقة والتصادمات والحركة الدائرية والاهتزازات والموجات والبصريات والغازات والحرارة."
+ },
+ {
+  "k": "783a297a1fc7",
+  "text": "الكيمياء",
+  "ctx": "{ slug: \"chemistry\", title: \"الكيمياء\", description: \"الكتلة المولية وموازنة المعادلات والحسابات الكيميائية والمحاليل و pH والصيغة الأولية والجدول الدوري وسرعة "
+ },
+ {
+  "k": "08e768c0b3be",
+  "text": "الكتلة المولية وموازنة المعادلات والحسابات الكيميائية والمحاليل و pH والصيغة الأولية والجدول الدوري وسرعة التفاعل."
+ },
+ {
+  "k": "b5031d7c7081",
+  "text": "الأحياء",
+  "ctx": "{ slug: \"biology\", title: \"الأحياء\", description: \"الوراثة المندلية ومربع بانيت وهاردي-واينبرغ وأدوات DNA و RNA ونمو الجماهير والتخفيف المتسلسل والمجهر.\" },"
+ },
+ {
+  "k": "5b81cebd99b0",
+  "text": "الوراثة المندلية ومربع بانيت وهاردي-واينبرغ وأدوات DNA و RNA ونمو الجماهير والتخفيف المتسلسل والمجهر."
+ },
+ {
+  "k": "e14cc23ffad3",
+  "text": "الإحصاء والاحتمالات",
+  "ctx": "{ slug: \"statistics\", title: \"الإحصاء والاحتمالات\", description: \"الإحصاء الوصفي والتوزيعات الاحتمالية والانحدار والارتباط واختبارات الفرضيات والأرقام المعنوية "
+ },
+ {
+  "k": "851b7e5d19ca",
+  "text": "الإحصاء الوصفي والتوزيعات الاحتمالية والانحدار والارتباط واختبارات الفرضيات والأرقام المعنوية وانتشار الخطأ."
+ },
+ {
+  "k": "b280e8c6491a",
+  "text": "الطب والصيدلة والتمريض",
+  "ctx": "{ slug: \"medicine\", title: \"الطب والصيدلة والتمريض\", description: \"جرعات الأدوية وسرعة التنقيط الوريدي ومؤشر كتلة الجسم وتصفية الكرياتينين وتحويل وحدات المختبر "
+ },
+ {
+  "k": "a3e82bcc179e",
+  "text": "جرعات الأدوية وسرعة التنقيط الوريدي ومؤشر كتلة الجسم وتصفية الكرياتينين وتحويل وحدات المختبر واحتياج السوائل. للتعليم فقط."
+ },
+ {
+  "k": "151dd5de7998",
+  "text": "الاقتصاد والمحاسبة",
+  "ctx": "{ slug: \"economics\", title: \"الاقتصاد والمحاسبة\", description: \"الفائدة المركبة وجدول سداد القرض وصافي القيمة الحالية ومعدل العائد الداخلي ونقطة التعادل والاسته"
+ },
+ {
+  "k": "41f43dd59f31",
+  "text": "الفائدة المركبة وجدول سداد القرض وصافي القيمة الحالية ومعدل العائد الداخلي ونقطة التعادل والاستهلاك والمرونة والنسب المالية."
+ },
+ {
+  "k": "10d4435c9a8f",
+  "text": "المالية الشخصية والزكاة",
+  "ctx": "{ slug: \"personal-finance\", title: \"المالية الشخصية والزكاة\", description: \"حساب الزكاة ونصابها بالذهب والفضة، وتوزيع الميزانية الشهرية، والادخار للوصول إلى هدف"
+ },
+ {
+  "k": "c5dc06136aab",
+  "text": "حساب الزكاة ونصابها بالذهب والفضة، وتوزيع الميزانية الشهرية، والادخار للوصول إلى هدف مالي."
+ },
+ {
+  "k": "98c0a3a216b9",
+  "text": "علوم الحاسوب والشبكات",
+  "ctx": "{ slug: \"computing\", title: \"علوم الحاسوب والشبكات\", description: \"الشبكات الفرعية وعناوين IP وتمثيل الأعداد العشرية IEEE-754 والترميز وتعقيد الخوارزميات وأحجام"
+ },
+ {
+  "k": "ef916d864007",
+  "text": "الشبكات الفرعية وعناوين IP وتمثيل الأعداد العشرية IEEE-754 والترميز وتعقيد الخوارزميات وأحجام البيانات وزمن النقل."
+ },
+ {
+  "k": "3001e7d8a05d",
+  "text": "البرمجة وأدوات المبرمج",
+  "ctx": "{ slug: \"programming\", title: \"البرمجة وأدوات المبرمج\", description: \"فحص الكود وشرح رسائل الخطأ بالعربية، واختبار التعابير النمطية، وتتبع خوارزميات الترتيب وال"
+ },
+ {
+  "k": "76f6504e09ad",
+  "text": "فحص الكود وشرح رسائل الخطأ بالعربية، واختبار التعابير النمطية، وتتبع خوارزميات الترتيب والبحث، والعمليات على البتات، والهاش، وتنسيق JSON."
+ },
+ {
+  "k": "138c3f309460",
+  "text": "العمارة والتخطيط",
+  "ctx": "{ slug: \"architecture\", title: \"العمارة والتخطيط\", description: \"تصميم الدرج ومساحة المضلعات من الإحداثيات ونسبة البناء ومعامل الاستغلال وموقع الشمس وطول الظل.\""
+ },
+ {
+  "k": "9b2657ec3493",
+  "text": "تصميم الدرج ومساحة المضلعات من الإحداثيات ونسبة البناء ومعامل الاستغلال وموقع الشمس وطول الظل."
+ },
+ {
+  "k": "1913d57d38d9",
+  "text": "الجيولوجيا والبيئة",
+  "ctx": "{ slug: \"earth-environment\", title: \"الجيولوجيا والبيئة\", description: \"التأريخ بالنظائر المشعة وقوة الزلازل وطاقتها والبصمة الكربونية ومؤشر جودة الهواء.\" },"
+ },
+ {
+  "k": "656cd4e0a4ca",
+  "text": "التأريخ بالنظائر المشعة وقوة الزلازل وطاقتها والبصمة الكربونية ومؤشر جودة الهواء."
+ },
+ {
+  "k": "e1d6398f8284",
+  "text": "الزراعة والتغذية",
+  "ctx": "{ slug: \"agriculture-nutrition\", title: \"الزراعة والتغذية\", description: \"حساب الأسمدة NPK والاحتياج اليومي من السعرات والعناصر الغذائية واحتياج الري.\" },"
+ },
+ {
+  "k": "e122a3c6d207",
+  "text": "حساب الأسمدة NPK والاحتياج اليومي من السعرات والعناصر الغذائية واحتياج الري."
+ },
+ {
+  "k": "e7a5bf7f6a18",
+  "text": "التواريخ والتقويم",
+  "ctx": "{ slug: \"dates-calendar\", title: \"التواريخ والتقويم\", description: \"التحويل بين التاريخ الهجري والميلادي، والفرق بين تاريخين، وحساب العمر بدقة.\" },"
+ },
+ {
+  "k": "461cee32f7fe",
+  "text": "التحويل بين التاريخ الهجري والميلادي، والفرق بين تاريخين، وحساب العمر بدقة."
+ },
+ {
+  "k": "4327543b5096",
+  "text": "رياضيات الحياة اليومية",
+  "ctx": "{ slug: \"everyday-math\", title: \"رياضيات الحياة اليومية\", description: \"الخصومات والضريبة وتقسيم الفاتورة، وتكلفة الوقود للرحلة، والسرعة والمسافة والزمن، وكميات"
+ },
+ {
+  "k": "8805b5133807",
+  "text": "الخصومات والضريبة وتقسيم الفاتورة، وتكلفة الوقود للرحلة، والسرعة والمسافة والزمن، وكميات الدهان والبلاط."
+ },
+ {
+  "k": "220d36a4fc35",
+  "text": "أدوات الطالب",
+  "ctx": "{ slug: \"student\", title: \"أدوات الطالب\", description: \"المعدل التراكمي والدرجة المطلوبة في الامتحان النهائي وتوليد المراجع وعدّ الكلمات وخطة المذاكرة.\" }"
+ },
+ {
+  "k": "031cf43708cc",
+  "text": "المعدل التراكمي والدرجة المطلوبة في الامتحان النهائي وتوليد المراجع وعدّ الكلمات وخطة المذاكرة."
+ },
+ {
+  "k": "a95fe88181d7",
+  "text": "حاسبة المشتقة",
+  "ctx": "{ slug: \"derivative\", category: \"calculus\", title: \"حاسبة المشتقة\" },"
+ },
+ {
+  "k": "f5ce0fc0d563",
+  "text": "حاسبة التكامل المحدد وغير المحدد",
+  "ctx": "{ slug: \"integral\", category: \"calculus\", title: \"حاسبة التكامل المحدد وغير المحدد\" },"
+ },
+ {
+  "k": "7a0f13be3d32",
+  "text": "حاسبة النهايات",
+  "ctx": "{ slug: \"limit\", category: \"calculus\", title: \"حاسبة النهايات\" },"
+ },
+ {
+  "k": "6d7e5c415078",
+  "text": "متسلسلة تايلور وماكلورين",
+  "ctx": "{ slug: \"taylor-series\", category: \"calculus\", title: \"متسلسلة تايلور وماكلورين\" },"
+ },
+ {
+  "k": "c3585df15d61",
+  "text": "إيجاد الجذور عددياً",
+  "ctx": "{ slug: \"root-finding\", category: \"calculus\", title: \"إيجاد الجذور عددياً\" },"
+ },
+ {
+  "k": "accfcdba4812",
+  "text": "رسم الدوال",
+  "ctx": "{ slug: \"function-plotter\", category: \"calculus\", title: \"رسم الدوال\" },"
+ },
+ {
+  "k": "cdabc4348e6b",
+  "text": "المعادلة التفاضلية الخطية من الرتبة الأولى"
+ },
+ {
+  "k": "9c1a67b3f0ec",
+  "text": "المعادلة التفاضلية من الرتبة الثانية",
+  "ctx": "{ slug: \"ode-second-order\", category: \"differential-equations\", title: \"المعادلة التفاضلية من الرتبة الثانية\" },"
+ },
+ {
+  "k": "6e0d7b18d514",
+  "text": "الحل العددي للمعادلات التفاضلية (أويلر ورونغ-كوتا)"
+ },
+ {
+  "k": "955196ab7758",
+  "text": "حاسبة الكسور",
+  "ctx": "{ slug: \"fractions\", category: \"elementary-math\", title: \"حاسبة الكسور\" },"
+ },
+ {
+  "k": "d8e1e4bf8f0a",
+  "text": "حاسبة النسبة المئوية",
+  "ctx": "{ slug: \"percentage\", category: \"elementary-math\", title: \"حاسبة النسبة المئوية\" },"
+ },
+ {
+  "k": "8457c6f25c91",
+  "text": "القاسم المشترك الأكبر والمضاعف المشترك الأصغر"
+ },
+ {
+  "k": "79f273c7a506",
+  "text": "التحليل إلى العوامل الأولية والقواسم",
+  "ctx": "{ slug: \"prime-factorization\", category: \"elementary-math\", title: \"التحليل إلى العوامل الأولية والقواسم\" },"
+ },
+ {
+  "k": "cae4e9d49004",
+  "text": "النسبة والتناسب",
+  "ctx": "{ slug: \"ratio-proportion\", category: \"elementary-math\", title: \"النسبة والتناسب\" },"
+ },
+ {
+  "k": "409f1ba29f48",
+  "text": "مساحة الأشكال ومحيطها",
+  "ctx": "{ slug: \"plane-shapes\", category: \"geometry\", title: \"مساحة الأشكال ومحيطها\" },"
+ },
+ {
+  "k": "919c9f679517",
+  "text": "حجوم المجسمات ومساحاتها السطحية",
+  "ctx": "{ slug: \"solids\", category: \"geometry\", title: \"حجوم المجسمات ومساحاتها السطحية\" },"
+ },
+ {
+  "k": "5973c4b2da18",
+  "text": "حل المثلث (قانون الجيب وجيب التمام)",
+  "ctx": "{ slug: \"triangle-solver\", category: \"geometry\", title: \"حل المثلث (قانون الجيب وجيب التمام)\" },"
+ },
+ {
+  "k": "a09cff2c240c",
+  "text": "نظرية فيثاغورس والمثلث القائم",
+  "ctx": "{ slug: \"pythagoras\", category: \"geometry\", title: \"نظرية فيثاغورس والمثلث القائم\" },"
+ },
+ {
+  "k": "311c077d095f",
+  "text": "الدائرة: القوس والوتر والقطاع",
+  "ctx": "{ slug: \"circle-geometry\", category: \"geometry\", title: \"الدائرة: القوس والوتر والقطاع\" },"
+ },
+ {
+  "k": "bcaca6390300",
+  "text": "الهندسة التحليلية: المسافة والميل والمستقيم"
+ },
+ {
+  "k": "bc0e2c70384d",
+  "text": "حل أنظمة المعادلات الخطية",
+  "ctx": "{ slug: \"linear-system\", category: \"algebra\", title: \"حل أنظمة المعادلات الخطية\" },"
+ },
+ {
+  "k": "a25ec476c414",
+  "text": "حاسبة المصفوفات",
+  "ctx": "{ slug: \"matrix\", category: \"algebra\", title: \"حاسبة المصفوفات\" },"
+ },
+ {
+  "k": "65d9e6e637ac",
+  "text": "الأعداد المركبة",
+  "ctx": "{ slug: \"complex-numbers\", category: \"algebra\", title: \"الأعداد المركبة\" },"
+ },
+ {
+  "k": "43fa500ae52f",
+  "text": "جذور كثيرات الحدود",
+  "ctx": "{ slug: \"polynomial-roots\", category: \"algebra\", title: \"جذور كثيرات الحدود\" },"
+ },
+ {
+  "k": "6a5ddf6ac3b3",
+  "text": "الكسور الجزئية",
+  "ctx": "{ slug: \"partial-fractions\", category: \"algebra\", title: \"الكسور الجزئية\" },"
+ },
+ {
+  "k": "611dd021dc98",
+  "text": "حل المعادلة التربيعية",
+  "ctx": "{ slug: \"quadratic\", category: \"algebra\", title: \"حل المعادلة التربيعية\" },"
+ },
+ {
+  "k": "1f6e979a38b7",
+  "text": "تحويل الأنظمة العددية",
+  "ctx": "{ slug: \"number-bases\", category: \"algebra\", title: \"تحويل الأنظمة العددية\" },"
+ },
+ {
+  "k": "f206b8edb460",
+  "text": "المثلثات ودائرة الوحدة",
+  "ctx": "{ slug: \"trigonometry\", category: \"algebra\", title: \"المثلثات ودائرة الوحدة\" },"
+ },
+ {
+  "k": "85b32e1509b7",
+  "text": "تحويل لابلاس وعكسه",
+  "ctx": "{ slug: \"laplace\", category: \"signals\", title: \"تحويل لابلاس وعكسه\" },"
+ },
+ {
+  "k": "640e96b68c27",
+  "text": "متسلسلة فورييه للموجات الأساسية",
+  "ctx": "{ slug: \"fourier-series\", category: \"signals\", title: \"متسلسلة فورييه للموجات الأساسية\" },"
+ },
+ {
+  "k": "4ec2199516f7",
+  "text": "أخذ العينات ونايكويست",
+  "ctx": "{ slug: \"sampling-nyquist\", category: \"signals\", title: \"أخذ العينات ونايكويست\" },"
+ },
+ {
+  "k": "8338be4c458a",
+  "text": "أقطاب وأصفار دالة التحويل",
+  "ctx": "{ slug: \"transfer-function\", category: \"signals\", title: \"أقطاب وأصفار دالة التحويل\" },"
+ },
+ {
+  "k": "b26403a742bb",
+  "text": "قانون أوم والقدرة",
+  "ctx": "{ slug: \"ohms-law\", category: \"dc-circuits\", title: \"قانون أوم والقدرة\" },"
+ },
+ {
+  "k": "549081a89d39",
+  "text": "المقاومات على التوالي والتوازي",
+  "ctx": "{ slug: \"series-parallel-resistors\", category: \"dc-circuits\", title: \"المقاومات على التوالي والتوازي\" },"
+ },
+ {
+  "k": "71c9cbdcb62c",
+  "text": "مقسم الجهد ومقسم التيار",
+  "ctx": "{ slug: \"voltage-current-divider\", category: \"dc-circuits\", title: \"مقسم الجهد ومقسم التيار\" },"
+ },
+ {
+  "k": "1e06be971f7f",
+  "text": "تحليل العقد",
+  "ctx": "{ slug: \"nodal-analysis\", category: \"dc-circuits\", title: \"تحليل العقد\" },"
+ },
+ {
+  "k": "1dd81e8eca02",
+  "text": "تحليل الحلقات",
+  "ctx": "{ slug: \"mesh-analysis\", category: \"dc-circuits\", title: \"تحليل الحلقات\" },"
+ },
+ {
+  "k": "fba7d4e5f0d6",
+  "text": "مكافئ ثيفينين ونورتن",
+  "ctx": "{ slug: \"thevenin-norton\", category: \"dc-circuits\", title: \"مكافئ ثيفينين ونورتن\" },"
+ },
+ {
+  "k": "70dd2f9689c5",
+  "text": "أقصى نقل للقدرة",
+  "ctx": "{ slug: \"max-power-transfer\", category: \"dc-circuits\", title: \"أقصى نقل للقدرة\" },"
+ },
+ {
+  "k": "e7aa9233fb3a",
+  "text": "قنطرة ويتستون",
+  "ctx": "{ slug: \"wheatstone-bridge\", category: \"dc-circuits\", title: \"قنطرة ويتستون\" },"
+ },
+ {
+  "k": "b7eabcdf67ff",
+  "text": "ممانعة R و L و C",
+  "ctx": "{ slug: \"impedance\", category: \"ac-circuits\", title: \"ممانعة R و L و C\" },"
+ },
+ {
+  "k": "76d630c0c9e5",
+  "text": "دائرة RLC توالي وتوازي",
+  "ctx": "{ slug: \"rlc-circuit\", category: \"ac-circuits\", title: \"دائرة RLC توالي وتوازي\" },"
+ },
+ {
+  "k": "c3638df92e58",
+  "text": "الرنين ومعامل الجودة Q",
+  "ctx": "{ slug: \"resonance\", category: \"ac-circuits\", title: \"الرنين ومعامل الجودة Q\" },"
+ },
+ {
+  "k": "4bacabca8d02",
+  "text": "حاسبة الطور (Phasor)",
+  "ctx": "{ slug: \"phasor\", category: \"ac-circuits\", title: \"حاسبة الطور (Phasor)\" },"
+ },
+ {
+  "k": "0416e0b4b946",
+  "text": "القدرة المركبة وتصحيح معامل القدرة",
+  "ctx": "{ slug: \"complex-power\", category: \"ac-circuits\", title: \"القدرة المركبة وتصحيح معامل القدرة\" },"
+ },
+ {
+  "k": "f8eeda233a82",
+  "text": "الأنظمة ثلاثية الطور (نجمة ودلتا)",
+  "ctx": "{ slug: \"three-phase\", category: \"ac-circuits\", title: \"الأنظمة ثلاثية الطور (نجمة ودلتا)\" },"
+ },
+ {
+  "k": "a53b737b4e94",
+  "text": "المحول الكهربائي",
+  "ctx": "{ slug: \"transformer\", category: \"ac-circuits\", title: \"المحول الكهربائي\" },"
+ },
+ {
+  "k": "91a0994a1ca2",
+  "text": "الاستجابة الزمنية RC و RL",
+  "ctx": "{ slug: \"rc-rl-transient\", category: \"ac-circuits\", title: \"الاستجابة الزمنية RC و RL\" },"
+ },
+ {
+  "k": "886a3cd66f1d",
+  "text": "تردد القطع للمرشحات السلبية",
+  "ctx": "{ slug: \"passive-filter\", category: \"ac-circuits\", title: \"تردد القطع للمرشحات السلبية\" },"
+ },
+ {
+  "k": "a605e6c8b608",
+  "text": "ألوان المقاومات",
+  "ctx": "{ slug: \"resistor-color-code\", category: \"electronics\", title: \"ألوان المقاومات\" },"
+ },
+ {
+  "k": "3c4fad67669c",
+  "text": "مقاومة الـ LED",
+  "ctx": "{ slug: \"led-resistor\", category: \"electronics\", title: \"مقاومة الـ LED\" },"
+ },
+ {
+  "k": "412febe97cf6",
+  "text": "المقوّم وجهد التموج",
+  "ctx": "{ slug: \"rectifier-ripple\", category: \"electronics\", title: \"المقوّم وجهد التموج\" },"
+ },
+ {
+  "k": "7a6a50e2ad5f",
+  "text": "منظم زينر",
+  "ctx": "{ slug: \"zener-regulator\", category: \"electronics\", title: \"منظم زينر\" },"
+ },
+ {
+  "k": "4c05d50d9ea7",
+  "text": "انحياز الترانزستور BJT",
+  "ctx": "{ slug: \"bjt-bias\", category: \"electronics\", title: \"انحياز الترانزستور BJT\" },"
+ },
+ {
+  "k": "590ee5ee9528",
+  "text": "أساسيات MOSFET",
+  "ctx": "{ slug: \"mosfet\", category: \"electronics\", title: \"أساسيات MOSFET\" },"
+ },
+ {
+  "k": "1f452364acf9",
+  "text": "كسب مكبر العمليات",
+  "ctx": "{ slug: \"op-amp\", category: \"electronics\", title: \"كسب مكبر العمليات\" },"
+ },
+ {
+  "k": "00a73219b725",
+  "text": "المؤقت 555",
+  "ctx": "{ slug: \"timer-555\", category: \"electronics\", title: \"المؤقت 555\" },"
+ },
+ {
+  "k": "25e978ce03e2",
+  "text": "توصيل المكثفات والملفات",
+  "ctx": "{ slug: \"capacitor-inductor-combination\", category: \"electronics\", title: \"توصيل المكثفات والملفات\" },"
+ },
+ {
+  "k": "a866e3774f55",
+  "text": "منظم الجهد: فرق الجهد والحرارة",
+  "ctx": "{ slug: \"voltage-regulator\", category: \"electronics\", title: \"منظم الجهد: فرق الجهد والحرارة\" },"
+ },
+ {
+  "k": "42a8bdb9394f",
+  "text": "مولّد جدول الحقيقة",
+  "ctx": "{ slug: \"truth-table\", category: \"digital\", title: \"مولّد جدول الحقيقة\" },"
+ },
+ {
+  "k": "11be173bbd18",
+  "text": "تبسيط التعابير المنطقية (كارنو وكواين)",
+  "ctx": "{ slug: \"boolean-simplifier\", category: \"digital\", title: \"تبسيط التعابير المنطقية (كارنو وكواين)\" },"
+ },
+ {
+  "k": "54dfaf4848dc",
+  "text": "حاسبة البوابات المنطقية",
+  "ctx": "{ slug: \"logic-gates\", category: \"digital\", title: \"حاسبة البوابات المنطقية\" },"
+ },
+ {
+  "k": "ccf2a2ddc6e3",
+  "text": "الثنائي والست عشري والمتمم الثنائي",
+  "ctx": "{ slug: \"binary-twos-complement\", category: \"digital\", title: \"الثنائي والست عشري والمتمم الثنائي\" },"
+ },
+ {
+  "k": "960bfc005509",
+  "text": "مرجع القلابات (Flip-Flops)",
+  "ctx": "{ slug: \"flip-flops\", category: \"digital\", title: \"مرجع القلابات (Flip-Flops)\" },"
+ },
+ {
+  "k": "1240b075a473",
+  "text": "دقة المحول ADC والتحجيم",
+  "ctx": "{ slug: \"adc\", category: \"sensors\", title: \"دقة المحول ADC والتحجيم\" },"
+ },
+ {
+  "k": "343f2901e61d",
+  "text": "تصميم مقسم جهد للحساس",
+  "ctx": "{ slug: \"sensor-divider\", category: \"sensors\", title: \"تصميم مقسم جهد للحساس\" },"
+ },
+ {
+  "k": "3f7f98be240d",
+  "text": "الثرمستور (Beta و Steinhart-Hart)",
+  "ctx": "{ slug: \"thermistor\", category: \"sensors\", title: \"الثرمستور (Beta و Steinhart-Hart)\" },"
+ },
+ {
+  "k": "2a7a3ead93d7",
+  "text": "حساس الحرارة RTD",
+  "ctx": "{ slug: \"rtd\", category: \"sensors\", title: \"حساس الحرارة RTD\" },"
+ },
+ {
+  "k": "3e0e054c954a",
+  "text": "قنطرة مقياس الانفعال",
+  "ctx": "{ slug: \"strain-gauge-bridge\", category: \"sensors\", title: \"قنطرة مقياس الانفعال\" },"
+ },
+ {
+  "k": "75e9535f7094",
+  "text": "حاسبة PWM والسيرفو",
+  "ctx": "{ slug: \"pwm-servo\", category: \"sensors\", title: \"حاسبة PWM والسيرفو\" },"
+ },
+ {
+  "k": "347688769bbf",
+  "text": "قياس التيار بمقاومة شنت",
+  "ctx": "{ slug: \"shunt-resistor\", category: \"sensors\", title: \"قياس التيار بمقاومة شنت\" },"
+ },
+ {
+  "k": "09dcc084422e",
+  "text": "مقسم جهد لتحويل المستوى",
+  "ctx": "{ slug: \"level-shifter\", category: \"sensors\", title: \"مقسم جهد لتحويل المستوى\" },"
+ },
+ {
+  "k": "3b14ea4e0c4d",
+  "text": "معدل العينات مقابل الدقة",
+  "ctx": "{ slug: \"sample-rate-resolution\", category: \"sensors\", title: \"معدل العينات مقابل الدقة\" },"
+ },
+ {
+  "k": "c5f0ef4e5f54",
+  "text": "استجابة الخطوة للأنظمة",
+  "ctx": "{ slug: \"step-response\", category: \"control\", title: \"استجابة الخطوة للأنظمة\" },"
+ },
+ {
+  "k": "d52ae346d392",
+  "text": "معيار روث-هورفيتز للاستقرار",
+  "ctx": "{ slug: \"routh-hurwitz\", category: \"control\", title: \"معيار روث-هورفيتز للاستقرار\" },"
+ },
+ {
+  "k": "2a4f7cacc36c",
+  "text": "مخطط بود",
+  "ctx": "{ slug: \"bode-plot\", category: \"control\", title: \"مخطط بود\" },"
+ },
+ {
+  "k": "1a4953988c0e",
+  "text": "خطأ الحالة المستقرة",
+  "ctx": "{ slug: \"steady-state-error\", category: \"control\", title: \"خطأ الحالة المستقرة\" },"
+ },
+ {
+  "k": "6a6085c7884c",
+  "text": "محوّل الوحدات",
+  "ctx": "{ slug: \"unit-converter\", category: \"units\", title: \"محوّل الوحدات\" },"
+ },
+ {
+  "k": "8578e5fde6cd",
+  "text": "الصيغة الهندسية والبادئات",
+  "ctx": "{ slug: \"engineering-notation\", category: \"units\", title: \"الصيغة الهندسية والبادئات\" },"
+ },
+ {
+  "k": "9152add048cd",
+  "text": "القوانين والثوابت الشائعة",
+  "ctx": "{ slug: \"formulas-constants\", category: \"units\", title: \"القوانين والثوابت الشائعة\" },"
+ },
+ {
+  "k": "46c7c241060f",
+  "text": "القيم القياسية E12 و E24 و E96",
+  "ctx": "{ slug: \"standard-resistor-values\", category: \"units\", title: \"القيم القياسية E12 و E24 و E96\" },"
+ },
+ {
+  "k": "18976bc368db",
+  "text": "الإجهاد والانفعال ومعامل يونغ",
+  "ctx": "{ slug: \"stress-strain\", category: \"materials\", title: \"الإجهاد والانفعال ومعامل يونغ\" },"
+ },
+ {
+  "k": "784cebc2eeb2",
+  "text": "انحناء الكمرات والعزوم",
+  "ctx": "{ slug: \"beam-deflection\", category: \"materials\", title: \"انحناء الكمرات والعزوم\" },"
+ },
+ {
+  "k": "06441d46fb78",
+  "text": "خصائص المواد الهندسية",
+  "ctx": "{ slug: \"material-properties\", category: \"materials\", title: \"خصائص المواد الهندسية\" },"
+ },
+ {
+  "k": "72976b21d130",
+  "text": "معادلات الحركة بتسارع ثابت",
+  "ctx": "{ slug: \"kinematics\", category: \"physics\", title: \"معادلات الحركة بتسارع ثابت\" },"
+ },
+ {
+  "k": "5a924a9d103f",
+  "text": "حركة المقذوفات",
+  "ctx": "{ slug: \"projectile-motion\", category: \"physics\", title: \"حركة المقذوفات\" },"
+ },
+ {
+  "k": "8284e6e0b05e",
+  "text": "المستوى المائل والاحتكاك",
+  "ctx": "{ slug: \"inclined-plane\", category: \"physics\", title: \"المستوى المائل والاحتكاك\" },"
+ },
+ {
+  "k": "39395e8b5840",
+  "text": "الشغل والطاقة والقدرة",
+  "ctx": "{ slug: \"work-energy\", category: \"physics\", title: \"الشغل والطاقة والقدرة\" },"
+ },
+ {
+  "k": "d21f51da5a16",
+  "text": "الزخم والتصادمات",
+  "ctx": "{ slug: \"collisions\", category: \"physics\", title: \"الزخم والتصادمات\" },"
+ },
+ {
+  "k": "08eadeabc4cb",
+  "text": "الحركة الدائرية والجاذبية والمدارات",
+  "ctx": "{ slug: \"circular-gravitation\", category: \"physics\", title: \"الحركة الدائرية والجاذبية والمدارات\" },"
+ },
+ {
+  "k": "236a599f2895",
+  "text": "الحركة التوافقية والبندول والنابض",
+  "ctx": "{ slug: \"harmonic-motion\", category: \"physics\", title: \"الحركة التوافقية والبندول والنابض\" },"
+ },
+ {
+  "k": "9dec0f5fbf1b",
+  "text": "الموجات والصوت وظاهرة دوبلر",
+  "ctx": "{ slug: \"waves-doppler\", category: \"physics\", title: \"الموجات والصوت وظاهرة دوبلر\" },"
+ },
+ {
+  "k": "907060301905",
+  "text": "العدسات والمرايا وقانون سنل",
+  "ctx": "{ slug: \"optics\", category: \"physics\", title: \"العدسات والمرايا وقانون سنل\" },"
+ },
+ {
+  "k": "9f4aed8bc125",
+  "text": "الغاز المثالي والحرارة",
+  "ctx": "{ slug: \"gas-heat\", category: \"physics\", title: \"الغاز المثالي والحرارة\" },"
+ },
+ {
+  "k": "b01549416c33",
+  "text": "حاسبة الكتلة المولية",
+  "ctx": "{ slug: \"molar-mass\", category: \"chemistry\", title: \"حاسبة الكتلة المولية\" },"
+ },
+ {
+  "k": "12515a78fcd6",
+  "text": "موازنة المعادلات الكيميائية",
+  "ctx": "{ slug: \"equation-balancer\", category: \"chemistry\", title: \"موازنة المعادلات الكيميائية\" },"
+ },
+ {
+  "k": "817ae060adb7",
+  "text": "الحسابات الكيميائية والمادة المحددة",
+  "ctx": "{ slug: \"stoichiometry\", category: \"chemistry\", title: \"الحسابات الكيميائية والمادة المحددة\" },"
+ },
+ {
+  "k": "b1ad91edd3b3",
+  "text": "التركيز والتخفيف",
+  "ctx": "{ slug: \"solutions\", category: \"chemistry\", title: \"التركيز والتخفيف\" },"
+ },
+ {
+  "k": "9698d4345ec7",
+  "text": "حاسبة pH للأحماض والقواعد",
+  "ctx": "{ slug: \"ph-calculator\", category: \"chemistry\", title: \"حاسبة pH للأحماض والقواعد\" },"
+ },
+ {
+  "k": "08ce60120aa1",
+  "text": "الصيغة الأولية والجزيئية",
+  "ctx": "{ slug: \"empirical-formula\", category: \"chemistry\", title: \"الصيغة الأولية والجزيئية\" },"
+ },
+ {
+  "k": "31f40415e648",
+  "text": "الجدول الدوري",
+  "ctx": "{ slug: \"periodic-table\", category: \"chemistry\", title: \"الجدول الدوري\" },"
+ },
+ {
+  "k": "c6f86ef32639",
+  "text": "سرعة التفاعل وعمر النصف",
+  "ctx": "{ slug: \"reaction-kinetics\", category: \"chemistry\", title: \"سرعة التفاعل وعمر النصف\" },"
+ },
+ {
+  "k": "4524564fd2a6",
+  "text": "مربع بانيت والوراثة المندلية",
+  "ctx": "{ slug: \"punnett-square\", category: \"biology\", title: \"مربع بانيت والوراثة المندلية\" },"
+ },
+ {
+  "k": "a992a0247274",
+  "text": "اتزان هاردي-واينبرغ",
+  "ctx": "{ slug: \"hardy-weinberg\", category: \"biology\", title: \"اتزان هاردي-واينبرغ\" },"
+ },
+ {
+  "k": "1008c5680d2e",
+  "text": "أدوات DNA و RNA",
+  "ctx": "{ slug: \"dna-tools\", category: \"biology\", title: \"أدوات DNA و RNA\" },"
+ },
+ {
+  "k": "d253478fe2f2",
+  "text": "نمو الجماهير",
+  "ctx": "{ slug: \"population-growth\", category: \"biology\", title: \"نمو الجماهير\" },"
+ },
+ {
+  "k": "c376bc4cc784",
+  "text": "التخفيف المتسلسل وعدّ الخلايا",
+  "ctx": "{ slug: \"serial-dilution\", category: \"biology\", title: \"التخفيف المتسلسل وعدّ الخلايا\" },"
+ },
+ {
+  "k": "23c25bf617a2",
+  "text": "التكبير والقياس بالمجهر",
+  "ctx": "{ slug: \"microscopy\", category: \"biology\", title: \"التكبير والقياس بالمجهر\" },"
+ },
+ {
+  "k": "0e9c0a2c8b40",
+  "text": "الإحصاء الوصفي",
+  "ctx": "{ slug: \"descriptive-stats\", category: \"statistics\", title: \"الإحصاء الوصفي\" },"
+ },
+ {
+  "k": "135b390ae525",
+  "text": "التوزيعات الاحتمالية",
+  "ctx": "{ slug: \"probability-distributions\", category: \"statistics\", title: \"التوزيعات الاحتمالية\" },"
+ },
+ {
+  "k": "89ee7631d9ed",
+  "text": "الانحدار الخطي والارتباط",
+  "ctx": "{ slug: \"linear-regression\", category: \"statistics\", title: \"الانحدار الخطي والارتباط\" },"
+ },
+ {
+  "k": "132eb8d1a51b",
+  "text": "اختبارات الفرضيات",
+  "ctx": "{ slug: \"hypothesis-tests\", category: \"statistics\", title: \"اختبارات الفرضيات\" },"
+ },
+ {
+  "k": "b9087e72c113",
+  "text": "الأرقام المعنوية وانتشار الخطأ",
+  "ctx": "{ slug: \"significant-figures\", category: \"statistics\", title: \"الأرقام المعنوية وانتشار الخطأ\" },"
+ },
+ {
+  "k": "f235b8942a73",
+  "text": "حساب جرعات الأدوية",
+  "ctx": "{ slug: \"drug-dosage\", category: \"medicine\", title: \"حساب جرعات الأدوية\" },"
+ },
+ {
+  "k": "fa359dc48725",
+  "text": "سرعة التنقيط الوريدي",
+  "ctx": "{ slug: \"iv-drip-rate\", category: \"medicine\", title: \"سرعة التنقيط الوريدي\" },"
+ },
+ {
+  "k": "e34f10d6aa81",
+  "text": "مؤشر كتلة الجسم ومساحة سطحه",
+  "ctx": "{ slug: \"bmi-bsa\", category: \"medicine\", title: \"مؤشر كتلة الجسم ومساحة سطحه\" },"
+ },
+ {
+  "k": "8986e0a5e092",
+  "text": "تصفية الكرياتينين ووظائف الكلى",
+  "ctx": "{ slug: \"creatinine-clearance\", category: \"medicine\", title: \"تصفية الكرياتينين ووظائف الكلى\" },"
+ },
+ {
+  "k": "f47b3171301b",
+  "text": "تحويل وحدات المختبر",
+  "ctx": "{ slug: \"lab-units\", category: \"medicine\", title: \"تحويل وحدات المختبر\" },"
+ },
+ {
+  "k": "a12e70aeff20",
+  "text": "احتياج السوائل اليومي",
+  "ctx": "{ slug: \"fluid-requirements\", category: \"medicine\", title: \"احتياج السوائل اليومي\" },"
+ },
+ {
+  "k": "bb2aeab43062",
+  "text": "الفائدة البسيطة والمركبة",
+  "ctx": "{ slug: \"compound-interest\", category: \"economics\", title: \"الفائدة البسيطة والمركبة\" },"
+ },
+ {
+  "k": "2c40b0554144",
+  "text": "جدول سداد القرض",
+  "ctx": "{ slug: \"loan-amortization\", category: \"economics\", title: \"جدول سداد القرض\" },"
+ },
+ {
+  "k": "ec44fee896d5",
+  "text": "صافي القيمة الحالية ومعدل العائد الداخلي"
+ },
+ {
+  "k": "f91349115278",
+  "text": "نقطة التعادل",
+  "ctx": "{ slug: \"break-even\", category: \"economics\", title: \"نقطة التعادل\" },"
+ },
+ {
+  "k": "b62897f00ae9",
+  "text": "الاستهلاك (الإهلاك)",
+  "ctx": "{ slug: \"depreciation\", category: \"economics\", title: \"الاستهلاك (الإهلاك)\" },"
+ },
+ {
+  "k": "723afcef7e23",
+  "text": "المرونة السعرية",
+  "ctx": "{ slug: \"price-elasticity\", category: \"economics\", title: \"المرونة السعرية\" },"
+ },
+ {
+  "k": "09ecefb563df",
+  "text": "النسب المالية",
+  "ctx": "{ slug: \"financial-ratios\", category: \"economics\", title: \"النسب المالية\" },"
+ },
+ {
+  "k": "bc3f1a75b083",
+  "text": "حاسبة الزكاة",
+  "ctx": "{ slug: \"zakat\", category: \"personal-finance\", title: \"حاسبة الزكاة\" },"
+ },
+ {
+  "k": "585acbca3d41",
+  "text": "توزيع الميزانية الشهرية",
+  "ctx": "{ slug: \"budget-planner\", category: \"personal-finance\", title: \"توزيع الميزانية الشهرية\" },"
+ },
+ {
+  "k": "28f92e52d5b9",
+  "text": "الادخار لهدف مالي",
+  "ctx": "{ slug: \"savings-goal\", category: \"personal-finance\", title: \"الادخار لهدف مالي\" },"
+ },
+ {
+  "k": "010658e06228",
+  "text": "حاسبة الشبكات الفرعية IPv4",
+  "ctx": "{ slug: \"subnet-calculator\", category: \"computing\", title: \"حاسبة الشبكات الفرعية IPv4\" },"
+ },
+ {
+  "k": "9253ae36e224",
+  "text": "تمثيل الأعداد العشرية IEEE-754",
+  "ctx": "{ slug: \"ieee754\", category: \"computing\", title: \"تمثيل الأعداد العشرية IEEE-754\" },"
+ },
+ {
+  "k": "87c9e3b01035",
+  "text": "الترميز: ASCII و UTF-8 و Base64",
+  "ctx": "{ slug: \"text-encoding\", category: \"computing\", title: \"الترميز: ASCII و UTF-8 و Base64\" },"
+ },
+ {
+  "k": "e3223a35f0dd",
+  "text": "مقارنة تعقيد الخوارزميات",
+  "ctx": "{ slug: \"big-o\", category: \"computing\", title: \"مقارنة تعقيد الخوارزميات\" },"
+ },
+ {
+  "k": "141a648b5fff",
+  "text": "أحجام البيانات وزمن النقل",
+  "ctx": "{ slug: \"data-transfer\", category: \"computing\", title: \"أحجام البيانات وزمن النقل\" },"
+ },
+ {
+  "k": "ec9907179348",
+  "text": "شرح رسائل الخطأ البرمجية",
+  "ctx": "{ slug: \"error-explainer\", category: \"programming\", title: \"شرح رسائل الخطأ البرمجية\" },"
+ },
+ {
+  "k": "81d77041c2ce",
+  "text": "فاحص كود JavaScript",
+  "ctx": "{ slug: \"js-checker\", category: \"programming\", title: \"فاحص كود JavaScript\" },"
+ },
+ {
+  "k": "7c56a67faf9a",
+  "text": "فاحص كود Python",
+  "ctx": "{ slug: \"python-checker\", category: \"programming\", title: \"فاحص كود Python\" },"
+ },
+ {
+  "k": "835935677d43",
+  "text": "فاحص الأقواس وعلامات التنصيص",
+  "ctx": "{ slug: \"bracket-checker\", category: \"programming\", title: \"فاحص الأقواس وعلامات التنصيص\" },"
+ },
+ {
+  "k": "d913b69e0c6e",
+  "text": "فاحص ومنسّق JSON",
+  "ctx": "{ slug: \"json-formatter\", category: \"programming\", title: \"فاحص ومنسّق JSON\" },"
+ },
+ {
+  "k": "d6de8a4c85a2",
+  "text": "فاحص وسوم HTML",
+  "ctx": "{ slug: \"html-checker\", category: \"programming\", title: \"فاحص وسوم HTML\" },"
+ },
+ {
+  "k": "4c06f25c1f9e",
+  "text": "اختبار التعابير النمطية Regex",
+  "ctx": "{ slug: \"regex-tester\", category: \"programming\", title: \"اختبار التعابير النمطية Regex\" },"
+ },
+ {
+  "k": "7946712686b2",
+  "text": "تتبع خوارزميات الترتيب خطوة بخطوة",
+  "ctx": "{ slug: \"sorting-trace\", category: \"programming\", title: \"تتبع خوارزميات الترتيب خطوة بخطوة\" },"
+ },
+ {
+  "k": "e50660bea249",
+  "text": "تتبع البحث الخطي والثنائي",
+  "ctx": "{ slug: \"search-trace\", category: \"programming\", title: \"تتبع البحث الخطي والثنائي\" },"
+ },
+ {
+  "k": "24cad0e07074",
+  "text": "حاسبة العمليات على البتات",
+  "ctx": "{ slug: \"bitwise-calculator\", category: \"programming\", title: \"حاسبة العمليات على البتات\" },"
+ },
+ {
+  "k": "f97a4f7c59a8",
+  "text": "توليد الهاش MD5 و SHA",
+  "ctx": "{ slug: \"hash-generator\", category: \"programming\", title: \"توليد الهاش MD5 و SHA\" },"
+ },
+ {
+  "k": "68493ad4e05f",
+  "text": "تحويل الطابع الزمني Unix",
+  "ctx": "{ slug: \"unix-timestamp\", category: \"programming\", title: \"تحويل الطابع الزمني Unix\" },"
+ },
+ {
+  "k": "07ab926961bf",
+  "text": "تحويل الألوان HEX و RGB و HSL",
+  "ctx": "{ slug: \"color-converter\", category: \"programming\", title: \"تحويل الألوان HEX و RGB و HSL\" },"
+ },
+ {
+  "k": "39af62f684e4",
+  "text": "صلاحيات الملفات chmod",
+  "ctx": "{ slug: \"chmod-calculator\", category: \"programming\", title: \"صلاحيات الملفات chmod\" },"
+ },
+ {
+  "k": "395af5786b10",
+  "text": "شرح تعبير cron",
+  "ctx": "{ slug: \"cron-explainer\", category: \"programming\", title: \"شرح تعبير cron\" },"
+ },
+ {
+  "k": "7293ce19ad07",
+  "text": "تصميم الدرج",
+  "ctx": "{ slug: \"stair-design\", category: \"architecture\", title: \"تصميم الدرج\" },"
+ },
+ {
+  "k": "1b5e7478ebbe",
+  "text": "مساحة مضلع من الإحداثيات",
+  "ctx": "{ slug: \"polygon-area\", category: \"architecture\", title: \"مساحة مضلع من الإحداثيات\" },"
+ },
+ {
+  "k": "b267a8dbdfc8",
+  "text": "نسبة البناء ومعامل الاستغلال",
+  "ctx": "{ slug: \"far-coverage\", category: \"architecture\", title: \"نسبة البناء ومعامل الاستغلال\" },"
+ },
+ {
+  "k": "cafc562d994a",
+  "text": "موقع الشمس وطول الظل",
+  "ctx": "{ slug: \"sun-position\", category: \"architecture\", title: \"موقع الشمس وطول الظل\" },"
+ },
+ {
+  "k": "ae16791226f1",
+  "text": "التأريخ بالنظائر المشعة",
+  "ctx": "{ slug: \"radiometric-dating\", category: \"earth-environment\", title: \"التأريخ بالنظائر المشعة\" },"
+ },
+ {
+  "k": "f709efc2927b",
+  "text": "قوة الزلزال وطاقته",
+  "ctx": "{ slug: \"earthquake-magnitude\", category: \"earth-environment\", title: \"قوة الزلزال وطاقته\" },"
+ },
+ {
+  "k": "cb7ca31bcfb1",
+  "text": "البصمة الكربونية",
+  "ctx": "{ slug: \"carbon-footprint\", category: \"earth-environment\", title: \"البصمة الكربونية\" },"
+ },
+ {
+  "k": "ec008dd98161",
+  "text": "مؤشر جودة الهواء AQI",
+  "ctx": "{ slug: \"air-quality-index\", category: \"earth-environment\", title: \"مؤشر جودة الهواء AQI\" },"
+ },
+ {
+  "k": "0483273754cb",
+  "text": "حساب الأسمدة NPK",
+  "ctx": "{ slug: \"fertilizer-npk\", category: \"agriculture-nutrition\", title: \"حساب الأسمدة NPK\" },"
+ },
+ {
+  "k": "d4952919b1c7",
+  "text": "الاحتياج اليومي من السعرات",
+  "ctx": "{ slug: \"calorie-needs\", category: \"agriculture-nutrition\", title: \"الاحتياج اليومي من السعرات\" },"
+ },
+ {
+  "k": "5a7a611bdebb",
+  "text": "احتياج الري",
+  "ctx": "{ slug: \"irrigation\", category: \"agriculture-nutrition\", title: \"احتياج الري\" },"
+ },
+ {
+  "k": "1d859c9c01bf",
+  "text": "تحويل التاريخ الهجري والميلادي",
+  "ctx": "{ slug: \"hijri-converter\", category: \"dates-calendar\", title: \"تحويل التاريخ الهجري والميلادي\" },"
+ },
+ {
+  "k": "29bdb51ab906",
+  "text": "الفرق بين تاريخين وإضافة الأيام",
+  "ctx": "{ slug: \"date-difference\", category: \"dates-calendar\", title: \"الفرق بين تاريخين وإضافة الأيام\" },"
+ },
+ {
+  "k": "0cd098e0d4e4",
+  "text": "حاسبة العمر",
+  "ctx": "{ slug: \"age-calculator\", category: \"dates-calendar\", title: \"حاسبة العمر\" },"
+ },
+ {
+  "k": "b45f00607139",
+  "text": "الخصم والضريبة وتقسيم الفاتورة",
+  "ctx": "{ slug: \"discount-tax\", category: \"everyday-math\", title: \"الخصم والضريبة وتقسيم الفاتورة\" },"
+ },
+ {
+  "k": "458f1db29afb",
+  "text": "تكلفة الوقود للرحلة",
+  "ctx": "{ slug: \"fuel-cost\", category: \"everyday-math\", title: \"تكلفة الوقود للرحلة\" },"
+ },
+ {
+  "k": "45ed93178fef",
+  "text": "السرعة والمسافة والزمن",
+  "ctx": "{ slug: \"speed-distance-time\", category: \"everyday-math\", title: \"السرعة والمسافة والزمن\" },"
+ },
+ {
+  "k": "3f044cd1f6b4",
+  "text": "كمية الدهان والبلاط",
+  "ctx": "{ slug: \"paint-tiles\", category: \"everyday-math\", title: \"كمية الدهان والبلاط\" },"
+ },
+ {
+  "k": "e178d72ee83c",
+  "text": "حاسبة المعدل التراكمي",
+  "ctx": "{ slug: \"gpa-calculator\", category: \"student\", title: \"حاسبة المعدل التراكمي\" },"
+ },
+ {
+  "k": "0137d6a6568e",
+  "text": "الدرجة المطلوبة في الامتحان النهائي",
+  "ctx": "{ slug: \"final-grade\", category: \"student\", title: \"الدرجة المطلوبة في الامتحان النهائي\" },"
+ },
+ {
+  "k": "85d184142ad3",
+  "text": "مولّد المراجع APA و IEEE و MLA",
+  "ctx": "{ slug: \"citation-generator\", category: \"student\", title: \"مولّد المراجع APA و IEEE و MLA\" },"
+ },
+ {
+  "k": "934a8889c039",
+  "text": "عدّاد الكلمات ووقت القراءة",
+  "ctx": "{ slug: \"word-counter\", category: \"student\", title: \"عدّاد الكلمات ووقت القراءة\" },"
+ },
+ {
+  "k": "28c336ba5b8a",
+  "text": "خطة المذاكرة والعد التنازلي للامتحان",
+  "ctx": "{ slug: \"study-planner\", category: \"student\", title: \"خطة المذاكرة والعد التنازلي للامتحان\" }"
+ }
+]

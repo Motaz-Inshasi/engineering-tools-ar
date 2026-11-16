@@ -1,0 +1,466 @@
+[
+ {
+  "k": "828db020304f",
+  "text": "الصق كود Python لاكتشاف أخطاء المسافات البادئة والنقطتين والأقواس والنصوص غير المغلقة والأسماء غير المعرّفة، مع شرح كل خطأ بالعربية وطريقة إصلاحه."
+ },
+ {
+  "k": "61ff7e57d5e2",
+  "text": "بايثون",
+  "ctx": "keywords: [\"python\", \"بايثون\", \"فحص الكود\", \"IndentationError\", \"SyntaxError\", \"NameError\", \"تصحيح الأخطاء\", \"linter\"],"
+ },
+ {
+  "k": "847fa9fe66ea",
+  "text": "فحص الكود",
+  "ctx": "keywords: [\"python\", \"بايثون\", \"فحص الكود\", \"IndentationError\", \"SyntaxError\", \"NameError\", \"تصحيح الأخطاء\", \"linter\"],"
+ },
+ {
+  "k": "73cd49db22cc",
+  "text": "تصحيح الأخطاء",
+  "ctx": "keywords: [\"python\", \"بايثون\", \"فحص الكود\", \"IndentationError\", \"SyntaxError\", \"NameError\", \"تصحيح الأخطاء\", \"linter\"],"
+ },
+ {
+  "k": "fa066dfdaa24",
+  "text": "يُقسَّم الكود إلى أسطر منطقية، ثم تُفحص المسافات البادئة والكتل وقواعد الأخطاء الشائعة"
+ },
+ {
+  "k": "3063ef532bed",
+  "text": "كود Python",
+  "ctx": "{ id: \"code\", label: \"كود Python\", type: \"textarea\", rows: 12, wide: true, placeholder: \"def greet(name):\\n    print(\\\"Hello\\\", name)\" }"
+ },
+ {
+  "k": "26cb8db7cd5c",
+  "text": "السطر 1",
+  "ctx": "expect: [\"':'\", \"السطر 1\"],"
+ },
+ {
+  "k": "fe24b76568c4",
+  "text": "مثال: دالة نسي فيها الطالب النقطتين بعد التعريف، وكتب اسم الدالة خطأً عند استدعائها."
+ },
+ {
+  "k": "d7ccf3103388",
+  "text": "القوس (",
+  "ctx": "const BR_NAME = { \"(\": \"القوس (\", \"[\": \"القوس [\", \"{\": \"القوس {\" };"
+ },
+ {
+  "k": "329830b07af0",
+  "text": "القوس [",
+  "ctx": "const BR_NAME = { \"(\": \"القوس (\", \"[\": \"القوس [\", \"{\": \"القوس {\" };"
+ },
+ {
+  "k": "373918a59964",
+  "text": "القوس {",
+  "ctx": "const BR_NAME = { \"(\": \"القوس (\", \"[\": \"القوس [\", \"{\": \"القوس {\" };"
+ },
+ {
+  "k": "ae991324444f",
+  "text": "نص بثلاث علامات تنصيص {%0} لم يُغلق حتى نهاية الكود (unterminated triple-quoted string literal)."
+ },
+ {
+  "k": "57bbe6c4d56d",
+  "text": "أضف {%0} في نهاية النص.",
+  "ctx": "? { line: startLine, col: startCol, len: 3, severity: \"error\", message: `نص بثلاث علامات تنصيص ${q} لم يُغلق حتى نهاية الكود (unterminated triple-quoted string "
+ },
+ {
+  "k": "b84b93f3ed24",
+  "text": "النص الذي يبدأ بـ {%0} لم يُغلق على السطر نفسه (unterminated string literal)."
+ },
+ {
+  "k": "0f25269237fa",
+  "text": "أغلق النص بـ {%0} قبل نهاية السطر، أو استخدم ثلاث علامات {%1} لنص متعدد الأسطر."
+ },
+ {
+  "k": "fd182bf72f70",
+  "text": "قوس الإغلاق «{%0}» زائد ولا يقابله قوس فتح (unmatched '{%1}')."
+ },
+ {
+  "k": "e0ffcd78e19c",
+  "text": "احذف هذا القوس أو أضف قوس الفتح الناقص.",
+  "ctx": "if (!top) issues.push({ line, col, len: 1, severity: \"error\", message: `قوس الإغلاق «${c}» زائد ولا يقابله قوس فتح (unmatched '${c}').`, fix: \"احذف هذا القوس أو"
+ },
+ {
+  "k": "86312fc535e4",
+  "text": "القوس «{%0}» لا يطابق «{%1}» المفتوح في السطر {%2} (closing parenthesis '{%3}' does not match opening parenthesis '{%4}')."
+ },
+ {
+  "k": "a165d17be180",
+  "text": "أغلق «{%0}» بـ «{%1}».",
+  "ctx": "else if (top.ch !== CLOSE[c]) { issues.push({ line, col, len: 1, severity: \"error\", message: `القوس «${c}» لا يطابق «${top.ch}» المفتوح في السطر ${top.line} (cl"
+ },
+ {
+  "k": "c308090a6560",
+  "text": "{%0} المفتوح في السطر {%1} لم يُغلق ('{%2}' was never closed)."
+ },
+ {
+  "k": "83df396e12a9",
+  "text": "أضف «{%0}» في المكان المناسب.",
+  "ctx": "for (const s of stack) issues.push({ line: s.line, col: s.col, len: 1, severity: \"error\", message: `${BR_NAME[s.ch]} المفتوح في السطر ${s.line} لم يُغلق ('${s.c"
+ },
+ {
+  "k": "b028cfd852f7",
+  "text": "إزاحة هذا السطر تخلط بين Tab والمسافات العادية، وهذا يسبب بسهولة TabError: inconsistent use of tabs and spaces in indentation."
+ },
+ {
+  "k": "e89fcfae46df",
+  "text": "استخدم 4 مسافات عادية لكل مستوى في الملف كله، وفعّل في محررك تحويل Tab إلى مسافات."
+ },
+ {
+  "k": "85164872b8eb",
+  "text": "الكود يستخدم Tab في بعض الأسطر ومسافات عادية في أخرى، وهذا يسبب TabError بسهولة عند أي تعديل."
+ },
+ {
+  "k": "c5598a8a8986",
+  "text": "استخدم 4 مسافات عادية لكل مستوى في الملف كله."
+ },
+ {
+  "k": "d7424ff8cacc",
+  "text": "بعد السطر {%0} المنتهي بـ «:» يجب أن تأتي كتلة مُزاحة إلى الداخل (IndentationError: expected an indented block after '{%1}' statement on line {%2})."
+ },
+ {
+  "k": "3bd813190389",
+  "text": "أزِح هذا السطر 4 مسافات إلى الداخل، أو اكتب pass إذا كانت الكتلة فارغة مؤقتاً."
+ },
+ {
+  "k": "995b365110fe",
+  "text": "إزاحة غير متوقعة: هذا السطر مُزاح إلى الداخل دون أن يسبقه سطر ينتهي بـ «:» (IndentationError: unexpected indent)."
+ },
+ {
+  "k": "e176b54a102f",
+  "text": "احذف المسافات الزائدة في بداية السطر ليصبح بمحاذاة السطر الذي قبله."
+ },
+ {
+  "k": "e563bf2f6950",
+  "text": "هذا السطر لا يطابق مستوى إزاحة أي كتلة سابقة (IndentationError: unindent does not match any outer indentation level)."
+ },
+ {
+  "k": "dcc595eac9e8",
+  "text": "اجعل إزاحة السطر مساوية تماماً لإزاحة الكتلة التي ينتمي إليها (مضاعفات 4 مسافات)."
+ },
+ {
+  "k": "45ce628e5a10",
+  "text": "الإزاحة ليست من مضاعفات 4 مسافات.",
+  "ctx": "if (!odd && !usesTab && w % 4 !== 0) { odd = true; add(L.line, 0, L.indent.length, \"info\", \"الإزاحة ليست من مضاعفات 4 مسافات.\", \"الأسلوب المعتمد في Python (PEP "
+ },
+ {
+  "k": "82d341651c22",
+  "text": "الأسلوب المعتمد في Python (PEP 8) هو 4 مسافات لكل مستوى."
+ },
+ {
+  "k": "36471c5a4279",
+  "text": "الكتلة try في السطر {%0} بلا except أو finally بعدها (SyntaxError: expected 'except' or 'finally' block)."
+ },
+ {
+  "k": "f9b4f1852cce",
+  "text": "أضف بعد كتلة try كتلة except نوع_الخطأ: أو finally: بمحاذاتها."
+ },
+ {
+  "k": "db26dead709a",
+  "text": "Python لا تستخدم «else if».",
+  "ctx": "if (elseIf) add(L.line, lineCol, 7, \"error\", \"Python لا تستخدم «else if».\", \"اكتب elif بدلاً منها: elif شرط:\");"
+ },
+ {
+  "k": "152434ffe45d",
+  "text": "اكتب elif بدلاً منها: elif شرط:",
+  "ctx": "if (elseIf) add(L.line, lineCol, 7, \"error\", \"Python لا تستخدم «else if».\", \"اكتب elif بدلاً منها: elif شرط:\");"
+ },
+ {
+  "k": "477125c49ef9",
+  "text": "Python لا تستخدم الأقواس { } لتحديد الكتل كما في C و Java، بل النقطتين «:» والإزاحة."
+ },
+ {
+  "k": "d695dd850a2b",
+  "text": "اكتب: {%0}: ثم أزِح أسطر الكتلة 4 مسافات واحذف }."
+ },
+ {
+  "k": "35f744cdab5a",
+  "text": "تعريف {%0}",
+  "ctx": "const name = kw === \"def\" || kw === \"class\" ? `تعريف ${kw}` : `الجملة ${kw}`;"
+ },
+ {
+  "k": "30c49edad12d",
+  "text": "الجملة {%0}",
+  "ctx": "const name = kw === \"def\" || kw === \"class\" ? `تعريف ${kw}` : `الجملة ${kw}`;"
+ },
+ {
+  "k": "b2331fd43349",
+  "text": "{%0} يجب أن ينتهي بنقطتين «:» (SyntaxError: expected ':')."
+ },
+ {
+  "k": "ab6a1403a0ac",
+  "text": "أضف «:» في نهاية السطر: {%0}:",
+  "ctx": "add(L.line, Math.min(physical[L.line - 1].length, lineCol + original.length), 1, \"error\", `${name} يجب أن ينتهي بنقطتين «:» (SyntaxError: expected ':').`, `أضف "
+ },
+ {
+  "k": "2e3abadde453",
+  "text": "تعريف الدالة يحتاج قوسين بعد اسمها حتى لو لم تكن لها معاملات."
+ },
+ {
+  "k": "9e5cc43288aa",
+  "text": "اكتب: def name():",
+  "ctx": "if (kw === \"def\" && !/^(async\\s+)?def\\s+[A-Za-z_]\\w*\\s*\\(/.test(t)) add(L.line, lineCol, t.length, \"error\", \"تعريف الدالة يحتاج قوسين بعد اسمها حتى لو لم تكن له"
+ },
+ {
+  "k": "8ba9bfa607d0",
+  "text": "استخدمت = (إسناد) داخل الشرط بدل == (مقارنة) (SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?)."
+ },
+ {
+  "k": "6cbac6677f58",
+  "text": "استخدم == للمقارنة، مثل: if x == 5:",
+  "ctx": "if ((kw === \"if\" || kw === \"elif\" || kw === \"while\") && hasTopAssign(colon > 0 ? t.slice(kw.length, colon) : t.slice(kw.length))) add(L.line, lineCol, t.length,"
+ },
+ {
+  "k": "5812cb86aca7",
+  "text": "elif بلا if قبلها على مستوى الإزاحة نفسه (SyntaxError: invalid syntax)."
+ },
+ {
+  "k": "23ec43db760b",
+  "text": "تأكد أن elif بمحاذاة if التي تتبعها تماماً."
+ },
+ {
+  "k": "282420b00719",
+  "text": "else بلا if (أو for/while/try) قبلها على مستوى الإزاحة نفسه (SyntaxError: invalid syntax)."
+ },
+ {
+  "k": "d7f91f909907",
+  "text": "تأكد أن else بمحاذاة الجملة if التي تتبعها تماماً."
+ },
+ {
+  "k": "fab0e2830011",
+  "text": "except بلا try قبلها على مستوى الإزاحة نفسه."
+ },
+ {
+  "k": "60c3dfeb44d8",
+  "text": "ضع except بمحاذاة try تماماً.",
+  "ctx": "if (kw === \"except\" && ![\"try\", \"except\"].includes(before)) add(L.line, lineCol, 6, \"error\", \"except بلا try قبلها على مستوى الإزاحة نفسه.\", \"ضع except بمحاذاة "
+ },
+ {
+  "k": "a78b3c5fd152",
+  "text": "finally بلا try قبلها على مستوى الإزاحة نفسه."
+ },
+ {
+  "k": "67460d7687c9",
+  "text": "ضع finally بمحاذاة try تماماً.",
+  "ctx": "if (kw === \"finally\" && ![\"try\", \"except\", \"else\"].includes(before)) add(L.line, lineCol, 7, \"error\", \"finally بلا try قبلها على مستوى الإزاحة نفسه.\", \"ضع final"
+ },
+ {
+  "k": "eb8b4904903d",
+  "text": "except: بلا نوع خطأ تلتقط كل الأخطاء، حتى Ctrl+C، فتُخفي أسباب المشكلات."
+ },
+ {
+  "k": "14be49cc07cf",
+  "text": "حدّد نوع الخطأ: except ValueError: أو على الأقل except Exception:"
+ },
+ {
+  "k": "36c7f52acfd3",
+  "text": "دالة داخل صنف (method) بلا المعامل self، فعند استدعائها من كائن سيحدث TypeError: takes 0 positional arguments but 1 was given."
+ },
+ {
+  "k": "3464af3686b2",
+  "text": "اجعل self أول معامل: def name(self, ...):، أو أضف @staticmethod قبلها."
+ },
+ {
+  "k": "d1e3b88686ee",
+  "text": "قيمة افتراضية قابلة للتعديل ([] أو {}) تُنشأ مرة واحدة وتُشارك بين كل الاستدعاءات."
+ },
+ {
+  "k": "b727f781b892",
+  "text": "استخدم None ثم أنشئها داخل الدالة: def f(a=None): if a is None: a = []"
+ },
+ {
+  "k": "57ea17b25cef",
+  "text": "return خارج أي دالة (SyntaxError: 'return' outside function)."
+ },
+ {
+  "k": "104529e436e3",
+  "text": "ضع return داخل دالة def، أو احذفه.",
+  "ctx": "if (kw === \"return\" && !inFunc) add(L.line, lineCol, 6, \"error\", \"return خارج أي دالة (SyntaxError: 'return' outside function).\", \"ضع return داخل دالة def، أو ا"
+ },
+ {
+  "k": "5bcd799e576f",
+  "text": "yield خارج أي دالة.",
+  "ctx": "if (kw === \"yield\" && !inFunc) add(L.line, lineCol, 5, \"error\", \"yield خارج أي دالة.\", \"ضع yield داخل دالة def.\");"
+ },
+ {
+  "k": "16db93694153",
+  "text": "ضع yield داخل دالة def.",
+  "ctx": "if (kw === \"yield\" && !inFunc) add(L.line, lineCol, 5, \"error\", \"yield خارج أي دالة.\", \"ضع yield داخل دالة def.\");"
+ },
+ {
+  "k": "9a275cfd9108",
+  "text": "{%0} خارج حلقة تكرار (SyntaxError: '{%1}' outside loop)."
+ },
+ {
+  "k": "ffcb8bb588db",
+  "text": "ضع {%0} داخل for أو while.",
+  "ctx": "if ((kw === \"break\" || kw === \"continue\") && !loopIdx) add(L.line, lineCol, kw.length, \"error\", `${kw} خارج حلقة تكرار (SyntaxError: '${kw}' outside loop).`, `ض"
+ },
+ {
+  "k": "b7b393f6db58",
+  "text": "في Python 3 أصبحت print دالة تحتاج قوسين (SyntaxError: Missing parentheses in call to 'print')."
+ },
+ {
+  "k": "87e857155141",
+  "text": "اكتب: print({%0})",
+  "ctx": "if (/^print\\s+[^\\s=(.,)]/.test(t) && !/^print\\s*\\(/.test(t)) add(L.line, lineCol, 5, \"error\", \"في Python 3 أصبحت print دالة تحتاج قوسين (SyntaxError: Missing pa"
+ },
+ {
+  "k": "8898c1eb19c0",
+  "text": "Python لا تستخدم الأقواس { } لتحديد الكتل."
+ },
+ {
+  "k": "d64b0d6aacf1",
+  "text": "احذف القوس واعتمد على الإزاحة لتحديد الكتلة."
+ },
+ {
+  "k": "0ce1998998fb",
+  "text": "Python لا تستخدم && و || .",
+  "ctx": "if (/&&|\\|\\|/.test(t)) add(L.line, at(/&&|\\|\\|/), 2, \"error\", \"Python لا تستخدم && و || .\", \"استخدم and بدل && و or بدل || .\");"
+ },
+ {
+  "k": "9beeefcf6723",
+  "text": "استخدم and بدل && و or بدل || .",
+  "ctx": "if (/&&|\\|\\|/.test(t)) add(L.line, at(/&&|\\|\\|/), 2, \"error\", \"Python لا تستخدم && و || .\", \"استخدم and بدل && و or بدل || .\");"
+ },
+ {
+  "k": "36341332dd3e",
+  "text": "Python لا تستخدم ! للنفي.",
+  "ctx": "if (/(^|[^!=<>])!(?!=)\\s*[\\w(]/.test(t)) add(L.line, at(/!(?!=)/), 1, \"error\", \"Python لا تستخدم ! للنفي.\", \"استخدم not، مثل: if not done:\");"
+ },
+ {
+  "k": "6c317f578a4e",
+  "text": "استخدم not، مثل: if not done:",
+  "ctx": "if (/(^|[^!=<>])!(?!=)\\s*[\\w(]/.test(t)) add(L.line, at(/!(?!=)/), 1, \"error\", \"Python لا تستخدم ! للنفي.\", \"استخدم not، مثل: if not done:\");"
+ },
+ {
+  "k": "96479e5aca67",
+  "text": "Python لا تدعم ++ أو -- .",
+  "ctx": "if (/[A-Za-z_]\\w*\\s*(\\+\\+|--)(?!\\s*[\\w(])/.test(t)) add(L.line, at(/\\+\\+|--/), 2, \"error\", \"Python لا تدعم ++ أو -- .\", \"استخدم x += 1 أو x -= 1 .\");"
+ },
+ {
+  "k": "ea582b1f05d1",
+  "text": "استخدم x += 1 أو x -= 1 .",
+  "ctx": "if (/[A-Za-z_]\\w*\\s*(\\+\\+|--)(?!\\s*[\\w(])/.test(t)) add(L.line, at(/\\+\\+|--/), 2, \"error\", \"Python لا تدعم ++ أو -- .\", \"استخدم x += 1 أو x -= 1 .\");"
+ },
+ {
+  "k": "2538534f6122",
+  "text": "الفاصلة المنقوطة في نهاية السطر غير ضرورية في Python."
+ },
+ {
+  "k": "e1155e232835",
+  "text": "احذفها.",
+  "ctx": "if (/;\\s*$/.test(t)) add(L.line, at(/;\\s*$/), 1, \"info\", \"الفاصلة المنقوطة في نهاية السطر غير ضرورية في Python.\", \"احذفها.\");"
+ },
+ {
+  "k": "5c6759772efb",
+  "text": "«{%0}» غير معرّف في Python (NameError)، فالقيم المنطقية والقيمة الفارغة تُكتب بحرف كبير."
+ },
+ {
+  "k": "d5f94f9ead11",
+  "text": "اكتب {%0}.",
+  "ctx": "add(L.line, at(new RegExp(`\\\\b${m[1]}\\\\b`)), m[1].length, \"error\", `«${m[1]}» غير معرّف في Python (NameError)، فالقيم المنطقية والقيمة الفارغة تُكتب بحرف كبير.`"
+ },
+ {
+  "k": "ed78e0409611",
+  "text": "المقارنة مع None تكون بـ is لا بـ == .",
+  "ctx": "if (/[=!]=\\s*None\\b/.test(t)) add(L.line, at(/[=!]=\\s*None/), 2, \"info\", \"المقارنة مع None تكون بـ is لا بـ == .\", \"اكتب: if x is None: أو if x is not None:\");"
+ },
+ {
+  "k": "4ccfc28199b5",
+  "text": "اكتب: if x is None: أو if x is not None:"
+ },
+ {
+  "k": "18e4d02966ef",
+  "text": "is تقارن هوية الكائن لا قيمته، ومع الأرقام والنصوص قد تعطي نتيجة خاطئة (SyntaxWarning)."
+ },
+ {
+  "k": "6ceb2c004d33",
+  "text": "استخدم == للمقارنة بالقيمة.",
+  "ctx": "if (/\\bis\\s+(not\\s+)?(-?\\d|[\"'])/.test(t)) add(L.line, at(/\\bis\\s/), 2, \"warning\", \"is تقارن هوية الكائن لا قيمته، ومع الأرقام والنصوص قد تعطي نتيجة خاطئة (Synt"
+ },
+ {
+  "k": "c95cf37c6095",
+  "text": "جمع نص مع رقم يسبب TypeError: can only concatenate str (not \"int\") to str."
+ },
+ {
+  "k": "de36c66f9dd3",
+  "text": "حوّل الرقم إلى نص بـ str(5)، أو استخدم f-string: f\"العمر {age}\"."
+ },
+ {
+  "k": "1dde6f2f3a23",
+  "text": "«{%0}» قيمته من input()، و input() تعيد نصاً دائماً، فالعملية الحسابية أو المقارنة عليه ستسبب TypeError."
+ },
+ {
+  "k": "c467382cff59",
+  "text": "حوّله إلى رقم: {%0} = int(input(...)) أو float(...)."
+ },
+ {
+  "k": "e3e349529510",
+  "text": "انتهى الكود بعد السطر {%0} المنتهي بـ «:» دون كتلة مُزاحة (IndentationError: expected an indented block)."
+ },
+ {
+  "k": "52fcc11f3303",
+  "text": "أضف أسطر الكتلة مُزاحة 4 مسافات، أو اكتب pass."
+ },
+ {
+  "k": "069417004799",
+  "text": "الاسم «{%0}» غير معرّف{%1} (NameError: name '{%2}' is not defined)."
+ },
+ {
+  "k": "f1669006933b",
+  "text": "، ربما تقصد «{%0}»",
+  "ctx": "add(m ? L.line : L.line, m ? m.index : 0, n.length, guess ? \"error\" : \"warning\", `الاسم «${n}» غير معرّف${guess ? `، ربما تقصد «${guess}»` : \"\"} (NameError: nam"
+ },
+ {
+  "k": "82e5909ad3b1",
+  "text": "صحّح الاسم إلى «{%0}».",
+  "ctx": "add(m ? L.line : L.line, m ? m.index : 0, n.length, guess ? \"error\" : \"warning\", `الاسم «${n}» غير معرّف${guess ? `، ربما تقصد «${guess}»` : \"\"} (NameError: nam"
+ },
+ {
+  "k": "a3d17c7494c7",
+  "text": "عرّف «{%0}» قبل استخدامه، أو استورده بـ import إن كان من مكتبة."
+ },
+ {
+  "k": "3aee4d3fc5dd",
+  "text": "سطراً واحداً",
+  "ctx": "const linesWord = n === 1 ? \"سطراً واحداً\" : n === 2 ? \"سطرين\" : n <= 10 ? `${n} أسطر` : `${n} سطراً`;"
+ },
+ {
+  "k": "204f1053bb29",
+  "text": "سطرين",
+  "ctx": "const linesWord = n === 1 ? \"سطراً واحداً\" : n === 2 ? \"سطرين\" : n <= 10 ? `${n} أسطر` : `${n} سطراً`;"
+ },
+ {
+  "k": "114003e98af2",
+  "text": "{%0} أسطر",
+  "ctx": "const linesWord = n === 1 ? \"سطراً واحداً\" : n === 2 ? \"سطرين\" : n <= 10 ? `${n} أسطر` : `${n} سطراً`;"
+ },
+ {
+  "k": "b5e15534b6da",
+  "text": "{%0} سطراً",
+  "ctx": "const linesWord = n === 1 ? \"سطراً واحداً\" : n === 2 ? \"سطرين\" : n <= 10 ? `${n} أسطر` : `${n} سطراً`;"
+ },
+ {
+  "k": "a93c60d71e18",
+  "text": "قرأنا {%0}، وتجاهلنا التعليقات ومحتوى النصوص، ثم تتبعنا الأقواس وعلامات التنصيص."
+ },
+ {
+  "k": "ac10323fa9d2",
+  "text": "وُجدت مشكلة في الأقواس أو النصوص، وهي تُربك بقية التحليل، لذلك أصلحها أولاً ثم أعد الفحص."
+ },
+ {
+  "k": "faf4b50f6a6c",
+  "text": "جمعنا الأسطر المنطقية (السطر المكسور داخل أقواس يُعد سطراً واحداً)، وفحصنا الإزاحة: كل سطر ينتهي بـ «:» يجب أن تليه كتلة مُزاحة، والرجوع يجب أن يطابق مستوى سابقاً."
+ },
+ {
+  "k": "0c9877193e80",
+  "text": "ثم فحصنا القواعد الشائعة: النقطتان بعد if و for و def…، و = بدل == في الشروط، و else/elif/except في مكانها، و return و break خارج مكانهما، والأسماء غير المعرّفة والأخطاء الإملائية، وعادات اللغات الأخرى مثل && و ++ و true."
+ },
+ {
+  "k": "1a46b1b7e62d",
+  "text": "ملاحظة: الفحص ثابت دون تشغيل الكود، فلا يكتشف أخطاء التنفيذ التي تعتمد على القيم، مثل القسمة على صفر."
+ },
+ {
+  "k": "e1c5a36ed323",
+  "text": "عدد الأسطر",
+  "ctx": "const out = report(code, issues, { \"عدد الأسطر\": n });"
+ }
+]

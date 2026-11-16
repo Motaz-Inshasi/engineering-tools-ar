@@ -1,0 +1,42 @@
+export const CODONS = {
+"UUU": "F", "UUC": "F", "UUA": "L", "UUG": "L",
+"CUU": "L", "CUC": "L", "CUA": "L", "CUG": "L",
+"AUU": "I", "AUC": "I", "AUA": "I", "AUG": "M",
+"GUU": "V", "GUC": "V", "GUA": "V", "GUG": "V",
+"UCU": "S", "UCC": "S", "UCA": "S", "UCG": "S",
+"CCU": "P", "CCC": "P", "CCA": "P", "CCG": "P",
+"ACU": "T", "ACC": "T", "ACA": "T", "ACG": "T",
+"GCU": "A", "GCC": "A", "GCA": "A", "GCG": "A",
+"UAU": "Y", "UAC": "Y", "UAA": "*", "UAG": "*",
+"CAU": "H", "CAC": "H", "CAA": "Q", "CAG": "Q",
+"AAU": "N", "AAC": "N", "AAA": "K", "AAG": "K",
+"GAU": "D", "GAC": "D", "GAA": "E", "GAG": "E",
+"UGU": "C", "UGC": "C", "UGA": "*", "UGG": "W",
+"CGU": "R", "CGC": "R", "CGA": "R", "CGG": "R",
+"AGU": "S", "AGC": "S", "AGA": "R", "AGG": "R",
+"GGU": "G", "GGC": "G", "GGA": "G", "GGG": "G"
+};
+
+export const AMINO = {
+"A": { three: "Ala", en: "Alanine", ar: "Alanine" },
+"R": { three: "Arg", en: "Arginine", ar: "Arginine" },
+"N": { three: "Asn", en: "Asparagine", ar: "Asparagine" },
+"D": { three: "Asp", en: "Aspartic acid", ar: "Aspartic acid" },
+"C": { three: "Cys", en: "Cysteine", ar: "Cysteine" },
+"Q": { three: "Gln", en: "Glutamine", ar: "Glutamine" },
+"E": { three: "Glu", en: "Glutamic acid", ar: "Glutamic acid" },
+"G": { three: "Gly", en: "Glycine", ar: "Glycine" },
+"H": { three: "His", en: "Histidine", ar: "Histidine" },
+"I": { three: "Ile", en: "Isoleucine", ar: "Isoleucine" },
+"L": { three: "Leu", en: "Leucine", ar: "Leucine" },
+"K": { three: "Lys", en: "Lysine", ar: "Lysine" },
+"M": { three: "Met", en: "Methionine", ar: "Methionine" },
+"F": { three: "Phe", en: "Phenylalanine", ar: "Phenylalanine" },
+"P": { three: "Pro", en: "Proline", ar: "Proline" },
+"S": { three: "Ser", en: "Serine", ar: "Serine" },
+"T": { three: "Thr", en: "Threonine", ar: "Threonine" },
+"W": { three: "Trp", en: "Tryptophan", ar: "Tryptophan" },
+"Y": { three: "Tyr", en: "Tyrosine", ar: "Tyrosine" },
+"V": { three: "Val", en: "Valine", ar: "Valine" },
+"*": { three: "Stop", en: "Stop", ar: "Stop" }
+};

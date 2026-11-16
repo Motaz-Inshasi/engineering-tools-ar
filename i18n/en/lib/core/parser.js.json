@@ -1,0 +1,17 @@
+{
+  "efb7954c90b2": "Invalid number at position {%0}.",
+  "14d444c27751": "Unrecognized symbol «{%0}» in the expression.",
+  "f4bd11d452ee": "Enter a mathematical expression.",
+  "99127c3577ff": "There is an open parenthesis that was not closed.",
+  "1e34d9f5bdfd": "There is an opening “[” for the floor function that is not closed with “]”.",
+  "400ae019a5b3": "There is a “⌈” that was not closed with “⌉”.",
+  "8e3e06fc7abd": "«{%0}» was expected.",
+  "6c2006c7ac8d": "The function needs an input between parentheses.",
+  "6be145579c85": "The expression is incomplete.",
+  "076b5feba452": "The variable «{%0}» is not allowed here. Allowed variables: {%1}.",
+  "62eeb57b4f17": "There is an extra closing parenthesis or one in the wrong place.",
+  "0fbb74035ae5": "The symbol «{%0}» is in the wrong place.",
+  "d2cc65ad8685": "There is an extra closing parenthesis.",
+  "8c67e7f14643": "The expression could not be fully parsed. Check the syntax.",
+  "457c5785aa5b": "There is no value for the variable «{%0}»."
+}

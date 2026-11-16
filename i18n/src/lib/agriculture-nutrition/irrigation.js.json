@@ -1,0 +1,252 @@
+[
+ {
+  "k": "878bc79ef65f",
+  "text": "احسب احتياج الري اليومي للمحصول من ET0 ومعامل المحصول Kc والمطر الفعال وكفاءة نظام الري، ثم الحجم اليومي والأسبوعي بالليتر والمتر المكعب وزمن التشغيل إن أدخلت تدفق النظام."
+ },
+ {
+  "k": "5a7a611bdebb",
+  "text": "احتياج الري",
+  "ctx": "keywords: [\"احتياج الري\", \"ETc\", \"ET0\", \"معامل المحصول Kc\", \"FAO-56\", \"كفاءة الري\", \"تنقيط\", \"irrigation\"],"
+ },
+ {
+  "k": "48e8bfa61b29",
+  "text": "معامل المحصول Kc",
+  "ctx": "keywords: [\"احتياج الري\", \"ETc\", \"ET0\", \"معامل المحصول Kc\", \"FAO-56\", \"كفاءة الري\", \"تنقيط\", \"irrigation\"],"
+ },
+ {
+  "k": "dcc32a8ac0a8",
+  "text": "كفاءة الري",
+  "ctx": "keywords: [\"احتياج الري\", \"ETc\", \"ET0\", \"معامل المحصول Kc\", \"FAO-56\", \"كفاءة الري\", \"تنقيط\", \"irrigation\"],"
+ },
+ {
+  "k": "3e7dd0344442",
+  "text": "تنقيط",
+  "ctx": "keywords: [\"احتياج الري\", \"ETc\", \"ET0\", \"معامل المحصول Kc\", \"FAO-56\", \"كفاءة الري\", \"تنقيط\", \"irrigation\"],"
+ },
+ {
+  "k": "c049bda61ecd",
+  "text": "الاحتياج المائي للمحصول",
+  "ctx": "{ label: \"الاحتياج المائي للمحصول\", tex: \"ET_c = K_c \\\\cdot ET_0\" },"
+ },
+ {
+  "k": "adee7e91d10c",
+  "text": "الاحتياج الصافي والإجمالي",
+  "ctx": "{ label: \"الاحتياج الصافي والإجمالي\", tex: \"N = \\\\max(ET_c - P_{eff},\\\\,0),\\\\qquad G = \\\\frac{N}{E_f}\" },"
+ },
+ {
+  "k": "f3a7c395f7ab",
+  "text": "الحجم اليومي",
+  "ctx": "{ label: \"الحجم اليومي\", tex: \"V\\\\,[L] = G\\\\,[mm] \\\\times A\\\\,[m^2],\\\\qquad t = \\\\frac{V}{Q}\" }"
+ },
+ {
+  "k": "6df10cab811d",
+  "text": "التبخر والنتح المرجعي ET0",
+  "ctx": "{ id: \"et0\", label: \"التبخر والنتح المرجعي ET0\", unit: \"mm/day\", type: \"number\", default: \"5\" },"
+ },
+ {
+  "k": "db35d84669ae",
+  "text": "المحصول",
+  "ctx": "{ id: \"crop\", label: \"المحصول\", type: \"select\", default: \"wheat\", options: [[\"wheat\", \"قمح (Kc 1.15)\"], [\"maize\", \"ذرة (Kc 1.20)\"], [\"tomato\", \"طماطم (Kc 1.15)\""
+ },
+ {
+  "k": "a6de506673c2",
+  "text": "قمح (Kc 1.15)",
+  "ctx": "{ id: \"crop\", label: \"المحصول\", type: \"select\", default: \"wheat\", options: [[\"wheat\", \"قمح (Kc 1.15)\"], [\"maize\", \"ذرة (Kc 1.20)\"], [\"tomato\", \"طماطم (Kc 1.15)\""
+ },
+ {
+  "k": "886dadb30e32",
+  "text": "ذرة (Kc 1.20)",
+  "ctx": "{ id: \"crop\", label: \"المحصول\", type: \"select\", default: \"wheat\", options: [[\"wheat\", \"قمح (Kc 1.15)\"], [\"maize\", \"ذرة (Kc 1.20)\"], [\"tomato\", \"طماطم (Kc 1.15)\""
+ },
+ {
+  "k": "6fdf2b3d80e8",
+  "text": "طماطم (Kc 1.15)",
+  "ctx": "{ id: \"crop\", label: \"المحصول\", type: \"select\", default: \"wheat\", options: [[\"wheat\", \"قمح (Kc 1.15)\"], [\"maize\", \"ذرة (Kc 1.20)\"], [\"tomato\", \"طماطم (Kc 1.15)\""
+ },
+ {
+  "k": "a5db5c10e0fc",
+  "text": "بطاطس (Kc 1.15)",
+  "ctx": "{ id: \"crop\", label: \"المحصول\", type: \"select\", default: \"wheat\", options: [[\"wheat\", \"قمح (Kc 1.15)\"], [\"maize\", \"ذرة (Kc 1.20)\"], [\"tomato\", \"طماطم (Kc 1.15)\""
+ },
+ {
+  "k": "1cae053534a2",
+  "text": "زيتون (Kc 0.70)",
+  "ctx": "{ id: \"crop\", label: \"المحصول\", type: \"select\", default: \"wheat\", options: [[\"wheat\", \"قمح (Kc 1.15)\"], [\"maize\", \"ذرة (Kc 1.20)\"], [\"tomato\", \"طماطم (Kc 1.15)\""
+ },
+ {
+  "k": "0a456e2638bb",
+  "text": "حمضيات (Kc 0.65)",
+  "ctx": "{ id: \"crop\", label: \"المحصول\", type: \"select\", default: \"wheat\", options: [[\"wheat\", \"قمح (Kc 1.15)\"], [\"maize\", \"ذرة (Kc 1.20)\"], [\"tomato\", \"طماطم (Kc 1.15)\""
+ },
+ {
+  "k": "5bba8cd7bd4d",
+  "text": "برسيم (Kc 0.95)",
+  "ctx": "{ id: \"crop\", label: \"المحصول\", type: \"select\", default: \"wheat\", options: [[\"wheat\", \"قمح (Kc 1.15)\"], [\"maize\", \"ذرة (Kc 1.20)\"], [\"tomato\", \"طماطم (Kc 1.15)\""
+ },
+ {
+  "k": "f70cf0592a6e",
+  "text": "عشب ومراعٍ (Kc 0.95)",
+  "ctx": "{ id: \"crop\", label: \"المحصول\", type: \"select\", default: \"wheat\", options: [[\"wheat\", \"قمح (Kc 1.15)\"], [\"maize\", \"ذرة (Kc 1.20)\"], [\"tomato\", \"طماطم (Kc 1.15)\""
+ },
+ {
+  "k": "7ad06602f74a",
+  "text": "معامل مخصص",
+  "ctx": "{ id: \"crop\", label: \"المحصول\", type: \"select\", default: \"wheat\", options: [[\"wheat\", \"قمح (Kc 1.15)\"], [\"maize\", \"ذرة (Kc 1.20)\"], [\"tomato\", \"طماطم (Kc 1.15)\""
+ },
+ {
+  "k": "58a74e3d5dee",
+  "text": "المطر الفعال",
+  "ctx": "{ id: \"rain\", label: \"المطر الفعال\", unit: \"mm/day\", type: \"number\", default: \"0\" },"
+ },
+ {
+  "k": "b1fdbf9e0bd0",
+  "text": "المساحة",
+  "ctx": "{ id: \"area\", label: \"المساحة\", type: \"number\", default: \"1000\" },"
+ },
+ {
+  "k": "501d1a270ccb",
+  "text": "وحدة المساحة",
+  "ctx": "{ id: \"areaUnit\", label: \"وحدة المساحة\", type: \"select\", default: \"m2\", options: [[\"m2\", \"م²\"], [\"dunum\", \"دونم (1000 م²)\"], [\"ha\", \"هكتار\"]] },"
+ },
+ {
+  "k": "32fae0bedbaa",
+  "text": "م²",
+  "ctx": "{ id: \"areaUnit\", label: \"وحدة المساحة\", type: \"select\", default: \"m2\", options: [[\"m2\", \"م²\"], [\"dunum\", \"دونم (1000 م²)\"], [\"ha\", \"هكتار\"]] },"
+ },
+ {
+  "k": "396e7bea897f",
+  "text": "دونم (1000 م²)",
+  "ctx": "{ id: \"areaUnit\", label: \"وحدة المساحة\", type: \"select\", default: \"m2\", options: [[\"m2\", \"م²\"], [\"dunum\", \"دونم (1000 م²)\"], [\"ha\", \"هكتار\"]] },"
+ },
+ {
+  "k": "662210ff111f",
+  "text": "هكتار",
+  "ctx": "{ id: \"areaUnit\", label: \"وحدة المساحة\", type: \"select\", default: \"m2\", options: [[\"m2\", \"م²\"], [\"dunum\", \"دونم (1000 م²)\"], [\"ha\", \"هكتار\"]] },"
+ },
+ {
+  "k": "e9d4e8219714",
+  "text": "نظام الري",
+  "ctx": "{ id: \"system\", label: \"نظام الري\", type: \"select\", default: \"drip\", options: [[\"drip\", \"تنقيط (كفاءة 0.90)\"], [\"sprinkler\", \"رش (كفاءة 0.75)\"], [\"surface\", \"سط"
+ },
+ {
+  "k": "6a1b334af8ff",
+  "text": "تنقيط (كفاءة 0.90)",
+  "ctx": "{ id: \"system\", label: \"نظام الري\", type: \"select\", default: \"drip\", options: [[\"drip\", \"تنقيط (كفاءة 0.90)\"], [\"sprinkler\", \"رش (كفاءة 0.75)\"], [\"surface\", \"سط"
+ },
+ {
+  "k": "17d4da1c0a6b",
+  "text": "رش (كفاءة 0.75)",
+  "ctx": "{ id: \"system\", label: \"نظام الري\", type: \"select\", default: \"drip\", options: [[\"drip\", \"تنقيط (كفاءة 0.90)\"], [\"sprinkler\", \"رش (كفاءة 0.75)\"], [\"surface\", \"سط"
+ },
+ {
+  "k": "9856072a101e",
+  "text": "سطحي أو غمر (كفاءة 0.60)",
+  "ctx": "{ id: \"system\", label: \"نظام الري\", type: \"select\", default: \"drip\", options: [[\"drip\", \"تنقيط (كفاءة 0.90)\"], [\"sprinkler\", \"رش (كفاءة 0.75)\"], [\"surface\", \"سط"
+ },
+ {
+  "k": "51f3c431a535",
+  "text": "تدفق النظام الكلي (اختياري)",
+  "ctx": "{ id: \"flow\", label: \"تدفق النظام الكلي (اختياري)\", unit: \"L/h\", type: \"number\", default: \"\", help: \"اترك الحقل فارغاً إذا لم ترِد حساب زمن التشغيل.\" }"
+ },
+ {
+  "k": "dbab0b4ddcd0",
+  "text": "اترك الحقل فارغاً إذا لم ترِد حساب زمن التشغيل."
+ },
+ {
+  "k": "d775e87693f9",
+  "text": "مثال: ET0 = 5 mm/day ومعامل 1.2 على 1000 م² بالتنقيط."
+ },
+ {
+  "k": "9e0b17044e45",
+  "text": "تدفق النظام",
+  "ctx": "const flow = num(input, \"flow\", \"تدفق النظام\", { positive: true, optional: true });"
+ },
+ {
+  "k": "292a789131d5",
+  "text": "الاحتياج المائي للمحصول ETc = Kc × ET0:",
+  "ctx": "{ text: \"الاحتياج المائي للمحصول ETc = Kc × ET0:\", tex: `ET_c = ${ntex(kc)} \\\\times ${ntex(et0)} = ${ntex(etc, 6)}\\\\ mm` },"
+ },
+ {
+  "k": "2bf9fca5dba0",
+  "text": "الاحتياج الصافي بعد المطر الفعال:",
+  "ctx": "{ text: \"الاحتياج الصافي بعد المطر الفعال:\", tex: `N = \\\\max(${ntex(etc, 6)} - ${ntex(rain)},\\\\ 0) = ${ntex(net, 6)}\\\\ mm` },"
+ },
+ {
+  "k": "d04936839fd6",
+  "text": "الاحتياج الإجمالي بعد كفاءة النظام:",
+  "ctx": "{ text: \"الاحتياج الإجمالي بعد كفاءة النظام:\", tex: `G = \\\\frac{N}{E_f} = \\\\frac{${ntex(net, 6)}}{${ntex(eff)}} = ${ntex(gross, 6)}\\\\ mm` },"
+ },
+ {
+  "k": "108e99c24bb7",
+  "text": "الحجم اليومي (1 mm على 1 m² = 1 L):",
+  "ctx": "{ text: \"الحجم اليومي (1 mm على 1 m² = 1 L):\", tex: `V = G \\\\times A = ${ntex(gross, 6)} \\\\times ${ntex(areaM2, 6)} = ${ntex(liters, 6)}\\\\ L` }"
+ },
+ {
+  "k": "31f9a9dd6504",
+  "text": "زمن التشغيل اليومي:",
+  "ctx": "if (hours !== null) steps.push({ text: \"زمن التشغيل اليومي:\", tex: `t = \\\\frac{V}{Q} = \\\\frac{${ntex(liters, 6)}}{${ntex(flow)}} = ${ntex(hours, 6)}\\\\ h` });"
+ },
+ {
+  "k": "f96e7577a8e1",
+  "text": "الاحتياج المائي للمحصول ETc",
+  "ctx": "{ label: \"الاحتياج المائي للمحصول ETc\", value: `${fmt(etc, 4)} mm/يوم` },"
+ },
+ {
+  "k": "79ba0e382791",
+  "text": "{%0} mm/يوم",
+  "ctx": "{ label: \"الاحتياج المائي للمحصول ETc\", value: `${fmt(etc, 4)} mm/يوم` },"
+ },
+ {
+  "k": "caa5d431346b",
+  "text": "الاحتياج الصافي",
+  "ctx": "{ label: \"الاحتياج الصافي\", value: `${fmt(net, 4)} mm/يوم` },"
+ },
+ {
+  "k": "bf4de76a8fe8",
+  "text": "الاحتياج الإجمالي للري",
+  "ctx": "{ label: \"الاحتياج الإجمالي للري\", value: `${fmt(gross, 4)} mm/يوم`, text: `${fmt(gross, 4)} mm/يوم` },"
+ },
+ {
+  "k": "1e5bd87d438b",
+  "text": "{%0} L/يوم",
+  "ctx": "{ label: \"الحجم اليومي\", value: `${fmt(liters, 4)} L/يوم`, text: `${fmt(liters, 4)} L/يوم` },"
+ },
+ {
+  "k": "f250d8a8ed93",
+  "text": "الحجم اليومي بالمتر المكعب",
+  "ctx": "{ label: \"الحجم اليومي بالمتر المكعب\", value: `${fmt(m3, 4)} م³/يوم` },"
+ },
+ {
+  "k": "621defa26a69",
+  "text": "{%0} م³/يوم",
+  "ctx": "{ label: \"الحجم اليومي بالمتر المكعب\", value: `${fmt(m3, 4)} م³/يوم` },"
+ },
+ {
+  "k": "08fef2f8f229",
+  "text": "الحجم الأسبوعي",
+  "ctx": "{ label: \"الحجم الأسبوعي\", value: `${fmt(m3 * 7, 4)} م³/أسبوع` }"
+ },
+ {
+  "k": "e841243af0a3",
+  "text": "{%0} م³/أسبوع",
+  "ctx": "{ label: \"الحجم الأسبوعي\", value: `${fmt(m3 * 7, 4)} م³/أسبوع` }"
+ },
+ {
+  "k": "2b5931255068",
+  "text": "زمن الري اليومي",
+  "ctx": "if (hours !== null) results.push({ label: \"زمن الري اليومي\", value: `${fmt(hours, 4)} ساعة (${fmt(hours * 60, 4)} دقيقة)` });"
+ },
+ {
+  "k": "c29e09c254a2",
+  "text": "{%0} ساعة ({%1} دقيقة)",
+  "ctx": "if (hours !== null) results.push({ label: \"زمن الري اليومي\", value: `${fmt(hours, 4)} ساعة (${fmt(hours * 60, 4)} دقيقة)` });"
+ },
+ {
+  "k": "52137ef20035",
+  "text": "الاحتياج الإجمالي {%0} mm/يوم ≈ {%1} L/يوم لمساحة {%2} م²"
+ },
+ {
+  "k": "cf6a7c4bd235",
+  "text": "قيم Kc متوسطة لمرحلة منتصف الموسم وفق FAO-56، وهي تقريبية وتختلف حسب المناخ وطور النمو."
+ }
+]

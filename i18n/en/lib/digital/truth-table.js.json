@@ -1,0 +1,22 @@
+{
+ "297f5d2932de": "Variables are single English letters. AND: AB, A·B, or A&B. OR: A+B. NOT: A' or !A. XOR: A^B. AND, OR, NOT, and XOR can also be written as words.",
+ "2be107430d71": "Generate the truth table for any logic expression with up to 8 variables, with the minterms, maxterms, and the canonical sum of products (SOP) and product of sums (POS) forms.",
+ "741327099653": "truth table",
+ "446182fc4c2f": "Boolean algebra",
+ "734f64a2911b": "logic",
+ "e252a998d7e3": "minterms",
+ "8f737531962e": "Canonical forms",
+ "162e31eb56a8": "Operator precedence",
+ "94a7a130491b": "Logic expression",
+ "f60e5553aa68": "Example: $F = AB + \\overline{A}C$.",
+ "399da4424c94": "Expression",
+ "18780bf03f44": "The maximum number of variables is 8.",
+ "1c00c6757e78": "Variables: {%0}, so the number of rows is $2^{{%1}} = {%2}$.",
+ "4d9c94516aca": "None (constant expression)",
+ "950eff060c07": "We evaluate the expression for each combination by precedence: NOT, then AND, then XOR, then OR (see the table).",
+ "d9a9aafd2c4f": "The rows whose output is 1 give the minterms; each minterm is a product of all variables (a variable at 0 is negated):",
+ "813a13e71e5e": "The rows whose output is 0 give the maxterms (a variable at 1 is negated in the sum):",
+ "1aed83134453": "Minterms",
+ "243116b0e1d0": "Maxterms",
+ "a394b6db69cd": "Canonical sum of products"
+}

@@ -1,0 +1,27 @@
+[
+ {
+  "k": "4ceb0e7d10b1",
+  "text": "ا",
+  "ctx": ".replace(/[أإآٱ]/g, \"ا\")"
+ },
+ {
+  "k": "e9edeb603dee",
+  "text": "ه",
+  "ctx": ".replace(/ة/g, \"ه\")"
+ },
+ {
+  "k": "f9025892e5db",
+  "text": "ي",
+  "ctx": ".replace(/ى/g, \"ي\")"
+ },
+ {
+  "k": "304117b6c7c9",
+  "text": "و",
+  "ctx": ".replace(/ؤ/g, \"و\")"
+ },
+ {
+  "k": "0e6c03885746",
+  "text": "ال",
+  "ctx": "return words.every((w) => h.includes(w) || (w.startsWith(\"ال\") && w.length > 3 && h.includes(w.slice(2))));"
+ }
+]

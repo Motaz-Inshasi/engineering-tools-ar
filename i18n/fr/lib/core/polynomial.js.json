@@ -1,0 +1,6 @@
+{
+ "7b3fe60d3d1b": "Division par un polynôme nul.",
+ "1ffd2107abbc": "L'expression contient une valeur non définie.",
+ "3960288b942e": "Division par zéro dans l'expression.",
+ "660ba00d844e": "La variable «{%0}» est inconnue ici. Utilisez uniquement la variable {%1}."
+}

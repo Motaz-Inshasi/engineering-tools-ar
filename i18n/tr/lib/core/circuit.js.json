@@ -1,0 +1,14 @@
+{
+ "a0a94b99bc4e": "Devre elemanlarını girin, her satıra bir eleman yazın.",
+ "eeb0d5f59d1b": "En fazla 60 eleman girilebilir.",
+ "3e16f8a17fb6": "Satır {%0} («{%1}»)",
+ "b4abd3cee0fa": "{%0}: Biçim şöyle olmalıdır: ad düğüm1 düğüm2 değer.",
+ "b045905c00d5": "{%0}: Elemanın adı R, V veya I ile başlamalıdır.",
+ "53267bb0ef06": "{%0}: {%1} adı birden fazla kez kullanılmış.",
+ "8cbb2a50edb9": "{%0}: Elemanın iki ucu aynı düğümde.",
+ "6aa15cba536e": "{%0}: «{%1}» değeri geçerli bir sayı değil.",
+ "8e5df46c90a6": "{%0}: Direnç sıfırdan büyük olmalıdır (kısa devreyi göstermek için 0 V gerilim kaynağı kullanın).",
+ "777279ac0b31": "Devrede adı 0 (veya gnd) olan bir toprak düğümü bulunmalıdır.",
+ "32ba12ca855b": "Devrede toprak dışında hiçbir düğüm yok.",
+ "ff66be72d044": "Devre çözülemez: toprağa bağlı olmayan bir düğüm, gerilim kaynaklarından oluşan bir döngü veya yolu olmayan bir akım kaynağı var."
+}

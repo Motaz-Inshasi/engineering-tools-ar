@@ -1,0 +1,256 @@
+[
+ {
+  "k": "c5f66cfcb3f2",
+  "text": "احسب الرقم الهيدروجيني pH وpOH وتركيز أيونات H+ وOH- للحمض والقاعدة القوية والضعيفة والمحلول المنظم بمعادلة هندرسون–هاسلباخ، مع نسبة التأين وتصنيف المحلول إلى حمضي أو قاعدي أو متعادل عند 25 °C."
+ },
+ {
+  "k": "12a332c354af",
+  "text": "حمض",
+  "ctx": "keywords: [\"pH\", \"pOH\", \"حمض\", \"قاعدة\", \"حمض قوي\", \"حمض ضعيف\", \"Ka\", \"Kb\", \"pKa\", \"محلول منظم\", \"هندرسون هاسلباخ\", \"Henderson\", \"تأين\", \"Kw\"],"
+ },
+ {
+  "k": "8cf36ea29c76",
+  "text": "قاعدة",
+  "ctx": "keywords: [\"pH\", \"pOH\", \"حمض\", \"قاعدة\", \"حمض قوي\", \"حمض ضعيف\", \"Ka\", \"Kb\", \"pKa\", \"محلول منظم\", \"هندرسون هاسلباخ\", \"Henderson\", \"تأين\", \"Kw\"],"
+ },
+ {
+  "k": "2c3e4d4d3367",
+  "text": "حمض قوي",
+  "ctx": "keywords: [\"pH\", \"pOH\", \"حمض\", \"قاعدة\", \"حمض قوي\", \"حمض ضعيف\", \"Ka\", \"Kb\", \"pKa\", \"محلول منظم\", \"هندرسون هاسلباخ\", \"Henderson\", \"تأين\", \"Kw\"],"
+ },
+ {
+  "k": "2d7b2bbf5874",
+  "text": "حمض ضعيف",
+  "ctx": "keywords: [\"pH\", \"pOH\", \"حمض\", \"قاعدة\", \"حمض قوي\", \"حمض ضعيف\", \"Ka\", \"Kb\", \"pKa\", \"محلول منظم\", \"هندرسون هاسلباخ\", \"Henderson\", \"تأين\", \"Kw\"],"
+ },
+ {
+  "k": "aa13d9331fa2",
+  "text": "محلول منظم",
+  "ctx": "keywords: [\"pH\", \"pOH\", \"حمض\", \"قاعدة\", \"حمض قوي\", \"حمض ضعيف\", \"Ka\", \"Kb\", \"pKa\", \"محلول منظم\", \"هندرسون هاسلباخ\", \"Henderson\", \"تأين\", \"Kw\"],"
+ },
+ {
+  "k": "6e7ae622a647",
+  "text": "هندرسون هاسلباخ",
+  "ctx": "keywords: [\"pH\", \"pOH\", \"حمض\", \"قاعدة\", \"حمض قوي\", \"حمض ضعيف\", \"Ka\", \"Kb\", \"pKa\", \"محلول منظم\", \"هندرسون هاسلباخ\", \"Henderson\", \"تأين\", \"Kw\"],"
+ },
+ {
+  "k": "31338746bba2",
+  "text": "تأين",
+  "ctx": "keywords: [\"pH\", \"pOH\", \"حمض\", \"قاعدة\", \"حمض قوي\", \"حمض ضعيف\", \"Ka\", \"Kb\", \"pKa\", \"محلول منظم\", \"هندرسون هاسلباخ\", \"Henderson\", \"تأين\", \"Kw\"],"
+ },
+ {
+  "k": "61f86ae31685",
+  "text": "الماء عند 25 °C",
+  "ctx": "{ label: \"الماء عند 25 °C\", tex: \"K_w = [H^+][OH^-] = 10^{-14},\\\\qquad pH + pOH = 14\" },"
+ },
+ {
+  "k": "87acd6b6f5a7",
+  "text": "نوع المحلول",
+  "ctx": "{ id: \"type\", label: \"نوع المحلول\", type: \"select\", default: \"strong-acid\", options: [[\"strong-acid\", \"حمض قوي\"], [\"strong-base\", \"قاعدة قوية\"], [\"weak-acid\", \""
+ },
+ {
+  "k": "ad02eb13bd1e",
+  "text": "قاعدة قوية",
+  "ctx": "{ id: \"type\", label: \"نوع المحلول\", type: \"select\", default: \"strong-acid\", options: [[\"strong-acid\", \"حمض قوي\"], [\"strong-base\", \"قاعدة قوية\"], [\"weak-acid\", \""
+ },
+ {
+  "k": "e3a08b4b9e10",
+  "text": "قاعدة ضعيفة",
+  "ctx": "{ id: \"type\", label: \"نوع المحلول\", type: \"select\", default: \"strong-acid\", options: [[\"strong-acid\", \"حمض قوي\"], [\"strong-base\", \"قاعدة قوية\"], [\"weak-acid\", \""
+ },
+ {
+  "k": "8e7aedf10069",
+  "text": "محلول منظم (هندرسون–هاسلباخ)",
+  "ctx": "{ id: \"type\", label: \"نوع المحلول\", type: \"select\", default: \"strong-acid\", options: [[\"strong-acid\", \"حمض قوي\"], [\"strong-base\", \"قاعدة قوية\"], [\"weak-acid\", \""
+ },
+ {
+  "k": "a8d1866af0af",
+  "text": "من pH إلى [H+] و[OH-]",
+  "ctx": "{ id: \"type\", label: \"نوع المحلول\", type: \"select\", default: \"strong-acid\", options: [[\"strong-acid\", \"حمض قوي\"], [\"strong-base\", \"قاعدة قوية\"], [\"weak-acid\", \""
+ },
+ {
+  "k": "3ee6c59bfbc3",
+  "text": "التركيز التحليلي C",
+  "ctx": "{ id: \"C\", label: \"التركيز التحليلي C\", unit: \"M\", type: \"number\", default: \"0.01\", when: { type: [\"strong-acid\", \"strong-base\", \"weak-acid\", \"weak-base\"] } },"
+ },
+ {
+  "k": "6a2a56563df3",
+  "text": "عدد مجموعات OH- في القاعدة",
+  "ctx": "{ id: \"hydroxides\", label: \"عدد مجموعات OH- في القاعدة\", type: \"select\", default: \"1\", options: [[\"1\", \"1 (مثل NaOH)\"], [\"2\", \"2 (مثل Ca(OH)2)\"]], when: { type:"
+ },
+ {
+  "k": "20df8d126f52",
+  "text": "1 (مثل NaOH)",
+  "ctx": "{ id: \"hydroxides\", label: \"عدد مجموعات OH- في القاعدة\", type: \"select\", default: \"1\", options: [[\"1\", \"1 (مثل NaOH)\"], [\"2\", \"2 (مثل Ca(OH)2)\"]], when: { type:"
+ },
+ {
+  "k": "e19ffe81a1a6",
+  "text": "2 (مثل Ca(OH)2)",
+  "ctx": "{ id: \"hydroxides\", label: \"عدد مجموعات OH- في القاعدة\", type: \"select\", default: \"1\", options: [[\"1\", \"1 (مثل NaOH)\"], [\"2\", \"2 (مثل Ca(OH)2)\"]], when: { type:"
+ },
+ {
+  "k": "2960bed4d5b8",
+  "text": "نوع الثابت المُدخل",
+  "ctx": "{ id: \"constKind\", label: \"نوع الثابت المُدخل\", type: \"select\", default: \"K\", options: [[\"K\", \"K (Ka أو Kb)\"], [\"pK\", \"pK (pKa أو pKb)\"]], when: { type: [\"weak-"
+ },
+ {
+  "k": "e6758a852fef",
+  "text": "K (Ka أو Kb)",
+  "ctx": "{ id: \"constKind\", label: \"نوع الثابت المُدخل\", type: \"select\", default: \"K\", options: [[\"K\", \"K (Ka أو Kb)\"], [\"pK\", \"pK (pKa أو pKb)\"]], when: { type: [\"weak-"
+ },
+ {
+  "k": "eeb53bf06c70",
+  "text": "pK (pKa أو pKb)",
+  "ctx": "{ id: \"constKind\", label: \"نوع الثابت المُدخل\", type: \"select\", default: \"K\", options: [[\"K\", \"K (Ka أو Kb)\"], [\"pK\", \"pK (pKa أو pKb)\"]], when: { type: [\"weak-"
+ },
+ {
+  "k": "231c163346ad",
+  "text": "قيمة الثابت",
+  "ctx": "{ id: \"constVal\", label: \"قيمة الثابت\", type: \"number\", default: \"1.8e-5\", when: { type: [\"weak-acid\", \"weak-base\"] }, help: \"مثال: acetic acid Ka = 1.8e-5 أو p"
+ },
+ {
+  "k": "ad761e258cb3",
+  "text": "مثال: acetic acid Ka = 1.8e-5 أو pKa = 4.74."
+ },
+ {
+  "k": "3807148aa45f",
+  "text": "pKa للمحلول المنظم",
+  "ctx": "{ id: \"pKa\", label: \"pKa للمحلول المنظم\", type: \"number\", default: \"4.76\", when: { type: [\"buffer\"] } },"
+ },
+ {
+  "k": "8babde214d79",
+  "text": "تركيز الأيون المرافق [A-]",
+  "ctx": "{ id: \"A\", label: \"تركيز الأيون المرافق [A-]\", unit: \"M\", type: \"number\", default: \"0.1\", when: { type: [\"buffer\"] } },"
+ },
+ {
+  "k": "a4a839f037e0",
+  "text": "تركيز الحمض [HA]",
+  "ctx": "{ id: \"HA\", label: \"تركيز الحمض [HA]\", unit: \"M\", type: \"number\", default: \"0.1\", when: { type: [\"buffer\"] } },"
+ },
+ {
+  "k": "f73bf6015c1f",
+  "text": "قيمة pH",
+  "ctx": "{ id: \"pH\", label: \"قيمة pH\", type: \"number\", default: \"7\", when: { type: [\"from-ph\"] } }"
+ },
+ {
+  "k": "7282c46ad31c",
+  "text": "مثال: حمض HCl تركيزه 0.01 M.",
+  "ctx": "example: { values: { type: \"strong-acid\", C: \"0.01\", hydroxides: \"1\", constKind: \"K\", constVal: \"\", pKa: \"\", A: \"\", HA: \"\", pH: \"\" }, expect: [\"pH = 2\"], note: "
+ },
+ {
+  "k": "8cb8f832b5ba",
+  "text": "متعادل",
+  "ctx": "const nature = Math.abs(pH - 7) < 1e-9 ? \"متعادل\" : pH < 7 ? \"حمضي\" : \"قاعدي\";"
+ },
+ {
+  "k": "2b460e55a62d",
+  "text": "حمضي",
+  "ctx": "const nature = Math.abs(pH - 7) < 1e-9 ? \"متعادل\" : pH < 7 ? \"حمضي\" : \"قاعدي\";"
+ },
+ {
+  "k": "ae6b9c0ed645",
+  "text": "قاعدي",
+  "ctx": "const nature = Math.abs(pH - 7) < 1e-9 ? \"متعادل\" : pH < 7 ? \"حمضي\" : \"قاعدي\";"
+ },
+ {
+  "k": "b305cfdcbacc",
+  "text": "الرقم الهيدروجيني و pOH:",
+  "ctx": "const all = [...steps, { text: \"الرقم الهيدروجيني و pOH:\", tex: `pH = -\\\\log[H^+] = ${ntex(pH, 6)},\\\\qquad pOH = 14 - pH = ${ntex(pOH, 6)}` }];"
+ },
+ {
+  "k": "34a2531b0547",
+  "text": "الرقم الهيدروجيني pH",
+  "ctx": "{ label: \"الرقم الهيدروجيني pH\", value: fmt(pH, 5) },"
+ },
+ {
+  "k": "9a8e9a7f2984",
+  "text": "تركيز أيونات الهيدروجين [H+]",
+  "ctx": "{ label: \"تركيز أيونات الهيدروجين [H+]\", value: `${fmt(H, 4)} M` },"
+ },
+ {
+  "k": "d6ab77ac18c8",
+  "text": "تركيز أيونات الهيدروكسيد [OH-]",
+  "ctx": "{ label: \"تركيز أيونات الهيدروكسيد [OH-]\", value: `${fmt(OH, 4)} M` },"
+ },
+ {
+  "k": "64e595db2ce7",
+  "text": "طبيعة المحلول",
+  "ctx": "{ label: \"طبيعة المحلول\", value: nature },"
+ },
+ {
+  "k": "a7a8543af256",
+  "text": "تركيز الحمض",
+  "ctx": "const C = num(input, \"C\", \"تركيز الحمض\", { positive: true });"
+ },
+ {
+  "k": "c16a557e4e66",
+  "text": "حمض قوي أحادي البروتون، [H+] = C:",
+  "ctx": "const steps = [{ text: \"حمض قوي أحادي البروتون، [H+] = C:\", tex: `[H^+] = C = ${ntex(C)}\\\\ M` }];"
+ },
+ {
+  "k": "60f74abf42ae",
+  "text": "التركيز منخفض جداً، نأخذ في الحساب أيونات H+ من الماء:"
+ },
+ {
+  "k": "d30d4e38c473",
+  "text": "تركيز القاعدة",
+  "ctx": "const C = num(input, \"C\", \"تركيز القاعدة\", { positive: true });"
+ },
+ {
+  "k": "4335f47c30ed",
+  "text": "عدد مجموعات OH-",
+  "ctx": "const n = Number(choice(input, \"hydroxides\", \"عدد مجموعات OH-\", [\"1\", \"2\"], \"1\"));"
+ },
+ {
+  "k": "359c76bdfbdf",
+  "text": "قاعدة قوية، عدد مجموعات OH- = {%0}، فـ [OH-] = n·C:"
+ },
+ {
+  "k": "24edcd2236dd",
+  "text": "التركيز منخفض جداً، نأخذ في الحساب أيونات OH- من الماء:"
+ },
+ {
+  "k": "832eac7528cd",
+  "text": "نوع الثابت",
+  "ctx": "const kind = choice(input, \"constKind\", \"نوع الثابت\", [\"K\", \"pK\"], \"K\");"
+ },
+ {
+  "k": "2bf042b47def",
+  "text": "قيمة Ka أو pKa",
+  "ctx": "const K = constant(input, isAcid ? \"قيمة Ka أو pKa\" : \"قيمة Kb أو pKb\");"
+ },
+ {
+  "k": "b6e0d732a330",
+  "text": "قيمة Kb أو pKb",
+  "ctx": "const K = constant(input, isAcid ? \"قيمة Ka أو pKa\" : \"قيمة Kb أو pKb\");"
+ },
+ {
+  "k": "e2c1655a40a7",
+  "text": "معادلة التوازن التربيعية، حيث x = [H+] للحمض أو [OH-] للقاعدة:"
+ },
+ {
+  "k": "f1e66e0c61d5",
+  "text": "الحل الموجب:",
+  "ctx": "{ text: \"الحل الموجب:\", tex: `x = \\\\frac{2K_${sym}C}{K_${sym} + \\\\sqrt{K_${sym}^2 + 4K_${sym}C}} = ${ntex(x, 6)}\\\\ M` }"
+ },
+ {
+  "k": "80da1cd45636",
+  "text": "نسبة التأين α",
+  "ctx": "const extra = [{ label: \"نسبة التأين α\", value: `${fmt(alpha, 4)} %` }];"
+ },
+ {
+  "k": "cabbd8d50efe",
+  "text": "تركيز [A-]",
+  "ctx": "const A = num(input, \"A\", \"تركيز [A-]\", { positive: true });"
+ },
+ {
+  "k": "9ce391c99af7",
+  "text": "تركيز [HA]",
+  "ctx": "const HA = num(input, \"HA\", \"تركيز [HA]\", { positive: true });"
+ },
+ {
+  "k": "7ceb6f480721",
+  "text": "معادلة هندرسون–هاسلباخ:",
+  "ctx": "const steps = [{ text: \"معادلة هندرسون–هاسلباخ:\", tex: `pH = pK_a + \\\\log\\\\frac{[A^-]}{[HA]} = ${ntex(pKa)} + \\\\log\\\\frac{${ntex(A)}}{${ntex(HA)}} = ${ntex(pH, "
+ }
+]

@@ -1,0 +1,7 @@
+{
+ "953ce1f3bc31": "Toplama ve çıkarma için aynı boyutlarda iki matris gerekir.",
+ "a66e4db77967": "Çarpılamaz: birinci matrisin sütun sayısı ({%0}), ikinci matrisin satır sayısına ({%1}) eşit değil.",
+ "9b3e0271714d": "Determinant yalnızca kare matris için hesaplanır.",
+ "67fc31372e4f": "Ters matris yalnızca kare matris için vardır.",
+ "3a4bc298f50a": "Özdeğerler yalnızca kare matris için hesaplanır."
+}

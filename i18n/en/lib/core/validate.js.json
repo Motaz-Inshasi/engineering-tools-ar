@@ -1,0 +1,21 @@
+{
+  "f09b85ed1dbc": "Enter a value for {%0}.",
+  "beed0ab147c3": "The value of {%0} is not a valid number.",
+  "af786f267574": "The value of {%0} must be finite.",
+  "a7e3feb9b40e": "{%0} must be an integer.",
+  "ce967f218b65": "{%0} must be greater than zero.",
+  "1e0649a82ca7": "{%0} cannot be negative.",
+  "527916a7c2ee": "{%0} cannot be zero.",
+  "6792649ef421": "{%0} must be at least {%1}.",
+  "f808cd5546fe": "{%0} must be at most {%1}.",
+  "66b4682e84aa": "{%0} must be less than {%1}.",
+  "d5a3f2f8280d": "Enter {%0}.",
+  "adca16cb118e": "Choose a valid value for {%0}.",
+  "5d524875500e": "The value «{%0}» in {%1} is not a valid number.",
+  "cda49063483e": "All values in {%0} must be greater than zero.",
+  "4d71f5ed26e0": "{%0} needs at least {%1} values.",
+  "af916b45c906": "{%0} accepts at most {%1} values.",
+  "4a13cb15b380": "All rows of {%0} must contain the same number of values.",
+  "19b4ff67b117": "{%0} must be square.",
+  "546683c4c0bd": "The maximum size of {%0} is {%1}×{%2}."
+}

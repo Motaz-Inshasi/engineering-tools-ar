@@ -1,0 +1,12 @@
+{
+  "c05cf431978c": "Símbolo no reconocido «{%0}» en la expresión lógica.",
+  "2e0cec952000": "Introduce una expresión lógica.",
+  "f9627357b56f": "La expresión lógica está incompleta.",
+  "99127c3577ff": "Hay un paréntesis abierto que no se cerró.",
+  "c1e3b3333721": "La expresión lógica tiene una sintaxis incorrecta.",
+  "fcd7d7b66007": "No se pudo interpretar la expresión lógica completa; revisa los paréntesis y los símbolos.",
+  "7ac036b128a8": "Todas las combinaciones dan 1, así que la función = 1.",
+  "7e097c014f67": "Tras los implicantes esenciales quedaron minitérminos sin cubrir ({%0}), así que elegimos el conjunto más pequeño de implicantes primos que los cubre{%1}.",
+  "6ce6b83288aa": " mediante el método de Petrick (búsqueda exhaustiva)",
+  "95a92be8ac8d": " mediante un método voraz"
+}

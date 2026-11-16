@@ -1,0 +1,223 @@
+[
+ {
+  "k": "d458f2e5588a",
+  "text": "حاسبة PWM للمتحكمات الدقيقة: قيمة TOP للمؤقت والتردد الفعلي ودقة PWM بالبت وقيمة المقارنة لأي دورة عمل، وحساب عرض نبضة السيرفو وقيمة المقارنة لأي زاوية."
+ },
+ {
+  "k": "d0ee66a7b529",
+  "text": "سيرفو",
+  "ctx": "keywords: [\"PWM\", \"سيرفو\", \"servo\", \"دورة العمل\", \"duty cycle\", \"مؤقت\", \"timer\", \"prescaler\", \"عرض النبضة\", \"Arduino\", \"STM32\"],"
+ },
+ {
+  "k": "04129553cec9",
+  "text": "دورة العمل",
+  "ctx": "keywords: [\"PWM\", \"سيرفو\", \"servo\", \"دورة العمل\", \"duty cycle\", \"مؤقت\", \"timer\", \"prescaler\", \"عرض النبضة\", \"Arduino\", \"STM32\"],"
+ },
+ {
+  "k": "7d9903ba1aae",
+  "text": "مؤقت",
+  "ctx": "keywords: [\"PWM\", \"سيرفو\", \"servo\", \"دورة العمل\", \"duty cycle\", \"مؤقت\", \"timer\", \"prescaler\", \"عرض النبضة\", \"Arduino\", \"STM32\"],"
+ },
+ {
+  "k": "0a3fb9ae2293",
+  "text": "عرض النبضة",
+  "ctx": "keywords: [\"PWM\", \"سيرفو\", \"servo\", \"دورة العمل\", \"duty cycle\", \"مؤقت\", \"timer\", \"prescaler\", \"عرض النبضة\", \"Arduino\", \"STM32\"],"
+ },
+ {
+  "k": "7c362b3024e9",
+  "text": "تردد PWM للمؤقت (Fast PWM)",
+  "ctx": "{ label: \"تردد PWM للمؤقت (Fast PWM)\", tex: \"f_{PWM} = \\\\frac{f_{clk}}{N_{pre}(TOP + 1)},\\\\qquad \\\\text{resolution} = \\\\log_2(TOP + 1)\\\\ \\\\text{bits}\" },"
+ },
+ {
+  "k": "1b7b1d220fb7",
+  "text": "السيرفو: عرض النبضة خطي مع الزاوية",
+  "ctx": "{ label: \"السيرفو: عرض النبضة خطي مع الزاوية\", tex: \"t_p = t_{min} + \\\\frac{\\\\theta}{\\\\theta_{max}}(t_{max} - t_{min}),\\\\qquad D = \\\\frac{t_p}{T}\" }"
+ },
+ {
+  "k": "f57622182b15",
+  "text": "المطلوب",
+  "ctx": "{ id: \"mode\", label: \"المطلوب\", type: \"select\", default: \"servo\", options: [[\"pwm\", \"إعداد مؤقت PWM\"], [\"servo\", \"زاوية السيرفو\"]] },"
+ },
+ {
+  "k": "e66328c4d449",
+  "text": "إعداد مؤقت PWM",
+  "ctx": "{ id: \"mode\", label: \"المطلوب\", type: \"select\", default: \"servo\", options: [[\"pwm\", \"إعداد مؤقت PWM\"], [\"servo\", \"زاوية السيرفو\"]] },"
+ },
+ {
+  "k": "38af801aa758",
+  "text": "زاوية السيرفو",
+  "ctx": "{ id: \"mode\", label: \"المطلوب\", type: \"select\", default: \"servo\", options: [[\"pwm\", \"إعداد مؤقت PWM\"], [\"servo\", \"زاوية السيرفو\"]] },"
+ },
+ {
+  "k": "1ebec2fbd276",
+  "text": "تردد ساعة المؤقت",
+  "ctx": "{ id: \"fclk\", label: \"تردد ساعة المؤقت\", unit: \"Hz\", type: \"number\", default: \"16M\" },"
+ },
+ {
+  "k": "f6315dcb73ce",
+  "text": "المقسم المسبق (Prescaler)",
+  "ctx": "{ id: \"pre\", label: \"المقسم المسبق (Prescaler)\", type: \"number\", default: \"8\" },"
+ },
+ {
+  "k": "9ae33f77f224",
+  "text": "تردد PWM المطلوب",
+  "ctx": "{ id: \"f\", label: \"تردد PWM المطلوب\", unit: \"Hz\", type: \"number\", default: \"50\" },"
+ },
+ {
+  "k": "2f7af0b24aa6",
+  "text": "الزاوية المطلوبة",
+  "ctx": "{ id: \"angle\", label: \"الزاوية المطلوبة\", unit: \"°\", type: \"number\", default: \"90\", when: { mode: [\"servo\"] } },"
+ },
+ {
+  "k": "03711c0d6149",
+  "text": "مدى زاوية السيرفو",
+  "ctx": "{ id: \"range\", label: \"مدى زاوية السيرفو\", unit: \"°\", type: \"number\", default: \"180\", when: { mode: [\"servo\"] } },"
+ },
+ {
+  "k": "4865f4bddddd",
+  "text": "عرض النبضة عند 0°",
+  "ctx": "{ id: \"tmin\", label: \"عرض النبضة عند 0°\", unit: \"s\", type: \"number\", default: \"1m\", when: { mode: [\"servo\"] } },"
+ },
+ {
+  "k": "72b2e1b41a6e",
+  "text": "عرض النبضة عند أقصى زاوية",
+  "ctx": "{ id: \"tmax\", label: \"عرض النبضة عند أقصى زاوية\", unit: \"s\", type: \"number\", default: \"2m\", when: { mode: [\"servo\"] } }"
+ },
+ {
+  "k": "a0ccdca7d9dd",
+  "text": "مثال: سيرفو 180° على مؤقت 16 MHz بمقسم 8 وتردد 50 Hz."
+ },
+ {
+  "k": "c5511cc619ca",
+  "text": "تردد الساعة",
+  "ctx": "const fclk = num(input, \"fclk\", \"تردد الساعة\", { positive: true });"
+ },
+ {
+  "k": "a75bc15a9724",
+  "text": "المقسم المسبق",
+  "ctx": "const pre = num(input, \"pre\", \"المقسم المسبق\", { integer: true, min: 1, max: 65536 });"
+ },
+ {
+  "k": "2abab1aa1c4e",
+  "text": "تردد PWM",
+  "ctx": "const f = num(input, \"f\", \"تردد PWM\", { positive: true });"
+ },
+ {
+  "k": "1886ce5e7d81",
+  "text": "التردد المطلوب أعلى مما يسمح به هذا المقسم وتردد الساعة. قلّل المقسم أو التردد."
+ },
+ {
+  "k": "eb7e4f122f52",
+  "text": "قيمة TOP المطلوبة {%0} تتجاوز مؤقت 16 بت (65535). زِد المقسم المسبق."
+ },
+ {
+  "k": "61b8cbd7b576",
+  "text": "تردد المؤقت بعد المقسم ثم عدد العدّات في الدور:"
+ },
+ {
+  "k": "11c6f72492ba",
+  "text": "التردد الفعلي {%0} (الخطأ {%1}%) ودقة PWM {%2} بت."
+ },
+ {
+  "k": "ace96e42ba25",
+  "text": "قيمة TOP (ICR/ARR)",
+  "ctx": "{ label: \"قيمة TOP (ICR/ARR)\", value: top, text: `TOP = ${top}` },"
+ },
+ {
+  "k": "d603fd692abf",
+  "text": "التردد الفعلي",
+  "ctx": "{ label: \"التردد الفعلي\", value: eng(fact, \"Hz\", 6) },"
+ },
+ {
+  "k": "fce45c2e0c4e",
+  "text": "دقة PWM",
+  "ctx": "{ label: \"دقة PWM\", value: `${fmt(bits, 4)} بت` }"
+ },
+ {
+  "k": "6fb69770ea2b",
+  "text": "{%0} بت",
+  "ctx": "{ label: \"دقة PWM\", value: `${fmt(bits, 4)} بت` }"
+ },
+ {
+  "k": "d4d2f25f92ac",
+  "text": "قيمة المقارنة لدورة العمل:",
+  "ctx": "steps.push({ text: \"قيمة المقارنة لدورة العمل:\", tex: `OCR = D(TOP + 1) = ${ntex(duty)} \\\\times ${top + 1} = ${ocr}` });"
+ },
+ {
+  "k": "889d8e88f94c",
+  "text": "قيمة المقارنة OCR/CCR",
+  "ctx": "results.push({ label: \"قيمة المقارنة OCR/CCR\", value: ocr, text: `OCR = ${ocr}` }, { label: \"زمن الارتفاع\", value: eng(duty * T, \"s\", 4) });"
+ },
+ {
+  "k": "cf4019436892",
+  "text": "زمن الارتفاع",
+  "ctx": "results.push({ label: \"قيمة المقارنة OCR/CCR\", value: ocr, text: `OCR = ${ocr}` }, { label: \"زمن الارتفاع\", value: eng(duty * T, \"s\", 4) });"
+ },
+ {
+  "k": "76482d899738",
+  "text": "الزاوية",
+  "ctx": "const angle = num(input, \"angle\", \"الزاوية\"), range = num(input, \"range\", \"مدى الزاوية\", { positive: true });"
+ },
+ {
+  "k": "a748748bd401",
+  "text": "مدى الزاوية",
+  "ctx": "const angle = num(input, \"angle\", \"الزاوية\"), range = num(input, \"range\", \"مدى الزاوية\", { positive: true });"
+ },
+ {
+  "k": "f67241144ada",
+  "text": "عرض النبضة الأدنى",
+  "ctx": "const tmin = num(input, \"tmin\", \"عرض النبضة الأدنى\", { positive: true }), tmax = num(input, \"tmax\", \"عرض النبضة الأقصى\", { positive: true });"
+ },
+ {
+  "k": "80912ed5d41b",
+  "text": "عرض النبضة الأقصى",
+  "ctx": "const tmin = num(input, \"tmin\", \"عرض النبضة الأدنى\", { positive: true }), tmax = num(input, \"tmax\", \"عرض النبضة الأقصى\", { positive: true });"
+ },
+ {
+  "k": "7e82ff15bc73",
+  "text": "الزاوية يجب أن تكون بين 0 و {%0}°.",
+  "ctx": "if (angle < 0 || angle > range) fail(`الزاوية يجب أن تكون بين 0 و ${fmt(range)}°.`, \"angle\");"
+ },
+ {
+  "k": "db16773f3cf1",
+  "text": "عرض النبضة الأقصى يجب أن يكون أكبر من الأدنى."
+ },
+ {
+  "k": "29f1bf399327",
+  "text": "عرض النبضة الأقصى أطول من دور PWM؛ قلّل التردد (السيرفو عادة 50 Hz)."
+ },
+ {
+  "k": "6201f718f6e9",
+  "text": "عرض النبضة خطي مع الزاوية:",
+  "ctx": "steps.push({ text: \"عرض النبضة خطي مع الزاوية:\", tex: `t_p = ${ntex(tmin)} + \\\\frac{${ntex(angle)}}{${ntex(range)}}(${ntex(tmax)} - ${ntex(tmin)}) = ${ntex(tp, "
+ },
+ {
+  "k": "79dd0bbe4c9c",
+  "text": "دورة العمل وقيمة المقارنة:",
+  "ctx": "steps.push({ text: \"دورة العمل وقيمة المقارنة:\", tex: `D = \\\\frac{t_p}{T} = ${ntex(100 * duty, 4)}\\\\%,\\\\quad OCR = D(TOP + 1) = ${ocr}` });"
+ },
+ {
+  "k": "03cf2a27b5e8",
+  "text": "كل عدّة واحدة تقابل {%0}° تقريباً، وهي أصغر خطوة زاوية ممكنة بهذا الإعداد."
+ },
+ {
+  "k": "b343a2961682",
+  "text": "قيمة المقارنة",
+  "ctx": "results.push({ label: \"عرض النبضة\", value: eng(tp, \"s\", 4), text: `pulse = ${eng(tp, \"s\", 4)}` }, { label: \"دورة العمل\", value: `${fmt(100 * duty, 4)}%` }, { la"
+ },
+ {
+  "k": "f7db15d9400a",
+  "text": "أصغر خطوة زاوية",
+  "ctx": "results.push({ label: \"عرض النبضة\", value: eng(tp, \"s\", 4), text: `pulse = ${eng(tp, \"s\", 4)}` }, { label: \"دورة العمل\", value: `${fmt(100 * duty, 4)}%` }, { la"
+ },
+ {
+  "k": "83705d6c6fd9",
+  "text": "شكل إشارة PWM (دوران)",
+  "ctx": "return { results, steps, copy, blocks: [{ type: \"plot\", title: \"شكل إشارة PWM (دوران)\", xLabel: \"t (s)\", yLabel: \"الخرج\", yMin: -0.2, yMax: 1.3, series: [{ name"
+ },
+ {
+  "k": "d96bd37a284a",
+  "text": "الخرج",
+  "ctx": "return { results, steps, copy, blocks: [{ type: \"plot\", title: \"شكل إشارة PWM (دوران)\", xLabel: \"t (s)\", yLabel: \"الخرج\", yMin: -0.2, yMax: 1.3, series: [{ name"
+ }
+]

@@ -1,0 +1,14 @@
+{
+ "a0a94b99bc4e": "Saisissez les éléments du circuit, un élément par ligne.",
+ "eeb0d5f59d1b": "Le nombre maximal d'éléments est 60.",
+ "3e16f8a17fb6": "Ligne {%0} («{%1}»)",
+ "b4abd3cee0fa": "{%0} : la syntaxe doit être : nom nœud1 nœud2 valeur.",
+ "b045905c00d5": "{%0} : le nom de l'élément doit commencer par R, V ou I.",
+ "53267bb0ef06": "{%0} : le nom {%1} est en double.",
+ "8cbb2a50edb9": "{%0} : les deux bornes de l'élément sont reliées au même nœud.",
+ "6aa15cba536e": "{%0} : la valeur «{%1}» n'est pas un nombre valide.",
+ "8e5df46c90a6": "{%0} : la résistance doit être supérieure à zéro (utilisez une source de tension de 0 pour représenter un court-circuit).",
+ "777279ac0b31": "Le circuit a besoin d'un nœud de masse nommé 0 (ou gnd).",
+ "32ba12ca855b": "Le circuit ne contient aucun nœud autre que la masse.",
+ "ff66be72d044": "Le circuit n'est pas résoluble : il existe un nœud isolé de la masse, une boucle de sources de tension, ou une source de courant sans chemin."
+}

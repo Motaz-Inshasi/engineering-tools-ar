@@ -1,0 +1,142 @@
+[
+ {
+  "k": "83e154e96628",
+  "text": "أساسيات MOSFET من نوع N المعزز: منطقة العمل (قطع، خطية، تشبع) وتيار المصرف والموصلية التبادلية gm ومقاومة الخرج، مع منحنيات الخواص."
+ },
+ {
+  "k": "4a3c68046545",
+  "text": "موسفت",
+  "ctx": "keywords: [\"MOSFET\", \"موسفت\", \"ترانزستور تأثير المجال\", \"تيار المصرف\", \"جهد العتبة\", \"gm\", \"تشبع\", \"منطقة خطية\"],"
+ },
+ {
+  "k": "f77ed233b71c",
+  "text": "ترانزستور تأثير المجال",
+  "ctx": "keywords: [\"MOSFET\", \"موسفت\", \"ترانزستور تأثير المجال\", \"تيار المصرف\", \"جهد العتبة\", \"gm\", \"تشبع\", \"منطقة خطية\"],"
+ },
+ {
+  "k": "39a8b0936450",
+  "text": "تيار المصرف",
+  "ctx": "keywords: [\"MOSFET\", \"موسفت\", \"ترانزستور تأثير المجال\", \"تيار المصرف\", \"جهد العتبة\", \"gm\", \"تشبع\", \"منطقة خطية\"],"
+ },
+ {
+  "k": "aa35dc7fd80a",
+  "text": "جهد العتبة",
+  "ctx": "keywords: [\"MOSFET\", \"موسفت\", \"ترانزستور تأثير المجال\", \"تيار المصرف\", \"جهد العتبة\", \"gm\", \"تشبع\", \"منطقة خطية\"],"
+ },
+ {
+  "k": "6f1c5105fa3a",
+  "text": "تشبع",
+  "ctx": "keywords: [\"MOSFET\", \"موسفت\", \"ترانزستور تأثير المجال\", \"تيار المصرف\", \"جهد العتبة\", \"gm\", \"تشبع\", \"منطقة خطية\"],"
+ },
+ {
+  "k": "9133512af464",
+  "text": "منطقة خطية",
+  "ctx": "keywords: [\"MOSFET\", \"موسفت\", \"ترانزستور تأثير المجال\", \"تيار المصرف\", \"جهد العتبة\", \"gm\", \"تشبع\", \"منطقة خطية\"],"
+ },
+ {
+  "k": "db106bbb1691",
+  "text": "الخطية (Triode) عندما VDS < VGS − Vth",
+  "ctx": "{ label: \"الخطية (Triode) عندما VDS < VGS − Vth\", tex: \"I_D = k\\\\left[(V_{GS} - V_{th})V_{DS} - \\\\tfrac{1}{2}V_{DS}^2\\\\right]\" },"
+ },
+ {
+  "k": "f2d46ba360da",
+  "text": "التشبع عندما VDS ≥ VGS − Vth",
+  "ctx": "{ label: \"التشبع عندما VDS ≥ VGS − Vth\", tex: \"I_D = \\\\tfrac{1}{2}k(V_{GS} - V_{th})^2(1 + \\\\lambda V_{DS}),\\\\quad g_m = k(V_{GS} - V_{th})\" }"
+ },
+ {
+  "k": "9d33793f6324",
+  "text": "جهد العتبة Vth",
+  "ctx": "{ id: \"Vth\", label: \"جهد العتبة Vth\", unit: \"V\", type: \"number\", default: \"1\" },"
+ },
+ {
+  "k": "244e0dd2b67a",
+  "text": "معامل التوصيل k = μnCox·W/L",
+  "ctx": "{ id: \"k\", label: \"معامل التوصيل k = μnCox·W/L\", unit: \"A/V²\", type: \"number\", default: \"2m\" },"
+ },
+ {
+  "k": "01c79923cfcb",
+  "text": "معامل تعديل طول القناة λ",
+  "ctx": "{ id: \"lambda\", label: \"معامل تعديل طول القناة λ\", unit: \"1/V\", type: \"number\", default: \"0\" }"
+ },
+ {
+  "k": "fcdcf7c119be",
+  "text": "مثال: VGS = 3 V و Vth = 1 V و k = 2 mA/V²."
+ },
+ {
+  "k": "6b0a0ffe88d4",
+  "text": "قطع",
+  "ctx": "const NAMES = { cutoff: \"قطع\", triode: \"خطية (Triode)\", sat: \"تشبع (Saturation)\" };"
+ },
+ {
+  "k": "0269a9749552",
+  "text": "خطية (Triode)",
+  "ctx": "const NAMES = { cutoff: \"قطع\", triode: \"خطية (Triode)\", sat: \"تشبع (Saturation)\" };"
+ },
+ {
+  "k": "7137b5c25727",
+  "text": "تشبع (Saturation)",
+  "ctx": "const NAMES = { cutoff: \"قطع\", triode: \"خطية (Triode)\", sat: \"تشبع (Saturation)\" };"
+ },
+ {
+  "k": "2b74bb568f88",
+  "text": "جهد التجاوز (Overdrive):",
+  "ctx": "const steps = [{ text: \"جهد التجاوز (Overdrive):\", tex: `V_{OV} = V_{GS} - V_{th} = ${ntex(Vgs)} - ${ntex(Vth)} = ${ntex(ov, 5)}\\\\ V` }];"
+ },
+ {
+  "k": "61a7cef44790",
+  "text": "VGS أقل من جهد العتبة فلا تتكوّن قناة: الترانزستور مقطوع و ID = 0."
+ },
+ {
+  "k": "2c0e6560bc3c",
+  "text": "VDS = {%0} V أقل من VOV، فالقناة غير مختنقة: منطقة خطية."
+ },
+ {
+  "k": "e85bfb9f43e0",
+  "text": "عند VDS صغير يتصرف الترانزستور كمقاومة:",
+  "ctx": "steps.push({ text: \"عند VDS صغير يتصرف الترانزستور كمقاومة:\", tex: `R_{on} \\\\approx \\\\frac{1}{k V_{OV}} = ${ntex(Ron, 5)}\\\\ \\\\Omega` });"
+ },
+ {
+  "k": "4bc1a641c282",
+  "text": "VDS = {%0} V ≥ VOV، فالقناة مختنقة عند المصرف: منطقة التشبع (منطقة التكبير)."
+ },
+ {
+  "k": "fe76c9d3a3e2",
+  "text": "معاملات الإشارة الصغيرة:",
+  "ctx": "steps.push({ text: \"معاملات الإشارة الصغيرة:\", tex: `g_m = k V_{OV} = ${ntex(gm, 5)}\\\\ S${lambda > 0 ? `,\\\\quad r_o \\\\approx \\\\frac{1}{\\\\lambda I_D} = ${ntex(ro"
+ },
+ {
+  "k": "78d326ba6905",
+  "text": "منحنيات ID مقابل VDS",
+  "ctx": "const blocks = curves.length ? [{ type: \"plot\", title: \"منحنيات ID مقابل VDS\", xLabel: \"VDS (V)\", yLabel: \"ID (A)\", includeZero: true, series: [...curves, { nam"
+ },
+ {
+  "k": "dd76b298ca5a",
+  "text": "نقطة التشغيل",
+  "ctx": "const blocks = curves.length ? [{ type: \"plot\", title: \"منحنيات ID مقابل VDS\", xLabel: \"VDS (V)\", yLabel: \"ID (A)\", includeZero: true, series: [...curves, { nam"
+ },
+ {
+  "k": "f9450de3426a",
+  "text": "منطقة العمل",
+  "ctx": "{ label: \"منطقة العمل\", value: NAMES[r.region], text: NAMES[r.region] },"
+ },
+ {
+  "k": "e325cb8eb4aa",
+  "text": "تيار المصرف ID",
+  "ctx": "{ label: \"تيار المصرف ID\", value: eng(r.Id, \"A\", 4), text: `ID = ${eng(r.Id, \"A\", 4)}` },"
+ },
+ {
+  "k": "aa6dc4312e76",
+  "text": "الموصلية التبادلية gm",
+  "ctx": "{ label: \"الموصلية التبادلية gm\", value: eng(gm, \"S\", 4) },"
+ },
+ {
+  "k": "660a9075e206",
+  "text": "مقاومة التوصيل Ron",
+  "ctx": "...(r.region === \"triode\" ? [{ label: \"مقاومة التوصيل Ron\", value: eng(Ron, \"Ω\", 4) }] : []),"
+ },
+ {
+  "k": "2c3b5da59abd",
+  "text": "القدرة المبددة",
+  "ctx": "{ label: \"القدرة المبددة\", value: eng(r.Id * Vds, \"W\", 4) }"
+ }
+]

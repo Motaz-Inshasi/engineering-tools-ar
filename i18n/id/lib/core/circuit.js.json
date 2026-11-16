@@ -1,0 +1,14 @@
+{
+ "a0a94b99bc4e": "Masukkan elemen rangkaian, satu elemen per baris.",
+ "eeb0d5f59d1b": "Jumlah maksimum elemen adalah 60.",
+ "3e16f8a17fb6": "Baris {%0} («{%1}»)",
+ "b4abd3cee0fa": "{%0}: Format harus: nama simpul1 simpul2 nilai.",
+ "b045905c00d5": "{%0}: Nama elemen harus diawali R, V, atau I.",
+ "53267bb0ef06": "{%0}: Nama {%1} duplikat.",
+ "8cbb2a50edb9": "{%0}: Kedua ujung elemen berada pada simpul yang sama.",
+ "6aa15cba536e": "{%0}: Nilai «{%1}» bukan angka yang valid.",
+ "8e5df46c90a6": "{%0}: Resistansi harus lebih besar dari nol (gunakan sumber tegangan 0 untuk merepresentasikan hubung singkat).",
+ "777279ac0b31": "Rangkaian memerlukan simpul ground bernama 0 (atau gnd).",
+ "32ba12ca855b": "Rangkaian tidak memiliki simpul selain ground.",
+ "ff66be72d044": "Rangkaian tidak dapat diselesaikan: ada simpul yang terisolasi dari ground, atau loop sumber tegangan, atau sumber arus tanpa jalur."
+}

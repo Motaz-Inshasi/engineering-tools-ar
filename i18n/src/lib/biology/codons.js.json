@@ -1,0 +1,107 @@
+[
+ {
+  "k": "74b9c70e28d6",
+  "text": "ألانين",
+  "ctx": "\"A\": { three: \"Ala\", en: \"Alanine\", ar: \"ألانين\" },"
+ },
+ {
+  "k": "86aca58b0950",
+  "text": "أرجنين",
+  "ctx": "\"R\": { three: \"Arg\", en: \"Arginine\", ar: \"أرجنين\" },"
+ },
+ {
+  "k": "e246b2c36daa",
+  "text": "أسباراجين",
+  "ctx": "\"N\": { three: \"Asn\", en: \"Asparagine\", ar: \"أسباراجين\" },"
+ },
+ {
+  "k": "fbbb285c3fce",
+  "text": "حمض الأسبارتيك",
+  "ctx": "\"D\": { three: \"Asp\", en: \"Aspartic acid\", ar: \"حمض الأسبارتيك\" },"
+ },
+ {
+  "k": "253e163bcf85",
+  "text": "سيستين",
+  "ctx": "\"C\": { three: \"Cys\", en: \"Cysteine\", ar: \"سيستين\" },"
+ },
+ {
+  "k": "7476e3807df2",
+  "text": "غلوتامين",
+  "ctx": "\"Q\": { three: \"Gln\", en: \"Glutamine\", ar: \"غلوتامين\" },"
+ },
+ {
+  "k": "40f75177d17a",
+  "text": "حمض الغلوتاميك",
+  "ctx": "\"E\": { three: \"Glu\", en: \"Glutamic acid\", ar: \"حمض الغلوتاميك\" },"
+ },
+ {
+  "k": "c8c789fa40fc",
+  "text": "غلايسين",
+  "ctx": "\"G\": { three: \"Gly\", en: \"Glycine\", ar: \"غلايسين\" },"
+ },
+ {
+  "k": "35f8a06f1fc4",
+  "text": "هستيدين",
+  "ctx": "\"H\": { three: \"His\", en: \"Histidine\", ar: \"هستيدين\" },"
+ },
+ {
+  "k": "347222658fae",
+  "text": "آيزولوسين",
+  "ctx": "\"I\": { three: \"Ile\", en: \"Isoleucine\", ar: \"آيزولوسين\" },"
+ },
+ {
+  "k": "9a84e427b988",
+  "text": "ليوسين",
+  "ctx": "\"L\": { three: \"Leu\", en: \"Leucine\", ar: \"ليوسين\" },"
+ },
+ {
+  "k": "78fc37034d8b",
+  "text": "ليسين",
+  "ctx": "\"K\": { three: \"Lys\", en: \"Lysine\", ar: \"ليسين\" },"
+ },
+ {
+  "k": "02b635090329",
+  "text": "ميثيونين",
+  "ctx": "\"M\": { three: \"Met\", en: \"Methionine\", ar: \"ميثيونين\" },"
+ },
+ {
+  "k": "5fbdd5c59d34",
+  "text": "فينيل ألانين",
+  "ctx": "\"F\": { three: \"Phe\", en: \"Phenylalanine\", ar: \"فينيل ألانين\" },"
+ },
+ {
+  "k": "00b90ca8f245",
+  "text": "برولين",
+  "ctx": "\"P\": { three: \"Pro\", en: \"Proline\", ar: \"برولين\" },"
+ },
+ {
+  "k": "d34d0d5f4050",
+  "text": "سيرين",
+  "ctx": "\"S\": { three: \"Ser\", en: \"Serine\", ar: \"سيرين\" },"
+ },
+ {
+  "k": "39d468f4a725",
+  "text": "ثريونين",
+  "ctx": "\"T\": { three: \"Thr\", en: \"Threonine\", ar: \"ثريونين\" },"
+ },
+ {
+  "k": "52836f3062f3",
+  "text": "تريبتوفان",
+  "ctx": "\"W\": { three: \"Trp\", en: \"Tryptophan\", ar: \"تريبتوفان\" },"
+ },
+ {
+  "k": "7af2618c78cd",
+  "text": "تيروسين",
+  "ctx": "\"Y\": { three: \"Tyr\", en: \"Tyrosine\", ar: \"تيروسين\" },"
+ },
+ {
+  "k": "eb57ccacfc9f",
+  "text": "فالين",
+  "ctx": "\"V\": { three: \"Val\", en: \"Valine\", ar: \"فالين\" },"
+ },
+ {
+  "k": "bfc3318bde36",
+  "text": "توقف",
+  "ctx": "\"*\": { three: \"Stop\", en: \"Stop\", ar: \"توقف\" }"
+ }
+]

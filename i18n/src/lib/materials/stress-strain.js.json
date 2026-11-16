@@ -1,0 +1,270 @@
+[
+ {
+  "k": "a2bfc9cd1a39",
+  "text": "مادة مخصصة (إدخال E يدوياً)",
+  "ctx": "const MAT_OPTIONS = [...MATERIALS.map((m) => [m.id, m.ar]), [\"custom\", \"مادة مخصصة (إدخال E يدوياً)\"]];"
+ },
+ {
+  "k": "c6e2aa65e19b",
+  "text": "احسب الإجهاد σ والانفعال ε والاستطالة ΔL وعامل الأمان من القوة والمقطع والطول والمادة، أو احسب معامل المرونة من قياس الاستطالة، مع تحذيرات الخضوع والكسر."
+ },
+ {
+  "k": "ca5047252e1c",
+  "text": "إجهاد",
+  "ctx": "keywords: [\"إجهاد\", \"انفعال\", \"معامل يونغ\", \"استطالة\", \"عامل الأمان\", \"stress\", \"strain\", \"Young's modulus\", \"هوك\"],"
+ },
+ {
+  "k": "8348e6a0bebb",
+  "text": "انفعال",
+  "ctx": "keywords: [\"إجهاد\", \"انفعال\", \"معامل يونغ\", \"استطالة\", \"عامل الأمان\", \"stress\", \"strain\", \"Young's modulus\", \"هوك\"],"
+ },
+ {
+  "k": "cf2690e24ff5",
+  "text": "معامل يونغ",
+  "ctx": "keywords: [\"إجهاد\", \"انفعال\", \"معامل يونغ\", \"استطالة\", \"عامل الأمان\", \"stress\", \"strain\", \"Young's modulus\", \"هوك\"],"
+ },
+ {
+  "k": "2cc10f48c96d",
+  "text": "استطالة",
+  "ctx": "keywords: [\"إجهاد\", \"انفعال\", \"معامل يونغ\", \"استطالة\", \"عامل الأمان\", \"stress\", \"strain\", \"Young's modulus\", \"هوك\"],"
+ },
+ {
+  "k": "c8c9628391c9",
+  "text": "عامل الأمان",
+  "ctx": "keywords: [\"إجهاد\", \"انفعال\", \"معامل يونغ\", \"استطالة\", \"عامل الأمان\", \"stress\", \"strain\", \"Young's modulus\", \"هوك\"],"
+ },
+ {
+  "k": "531b4231c392",
+  "text": "هوك",
+  "ctx": "keywords: [\"إجهاد\", \"انفعال\", \"معامل يونغ\", \"استطالة\", \"عامل الأمان\", \"stress\", \"strain\", \"Young's modulus\", \"هوك\"],"
+ },
+ {
+  "k": "fec034a22b41",
+  "text": "الإجهاد",
+  "ctx": "{ label: \"الإجهاد\", tex: \"\\\\sigma = \\\\frac{F}{A}\" },"
+ },
+ {
+  "k": "22584d6ffffc",
+  "text": "الانفعال ومعامل المرونة",
+  "ctx": "{ label: \"الانفعال ومعامل المرونة\", tex: \"\\\\varepsilon = \\\\frac{\\\\sigma}{E} = \\\\frac{\\\\Delta L}{L},\\\\qquad \\\\Delta L = \\\\varepsilon L\" },"
+ },
+ {
+  "k": "bc084662c076",
+  "text": "وضع الحساب",
+  "ctx": "{ id: \"mode\", label: \"وضع الحساب\", type: \"select\", default: \"axial\", options: [[\"axial\", \"من القوة والمقطع والمادة\"], [\"measurement\", \"من قياس الاستطالة (لحساب "
+ },
+ {
+  "k": "9566323d4a3c",
+  "text": "من القوة والمقطع والمادة",
+  "ctx": "{ id: \"mode\", label: \"وضع الحساب\", type: \"select\", default: \"axial\", options: [[\"axial\", \"من القوة والمقطع والمادة\"], [\"measurement\", \"من قياس الاستطالة (لحساب "
+ },
+ {
+  "k": "504b8d9b4748",
+  "text": "من قياس الاستطالة (لحساب E)",
+  "ctx": "{ id: \"mode\", label: \"وضع الحساب\", type: \"select\", default: \"axial\", options: [[\"axial\", \"من القوة والمقطع والمادة\"], [\"measurement\", \"من قياس الاستطالة (لحساب "
+ },
+ {
+  "k": "d3be66a24d08",
+  "text": "القوة F",
+  "ctx": "{ id: \"F\", label: \"القوة F\", unit: \"N\", type: \"number\", default: \"10k\", help: \"يمكن استخدام البادئة k للكيلونيوتن، مثل 10k.\" },"
+ },
+ {
+  "k": "f32aa589d4cb",
+  "text": "يمكن استخدام البادئة k للكيلونيوتن، مثل 10k."
+ },
+ {
+  "k": "fe526a1cfed2",
+  "text": "شكل المقطع",
+  "ctx": "{ id: \"section\", label: \"شكل المقطع\", type: \"select\", default: \"circle\", options: [[\"circle\", \"دائري (القطر d)\"], [\"rect\", \"مستطيل (b × h)\"], [\"custom\", \"مساحة "
+ },
+ {
+  "k": "6eab4adb2cdb",
+  "text": "دائري (القطر d)",
+  "ctx": "{ id: \"section\", label: \"شكل المقطع\", type: \"select\", default: \"circle\", options: [[\"circle\", \"دائري (القطر d)\"], [\"rect\", \"مستطيل (b × h)\"], [\"custom\", \"مساحة "
+ },
+ {
+  "k": "d4d5a8dd101c",
+  "text": "مستطيل (b × h)",
+  "ctx": "{ id: \"section\", label: \"شكل المقطع\", type: \"select\", default: \"circle\", options: [[\"circle\", \"دائري (القطر d)\"], [\"rect\", \"مستطيل (b × h)\"], [\"custom\", \"مساحة "
+ },
+ {
+  "k": "b5f2da2cee67",
+  "text": "مساحة مخصصة A",
+  "ctx": "{ id: \"section\", label: \"شكل المقطع\", type: \"select\", default: \"circle\", options: [[\"circle\", \"دائري (القطر d)\"], [\"rect\", \"مستطيل (b × h)\"], [\"custom\", \"مساحة "
+ },
+ {
+  "k": "2908605deb55",
+  "text": "القطر d",
+  "ctx": "{ id: \"d\", label: \"القطر d\", unit: \"mm\", type: \"number\", default: \"10\", when: { section: [\"circle\"] } },"
+ },
+ {
+  "k": "b02a25533e70",
+  "text": "العرض b",
+  "ctx": "{ id: \"b\", label: \"العرض b\", unit: \"mm\", type: \"number\", default: \"20\", when: { section: [\"rect\"] } },"
+ },
+ {
+  "k": "fbc69e28ad72",
+  "text": "الارتفاع h",
+  "ctx": "{ id: \"h\", label: \"الارتفاع h\", unit: \"mm\", type: \"number\", default: \"40\", when: { section: [\"rect\"] } },"
+ },
+ {
+  "k": "7dd8907bccdf",
+  "text": "مساحة المقطع A",
+  "ctx": "{ id: \"Acust\", label: \"مساحة المقطع A\", unit: \"mm²\", type: \"number\", default: \"1000\", when: { section: [\"custom\"] } },"
+ },
+ {
+  "k": "eb0875dee6f9",
+  "text": "الطول الأصلي L",
+  "ctx": "{ id: \"L\", label: \"الطول الأصلي L\", unit: \"mm\", type: \"number\", default: \"1000\" },"
+ },
+ {
+  "k": "ba57456d7cb2",
+  "text": "الاستطالة المقاسة ΔL",
+  "ctx": "{ id: \"dL\", label: \"الاستطالة المقاسة ΔL\", unit: \"mm\", type: \"number\", default: \"0.6366\", when: { mode: [\"measurement\"] } },"
+ },
+ {
+  "k": "b510d10bcd56",
+  "text": "المادة",
+  "ctx": "{ id: \"mat\", label: \"المادة\", type: \"select\", default: \"a36\", options: MAT_OPTIONS, when: { mode: [\"axial\"] } },"
+ },
+ {
+  "k": "1e1845fb645e",
+  "text": "معامل المرونة E (للمادة المخصصة)",
+  "ctx": "{ id: \"Ecust\", label: \"معامل المرونة E (للمادة المخصصة)\", unit: \"GPa\", type: \"number\", default: \"200\", when: { mat: [\"custom\"] } },"
+ },
+ {
+  "k": "e477cd17b4df",
+  "text": "مقاومة الخضوع (اختياري)",
+  "ctx": "{ id: \"Ycust\", label: \"مقاومة الخضوع (اختياري)\", unit: \"MPa\", type: \"number\", when: { mat: [\"custom\"] } },"
+ },
+ {
+  "k": "318ee7c2a90d",
+  "text": "مقاومة الشد القصوى (اختياري)",
+  "ctx": "{ id: \"Ucust\", label: \"مقاومة الشد القصوى (اختياري)\", unit: \"MPa\", type: \"number\", when: { mat: [\"custom\"] } }"
+ },
+ {
+  "k": "939a1457af71",
+  "text": "عامل الأمان = 1.96",
+  "ctx": "expect: [\"σ = 127.3 MPa\", \"ε = 6.366e-4\", \"ΔL = 0.6366 mm\", \"عامل الأمان = 1.96\"],"
+ },
+ {
+  "k": "9aab74b6ad0e",
+  "text": "مثال: قضيب فولاذ A36 قطره 10 mm يحمل 10 kN، طوله 1000 mm."
+ },
+ {
+  "k": "332d975a9201",
+  "text": "مساحة المقطع الدائري:",
+  "ctx": "return { A, tex:`A = \\\\frac{\\\\pi d^2}{4} = \\\\frac{\\\\pi \\\\cdot ${ntex(d, 6)}^2}{4} = ${ntex(A, 6)}\\\\ mm^2`, text: \"مساحة المقطع الدائري:\" };"
+ },
+ {
+  "k": "f548604270dd",
+  "text": "مساحة المقطع المستطيل:",
+  "ctx": "return { A, tex: `A = b h = ${ntex(b, 6)} \\\\times ${ntex(h, 6)} = ${ntex(A, 6)}\\\\ mm^2`, text: \"مساحة المقطع المستطيل:\" };"
+ },
+ {
+  "k": "272be7c846c3",
+  "text": "مساحة المقطع المعطاة:",
+  "ctx": "return { A, tex: `A = ${ntex(A, 6)}\\\\ mm^2`, text: \"مساحة المقطع المعطاة:\" };"
+ },
+ {
+  "k": "1900573b32de",
+  "text": "الاستطالة ΔL",
+  "ctx": "const dL = num(input, \"dL\", \"الاستطالة ΔL\", { positive: true });"
+ },
+ {
+  "k": "4c6b0900f585",
+  "text": "الإجهاد المحسوب:",
+  "ctx": "{ text: \"الإجهاد المحسوب:\", tex: `\\\\sigma = \\\\frac{F}{A} = \\\\frac{${ntex(F, 6)}}{${ntex(A, 6)}} = ${ntex(sigma, 6)}\\\\ MPa` },"
+ },
+ {
+  "k": "afbacbbc4bb5",
+  "text": "الانفعال من الاستطالة المقاسة:",
+  "ctx": "{ text: \"الانفعال من الاستطالة المقاسة:\", tex: `\\\\varepsilon = \\\\frac{\\\\Delta L}{L} = \\\\frac{${ntex(dL, 6)}}{${ntex(L, 6)}} = ${ntex(eps, 6)}` },"
+ },
+ {
+  "k": "c21fb5780e99",
+  "text": "معامل المرونة المقاس:",
+  "ctx": "{ text: \"معامل المرونة المقاس:\", tex: `E = \\\\frac{\\\\sigma}{\\\\varepsilon} = \\\\frac{${ntex(sigma, 6)}}{${ntex(eps, 6)}} = ${ntex(sigma / eps, 6)}\\\\ MPa = ${fmt(Eg"
+ },
+ {
+  "k": "0bc071caa5dc",
+  "text": "المساحة A",
+  "ctx": "{ label: \"المساحة A\", value: `${fmt(A, 4)} mm²` },"
+ },
+ {
+  "k": "1f6e8fb7086c",
+  "text": "الإجهاد σ",
+  "ctx": "{ label: \"الإجهاد σ\", value: `${fmt(sigma, 4)} MPa` },"
+ },
+ {
+  "k": "5dae0858fdff",
+  "text": "الانفعال ε",
+  "ctx": "{ label: \"الانفعال ε\", value: sci(eps) },"
+ },
+ {
+  "k": "962115c5eb6f",
+  "text": "معامل المرونة المقاس E",
+  "ctx": "{ label: \"معامل المرونة المقاس E\", value: `${fmt(Egpa, 4)} GPa` }"
+ },
+ {
+  "k": "6dadd3d65105",
+  "text": "معامل المرونة E",
+  "ctx": "E = num(input, \"Ecust\", \"معامل المرونة E\", { positive: true });"
+ },
+ {
+  "k": "1c0358e59545",
+  "text": "مقاومة الخضوع",
+  "ctx": "yieldV = num(input, \"Ycust\", \"مقاومة الخضوع\", { positive: true, optional: true });"
+ },
+ {
+  "k": "1f49e33de0d6",
+  "text": "مقاومة الشد القصوى",
+  "ctx": "utsV = num(input, \"Ucust\", \"مقاومة الشد القصوى\", { positive: true, optional: true });"
+ },
+ {
+  "k": "f1a28f94c7f1",
+  "text": "مادة مخصصة",
+  "ctx": "const matName = mat === \"custom\" ? \"مادة مخصصة\" : find(mat).ar;"
+ },
+ {
+  "k": "1001325df1b8",
+  "text": "غير منطبق",
+  "ctx": "const sfText = SF === null ? \"غير منطبق\" : fmt(SF, 3);"
+ },
+ {
+  "k": "88614e93fa9a",
+  "text": "تحذير: الإجهاد ({%0} MPa) تجاوز مقاومة الخضوع ({%1} MPa)، فيحدث تشوه دائم (لدن)."
+ },
+ {
+  "k": "fcc9c98490e5",
+  "text": "تحذير: الإجهاد ({%0} MPa) تجاوز مقاومة الشد القصوى ({%1} MPa)، فيحدث كسر."
+ },
+ {
+  "k": "f8327779f2d6",
+  "text": "الإجهاد المحوري:",
+  "ctx": "{ text: \"الإجهاد المحوري:\", tex: `\\\\sigma = \\\\frac{F}{A} = \\\\frac{${ntex(F, 6)}}{${ntex(A, 6)}} = ${ntex(sigma, 6)}\\\\ MPa` },"
+ },
+ {
+  "k": "ffcd864379fa",
+  "text": "الانفعال بقانون هوك (E لـ {%0} = {%1} GPa):"
+ },
+ {
+  "k": "9cfa02108a37",
+  "text": "الاستطالة الكلية:",
+  "ctx": "{ text: \"الاستطالة الكلية:\", tex: `\\\\Delta L = \\\\varepsilon L = ${ntex(eps, 6)} \\\\times ${ntex(L, 6)} = ${ntex(dL, 6)}\\\\ mm` }"
+ },
+ {
+  "k": "f02d9d98e30a",
+  "text": "عامل الأمان على الخضوع:",
+  "ctx": "if (SF !== null) steps.push({ text: \"عامل الأمان على الخضوع:\", tex: `SF = \\\\frac{\\\\sigma_y}{\\\\sigma} = \\\\frac{${ntex(yieldV, 6)}}{${ntex(sigma, 6)}} = ${fmt(SF,"
+ },
+ {
+  "k": "3db933f2df10",
+  "text": "معامل المرونة المستخدم E",
+  "ctx": "{ label: \"معامل المرونة المستخدم E\", value: `${fmt(E, 4)} GPa` },"
+ },
+ {
+  "k": "78f26d631dec",
+  "text": "σ = {%0} MPa، ε = {%1}، ΔL = {%2} mm، عامل الأمان = {%3}"
+ }
+]

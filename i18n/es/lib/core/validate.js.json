@@ -1,0 +1,21 @@
+{
+  "f09b85ed1dbc": "Introduce un valor para {%0}.",
+  "beed0ab147c3": "El valor de {%0} no es un número válido.",
+  "af786f267574": "El valor de {%0} debe ser finito.",
+  "a7e3feb9b40e": "{%0} debe ser un número entero.",
+  "ce967f218b65": "{%0} debe ser mayor que cero.",
+  "1e0649a82ca7": "{%0} no puede ser negativo.",
+  "527916a7c2ee": "{%0} no puede ser igual a cero.",
+  "6792649ef421": "{%0} no debe ser menor que {%1}.",
+  "f808cd5546fe": "{%0} no debe ser mayor que {%1}.",
+  "66b4682e84aa": "{%0} debe ser menor que {%1}.",
+  "d5a3f2f8280d": "Introduce {%0}.",
+  "adca16cb118e": "Elige un valor válido para {%0}.",
+  "5d524875500e": "El valor «{%0}» en {%1} no es un número entero.",
+  "cda49063483e": "Todos los valores de {%0} deben ser mayores que cero.",
+  "4d71f5ed26e0": "{%0} necesita al menos {%1} valores.",
+  "af916b45c906": "{%0} admite como máximo {%1} valores.",
+  "4a13cb15b380": "Todas las filas de {%0} deben tener el mismo número de valores.",
+  "19b4ff67b117": "{%0} debe ser cuadrada.",
+  "546683c4c0bd": "El tamaño máximo de {%0} es {%1}×{%2}."
+}

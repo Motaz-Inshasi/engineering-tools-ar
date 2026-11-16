@@ -1,0 +1,555 @@
+[
+ {
+  "k": "b57bcd18c43b",
+  "text": "مربع",
+  "ctx": "square: \"مربع\","
+ },
+ {
+  "k": "f33100894c4a",
+  "text": "مستطيل",
+  "ctx": "rectangle: \"مستطيل\","
+ },
+ {
+  "k": "15cb7513074a",
+  "text": "مثلث",
+  "ctx": "triangle: \"مثلث\","
+ },
+ {
+  "k": "81aa23fd8e40",
+  "text": "مثلث قائم الزاوية",
+  "ctx": "\"right-triangle\": \"مثلث قائم الزاوية\","
+ },
+ {
+  "k": "75ff9cf2636f",
+  "text": "دائرة",
+  "ctx": "circle: \"دائرة\","
+ },
+ {
+  "k": "5d4284b8dd1f",
+  "text": "قطع ناقص (إهليلج)",
+  "ctx": "ellipse: \"قطع ناقص (إهليلج)\","
+ },
+ {
+  "k": "c3232dd73c44",
+  "text": "شبه منحرف",
+  "ctx": "trapezoid: \"شبه منحرف\","
+ },
+ {
+  "k": "1269243b6435",
+  "text": "متوازي أضلاع",
+  "ctx": "parallelogram: \"متوازي أضلاع\","
+ },
+ {
+  "k": "da9574d642a9",
+  "text": "معين",
+  "ctx": "rhombus: \"معين\","
+ },
+ {
+  "k": "4ea5fbe385a4",
+  "text": "مضلع منتظم",
+  "ctx": "\"regular-polygon\": \"مضلع منتظم\","
+ },
+ {
+  "k": "0172bf4969a9",
+  "text": "قطاع دائري",
+  "ctx": "sector: \"قطاع دائري\""
+ },
+ {
+  "k": "c690b2a05211",
+  "text": "احسب مساحة ومحيط الأشكال المستوية الشائعة، مثل المربع والمستطيل والمثلث والدائرة والإهليلج وشبه المنحرف والمعين والمضلع المنتظم والقطاع الدائري، مع خواص إضافية ورسم للمخطط."
+ },
+ {
+  "k": "8adc0ffd1921",
+  "text": "مساحة",
+  "ctx": "keywords: [\"مساحة\", \"محيط\", \"مستطيل\", \"مثلث\", \"دائرة\", \"شبه منحرف\", \"معين\", \"مضلع منتظم\", \"قطاع دائري\", \"area\", \"perimeter\", \"plane shapes\"],"
+ },
+ {
+  "k": "9073684cd8b1",
+  "text": "محيط",
+  "ctx": "keywords: [\"مساحة\", \"محيط\", \"مستطيل\", \"مثلث\", \"دائرة\", \"شبه منحرف\", \"معين\", \"مضلع منتظم\", \"قطاع دائري\", \"area\", \"perimeter\", \"plane shapes\"],"
+ },
+ {
+  "k": "6dcc7909cece",
+  "text": "مساحة المستطيل",
+  "ctx": "{ label: \"مساحة المستطيل\", tex: \"A = LW\" },"
+ },
+ {
+  "k": "d7a6edca4867",
+  "text": "مساحة المثلث",
+  "ctx": "{ label: \"مساحة المثلث\", tex: \"A = \\\\frac{1}{2}bh\" },"
+ },
+ {
+  "k": "09677eabb2b7",
+  "text": "مساحة الدائرة",
+  "ctx": "{ label: \"مساحة الدائرة\", tex: \"A = \\\\pi r^2\" },"
+ },
+ {
+  "k": "7d457ecea57c",
+  "text": "مساحة المضلع المنتظم",
+  "ctx": "{ label: \"مساحة المضلع المنتظم\", tex: \"A = \\\\frac{n s^2}{4\\\\tan(\\\\pi/n)}\" }"
+ },
+ {
+  "k": "1d4f0efaf6d3",
+  "text": "الشكل",
+  "ctx": "{ id: \"shape\", label: \"الشكل\", type: \"select\", default: \"rectangle\", options: [[\"square\", \"مربع\"], [\"rectangle\", \"مستطيل\"], [\"triangle\", \"مثلث\"], [\"right-triang"
+ },
+ {
+  "k": "d0b1186b5838",
+  "text": "وحدة الطول",
+  "ctx": "{ id: \"unit\", label: \"وحدة الطول\", type: \"text\", default: \"cm\", help: \"الوحدة للعرض فقط؛ المساحة بوحدة مربعة.\" },"
+ },
+ {
+  "k": "43e636f86c0b",
+  "text": "الوحدة للعرض فقط؛ المساحة بوحدة مربعة.",
+  "ctx": "{ id: \"unit\", label: \"وحدة الطول\", type: \"text\", default: \"cm\", help: \"الوحدة للعرض فقط؛ المساحة بوحدة مربعة.\" },"
+ },
+ {
+  "k": "56bb5e9318b9",
+  "text": "طول الضلع s",
+  "ctx": "{ id: \"s\", label: \"طول الضلع s\", type: \"number\", default: \"5\", when: { shape: [\"square\"] } },"
+ },
+ {
+  "k": "55066f672411",
+  "text": "الطول L",
+  "ctx": "{ id: \"rl\", label: \"الطول L\", type: \"number\", default: \"8\", when: { shape: [\"rectangle\"] } },"
+ },
+ {
+  "k": "164707c8cdb2",
+  "text": "العرض W",
+  "ctx": "{ id: \"rw\", label: \"العرض W\", type: \"number\", default: \"5\", when: { shape: [\"rectangle\"] } },"
+ },
+ {
+  "k": "4ef89b27d22e",
+  "text": "معطيات المثلث",
+  "ctx": "{ id: \"tmode\", label: \"معطيات المثلث\", type: \"select\", default: \"bh\", options: [[\"bh\", \"القاعدة والارتفاع\"], [\"sss\", \"الأضلاع الثلاثة\"]], when: { shape: [\"trian"
+ },
+ {
+  "k": "2246ebabbc5f",
+  "text": "القاعدة والارتفاع",
+  "ctx": "{ id: \"tmode\", label: \"معطيات المثلث\", type: \"select\", default: \"bh\", options: [[\"bh\", \"القاعدة والارتفاع\"], [\"sss\", \"الأضلاع الثلاثة\"]], when: { shape: [\"trian"
+ },
+ {
+  "k": "4a23a128cc14",
+  "text": "الأضلاع الثلاثة",
+  "ctx": "{ id: \"tmode\", label: \"معطيات المثلث\", type: \"select\", default: \"bh\", options: [[\"bh\", \"القاعدة والارتفاع\"], [\"sss\", \"الأضلاع الثلاثة\"]], when: { shape: [\"trian"
+ },
+ {
+  "k": "634cf6a1593d",
+  "text": "القاعدة b",
+  "ctx": "{ id: \"tb\", label: \"القاعدة b\", type: \"number\", default: \"10\", when: { shape: [\"triangle\"], tmode: [\"bh\"] } },"
+ },
+ {
+  "k": "fbc69e28ad72",
+  "text": "الارتفاع h",
+  "ctx": "{ id: \"th\", label: \"الارتفاع h\", type: \"number\", default: \"4\", when: { shape: [\"triangle\"], tmode: [\"bh\"] } },"
+ },
+ {
+  "k": "800677ed0e70",
+  "text": "الضلع الأيسر (اختياري)",
+  "ctx": "{ id: \"ta\", label: \"الضلع الأيسر (اختياري)\", type: \"number\", when: { shape: [\"triangle\"], tmode: [\"bh\"] }, help: \"أدخل الضلعين الاختياريين معاً لحساب المحيط.\" }"
+ },
+ {
+  "k": "b82a1f454677",
+  "text": "أدخل الضلعين الاختياريين معاً لحساب المحيط."
+ },
+ {
+  "k": "3d96aa05dfad",
+  "text": "الضلع الأيمن (اختياري)",
+  "ctx": "{ id: \"tc\", label: \"الضلع الأيمن (اختياري)\", type: \"number\", when: { shape: [\"triangle\"], tmode: [\"bh\"] } },"
+ },
+ {
+  "k": "cf901c3ac36d",
+  "text": "الضلع الأول a",
+  "ctx": "{ id: \"t1\", label: \"الضلع الأول a\", type: \"number\", default: \"3\", when: { shape: [\"triangle\"], tmode: [\"sss\"] } },"
+ },
+ {
+  "k": "d6c7dac1abc9",
+  "text": "الضلع الثاني b",
+  "ctx": "{ id: \"t2\", label: \"الضلع الثاني b\", type: \"number\", default: \"4\", when: { shape: [\"triangle\"], tmode: [\"sss\"] } },"
+ },
+ {
+  "k": "41bc495601fa",
+  "text": "الضلع الثالث c",
+  "ctx": "{ id: \"t3\", label: \"الضلع الثالث c\", type: \"number\", default: \"5\", when: { shape: [\"triangle\"], tmode: [\"sss\"] } },"
+ },
+ {
+  "k": "ab5e01273d69",
+  "text": "الساق الأولى a",
+  "ctx": "{ id: \"ra\", label: \"الساق الأولى a\", type: \"number\", default: \"3\", when: { shape: [\"right-triangle\"] } },"
+ },
+ {
+  "k": "381e77410987",
+  "text": "الساق الثانية b",
+  "ctx": "{ id: \"rb\", label: \"الساق الثانية b\", type: \"number\", default: \"4\", when: { shape: [\"right-triangle\"] } },"
+ },
+ {
+  "k": "a751a20583bb",
+  "text": "المعطى",
+  "ctx": "{ id: \"cmode\", label: \"المعطى\", type: \"select\", default: \"radius\", options: [[\"radius\", \"نصف القطر\"], [\"diameter\", \"القطر\"]], when: { shape: [\"circle\"] } },"
+ },
+ {
+  "k": "b922bb31f550",
+  "text": "نصف القطر",
+  "ctx": "{ id: \"cmode\", label: \"المعطى\", type: \"select\", default: \"radius\", options: [[\"radius\", \"نصف القطر\"], [\"diameter\", \"القطر\"]], when: { shape: [\"circle\"] } },"
+ },
+ {
+  "k": "2f22fada2a9f",
+  "text": "القطر",
+  "ctx": "{ id: \"cmode\", label: \"المعطى\", type: \"select\", default: \"radius\", options: [[\"radius\", \"نصف القطر\"], [\"diameter\", \"القطر\"]], when: { shape: [\"circle\"] } },"
+ },
+ {
+  "k": "1a39dcff5b40",
+  "text": "القيمة",
+  "ctx": "{ id: \"cval\", label: \"القيمة\", type: \"number\", default: \"1\", when: { shape: [\"circle\"] }, help: \"نصف القطر أو القطر حسب الاختيار أعلاه.\" },"
+ },
+ {
+  "k": "5f40722f97f7",
+  "text": "نصف القطر أو القطر حسب الاختيار أعلاه.",
+  "ctx": "{ id: \"cval\", label: \"القيمة\", type: \"number\", default: \"1\", when: { shape: [\"circle\"] }, help: \"نصف القطر أو القطر حسب الاختيار أعلاه.\" },"
+ },
+ {
+  "k": "5ed8df03d2f2",
+  "text": "نصف المحور الأفقي a",
+  "ctx": "{ id: \"ea\", label: \"نصف المحور الأفقي a\", type: \"number\", default: \"5\", when: { shape: [\"ellipse\"] } },"
+ },
+ {
+  "k": "63fb34509aef",
+  "text": "نصف المحور الرأسي b",
+  "ctx": "{ id: \"eb\", label: \"نصف المحور الرأسي b\", type: \"number\", default: \"3\", when: { shape: [\"ellipse\"] } },"
+ },
+ {
+  "k": "4b7c3a5adc91",
+  "text": "القاعدة العليا a",
+  "ctx": "{ id: \"pa\", label: \"القاعدة العليا a\", type: \"number\", default: \"4\", when: { shape: [\"trapezoid\"] } },"
+ },
+ {
+  "k": "336409f962e2",
+  "text": "القاعدة السفلى b",
+  "ctx": "{ id: \"pb\", label: \"القاعدة السفلى b\", type: \"number\", default: \"10\", when: { shape: [\"trapezoid\"] } },"
+ },
+ {
+  "k": "f0c67d456ff4",
+  "text": "الساق الأولى (اختياري)",
+  "ctx": "{ id: \"pl1\", label: \"الساق الأولى (اختياري)\", type: \"number\", when: { shape: [\"trapezoid\"] } },"
+ },
+ {
+  "k": "a2387cb13b5e",
+  "text": "الساق الثانية (اختياري)",
+  "ctx": "{ id: \"pl2\", label: \"الساق الثانية (اختياري)\", type: \"number\", when: { shape: [\"trapezoid\"] }, help: \"أدخل الساقين معاً لحساب المحيط.\" },"
+ },
+ {
+  "k": "6973fea15abd",
+  "text": "أدخل الساقين معاً لحساب المحيط.",
+  "ctx": "{ id: \"pl2\", label: \"الساق الثانية (اختياري)\", type: \"number\", when: { shape: [\"trapezoid\"] }, help: \"أدخل الساقين معاً لحساب المحيط.\" },"
+ },
+ {
+  "k": "f0063d83a2a7",
+  "text": "الضلع المائل s",
+  "ctx": "{ id: \"qs\", label: \"الضلع المائل s\", type: \"number\", default: \"6\", when: { shape: [\"parallelogram\"] } },"
+ },
+ {
+  "k": "5f2b58babb3e",
+  "text": "الارتفاع عمودي على القاعدة، ولا يزيد عن الضلع المائل."
+ },
+ {
+  "k": "c780b7d33b74",
+  "text": "القطر الأول d1",
+  "ctx": "{ id: \"d1\", label: \"القطر الأول d1\", type: \"number\", default: \"6\", when: { shape: [\"rhombus\"] } },"
+ },
+ {
+  "k": "ab3b9a09d969",
+  "text": "القطر الثاني d2",
+  "ctx": "{ id: \"d2\", label: \"القطر الثاني d2\", type: \"number\", default: \"8\", when: { shape: [\"rhombus\"] } },"
+ },
+ {
+  "k": "dced4d4fa607",
+  "text": "عدد الأضلاع n",
+  "ctx": "{ id: \"npoly\", label: \"عدد الأضلاع n\", type: \"number\", default: \"6\", when: { shape: [\"regular-polygon\"] } },"
+ },
+ {
+  "k": "c7869459ad59",
+  "text": "نصف القطر r",
+  "ctx": "{ id: \"sr\", label: \"نصف القطر r\", type: \"number\", default: \"2\", when: { shape: [\"sector\"] } },"
+ },
+ {
+  "k": "330502aef7d2",
+  "text": "الزاوية θ (بالدرجات)",
+  "ctx": "{ id: \"sang\", label: \"الزاوية θ (بالدرجات)\", type: \"number\", default: \"90\", when: { shape: [\"sector\"] }, help: \"من 0 إلى 360 درجة.\" }"
+ },
+ {
+  "k": "b0501cf31a1f",
+  "text": "من 0 إلى 360 درجة.",
+  "ctx": "{ id: \"sang\", label: \"الزاوية θ (بالدرجات)\", type: \"number\", default: \"90\", when: { shape: [\"sector\"] }, help: \"من 0 إلى 360 درجة.\" }"
+ },
+ {
+  "k": "34268e9cf3be",
+  "text": "مثال: مستطيل طوله 8 cm وعرضه 5 cm.",
+  "ctx": "example: { values: { ...blank, shape: \"rectangle\", unit: \"cm\", rl: \"8\", rw: \"5\" }, expect: [\"40 cm²\", \"26 cm\"], note: \"مثال: مستطيل طوله 8 cm وعرضه 5 cm.\" },"
+ },
+ {
+  "k": "5b1774413ef1",
+  "text": "طول الضلع",
+  "ctx": "const s = num(input, \"s\", \"طول الضلع\", { positive: true });"
+ },
+ {
+  "k": "d36bf52912ac",
+  "text": "طول القطر",
+  "ctx": "extras: [[\"طول القطر\", c.L(d)]],"
+ },
+ {
+  "k": "a31627cf1f9f",
+  "text": "المساحة:",
+  "ctx": "{ text: \"المساحة:\", tex: `A = s^2 = ${c.T(s)}^2 = ${c.T(area)}\\\\ ${c.U}^2` },"
+ },
+ {
+  "k": "c38b607a2621",
+  "text": "المحيط:",
+  "ctx": "{ text: \"المحيط:\", tex: `P = 4s = ${c.T(perimeter)}\\\\ ${c.U}` },"
+ },
+ {
+  "k": "a654afd4d5cc",
+  "text": "طول القطر:",
+  "ctx": "{ text: \"طول القطر:\", tex: `d = s\\\\sqrt{2} = ${c.T(d)}\\\\ ${c.U}` }"
+ },
+ {
+  "k": "4c4cdc57c4af",
+  "text": "الضلع الأيسر",
+  "ctx": "const ta = num(input, \"ta\", \"الضلع الأيسر\", { positive: true, optional: true });"
+ },
+ {
+  "k": "23defca0b3b9",
+  "text": "الضلع الأيمن",
+  "ctx": "const tc = num(input, \"tc\", \"الضلع الأيمن\", { positive: true, optional: true });"
+ },
+ {
+  "k": "b401575797cf",
+  "text": "أدخل الضلعين الاختياريين معاً لحساب المحيط، أو اتركهما فارغين."
+ },
+ {
+  "k": "369bad5fd728",
+  "text": "الأضلاع المدخلة لا تُكوّن مثلثاً مع هذه القاعدة."
+ },
+ {
+  "k": "0cf86e105f05",
+  "text": "الارتفاع h لا يتوافق مع الأضلاع المدخلة."
+ },
+ {
+  "k": "6e633bcbe004",
+  "text": "الأضلاع الثلاثة لا تُكوّن مثلثاً: مجموع أي ضلعين يجب أن يزيد عن الضلع الثالث."
+ },
+ {
+  "k": "40664fa4853c",
+  "text": "الارتفاعات (على a، b، c)",
+  "ctx": "[\"الارتفاعات (على a، b، c)\", `${c.L(ha)}، ${c.L(hb)}، ${c.L(hc)}`],"
+ },
+ {
+  "k": "9a06814a8cd6",
+  "text": "الزوايا (بالدرجات)",
+  "ctx": "[\"الزوايا (بالدرجات)\", `${fmt(angA, 4)}°، ${fmt(angB, 4)}°، ${fmt(angC, 4)}°`]"
+ },
+ {
+  "k": "881aca151909",
+  "text": "نصف المحيط:",
+  "ctx": "{ text: \"نصف المحيط:\", tex: `s = \\\\frac{a+b+c}{2} = ${c.T(s)}` },"
+ },
+ {
+  "k": "0443563a4244",
+  "text": "مساحة هيرون:",
+  "ctx": "{ text: \"مساحة هيرون:\", tex: `A = \\\\sqrt{s(s-a)(s-b)(s-c)} = ${c.T(area)}\\\\ ${c.U}^2` },"
+ },
+ {
+  "k": "ec707f68774b",
+  "text": "الزاوية المقابلة لـ a بقانون جيب التمام:"
+ },
+ {
+  "k": "6dad754edc8e",
+  "text": "الوتر",
+  "ctx": "[\"الوتر\", c.L(hyp)],"
+ },
+ {
+  "k": "f6d0c333cddf",
+  "text": "الارتفاع على الوتر",
+  "ctx": "[\"الارتفاع على الوتر\", c.L(alt)],"
+ },
+ {
+  "k": "bedd5e3ba6fb",
+  "text": "الزاويتان الحادتان",
+  "ctx": "[\"الزاويتان الحادتان\", `${fmt(angA, 4)}° و ${fmt(angB, 4)}°`]"
+ },
+ {
+  "k": "53ff3a714c41",
+  "text": "{%0}° و {%1}°",
+  "ctx": "[\"الزاويتان الحادتان\", `${fmt(angA, 4)}° و ${fmt(angB, 4)}°`]"
+ },
+ {
+  "k": "da7dd5722023",
+  "text": "الوتر (فيثاغورس):",
+  "ctx": "{ text: \"الوتر (فيثاغورس):\", tex: `c = \\\\sqrt{a^2+b^2} = ${c.T(hyp)}\\\\ ${c.U}` },"
+ },
+ {
+  "k": "ab54d3a15e52",
+  "text": "الارتفاع على الوتر:",
+  "ctx": "{ text: \"الارتفاع على الوتر:\", tex: `h = \\\\frac{ab}{c} = ${c.T(alt)}\\\\ ${c.U}` }"
+ },
+ {
+  "k": "47abb6bcbb03",
+  "text": "نصف القطر:",
+  "ctx": "{ text: \"نصف القطر:\", tex: `r = ${c.T(r)}\\\\ ${c.U}` },"
+ },
+ {
+  "k": "2e0880dc8784",
+  "text": "المركز",
+  "ctx": "extra: [{ name: \"المركز\", points: [[0, 0]], marker: \"x\", line: false }]"
+ },
+ {
+  "k": "344a5c092bbe",
+  "text": "المحور الأطول",
+  "ctx": "extras: [[\"المحور الأطول\", c.L(2 * Math.max(a, b))], [\"المحور الأقصر\", c.L(2 * Math.min(a, b))]],"
+ },
+ {
+  "k": "208bd06ec6a9",
+  "text": "المحور الأقصر",
+  "ctx": "extras: [[\"المحور الأطول\", c.L(2 * Math.max(a, b))], [\"المحور الأقصر\", c.L(2 * Math.min(a, b))]],"
+ },
+ {
+  "k": "4d007fe4b884",
+  "text": "المحيط (تقريب رامانوجان الثاني):",
+  "ctx": "{ text: \"المحيط (تقريب رامانوجان الثاني):\", tex: `P \\\\approx \\\\pi\\\\left[3(a+b)-\\\\sqrt{(3a+b)(a+3b)}\\\\right] = ${c.T(perimeter)}\\\\ ${c.U}` }"
+ },
+ {
+  "k": "65aa6650bf80",
+  "text": "الساق الأولى",
+  "ctx": "const l1 = num(input, \"pl1\", \"الساق الأولى\", { positive: true, optional: true });"
+ },
+ {
+  "k": "3d1056f56f5b",
+  "text": "الساق الثانية",
+  "ctx": "const l2 = num(input, \"pl2\", \"الساق الثانية\", { positive: true, optional: true });"
+ },
+ {
+  "k": "4be74ecbdd0c",
+  "text": "أدخل الساقين معاً لحساب المحيط، أو اتركهما فارغتين."
+ },
+ {
+  "k": "caa661f6d43d",
+  "text": "طول الساق لا يمكن أن يكون أقل من الارتفاع."
+ },
+ {
+  "k": "cbee62e27ecf",
+  "text": "الأضلاع المدخلة لا تُكوّن شبه منحرف بهذه القاعدتين والارتفاع."
+ },
+ {
+  "k": "1a666ecd7016",
+  "text": "القاعدة المتوسطة",
+  "ctx": "extras: [[\"القاعدة المتوسطة\", c.L((a + b) / 2)]],"
+ },
+ {
+  "k": "4eae95d03bb4",
+  "text": "الارتفاع لا يمكن أن يزيد عن الضلع المائل."
+ },
+ {
+  "k": "dccd87d716b8",
+  "text": "القطر الطويل",
+  "ctx": "extras: [[\"القطر الطويل\", c.L(Math.max(d1, d2))], [\"القطر القصير\", c.L(Math.min(d1, d2))]],"
+ },
+ {
+  "k": "a6e3f083383e",
+  "text": "القطر القصير",
+  "ctx": "extras: [[\"القطر الطويل\", c.L(Math.max(d1, d2))], [\"القطر القصير\", c.L(Math.min(d1, d2))]],"
+ },
+ {
+  "k": "032dd2b40a7b",
+  "text": "الإزاحة الأفقية للضلع المائل:",
+  "ctx": "{ text: \"الإزاحة الأفقية للضلع المائل:\", tex: `x = \\\\sqrt{s^2-h^2} = ${c.T(x)}\\\\ ${c.U}` }"
+ },
+ {
+  "k": "8f53b899888d",
+  "text": "المساحة من القطرين:",
+  "ctx": "{ text: \"المساحة من القطرين:\", tex: `A = \\\\frac{d_1 d_2}{2} = ${c.T(area)}\\\\ ${c.U}^2` },"
+ },
+ {
+  "k": "320651241ac6",
+  "text": "الضلع (فيثاغورس على نصفي القطرين):",
+  "ctx": "{ text: \"الضلع (فيثاغورس على نصفي القطرين):\", tex: `s = \\\\sqrt{(d_1/2)^2+(d_2/2)^2} = ${c.T(side)}\\\\ ${c.U}` },"
+ },
+ {
+  "k": "0991e9ab3cbf",
+  "text": "نصف قطر الدائرة الداخلية (الأبوثيم)",
+  "ctx": "[\"نصف قطر الدائرة الداخلية (الأبوثيم)\", c.L(apothem)],"
+ },
+ {
+  "k": "8cab7338eec4",
+  "text": "نصف قطر الدائرة المحيطة",
+  "ctx": "[\"نصف قطر الدائرة المحيطة\", c.L(R)],"
+ },
+ {
+  "k": "3c704073a3cb",
+  "text": "الزاوية الداخلية (درجة)",
+  "ctx": "[\"الزاوية الداخلية (درجة)\", `${fmt(interior, 6)}°`]"
+ },
+ {
+  "k": "c868d66e62f2",
+  "text": "نصف قطر الدائرة الداخلية:",
+  "ctx": "{ text: \"نصف قطر الدائرة الداخلية:\", tex: `a = \\\\frac{s}{2\\\\tan(\\\\pi/n)} = ${c.T(apothem)}\\\\ ${c.U}` },"
+ },
+ {
+  "k": "f73670016bdc",
+  "text": "نصف قطر الدائرة المحيطة:",
+  "ctx": "{ text: \"نصف قطر الدائرة المحيطة:\", tex: `R = \\\\frac{s}{2\\\\sin(\\\\pi/n)} = ${c.T(R)}\\\\ ${c.U}` }"
+ },
+ {
+  "k": "454e10b205f4",
+  "text": "الزاوية θ",
+  "ctx": "const deg0 = num(input, \"sang\", \"الزاوية θ\", { positive: true, max: 360 });"
+ },
+ {
+  "k": "a65642702d4e",
+  "text": "طول القوس",
+  "ctx": "extras: [[\"طول القوس\", c.L(arc)], [\"الزاوية بالراديان\", `${fmt(th, 6)}`]],"
+ },
+ {
+  "k": "ac1ccab99367",
+  "text": "الزاوية بالراديان",
+  "ctx": "extras: [[\"طول القوس\", c.L(arc)], [\"الزاوية بالراديان\", `${fmt(th, 6)}`]],"
+ },
+ {
+  "k": "aaab355389a1",
+  "text": "الزاوية بالراديان:",
+  "ctx": "{ text: \"الزاوية بالراديان:\", tex: `\\\\theta = \\\\frac{${c.T(deg0)}\\\\pi}{180} = ${c.T(th)}` },"
+ },
+ {
+  "k": "a1ab06de15a6",
+  "text": "طول القوس:",
+  "ctx": "{ text: \"طول القوس:\", tex: `L = r\\\\theta = ${c.T(arc)}\\\\ ${c.U}` },"
+ },
+ {
+  "k": "2b2418e718c7",
+  "text": "المحيط (قوسان نصفا قطر):",
+  "ctx": "{ text: \"المحيط (قوسان نصفا قطر):\", tex: `P = 2r + r\\\\theta = ${c.T(perimeter)}\\\\ ${c.U}` }"
+ },
+ {
+  "k": "b1fdbf9e0bd0",
+  "text": "المساحة",
+  "ctx": "const results = [{ label: \"المساحة\", value: c.A(r.area), text: c.A(r.area) }];"
+ },
+ {
+  "k": "3349c253863d",
+  "text": "المساحة = {%0}",
+  "ctx": "const parts = [`المساحة = ${c.A(r.area)}`];"
+ },
+ {
+  "k": "41f5efd4fdc9",
+  "text": "المحيط",
+  "ctx": "results.push({ label: \"المحيط\", value: c.L(r.perimeter), text: c.L(r.perimeter) });"
+ },
+ {
+  "k": "00d0ccf10eec",
+  "text": "المحيط = {%0}",
+  "ctx": "parts.push(`المحيط = ${c.L(r.perimeter)}`);"
+ },
+ {
+  "k": "ab84b3924a76",
+  "text": "رسم {%0}",
+  "ctx": "const blocks = [{ type: \"plot\", title: `رسم ${name}`, xLabel: `x (${unit})`, yLabel: `y (${unit})`, equalAspect: true, series }];"
+ }
+]

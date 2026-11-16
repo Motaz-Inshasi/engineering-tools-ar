@@ -1,0 +1,162 @@
+[
+ {
+  "k": "a1cb79931bca",
+  "text": "RC تمرير منخفض",
+  "ctx": "const TYPES = [[\"rc-lp\", \"RC تمرير منخفض\"], [\"rc-hp\", \"RC تمرير مرتفع\"], [\"rl-lp\", \"RL تمرير منخفض\"], [\"rl-hp\", \"RL تمرير مرتفع\"], [\"rlc-bp\", \"RLC تمرير نطاق (ا"
+ },
+ {
+  "k": "882808a83de7",
+  "text": "RC تمرير مرتفع",
+  "ctx": "const TYPES = [[\"rc-lp\", \"RC تمرير منخفض\"], [\"rc-hp\", \"RC تمرير مرتفع\"], [\"rl-lp\", \"RL تمرير منخفض\"], [\"rl-hp\", \"RL تمرير مرتفع\"], [\"rlc-bp\", \"RLC تمرير نطاق (ا"
+ },
+ {
+  "k": "3e02ff7fe6ba",
+  "text": "RL تمرير منخفض",
+  "ctx": "const TYPES = [[\"rc-lp\", \"RC تمرير منخفض\"], [\"rc-hp\", \"RC تمرير مرتفع\"], [\"rl-lp\", \"RL تمرير منخفض\"], [\"rl-hp\", \"RL تمرير مرتفع\"], [\"rlc-bp\", \"RLC تمرير نطاق (ا"
+ },
+ {
+  "k": "ecc8f6d63601",
+  "text": "RL تمرير مرتفع",
+  "ctx": "const TYPES = [[\"rc-lp\", \"RC تمرير منخفض\"], [\"rc-hp\", \"RC تمرير مرتفع\"], [\"rl-lp\", \"RL تمرير منخفض\"], [\"rl-hp\", \"RL تمرير مرتفع\"], [\"rlc-bp\", \"RLC تمرير نطاق (ا"
+ },
+ {
+  "k": "a920318c79c0",
+  "text": "RLC تمرير نطاق (الخرج على R)",
+  "ctx": "const TYPES = [[\"rc-lp\", \"RC تمرير منخفض\"], [\"rc-hp\", \"RC تمرير مرتفع\"], [\"rl-lp\", \"RL تمرير منخفض\"], [\"rl-hp\", \"RL تمرير مرتفع\"], [\"rlc-bp\", \"RLC تمرير نطاق (ا"
+ },
+ {
+  "k": "7925d4759df5",
+  "text": "مرشحات سلبية من الرتبة الأولى RC و RL ومرشح RLC لتمرير النطاق: تردد القطع والكسب والطور عند أي تردد، مع مخطط بود للمقدار والطور."
+ },
+ {
+  "k": "2886ca945d2c",
+  "text": "مرشح",
+  "ctx": "keywords: [\"مرشح\", \"فلتر\", \"filter\", \"تردد القطع\", \"cutoff\", \"تمرير منخفض\", \"تمرير مرتفع\", \"low pass\", \"high pass\", \"band pass\", \"RC\"],"
+ },
+ {
+  "k": "3748cd77c620",
+  "text": "فلتر",
+  "ctx": "keywords: [\"مرشح\", \"فلتر\", \"filter\", \"تردد القطع\", \"cutoff\", \"تمرير منخفض\", \"تمرير مرتفع\", \"low pass\", \"high pass\", \"band pass\", \"RC\"],"
+ },
+ {
+  "k": "1fc90b957933",
+  "text": "تردد القطع",
+  "ctx": "keywords: [\"مرشح\", \"فلتر\", \"filter\", \"تردد القطع\", \"cutoff\", \"تمرير منخفض\", \"تمرير مرتفع\", \"low pass\", \"high pass\", \"band pass\", \"RC\"],"
+ },
+ {
+  "k": "01af732f5fb0",
+  "text": "تمرير منخفض",
+  "ctx": "keywords: [\"مرشح\", \"فلتر\", \"filter\", \"تردد القطع\", \"cutoff\", \"تمرير منخفض\", \"تمرير مرتفع\", \"low pass\", \"high pass\", \"band pass\", \"RC\"],"
+ },
+ {
+  "k": "57dab0aea8d3",
+  "text": "تمرير مرتفع",
+  "ctx": "keywords: [\"مرشح\", \"فلتر\", \"filter\", \"تردد القطع\", \"cutoff\", \"تمرير منخفض\", \"تمرير مرتفع\", \"low pass\", \"high pass\", \"band pass\", \"RC\"],"
+ },
+ {
+  "k": "02204b4ac7cd",
+  "text": "ترددات القطع",
+  "ctx": "{ label: \"ترددات القطع\", tex: \"f_c^{RC} = \\\\frac{1}{2\\\\pi RC},\\\\qquad f_c^{RL} = \\\\frac{R}{2\\\\pi L},\\\\qquad f_0^{RLC} = \\\\frac{1}{2\\\\pi\\\\sqrt{LC}}\" },"
+ },
+ {
+  "k": "0c61a3e2cace",
+  "text": "دالة النقل للتمرير المنخفض RC",
+  "ctx": "{ label: \"دالة النقل للتمرير المنخفض RC\", tex: \"H(j\\\\omega) = \\\\frac{1}{1 + j\\\\omega RC},\\\\quad |H(f_c)| = \\\\frac{1}{\\\\sqrt{2}} \\\\;(-3\\\\,dB)\" }"
+ },
+ {
+  "k": "93e07cd32162",
+  "text": "نوع المرشح",
+  "ctx": "{ id: \"type\", label: \"نوع المرشح\", type: \"select\", default: \"rc-lp\", options: TYPES },"
+ },
+ {
+  "k": "9dd466434729",
+  "text": "تردد لحساب الكسب عنده (اختياري)",
+  "ctx": "{ id: \"f\", label: \"تردد لحساب الكسب عنده (اختياري)\", unit: \"Hz\", type: \"number\", default: \"5k\" }"
+ },
+ {
+  "k": "88d1dc7b08cc",
+  "text": "مثال: مرشح تمرير منخفض 1.6 kΩ و 100 nF.",
+  "ctx": "example: { values: { type: \"rc-lp\", R: \"1.6k\", C: \"100n\", f: \"5k\" }, expect: [\"fc = 994.7 Hz\"], note: \"مثال: مرشح تمرير منخفض 1.6 kΩ و 100 nF.\" },"
+ },
+ {
+  "k": "53b581b1699f",
+  "text": "التردد",
+  "ctx": "const f = num(input, \"f\", \"التردد\", { optional: true, positive: true });"
+ },
+ {
+  "k": "89bc0582e8cb",
+  "text": "التردد المركزي (رنين التوالي):",
+  "ctx": "steps.push({ text: \"التردد المركزي (رنين التوالي):\", tex: `f_0 = \\\\frac{1}{2\\\\pi\\\\sqrt{${ntex(p.L)} \\\\times ${ntex(p.C)}}} = ${ntex(fc, 6)}\\\\ Hz` });"
+ },
+ {
+  "k": "a86a393af428",
+  "text": "معامل الجودة وعرض النطاق:",
+  "ctx": "steps.push({ text: \"معامل الجودة وعرض النطاق:\", tex: `Q = \\\\frac{1}{R}\\\\sqrt{\\\\frac{L}{C}} = ${ntex(Q, 5)},\\\\quad BW = \\\\frac{f_0}{Q} = ${ntex(BW, 6)}\\\\ Hz` });"
+ },
+ {
+  "k": "c6670376d6fb",
+  "text": "عند f0 تلغي مفاعلتا L و C بعضهما فيمر كامل الجهد إلى R (كسب 0 dB)، ويقل الكسب بعيداً عنه."
+ },
+ {
+  "k": "23f23c1cb457",
+  "text": "التردد المركزي f0",
+  "ctx": "results.push({ label: \"التردد المركزي f0\", value: eng(fc, \"Hz\", 4), text: `f0 = ${eng(fc, \"Hz\", 4)}` }, { label: \"معامل الجودة Q\", value: Q, sig: 5 }, { label: "
+ },
+ {
+  "k": "8f570ba27f0c",
+  "text": "معامل الجودة Q",
+  "ctx": "results.push({ label: \"التردد المركزي f0\", value: eng(fc, \"Hz\", 4), text: `f0 = ${eng(fc, \"Hz\", 4)}` }, { label: \"معامل الجودة Q\", value: Q, sig: 5 }, { label: "
+ },
+ {
+  "k": "f864dfd46186",
+  "text": "عرض النطاق",
+  "ctx": "results.push({ label: \"التردد المركزي f0\", value: eng(fc, \"Hz\", 4), text: `f0 = ${eng(fc, \"Hz\", 4)}` }, { label: \"معامل الجودة Q\", value: Q, sig: 5 }, { label: "
+ },
+ {
+  "k": "817135cfc1c5",
+  "text": "تردد القطع (حيث يهبط الكسب 3 dB ويكون الطور ±45°):"
+ },
+ {
+  "k": "6d05829200d9",
+  "text": "فوق تردد القطع يهبط الكسب بمعدل 20 dB لكل عقد (مرشح رتبة أولى)."
+ },
+ {
+  "k": "438f2c6c28d5",
+  "text": "تحت تردد القطع يهبط الكسب بمعدل 20 dB لكل عقد، وفوقه يمر الإشارة تقريباً كاملة."
+ },
+ {
+  "k": "a66f14dee316",
+  "text": "تردد القطع fc",
+  "ctx": "results.push({ label: \"تردد القطع fc\", value: eng(fc, \"Hz\", 4), text: `fc = ${eng(fc, \"Hz\", 4)}` }, { label: \"الثابت الزمني τ\", value: eng(1 / (2 * Math.PI * fc"
+ },
+ {
+  "k": "6e4d5985e890",
+  "text": "الثابت الزمني τ",
+  "ctx": "results.push({ label: \"تردد القطع fc\", value: eng(fc, \"Hz\", 4), text: `fc = ${eng(fc, \"Hz\", 4)}` }, { label: \"الثابت الزمني τ\", value: eng(1 / (2 * Math.PI * fc"
+ },
+ {
+  "k": "df97a9c680b2",
+  "text": "عند {%0} نعوّض في دالة النقل:",
+  "ctx": "steps.push({ text: `عند ${eng(f, \"Hz\")} نعوّض في دالة النقل:`, tex: `|H| = ${ntex(cabs(h), 6)} = ${ntex(db, 5)}\\\\ dB,\\\\quad \\\\angle H = ${ntex(ph, 5)}^\\\\circ` }"
+ },
+ {
+  "k": "7968bd0b1b95",
+  "text": "الكسب عند {%0}",
+  "ctx": "results.push({ label: `الكسب عند ${eng(f, \"Hz\")}`, value: `${fmt(cabs(h), 5)} (${fmt(db, 4)} dB)` }, { label: \"الطور عنده\", value: ph, unit: \"°\", sig: 4 });"
+ },
+ {
+  "k": "dd6241244498",
+  "text": "الطور عنده",
+  "ctx": "results.push({ label: `الكسب عند ${eng(f, \"Hz\")}`, value: `${fmt(cabs(h), 5)} (${fmt(db, 4)} dB)` }, { label: \"الطور عنده\", value: ph, unit: \"°\", sig: 4 });"
+ },
+ {
+  "k": "d504739e237c",
+  "text": "المقدار (dB)",
+  "ctx": "{ type: \"plot\", title: \"المقدار (dB)\", logX: true, xLabel: \"f (Hz)\", yLabel: \"|H| (dB)\", series: [{ name: \"|H|\", points: fs.map((x, i) => [x, 20 * Math.log10(ca"
+ },
+ {
+  "k": "c94b67e6271a",
+  "text": "الطور (درجات)",
+  "ctx": "{ type: \"plot\", title: \"الطور (درجات)\", logX: true, xLabel: \"f (Hz)\", yLabel: \"∠H (°)\", series: [{ name: \"∠H\", points: fs.map((x, i) => [x, (carg(resp[i]) * 180"
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "f09b85ed1dbc": "{%0} değerini girin.",
+ "beed0ab147c3": "{%0} değeri geçerli bir sayı değil.",
+ "af786f267574": "{%0} değeri sonlu olmalıdır.",
+ "a7e3feb9b40e": "{%0} bir tam sayı olmalıdır.",
+ "ce967f218b65": "{%0} sıfırdan büyük olmalıdır.",
+ "1e0649a82ca7": "{%0} negatif olamaz.",
+ "527916a7c2ee": "{%0} sıfıra eşit olamaz.",
+ "6792649ef421": "{%0} en az {%1} olmalıdır.",
+ "f808cd5546fe": "{%0} en fazla {%1} olabilir.",
+ "66b4682e84aa": "{%0} {%1} değerinden küçük olmalıdır.",
+ "d5a3f2f8280d": "{%0} girin.",
+ "adca16cb118e": "{%0} için geçerli bir değer seçin.",
+ "5d524875500e": "{%1} içindeki «{%0}» değeri geçerli bir sayı değil.",
+ "cda49063483e": "{%0} içindeki bütün değerler sıfırdan büyük olmalıdır.",
+ "4d71f5ed26e0": "{%0} en az {%1} değer gerektirir.",
+ "af916b45c906": "{%0} en fazla {%1} değer kabul eder.",
+ "4a13cb15b380": "{%0} satırlarının tamamı aynı sayıda değer içermelidir.",
+ "19b4ff67b117": "{%0} kare matris olmalıdır.",
+ "546683c4c0bd": "{%0} için en büyük boyut {%1}×{%2}'dir."
+}

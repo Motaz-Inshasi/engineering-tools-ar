@@ -1,0 +1,7 @@
+{
+ "953ce1f3bc31": "L'addition et la soustraction nécessitent deux matrices de mêmes dimensions.",
+ "a66e4db77967": "Multiplication impossible : le nombre de colonnes de la première ({%0}) ne correspond pas au nombre de lignes de la seconde ({%1}).",
+ "9b3e0271714d": "Le déterminant n'est calculé que pour une matrice carrée.",
+ "67fc31372e4f": "L'inverse n'existe que pour une matrice carrée.",
+ "3a4bc298f50a": "Les valeurs propres ne sont calculées que pour une matrice carrée."
+}

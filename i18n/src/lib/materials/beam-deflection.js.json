@@ -1,0 +1,329 @@
+[
+ {
+  "k": "a2bfc9cd1a39",
+  "text": "مادة مخصصة (إدخال E يدوياً)",
+  "ctx": "const MAT_OPTIONS = [...MATERIALS.map((m) => [m.id, m.ar]), [\"custom\", \"مادة مخصصة (إدخال E يدوياً)\"]];"
+ },
+ {
+  "k": "c11c546cdf5d",
+  "text": "كمرة بسيطة الدعم بحمل مركّز P في المنتصف"
+ },
+ {
+  "k": "5b61f1d5c9ae",
+  "text": "رد الفعل عند الدعم A",
+  "ctx": "reactions: (q) => [[\"رد الفعل عند الدعم A\", q / 2], [\"رد الفعل عند الدعم B\", q / 2]],"
+ },
+ {
+  "k": "55dc4d838b21",
+  "text": "رد الفعل عند الدعم B",
+  "ctx": "reactions: (q) => [[\"رد الفعل عند الدعم A\", q / 2], [\"رد الفعل عند الدعم B\", q / 2]],"
+ },
+ {
+  "k": "90be6dbfcc2d",
+  "text": "كمرة بسيطة الدعم بحمل منتظم w",
+  "ctx": "name: \"كمرة بسيطة الدعم بحمل منتظم w\","
+ },
+ {
+  "k": "7b6d9135d46d",
+  "text": "كمرة ذراع (مثبتة من طرف) بحمل مركّز P في الطرف الحر"
+ },
+ {
+  "k": "48b62d5f98f7",
+  "text": "رد الفعل الرأسي عند الدعم الثابت",
+  "ctx": "reactions: (q) => [[\"رد الفعل الرأسي عند الدعم الثابت\", q]],"
+ },
+ {
+  "k": "e014fd666dfe",
+  "text": "كمرة ذراع (مثبتة من طرف) بحمل منتظم w",
+  "ctx": "name: \"كمرة ذراع (مثبتة من طرف) بحمل منتظم w\","
+ },
+ {
+  "k": "f0d8ffc50e7d",
+  "text": "احسب أقصى انحراف وعزم الانحناء وقوة القص وردود الأفعال والإجهاد الانحنائي لكمرة بسيطة أو ذراع تحت حمل مركّز أو منتظم، وارسم منحنى الانحراف وتحقق من حد L/360."
+ },
+ {
+  "k": "f6bc8c313d59",
+  "text": "انحناء الكمرة",
+  "ctx": "keywords: [\"انحناء الكمرة\", \"انحراف الكمرة\", \"عزم الانحناء\", \"قوة القص\", \"كمرة بسيطة\", \"كمرة ذراع\", \"beam deflection\", \"bending moment\", \"L/360\"],"
+ },
+ {
+  "k": "0d4a75fa0148",
+  "text": "انحراف الكمرة",
+  "ctx": "keywords: [\"انحناء الكمرة\", \"انحراف الكمرة\", \"عزم الانحناء\", \"قوة القص\", \"كمرة بسيطة\", \"كمرة ذراع\", \"beam deflection\", \"bending moment\", \"L/360\"],"
+ },
+ {
+  "k": "636bd7e6a799",
+  "text": "عزم الانحناء",
+  "ctx": "keywords: [\"انحناء الكمرة\", \"انحراف الكمرة\", \"عزم الانحناء\", \"قوة القص\", \"كمرة بسيطة\", \"كمرة ذراع\", \"beam deflection\", \"bending moment\", \"L/360\"],"
+ },
+ {
+  "k": "639671f63aa9",
+  "text": "قوة القص",
+  "ctx": "keywords: [\"انحناء الكمرة\", \"انحراف الكمرة\", \"عزم الانحناء\", \"قوة القص\", \"كمرة بسيطة\", \"كمرة ذراع\", \"beam deflection\", \"bending moment\", \"L/360\"],"
+ },
+ {
+  "k": "2113d66e695c",
+  "text": "كمرة بسيطة",
+  "ctx": "keywords: [\"انحناء الكمرة\", \"انحراف الكمرة\", \"عزم الانحناء\", \"قوة القص\", \"كمرة بسيطة\", \"كمرة ذراع\", \"beam deflection\", \"bending moment\", \"L/360\"],"
+ },
+ {
+  "k": "4ffb4a20aa26",
+  "text": "كمرة ذراع",
+  "ctx": "keywords: [\"انحناء الكمرة\", \"انحراف الكمرة\", \"عزم الانحناء\", \"قوة القص\", \"كمرة بسيطة\", \"كمرة ذراع\", \"beam deflection\", \"bending moment\", \"L/360\"],"
+ },
+ {
+  "k": "735c01804abe",
+  "text": "انحراف كمرة بسيطة بحمل مركّز",
+  "ctx": "{ label: \"انحراف كمرة بسيطة بحمل مركّز\", tex: \"\\\\delta_{max} = \\\\frac{PL^3}{48EI}\" },"
+ },
+ {
+  "k": "da63a6d3b77d",
+  "text": "انحراف كمرة بسيطة بحمل منتظم",
+  "ctx": "{ label: \"انحراف كمرة بسيطة بحمل منتظم\", tex: \"\\\\delta_{max} = \\\\frac{5wL^4}{384EI}\" },"
+ },
+ {
+  "k": "309734f2cde3",
+  "text": "انحراف ذراع بحمل مركّز في الطرف",
+  "ctx": "{ label: \"انحراف ذراع بحمل مركّز في الطرف\", tex: \"\\\\delta_{max} = \\\\frac{PL^3}{3EI}\" },"
+ },
+ {
+  "k": "fa2bc51d3c89",
+  "text": "انحراف ذراع بحمل منتظم",
+  "ctx": "{ label: \"انحراف ذراع بحمل منتظم\", tex: \"\\\\delta_{max} = \\\\frac{wL^4}{8EI}\" },"
+ },
+ {
+  "k": "f3b9754c7c07",
+  "text": "إجهاد الانحناء",
+  "ctx": "{ label: \"إجهاد الانحناء\", tex: \"\\\\sigma = \\\\frac{Mc}{I}\" }"
+ },
+ {
+  "k": "dc1db1a17708",
+  "text": "نوع الكمرة والحمل",
+  "ctx": "{ id: \"beam\", label: \"نوع الكمرة والحمل\", type: \"select\", default: \"ss_point\", options: [[\"ss_point\", \"بسيطة الدعم - حمل مركّز في المنتصف\"], [\"ss_uniform\", \"بسي"
+ },
+ {
+  "k": "90ad3c6b38c7",
+  "text": "بسيطة الدعم - حمل مركّز في المنتصف",
+  "ctx": "{ id: \"beam\", label: \"نوع الكمرة والحمل\", type: \"select\", default: \"ss_point\", options: [[\"ss_point\", \"بسيطة الدعم - حمل مركّز في المنتصف\"], [\"ss_uniform\", \"بسي"
+ },
+ {
+  "k": "66922eebd603",
+  "text": "بسيطة الدعم - حمل منتظم",
+  "ctx": "{ id: \"beam\", label: \"نوع الكمرة والحمل\", type: \"select\", default: \"ss_point\", options: [[\"ss_point\", \"بسيطة الدعم - حمل مركّز في المنتصف\"], [\"ss_uniform\", \"بسي"
+ },
+ {
+  "k": "d2b14368ddd5",
+  "text": "ذراع - حمل مركّز في الطرف الحر",
+  "ctx": "{ id: \"beam\", label: \"نوع الكمرة والحمل\", type: \"select\", default: \"ss_point\", options: [[\"ss_point\", \"بسيطة الدعم - حمل مركّز في المنتصف\"], [\"ss_uniform\", \"بسي"
+ },
+ {
+  "k": "7048b423e437",
+  "text": "ذراع - حمل منتظم",
+  "ctx": "{ id: \"beam\", label: \"نوع الكمرة والحمل\", type: \"select\", default: \"ss_point\", options: [[\"ss_point\", \"بسيطة الدعم - حمل مركّز في المنتصف\"], [\"ss_uniform\", \"بسي"
+ },
+ {
+  "k": "74172d9bc1a1",
+  "text": "طول الكمرة L",
+  "ctx": "{ id: \"L\", label: \"طول الكمرة L\", unit: \"m\", type: \"number\", default: \"4\" },"
+ },
+ {
+  "k": "894b43577129",
+  "text": "الحمل المركّز P",
+  "ctx": "{ id: \"P\", label: \"الحمل المركّز P\", unit: \"N\", type: \"number\", default: \"10k\", when: { beam: [\"ss_point\", \"cant_point\"] } },"
+ },
+ {
+  "k": "2f171b7566c3",
+  "text": "الحمل المنتظم w",
+  "ctx": "{ id: \"w\", label: \"الحمل المنتظم w\", unit: \"N/m\", type: \"number\", default: \"5k\", when: { beam: [\"ss_uniform\", \"cant_uniform\"] } },"
+ },
+ {
+  "k": "1fe9df013746",
+  "text": "المادة (لمعامل المرونة E)",
+  "ctx": "{ id: \"mat\", label: \"المادة (لمعامل المرونة E)\", type: \"select\", default: \"a36\", options: MAT_OPTIONS },"
+ },
+ {
+  "k": "1e1845fb645e",
+  "text": "معامل المرونة E (للمادة المخصصة)",
+  "ctx": "{ id: \"Ecust\", label: \"معامل المرونة E (للمادة المخصصة)\", unit: \"GPa\", type: \"number\", default: \"200\", when: { mat: [\"custom\"] } },"
+ },
+ {
+  "k": "41ecfa6dcd58",
+  "text": "المقطع",
+  "ctx": "{ id: \"section\", label: \"المقطع\", type: \"select\", default: \"rect\", options: [[\"rect\", \"مستطيل b × h\"], [\"circle\", \"دائري قطره d\"], [\"custom\", \"عزم قصور I مدخل ي"
+ },
+ {
+  "k": "a51209da909d",
+  "text": "مستطيل b × h",
+  "ctx": "{ id: \"section\", label: \"المقطع\", type: \"select\", default: \"rect\", options: [[\"rect\", \"مستطيل b × h\"], [\"circle\", \"دائري قطره d\"], [\"custom\", \"عزم قصور I مدخل ي"
+ },
+ {
+  "k": "0f9519eb5698",
+  "text": "دائري قطره d",
+  "ctx": "{ id: \"section\", label: \"المقطع\", type: \"select\", default: \"rect\", options: [[\"rect\", \"مستطيل b × h\"], [\"circle\", \"دائري قطره d\"], [\"custom\", \"عزم قصور I مدخل ي"
+ },
+ {
+  "k": "70d42395d8cd",
+  "text": "عزم قصور I مدخل يدوياً",
+  "ctx": "{ id: \"section\", label: \"المقطع\", type: \"select\", default: \"rect\", options: [[\"rect\", \"مستطيل b × h\"], [\"circle\", \"دائري قطره d\"], [\"custom\", \"عزم قصور I مدخل ي"
+ },
+ {
+  "k": "b02a25533e70",
+  "text": "العرض b",
+  "ctx": "{ id: \"b\", label: \"العرض b\", unit: \"mm\", type: \"number\", default: \"100\", when: { section: [\"rect\"] } },"
+ },
+ {
+  "k": "fbc69e28ad72",
+  "text": "الارتفاع h",
+  "ctx": "{ id: \"h\", label: \"الارتفاع h\", unit: \"mm\", type: \"number\", default: \"200\", when: { section: [\"rect\"] } },"
+ },
+ {
+  "k": "2908605deb55",
+  "text": "القطر d",
+  "ctx": "{ id: \"d\", label: \"القطر d\", unit: \"mm\", type: \"number\", default: \"100\", when: { section: [\"circle\"] } },"
+ },
+ {
+  "k": "bc24aeebe978",
+  "text": "عزم القصور I",
+  "ctx": "{ id: \"Icust\", label: \"عزم القصور I\", type: \"number\", default: \"8e7\", when: { section: [\"custom\"] } },"
+ },
+ {
+  "k": "2ab9f302ca8f",
+  "text": "وحدة I",
+  "ctx": "{ id: \"Iunit\", label: \"وحدة I\", type: \"select\", default: \"mm4\", options: [[\"mm4\", \"mm⁴\"], [\"cm4\", \"cm⁴\"]], when: { section: [\"custom\"] } },"
+ },
+ {
+  "k": "4a0453a1fc1e",
+  "text": "المسافة c من المحور المحايد لأبعد ليف",
+  "ctx": "{ id: \"ccust\", label: \"المسافة c من المحور المحايد لأبعد ليف\", unit: \"mm\", type: \"number\", default: \"100\", when: { section: [\"custom\"] } }"
+ },
+ {
+  "k": "da19f403d0cb",
+  "text": "مثال: كمرة بسيطة طولها 4 m بحمل 10 kN في المنتصف، E = 200 GPa، و I = 8.0e7 mm⁴."
+ },
+ {
+  "k": "744d66c0fee8",
+  "text": "نوع الكمرة",
+  "ctx": "const beamId = choice(input, \"beam\", \"نوع الكمرة\", Object.keys(CASES), \"ss_point\");"
+ },
+ {
+  "k": "b510d10bcd56",
+  "text": "المادة",
+  "ctx": "const mat = choice(input, \"mat\", \"المادة\", [...IDS, \"custom\"], \"a36\");"
+ },
+ {
+  "k": "6dadd3d65105",
+  "text": "معامل المرونة E",
+  "ctx": "const Egpa = isCustom ? num(input, \"Ecust\", \"معامل المرونة E\", { positive: true }) : find(mat).E;"
+ },
+ {
+  "k": "48e8de24cf6c",
+  "text": "المسافة c",
+  "ctx": "cDist = num(input, \"ccust\", \"المسافة c\", { positive: true });"
+ },
+ {
+  "k": "27464f192c7c",
+  "text": "الحالة: {%0}",
+  "ctx": "{ text: `الحالة: ${c.name}`, tex: c.deflTex },"
+ },
+ {
+  "k": "aca8c8eabd7a",
+  "text": "تحويل E إلى باسكال و I إلى m⁴:",
+  "ctx": "{ text: \"تحويل E إلى باسكال و I إلى m⁴:\", tex: `EI = ${ntex(EPa, 6)} \\\\times ${ntex(Im4, 6)} = ${ntex(EI, 6)}\\\\ N\\\\cdot m^2` },"
+ },
+ {
+  "k": "bbd85364d09b",
+  "text": "أقصى انحراف:",
+  "ctx": "{ text: \"أقصى انحراف:\", tex: `\\\\delta_{max} = ${c.substDefl(q, L, EI)} = ${ntex(defm, 6)}\\\\ m = ${fmt(dMm, 4)}\\\\ mm` },"
+ },
+ {
+  "k": "2488b28f8ea6",
+  "text": "أقصى عزم انحناء:",
+  "ctx": "{ text: \"أقصى عزم انحناء:\", tex: `M_{max} = ${c.substMom(q, L)} = ${ntex(M, 6)}\\\\ N\\\\cdot m` },"
+ },
+ {
+  "k": "b11dd577d1ac",
+  "text": "أقصى قوة قص:",
+  "ctx": "{ text: \"أقصى قوة قص:\", tex: `V_{max} = ${c.substShear(q, L)} = ${ntex(V, 6)}\\\\ N` },"
+ },
+ {
+  "k": "bbeacb40155d",
+  "text": "أقصى إجهاد انحناء (c = المسافة لأبعد ليف):"
+ },
+ {
+  "k": "427f972116d2",
+  "text": "التحقق من الحد المسموح L/360:",
+  "ctx": "{ text: \"التحقق من الحد المسموح L/360:\", tex: `\\\\frac{L}{360} = ${fmt(allow, 4)}\\\\ mm,\\\\qquad \\\\frac{L}{\\\\delta} = ${fmt(ratio, 4)}` }"
+ },
+ {
+  "k": "d00874c58d7c",
+  "text": "أقصى انحراف δ",
+  "ctx": "{ label: \"أقصى انحراف δ\", value: `${fmt(dMm, 4)} mm`, text: `δ = ${fmt(dMm, 4)} mm` },"
+ },
+ {
+  "k": "a261f8db0f22",
+  "text": "أقصى عزم انحناء M",
+  "ctx": "{ label: \"أقصى عزم انحناء M\", value: eng(M, \"N·m\", 4), text: `M = ${eng(M, \"N·m\", 4)}` },"
+ },
+ {
+  "k": "34fcbf3a6d07",
+  "text": "أقصى قوة قص V",
+  "ctx": "{ label: \"أقصى قوة قص V\", value: eng(V, \"N\", 4) }"
+ },
+ {
+  "k": "a9849c660564",
+  "text": "عزم التثبيت عند الجدار",
+  "ctx": "if (c.fixed) results.push({ label: \"عزم التثبيت عند الجدار\", value: eng(M, \"N·m\", 4) });"
+ },
+ {
+  "k": "2421cb473c0b",
+  "text": "أقصى إجهاد انحناء σ",
+  "ctx": "{ label: \"أقصى إجهاد انحناء σ\", value: `${fmt(sigma, 4)} MPa`, text: `σ = ${fmt(sigma, 4)} MPa` },"
+ },
+ {
+  "k": "1a1441042bf2",
+  "text": "نسبة الطول إلى الانحراف L/δ",
+  "ctx": "{ label: \"نسبة الطول إلى الانحراف L/δ\", value: fmt(ratio, 4), text: `L/δ = ${fmt(ratio, 4)}` },"
+ },
+ {
+  "k": "3b7f519384db",
+  "text": "الحد المسموح L/360",
+  "ctx": "{ label: \"الحد المسموح L/360\", value: `${fmt(allow, 4)} mm` },"
+ },
+ {
+  "k": "c4b1ee8c44a9",
+  "text": "التحقق من الانحراف",
+  "ctx": "{ label: \"التحقق من الانحراف\", value: okDefl ? \"مقبول (δ ≤ L/360)\" : \"يتجاوز الحد المسموح L/360\" }"
+ },
+ {
+  "k": "4342cb415c84",
+  "text": "مقبول (δ ≤ L/360)",
+  "ctx": "{ label: \"التحقق من الانحراف\", value: okDefl ? \"مقبول (δ ≤ L/360)\" : \"يتجاوز الحد المسموح L/360\" }"
+ },
+ {
+  "k": "dd5f30931443",
+  "text": "يتجاوز الحد المسموح L/360",
+  "ctx": "{ label: \"التحقق من الانحراف\", value: okDefl ? \"مقبول (δ ≤ L/360)\" : \"يتجاوز الحد المسموح L/360\" }"
+ },
+ {
+  "k": "1d2cf4bbc134",
+  "text": "عامل الأمان على الخضوع",
+  "ctx": "if (SF !== null) results.push({ label: \"عامل الأمان على الخضوع\", value: fmt(SF, 3) });"
+ },
+ {
+  "k": "b74b90d012ce",
+  "text": "منحنى الانحراف (الاتجاه السالب إلى الأسفل)"
+ },
+ {
+  "k": "fd9f95c98016",
+  "text": "منحنى المرونة",
+  "ctx": "series: [{ name: \"منحنى المرونة\", points, line: true }],"
+ },
+ {
+  "k": "2eef157221ec",
+  "text": "تحذير: الانحراف ({%0} mm) يتجاوز الحد المسموح L/360 ({%1} mm)."
+ },
+ {
+  "k": "fdbe3b73245b",
+  "text": "تحذير: الإجهاد الانحنائي تجاوز مقاومة الخضوع للمادة المختارة."
+ }
+]

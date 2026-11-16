@@ -1,0 +1,12 @@
+{
+ "c05cf431978c": "Mantıksal ifadede anlaşılmayan simge «{%0}».",
+ "2e0cec952000": "Bir mantıksal ifade girin.",
+ "f9627357b56f": "Mantıksal ifade eksik.",
+ "99127c3577ff": "Kapanmamış bir açık parantez var.",
+ "c1e3b3333721": "Mantıksal ifadenin yazımı doğru değil.",
+ "fcd7d7b66007": "Mantıksal ifade tam olarak anlaşılamadı; parantezleri ve simgeleri kontrol edin.",
+ "7ac036b128a8": "Tüm kombinasyonlar 1 verir, dolayısıyla fonksiyon = 1.",
+ "7e097c014f67": "Temel terimlerden sonra kapsanmayan minterimler kaldı ({%0}); bu nedenle bunları kapsayan asal terimlerin en küçük kümesini seçtik{%1}.",
+ "6ce6b83288aa": " Petrick yöntemiyle (kapsamlı arama)",
+ "95a92be8ac8d": " açgözlü yöntemle"
+}

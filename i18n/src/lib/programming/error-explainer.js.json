@@ -1,0 +1,154 @@
+[
+ {
+  "k": "033bd53a8107",
+  "text": "اقرأ السطر الأخير من الرسالة، فهو غالباً يحمل نوع الخطأ ووصفه."
+ },
+ {
+  "k": "de48b5cc2160",
+  "text": "انتقل إلى رقم السطر المذكور في الرسالة وافحص الكود عنده وما قبله."
+ },
+ {
+  "k": "414c26124e99",
+  "text": "حدّد نوع الخطأ مثل NameError أو SyntaxError ثم ابحث عنه مع اسم لغتك."
+ },
+ {
+  "k": "4abe6f09f1c8",
+  "text": "ابحث عن نص الرسالة الحرفي في محرك بحث للحصول على شروح أوسع."
+ },
+ {
+  "k": "979362c3494f",
+  "text": "الصق رسالة الخطأ أو مخرجات المترجم كاملة، وستحصل على اسم الخطأ ومعناه بالعربية وموقعه في الكود وأسبابه المحتملة وطرق إصلاحه مع مثال خاطئ وآخر صحيح، لأشهر أخطاء Python و JavaScript و Java و C/C++ و C#."
+ },
+ {
+  "k": "21ba1fb66c18",
+  "text": "شرح الخطأ",
+  "ctx": "keywords: [\"شرح الخطأ\", \"رسالة الخطأ\", \"error\", \"traceback\", \"exception\", \"خطأ برمجي\", \"NameError\", \"TypeError\", \"SyntaxError\", \"NullPointerException\", \"segment"
+ },
+ {
+  "k": "4d4e717b3b50",
+  "text": "رسالة الخطأ",
+  "ctx": "keywords: [\"شرح الخطأ\", \"رسالة الخطأ\", \"error\", \"traceback\", \"exception\", \"خطأ برمجي\", \"NameError\", \"TypeError\", \"SyntaxError\", \"NullPointerException\", \"segment"
+ },
+ {
+  "k": "c2dbfb7a0c9c",
+  "text": "خطأ برمجي",
+  "ctx": "keywords: [\"شرح الخطأ\", \"رسالة الخطأ\", \"error\", \"traceback\", \"exception\", \"خطأ برمجي\", \"NameError\", \"TypeError\", \"SyntaxError\", \"NullPointerException\", \"segment"
+ },
+ {
+  "k": "7facb4958257",
+  "text": "تُطابَق الرسالة مع قاعدة أخطاء معروفة، ثم يُستخرج اسم الخطأ وموقعه ومعناه"
+ },
+ {
+  "k": "5a1975f54ceb",
+  "text": "نص رسالة الخطأ",
+  "ctx": "{ id: \"text\", label: \"نص رسالة الخطأ\", type: \"textarea\", rows: 8, wide: true, default: \"NameError: name 'totl' is not defined\", help: \"الصق الرسالة كاملة، ويفضّ"
+ },
+ {
+  "k": "b6c14a5b4a78",
+  "text": "الصق الرسالة كاملة، ويفضّل آخر سطر منها وسطر الموقع إن وُجد."
+ },
+ {
+  "k": "3b9b716ec61d",
+  "text": "لغة البرنامج",
+  "ctx": "{ id: \"lang\", label: \"لغة البرنامج\", type: \"select\", default: \"auto\", options: [[\"auto\", \"تلقائي\"], [\"python\", \"Python\"], [\"javascript\", \"JavaScript / Node.js\"]"
+ },
+ {
+  "k": "bbf6d1ebddd6",
+  "text": "تلقائي",
+  "ctx": "{ id: \"lang\", label: \"لغة البرنامج\", type: \"select\", default: \"auto\", options: [[\"auto\", \"تلقائي\"], [\"python\", \"Python\"], [\"javascript\", \"JavaScript / Node.js\"]"
+ },
+ {
+  "k": "fffb2f4a6cf6",
+  "text": "اتركها تلقائياً ما لم تتعرف الأداة على لغتك."
+ },
+ {
+  "k": "2286748330cf",
+  "text": "مثال: تتبّع Python كامل ينتهي باسم متغير غير معرّف."
+ },
+ {
+  "k": "5358857b3a7a",
+  "text": "<div class=\"pair\"><p>❌ خطأ</p><pre class=\"code\" dir=\"ltr\"><code>{%0}</code></pre><p>✅ صحيح</p><pre class=\"code\" dir=\"ltr\"><code>{%1}</code></pre></div>"
+ },
+ {
+  "k": "9dc214bdabe5",
+  "text": "السطر {%0}",
+  "ctx": "if (g.line) parts.push(`السطر ${g.line}`);"
+ },
+ {
+  "k": "a52b9ff987f7",
+  "text": "العمود {%0}",
+  "ctx": "if (g.col) parts.push(`العمود ${g.col}`);"
+ },
+ {
+  "k": "c7060b7da8b7",
+  "text": "{%0} في الملف {%1}",
+  "ctx": "return parts.length ? `${parts.join(\"، \")} في الملف ${g.file}` : `الملف ${g.file}`;"
+ },
+ {
+  "k": "87805576f6ba",
+  "text": "الملف {%0}",
+  "ctx": "return parts.length ? `${parts.join(\"، \")} في الملف ${g.file}` : `الملف ${g.file}`;"
+ },
+ {
+  "k": "64eb2624f5dd",
+  "text": "الحكم",
+  "ctx": "{ label: \"الحكم\", value: \"لم نتعرف على هذه الرسالة\" },"
+ },
+ {
+  "k": "b109979da98d",
+  "text": "لم نتعرف على هذه الرسالة",
+  "ctx": "{ label: \"الحكم\", value: \"لم نتعرف على هذه الرسالة\" },"
+ },
+ {
+  "k": "d76522a03537",
+  "text": "اللغة",
+  "ctx": "{ label: \"اللغة\", value: lang === \"auto\" ? \"تلقائي\" : LANG_NAMES[lang] }"
+ },
+ {
+  "k": "c1463feceb1d",
+  "text": "لم تطابق الرسالة أي خطأ في قاعدة الأداة. جرّب اختيار اللغة يدوياً، أو ابحث عن نص الرسالة الحرفي."
+ },
+ {
+  "k": "2e679116d51f",
+  "text": "الخطأ{%0}",
+  "ctx": "results.push({ label: `الخطأ${s}`, value: fill(e.title, g) });"
+ },
+ {
+  "k": "eca7ef657ed4",
+  "text": "اللغة{%0}",
+  "ctx": "results.push({ label: `اللغة${s}`, value: LANG_NAMES[e.lang] });"
+ },
+ {
+  "k": "66c55be19b12",
+  "text": "الموقع{%0}",
+  "ctx": "if (loc) results.push({ label: `الموقع${s}`, value: loc });"
+ },
+ {
+  "k": "15aa587b1246",
+  "text": "المعنى{%0}",
+  "ctx": "results.push({ label: `المعنى${s}`, value: fill(e.explain, g) });"
+ },
+ {
+  "k": "62b223ce1bd7",
+  "text": "الأسباب المحتملة{%0}: {%1}",
+  "ctx": "blocks.push({ type: \"note\", text: `الأسباب المحتملة${s}: ${numbered(e.causes, g)}` });"
+ },
+ {
+  "k": "6c097049a262",
+  "text": "طرق الإصلاح{%0}: {%1}",
+  "ctx": "blocks.push({ type: \"note\", text: `طرق الإصلاح${s}: ${numbered(e.fixes, g)}` });"
+ },
+ {
+  "k": "ae9c377f46ce",
+  "text": "عالج الخطأ «{%0}» بتطبيق طرق الإصلاح ثم أعد تشغيل الكود."
+ },
+ {
+  "k": "52daa8455138",
+  "text": "أدخل نص رسالة الخطأ.",
+  "ctx": "if (isBlank(input.text)) fail(\"أدخل نص رسالة الخطأ.\", \"text\");"
+ },
+ {
+  "k": "1e52572014ef",
+  "text": "النص أطول من الحد المسموح (200000 حرف)، فاقتطع الجزء الذي يحوي رسالة الخطأ."
+ }
+]

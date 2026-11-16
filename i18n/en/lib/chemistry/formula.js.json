@@ -1,0 +1,18 @@
+{
+  "f77dce859ae3": "Unmatched bracket «{%0}».",
+  "38737506eb03": "The symbol «{%0}» is not a known element. Remember that the first letter is capital and the second is lowercase (such as Cl and Na).",
+  "f19ca3c45005": "The letter «{%0}» must be capital at the start of an element symbol (such as {%1}).",
+  "0d0f0fdf62dd": "The symbol «{%0}» is not understood in the formula.",
+  "99127c3577ff": "There is an open bracket that was not closed.",
+  "9a1d3b80c600": "The formula is empty.",
+  "b1a44876769e": "The formula of the hydrated compound is incomplete (such as CuSO4·5H2O).",
+  "6cc382077040": "There is a number with no element in the formula.",
+  "b53d603b6479": "The formula contains no elements.",
+  "b276cf15a367": "Write the equation with two sides separated by a single arrow, such as: H2 + O2 -> H2O",
+  "b0d50b3904ce": "Each side of the equation needs at least one substance.",
+  "f3b5f815c4ef": "In «{%0}»: {%1}",
+  "77014093f678": "The element {%0} appears on only one side of the equation, so the equation cannot be balanced.",
+  "c5a95bd240b6": "No positive coefficients balance this equation. Check the formulas.",
+  "17425898370a": "The equation admits more than one independent balancing (it combines two or more reactions). Separate it into separate reactions.",
+  "539097e83cff": "No positive coefficients balance this equation. Perhaps one of the substances is on the wrong side."
+}

@@ -1,0 +1,324 @@
+[
+ {
+  "k": "6f61ae091736",
+  "text": "{%0} × {%1} لتر",
+  "ctx": "if (p.big > 0) parts.push(`${p.big} × ${BIG} لتر`);"
+ },
+ {
+  "k": "08a90f9d4315",
+  "text": "طول الغرفة",
+  "ctx": "const L = num(input, \"roomL\", \"طول الغرفة\", { positive: true, max: 1000 });"
+ },
+ {
+  "k": "bae250e9baf4",
+  "text": "عرض الغرفة",
+  "ctx": "const W = num(input, \"roomW\", \"عرض الغرفة\", { positive: true, max: 1000 });"
+ },
+ {
+  "k": "d38dafc7380d",
+  "text": "ارتفاع الغرفة",
+  "ctx": "const H = num(input, \"roomH\", \"ارتفاع الغرفة\", { positive: true, max: 100 });"
+ },
+ {
+  "k": "94db06cddefc",
+  "text": "عدد الأبواب",
+  "ctx": "const doors = num(input, \"doors\", \"عدد الأبواب\", { integer: true, nonNegative: true, max: 1000, default: 0 });"
+ },
+ {
+  "k": "fef8dbad29e1",
+  "text": "عدد النوافذ",
+  "ctx": "const windows = num(input, \"windows\", \"عدد النوافذ\", { integer: true, nonNegative: true, max: 1000, default: 0 });"
+ },
+ {
+  "k": "bd28fd945417",
+  "text": "مساحة الباب",
+  "ctx": "const doorArea = num(input, \"doorArea\", \"مساحة الباب\", { positive: true, max: 100, default: 2 });"
+ },
+ {
+  "k": "e1e08b5c435b",
+  "text": "مساحة النافذة",
+  "ctx": "const windowArea = num(input, \"windowArea\", \"مساحة النافذة\", { positive: true, max: 100, default: 1.5 });"
+ },
+ {
+  "k": "57f53e285c0f",
+  "text": "عدد الطبقات",
+  "ctx": "const coats = num(input, \"coats\", \"عدد الطبقات\", { integer: true, min: 1, max: 5, default: 2 });"
+ },
+ {
+  "k": "e2c12d96dbcc",
+  "text": "التغطية لكل لتر",
+  "ctx": "const coverage = num(input, \"coverage\", \"التغطية لكل لتر\", { positive: true, max: 100, default: 10 });"
+ },
+ {
+  "k": "e898d1fb37bf",
+  "text": "مساحة الأبواب والنوافذ تساوي أو تتجاوز مساحة الجدران، راجع الأبعاد أو عدد الفتحات."
+ },
+ {
+  "k": "965de0934b99",
+  "text": "مساحة الجدران الصافية",
+  "ctx": "{ label: \"مساحة الجدران الصافية\", value: `${fmt(walls, 6)} م²` },"
+ },
+ {
+  "k": "68616d33693d",
+  "text": "{%0} م²",
+  "ctx": "{ label: \"مساحة الجدران الصافية\", value: `${fmt(walls, 6)} م²` },"
+ },
+ {
+  "k": "fa7c711dfedf",
+  "text": "مساحة السقف",
+  "ctx": "{ label: \"مساحة السقف\", value: `${fmt(ceilingArea, 6)} م²` },"
+ },
+ {
+  "k": "9f2786b38f68",
+  "text": "مساحة الدهان الإجمالية للطبقة الواحدة",
+  "ctx": "{ label: \"مساحة الدهان الإجمالية للطبقة الواحدة\", value: `${fmt(area, 6)} م²` },"
+ },
+ {
+  "k": "a5b75dde83dd",
+  "text": "كمية الدهان المطلوبة",
+  "ctx": "{ label: \"كمية الدهان المطلوبة\", value: `${fmt(liters, 4)} لتر` },"
+ },
+ {
+  "k": "030beb60a57c",
+  "text": "{%0} لتر",
+  "ctx": "{ label: \"كمية الدهان المطلوبة\", value: `${fmt(liters, 4)} لتر` },"
+ },
+ {
+  "k": "7be86161bb7b",
+  "text": "العبوات المقترحة",
+  "ctx": "{ label: \"العبوات المقترحة\", value: packText(pack) },"
+ },
+ {
+  "k": "23259fb36154",
+  "text": "إجمالي الكمية المشتراة",
+  "ctx": "{ label: \"إجمالي الكمية المشتراة\", value: `${fmt(pack.total, 4)} لتر` },"
+ },
+ {
+  "k": "48be177c4704",
+  "text": "الفائض",
+  "ctx": "{ label: \"الفائض\", value: `${fmt(surplus, 4)} لتر` }"
+ },
+ {
+  "k": "4d94f39cbd99",
+  "text": "مساحة الجدران الصافية بعد طرح الفتحات:",
+  "ctx": "{ text: \"مساحة الجدران الصافية بعد طرح الفتحات:\", tex: `A_w = 2(${ntex(L)} + ${ntex(W)}) \\\\times ${ntex(H)} - (${doors} \\\\times ${ntex(doorArea)} + ${windows} \\"
+ },
+ {
+  "k": "e89711450060",
+  "text": "مساحة الدهان للطبقة الواحدة:",
+  "ctx": "{ text: \"مساحة الدهان للطبقة الواحدة:\", tex: `A = A_w${ceiling ? ` + ${ntex(L)} \\\\times ${ntex(W)}` : \"\"} = ${ntex(area, 6)}\\\\ \\\\text{m}^2` },"
+ },
+ {
+  "k": "945799105439",
+  "text": "كمية الدهان لكل الطبقات:",
+  "ctx": "{ text: \"كمية الدهان لكل الطبقات:\", tex: `V = \\\\frac{A \\\\times ${coats}}{${ntex(coverage)}} = ${ntex(liters, 6)}\\\\ \\\\text{L}` },"
+ },
+ {
+  "k": "6f9375ae40b2",
+  "text": "اختيار مزيج العبوات (18 لتر و3.6 لتر) الذي يقلل الهدر ثم عدد العبوات:"
+ },
+ {
+  "k": "3f99ae8b1e3b",
+  "text": "مساحة الدهان: {%0} م²، الكمية المحتاجة: {%1} لتر، العبوات: {%2} (إجمالي {%3} لتر)"
+ },
+ {
+  "k": "8b5f5845f6cd",
+  "text": "طول الأرضية",
+  "ctx": "const floorL = num(input, \"floorL\", \"طول الأرضية\", { positive: true, max: 1000 });"
+ },
+ {
+  "k": "c7f78caf287b",
+  "text": "عرض الأرضية",
+  "ctx": "const floorW = num(input, \"floorW\", \"عرض الأرضية\", { positive: true, max: 1000 });"
+ },
+ {
+  "k": "82ccf74e1b46",
+  "text": "طول البلاطة",
+  "ctx": "const tileL = num(input, \"tileL\", \"طول البلاطة\", { positive: true, max: 500 });"
+ },
+ {
+  "k": "ade58de27a23",
+  "text": "عرض البلاطة",
+  "ctx": "const tileW = num(input, \"tileW\", \"عرض البلاطة\", { positive: true, max: 500 });"
+ },
+ {
+  "k": "4cec500b44c6",
+  "text": "نسبة الهالك",
+  "ctx": "const waste = num(input, \"waste\", \"نسبة الهالك\", { min: 0, max: 100, default: 10 });"
+ },
+ {
+  "k": "307e8470922a",
+  "text": "عدد البلاط في العلبة",
+  "ctx": "const perBox = num(input, \"perBox\", \"عدد البلاط في العلبة\", { integer: true, min: 1, max: 10000, optional: true });"
+ },
+ {
+  "k": "c3f945466283",
+  "text": "مساحة الأرضية",
+  "ctx": "{ label: \"مساحة الأرضية\", value: `${fmt(area, 6)} م²` },"
+ },
+ {
+  "k": "dcad38657e9a",
+  "text": "مساحة البلاطة الواحدة",
+  "ctx": "{ label: \"مساحة البلاطة الواحدة\", value: `${fmt(tileArea, 6)} م²` },"
+ },
+ {
+  "k": "0337d9b0e65b",
+  "text": "المساحة مع الهالك",
+  "ctx": "{ label: \"المساحة مع الهالك\", value: `${fmt(withWaste, 6)} م²` },"
+ },
+ {
+  "k": "cbe65d27fccd",
+  "text": "عدد البلاط المطلوب",
+  "ctx": "{ label: \"عدد البلاط المطلوب\", value: `${count} بلاطة` }"
+ },
+ {
+  "k": "63c4ba4bb825",
+  "text": "{%0} بلاطة",
+  "ctx": "{ label: \"عدد البلاط المطلوب\", value: `${count} بلاطة` }"
+ },
+ {
+  "k": "69988be1edc9",
+  "text": "عدد البلاط: {%0} بلاطة (مساحة الأرضية {%1} م² مع هالك {%2}%)"
+ },
+ {
+  "k": "e19f1d100014",
+  "text": "عدد العلب",
+  "ctx": "results.push({ label: \"عدد العلب\", value: `${boxes} علبة` });"
+ },
+ {
+  "k": "457f734779bb",
+  "text": "{%0} علبة",
+  "ctx": "results.push({ label: \"عدد العلب\", value: `${boxes} علبة` });"
+ },
+ {
+  "k": "673b57eb96cc",
+  "text": "، عدد العلب: {%0} علبة",
+  "ctx": "copy += `، عدد العلب: ${boxes} علبة`;"
+ },
+ {
+  "k": "9ac9091e8330",
+  "text": "مساحة الأرضية ومساحة البلاطة الواحدة:",
+  "ctx": "{ text: \"مساحة الأرضية ومساحة البلاطة الواحدة:\", tex: `A = ${ntex(floorL)} \\\\times ${ntex(floorW)} = ${ntex(area, 6)}\\\\ \\\\text{m}^2,\\\\qquad a = \\\\frac{${ntex(ti"
+ },
+ {
+  "k": "1437fbe29249",
+  "text": "إضافة نسبة الهالك وتقريب عدد البلاط للأعلى:"
+ },
+ {
+  "k": "57a0c479a47c",
+  "text": "احسب كمية الدهان اللازمة لغرفة بعد طرح الأبواب والنوافذ مع عدد الطبقات والتغطية، واقترح مزيج عبوات 18 لتر و3.6 لتر بأقل هدر، أو احسب عدد بلاطات الأرضية مع نسبة الهالك وعدد العلب."
+ },
+ {
+  "k": "68956f70aed9",
+  "text": "دهان",
+  "ctx": "keywords: [\"دهان\", \"طلاء\", \"بلاط\", \"سيراميك\", \"كمية الدهان\", \"عدد البلاط\", \"paint\", \"tiles\"],"
+ },
+ {
+  "k": "45caf2aadd96",
+  "text": "طلاء",
+  "ctx": "keywords: [\"دهان\", \"طلاء\", \"بلاط\", \"سيراميك\", \"كمية الدهان\", \"عدد البلاط\", \"paint\", \"tiles\"],"
+ },
+ {
+  "k": "d18d32310a47",
+  "text": "بلاط",
+  "ctx": "keywords: [\"دهان\", \"طلاء\", \"بلاط\", \"سيراميك\", \"كمية الدهان\", \"عدد البلاط\", \"paint\", \"tiles\"],"
+ },
+ {
+  "k": "90650443a24f",
+  "text": "سيراميك",
+  "ctx": "keywords: [\"دهان\", \"طلاء\", \"بلاط\", \"سيراميك\", \"كمية الدهان\", \"عدد البلاط\", \"paint\", \"tiles\"],"
+ },
+ {
+  "k": "ff79863e2fe3",
+  "text": "كمية الدهان",
+  "ctx": "keywords: [\"دهان\", \"طلاء\", \"بلاط\", \"سيراميك\", \"كمية الدهان\", \"عدد البلاط\", \"paint\", \"tiles\"],"
+ },
+ {
+  "k": "86c48cced7a3",
+  "text": "عدد البلاط",
+  "ctx": "keywords: [\"دهان\", \"طلاء\", \"بلاط\", \"سيراميك\", \"كمية الدهان\", \"عدد البلاط\", \"paint\", \"tiles\"],"
+ },
+ {
+  "k": "fa1cb3614a67",
+  "text": "عدد البلاط مع الهالك",
+  "ctx": "{ label: \"عدد البلاط مع الهالك\", tex: \"N = \\\\left\\\\lceil \\\\frac{A (1 + w)}{a} \\\\right\\\\rceil\" }"
+ },
+ {
+  "k": "4679211ffe32",
+  "text": "نوع الحساب",
+  "ctx": "{ id: \"mode\", label: \"نوع الحساب\", type: \"select\", default: \"paint\", options: [[\"paint\", \"كمية الدهان للغرفة\"], [\"tiles\", \"عدد البلاط للأرضية\"]] },"
+ },
+ {
+  "k": "18ab010f1f2c",
+  "text": "كمية الدهان للغرفة",
+  "ctx": "{ id: \"mode\", label: \"نوع الحساب\", type: \"select\", default: \"paint\", options: [[\"paint\", \"كمية الدهان للغرفة\"], [\"tiles\", \"عدد البلاط للأرضية\"]] },"
+ },
+ {
+  "k": "38bcb0ed2121",
+  "text": "عدد البلاط للأرضية",
+  "ctx": "{ id: \"mode\", label: \"نوع الحساب\", type: \"select\", default: \"paint\", options: [[\"paint\", \"كمية الدهان للغرفة\"], [\"tiles\", \"عدد البلاط للأرضية\"]] },"
+ },
+ {
+  "k": "d8fe6f076d79",
+  "text": "م",
+  "ctx": "{ id: \"roomL\", label: \"طول الغرفة\", unit: \"م\", type: \"number\", default: \"4\", when: { mode: [\"paint\"] } },"
+ },
+ {
+  "k": "d58033374b50",
+  "text": "ارتفاع الجدران",
+  "ctx": "{ id: \"roomH\", label: \"ارتفاع الجدران\", unit: \"م\", type: \"number\", default: \"2.7\", when: { mode: [\"paint\"] } },"
+ },
+ {
+  "k": "5e1325a469ae",
+  "text": "مساحة الباب الواحد",
+  "ctx": "{ id: \"doorArea\", label: \"مساحة الباب الواحد\", unit: \"م²\", type: \"number\", default: \"2\", when: { mode: [\"paint\"] } },"
+ },
+ {
+  "k": "32fae0bedbaa",
+  "text": "م²",
+  "ctx": "{ id: \"doorArea\", label: \"مساحة الباب الواحد\", unit: \"م²\", type: \"number\", default: \"2\", when: { mode: [\"paint\"] } },"
+ },
+ {
+  "k": "f39b49eecd0b",
+  "text": "مساحة النافذة الواحدة",
+  "ctx": "{ id: \"windowArea\", label: \"مساحة النافذة الواحدة\", unit: \"م²\", type: \"number\", default: \"1.5\", when: { mode: [\"paint\"] } },"
+ },
+ {
+  "k": "dd0c20be11c1",
+  "text": "طلاء السقف أيضاً",
+  "ctx": "{ id: \"ceiling\", label: \"طلاء السقف أيضاً\", type: \"checkbox\", default: \"1\", when: { mode: [\"paint\"] } },"
+ },
+ {
+  "k": "549613028cb3",
+  "text": "م²/لتر",
+  "ctx": "{ id: \"coverage\", label: \"التغطية لكل لتر\", unit: \"م²/لتر\", type: \"number\", default: \"10\", when: { mode: [\"paint\"] }, help: \"تختلف حسب نوع الدهان، وغالباً بين 8"
+ },
+ {
+  "k": "0e9aa5dca5c2",
+  "text": "تختلف حسب نوع الدهان، وغالباً بين 8 و12 م²/لتر."
+ },
+ {
+  "k": "36bd5fe7a805",
+  "text": "سم",
+  "ctx": "{ id: \"tileL\", label: \"طول البلاطة\", unit: \"سم\", type: \"number\", default: \"60\", when: { mode: [\"tiles\"] } },"
+ },
+ {
+  "k": "33c11688fee2",
+  "text": "للقص والكسر، عادة من 5% إلى 10%.",
+  "ctx": "{ id: \"waste\", label: \"نسبة الهالك\", unit: \"%\", type: \"number\", default: \"10\", when: { mode: [\"tiles\"] }, help: \"للقص والكسر، عادة من 5% إلى 10%.\" },"
+ },
+ {
+  "k": "eea700938ed4",
+  "text": "اختياري: لحساب عدد العلب.",
+  "ctx": "{ id: \"perBox\", label: \"عدد البلاط في العلبة\", type: \"number\", when: { mode: [\"tiles\"] }, help: \"اختياري: لحساب عدد العلب.\" }"
+ },
+ {
+  "k": "34d4545aa29a",
+  "text": "3 × 3.6 لتر",
+  "ctx": "expect: [\"3 × 3.6 لتر\"],"
+ },
+ {
+  "k": "2e4c79c39f5a",
+  "text": "مثال: غرفة 4×3 وارتفاع 2.7 م بباب ونافذتين وسقف وطبقتين."
+ }
+]

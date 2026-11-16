@@ -1,0 +1,17 @@
+{
+ "efb7954c90b2": "Nombre incorrect à la position {%0}.",
+ "14d444c27751": "Symbole incompréhensible «{%0}» dans l'expression.",
+ "f4bd11d452ee": "Saisissez une expression mathématique.",
+ "99127c3577ff": "Il y a une parenthèse ouvrante qui n'est pas fermée.",
+ "1e34d9f5bdfd": "Il y a un crochet « [ » de la fonction partie entière qui n'est pas fermé par « ] ».",
+ "400ae019a5b3": "Il y a un « ⌈ » qui n'est pas fermé par « ⌉ ».",
+ "8e3e06fc7abd": "«{%0}» était attendu.",
+ "6c2006c7ac8d": "La fonction nécessite une entrée entre parenthèses.",
+ "6be145579c85": "L'expression est incomplète.",
+ "076b5feba452": "La variable «{%0}» n'est pas autorisée ici. Variables autorisées : {%1}.",
+ "62eeb57b4f17": "Il y a une parenthèse fermante en trop ou mal placée.",
+ "0fbb74035ae5": "Le symbole «{%0}» est mal placé.",
+ "d2cc65ad8685": "Il y a une parenthèse fermante en trop.",
+ "8c67e7f14643": "L'expression n'a pas pu être entièrement analysée, vérifiez la syntaxe.",
+ "457c5785aa5b": "Aucune valeur pour la variable «{%0}»."
+}

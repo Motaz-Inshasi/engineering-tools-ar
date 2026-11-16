@@ -1,0 +1,30 @@
+[
+ {
+  "k": "efe61db9c4a5",
+  "text": "دالة التحويل",
+  "ctx": "export function readTF(input, key = \"G\", label = \"دالة التحويل\", opts = {}) {"
+ },
+ {
+  "k": "42a87a2123cc",
+  "text": "{%0} يجب أن تكون دالة كسرية في s (بسط ومقام كثيرات حدود)."
+ },
+ {
+  "k": "1d5c23e7cbe5",
+  "text": "{%0} تساوي صفراً.",
+  "ctx": "if (num.every((x) => x === 0)) fail(`${label} تساوي صفراً.`, key);"
+ },
+ {
+  "k": "e336d0460b95",
+  "text": "{%0} يجب أن تكون كثيرة حدود وليست كسراً."
+ },
+ {
+  "k": "6716e08fbdd5",
+  "text": "مقام {%0} يجب أن يحتوي s.",
+  "ctx": "if (!opts.polynomial && opts.needDen !== false && degree(den) < 1) fail(`مقام ${label} يجب أن يحتوي s.`, key);"
+ },
+ {
+  "k": "34e363f7e8a5",
+  "text": "أقصى درجة هي 12.",
+  "ctx": "if (degree(den) > 12 || degree(num) > 12) fail(`أقصى درجة هي 12.`, key);"
+ }
+]

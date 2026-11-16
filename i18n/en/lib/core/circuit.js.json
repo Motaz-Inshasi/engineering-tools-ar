@@ -1,0 +1,14 @@
+{
+  "a0a94b99bc4e": "Enter the circuit elements, one element per line.",
+  "eeb0d5f59d1b": "The maximum number of elements is 60.",
+  "3e16f8a17fb6": "Line {%0} (“{%1}”)",
+  "b4abd3cee0fa": "{%0}: the format must be: name node1 node2 value.",
+  "b045905c00d5": "{%0}: the element name must start with R, V or I.",
+  "53267bb0ef06": "{%0}: the name {%1} is duplicated.",
+  "8cbb2a50edb9": "{%0}: both terminals of the element are on the same node.",
+  "6aa15cba536e": "{%0}: the value “{%1}” is not a valid number.",
+  "8e5df46c90a6": "{%0}: resistance must be greater than zero (use a 0 V voltage source to represent a short circuit).",
+  "777279ac0b31": "The circuit needs a ground node named 0 (or gnd).",
+  "32ba12ca855b": "The circuit has no nodes other than ground.",
+  "ff66be72d044": "The circuit cannot be solved: there is a node isolated from ground, a loop of voltage sources, or a current source with no path."
+}

@@ -1,0 +1,17 @@
+{
+ "efb7954c90b2": "Angka tidak valid pada posisi {%0}.",
+ "14d444c27751": "Simbol tidak dikenal «{%0}» dalam ekspresi.",
+ "f4bd11d452ee": "Masukkan ekspresi matematika.",
+ "99127c3577ff": "Ada tanda kurung buka yang belum ditutup.",
+ "1e34d9f5bdfd": "Ada tanda kurung «[» untuk fungsi bilangan bulat terbesar yang belum ditutup dengan «]».",
+ "400ae019a5b3": "Ada «⌈» yang belum ditutup dengan «⌉».",
+ "8e3e06fc7abd": "Diharapkan «{%0}».",
+ "6c2006c7ac8d": "Fungsi memerlukan masukan di dalam tanda kurung.",
+ "6be145579c85": "Ekspresi belum lengkap.",
+ "076b5feba452": "Variabel «{%0}» tidak diizinkan di sini. Variabel yang diizinkan: {%1}.",
+ "62eeb57b4f17": "Ada tanda kurung tutup berlebih atau berada di posisi yang salah.",
+ "0fbb74035ae5": "Simbol «{%0}» berada di posisi yang salah.",
+ "d2cc65ad8685": "Ada tanda kurung tutup berlebih.",
+ "8c67e7f14643": "Ekspresi tidak dapat dipahami sepenuhnya, periksa susunannya.",
+ "457c5785aa5b": "Tidak ada nilai untuk variabel «{%0}»."
+}

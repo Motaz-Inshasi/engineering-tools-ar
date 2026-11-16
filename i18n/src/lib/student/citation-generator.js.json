@@ -1,0 +1,208 @@
+[
+ {
+  "k": "584741b4a509",
+  "text": "السطر {%0} من المؤلفين: اكتب اللقب قبل الفاصلة، مثل: Smith, John"
+ },
+ {
+  "k": "a31248c058d7",
+  "text": "تاريخ الوصول يجب أن يكون بالصيغة YYYY-MM-DD."
+ },
+ {
+  "k": "d9c465ba7322",
+  "text": "تاريخ الوصول ليس تاريخاً صحيحاً.",
+  "ctx": "if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== mo - 1 || dt.getUTCDate() !== d) fail(\"تاريخ الوصول ليس تاريخاً صحيحاً.\", key);"
+ },
+ {
+  "k": "a62040be8b46",
+  "text": "أنشئ مرجع المصدر بثلاثة أنماط شائعة APA 7 وIEEE وMLA 9 للكتب والمقالات العلمية والمواقع الإلكترونية، مع نسخ النتائج الثلاث."
+ },
+ {
+  "k": "d6efe9d5dc95",
+  "text": "توثيق المصادر",
+  "ctx": "keywords: [\"توثيق المصادر\", \"مراجع\", \"APA\", \"IEEE\", \"MLA\", \"citation\", \"bibliography\", \"اقتباس\"],"
+ },
+ {
+  "k": "39eca502826f",
+  "text": "مراجع",
+  "ctx": "keywords: [\"توثيق المصادر\", \"مراجع\", \"APA\", \"IEEE\", \"MLA\", \"citation\", \"bibliography\", \"اقتباس\"],"
+ },
+ {
+  "k": "118af8bc659d",
+  "text": "اقتباس",
+  "ctx": "keywords: [\"توثيق المصادر\", \"مراجع\", \"APA\", \"IEEE\", \"MLA\", \"citation\", \"bibliography\", \"اقتباس\"],"
+ },
+ {
+  "k": "893eb6a211f3",
+  "text": "APA 7 (كتاب)",
+  "ctx": "{ label: \"APA 7 (كتاب)\", tex: \"\\\\text{Last, F. M. (Year). Title. Publisher.}\" },"
+ },
+ {
+  "k": "4c8fdc21a5dc",
+  "text": "IEEE (كتاب)",
+  "ctx": "{ label: \"IEEE (كتاب)\", tex: \"\\\\text{F. M. Last, Title, Publisher, Year.}\" },"
+ },
+ {
+  "k": "d81ee2b7e59c",
+  "text": "MLA 9 (كتاب)",
+  "ctx": "{ label: \"MLA 9 (كتاب)\", tex: \"\\\\text{Last, First. Title. Publisher, Year.}\" }"
+ },
+ {
+  "k": "6043564fa6c9",
+  "text": "نوع المصدر",
+  "ctx": "{ id: \"type\", label: \"نوع المصدر\", type: \"select\", default: \"book\", options: [[\"book\", \"كتاب\"], [\"journal\", \"مقالة في دورية علمية\"], [\"website\", \"موقع إلكتروني\""
+ },
+ {
+  "k": "0d27d5eb3aa7",
+  "text": "كتاب",
+  "ctx": "{ id: \"type\", label: \"نوع المصدر\", type: \"select\", default: \"book\", options: [[\"book\", \"كتاب\"], [\"journal\", \"مقالة في دورية علمية\"], [\"website\", \"موقع إلكتروني\""
+ },
+ {
+  "k": "f7ffa36700ef",
+  "text": "مقالة في دورية علمية",
+  "ctx": "{ id: \"type\", label: \"نوع المصدر\", type: \"select\", default: \"book\", options: [[\"book\", \"كتاب\"], [\"journal\", \"مقالة في دورية علمية\"], [\"website\", \"موقع إلكتروني\""
+ },
+ {
+  "k": "f05ebe5e37c5",
+  "text": "موقع إلكتروني",
+  "ctx": "{ id: \"type\", label: \"نوع المصدر\", type: \"select\", default: \"book\", options: [[\"book\", \"كتاب\"], [\"journal\", \"مقالة في دورية علمية\"], [\"website\", \"موقع إلكتروني\""
+ },
+ {
+  "k": "a5ce3fbfe95b",
+  "text": "المؤلفون",
+  "ctx": "{ id: \"authors\", label: \"المؤلفون\", type: \"textarea\", rows: 3, placeholder: \"Smith, John\\nDoe, Ann Marie\", help: \"مؤلف في كل سطر بالصيغة: اللقب، الاسم الأول وال"
+ },
+ {
+  "k": "4a6bfbfaca9e",
+  "text": "مؤلف في كل سطر بالصيغة: اللقب، الاسم الأول والأوسط. اتركه فارغاً إن لم يوجد مؤلف."
+ },
+ {
+  "k": "baffa49c77ea",
+  "text": "العنوان",
+  "ctx": "{ id: \"title\", label: \"العنوان\", type: \"text\", placeholder: \"عنوان الكتاب أو المقالة أو الصفحة\", help: \"عنوان الكتاب، أو عنوان المقالة، أو عنوان الصفحة.\" },"
+ },
+ {
+  "k": "a92de7521b65",
+  "text": "عنوان الكتاب أو المقالة أو الصفحة",
+  "ctx": "{ id: \"title\", label: \"العنوان\", type: \"text\", placeholder: \"عنوان الكتاب أو المقالة أو الصفحة\", help: \"عنوان الكتاب، أو عنوان المقالة، أو عنوان الصفحة.\" },"
+ },
+ {
+  "k": "ea0c203eb007",
+  "text": "عنوان الكتاب، أو عنوان المقالة، أو عنوان الصفحة."
+ },
+ {
+  "k": "c803b47df32a",
+  "text": "سنة النشر",
+  "ctx": "{ id: \"year\", label: \"سنة النشر\", type: \"number\", default: \"2020\" },"
+ },
+ {
+  "k": "eae7f2e7cf78",
+  "text": "الناشر",
+  "ctx": "{ id: \"publisher\", label: \"الناشر\", type: \"text\", when: { type: [\"book\"] } },"
+ },
+ {
+  "k": "8714e0673ecf",
+  "text": "مدينة النشر",
+  "ctx": "{ id: \"city\", label: \"مدينة النشر\", type: \"text\", when: { type: [\"book\"] }, help: \"تُستخدم في صيغة IEEE فقط.\" },"
+ },
+ {
+  "k": "2f3e3cf03448",
+  "text": "تُستخدم في صيغة IEEE فقط.",
+  "ctx": "{ id: \"city\", label: \"مدينة النشر\", type: \"text\", when: { type: [\"book\"] }, help: \"تُستخدم في صيغة IEEE فقط.\" },"
+ },
+ {
+  "k": "7ad08c08990d",
+  "text": "الطبعة",
+  "ctx": "{ id: \"edition\", label: \"الطبعة\", type: \"text\", when: { type: [\"book\"] }, help: \"اختياري، مثل 2 أو 3.\" },"
+ },
+ {
+  "k": "94ef76bd233c",
+  "text": "اختياري، مثل 2 أو 3.",
+  "ctx": "{ id: \"edition\", label: \"الطبعة\", type: \"text\", when: { type: [\"book\"] }, help: \"اختياري، مثل 2 أو 3.\" },"
+ },
+ {
+  "k": "1b34bb98b64a",
+  "text": "اسم الدورية",
+  "ctx": "{ id: \"journal\", label: \"اسم الدورية\", type: \"text\", when: { type: [\"journal\"] } },"
+ },
+ {
+  "k": "99e8d786e58b",
+  "text": "المجلد",
+  "ctx": "{ id: \"volume\", label: \"المجلد\", type: \"text\", when: { type: [\"journal\"] } },"
+ },
+ {
+  "k": "a82c1974096b",
+  "text": "العدد",
+  "ctx": "{ id: \"issue\", label: \"العدد\", type: \"text\", when: { type: [\"journal\"] } },"
+ },
+ {
+  "k": "b992e9c28462",
+  "text": "الصفحات",
+  "ctx": "{ id: \"pages\", label: \"الصفحات\", type: \"text\", when: { type: [\"journal\"] }, placeholder: \"45-67\", help: \"مثل 45-67 أو 12.\" },"
+ },
+ {
+  "k": "988f39ffbb4d",
+  "text": "مثل 45-67 أو 12.",
+  "ctx": "{ id: \"pages\", label: \"الصفحات\", type: \"text\", when: { type: [\"journal\"] }, placeholder: \"45-67\", help: \"مثل 45-67 أو 12.\" },"
+ },
+ {
+  "k": "6882fa0fda95",
+  "text": "اسم الموقع",
+  "ctx": "{ id: \"site\", label: \"اسم الموقع\", type: \"text\", when: { type: [\"website\"] } },"
+ },
+ {
+  "k": "e23be940c0eb",
+  "text": "الرابط",
+  "ctx": "{ id: \"url\", label: \"الرابط\", type: \"text\", when: { type: [\"website\"] }, placeholder: \"https://example.com/page\" },"
+ },
+ {
+  "k": "f0396eef3b50",
+  "text": "تاريخ الوصول",
+  "ctx": "{ id: \"accessed\", label: \"تاريخ الوصول\", type: \"text\", when: { type: [\"website\"] }, placeholder: \"2024-03-05\", help: \"اختياري بصيغة YYYY-MM-DD.\" }"
+ },
+ {
+  "k": "319cdfe116fb",
+  "text": "اختياري بصيغة YYYY-MM-DD.",
+  "ctx": "{ id: \"accessed\", label: \"تاريخ الوصول\", type: \"text\", when: { type: [\"website\"] }, placeholder: \"2024-03-05\", help: \"اختياري بصيغة YYYY-MM-DD.\" }"
+ },
+ {
+  "k": "e571c12e9767",
+  "text": "مثال: كتاب من مؤلف واحد بصيغة APA 7.",
+  "ctx": "note: \"مثال: كتاب من مؤلف واحد بصيغة APA 7.\""
+ },
+ {
+  "k": "a1f2f8476972",
+  "text": "يدعم هذا المولّد حتى 20 مؤلفاً في نمط APA."
+ },
+ {
+  "k": "ce29c50bc025",
+  "text": "أدخل عنوان المصدر.",
+  "ctx": "if (title === \"\") fail(\"أدخل عنوان المصدر.\", \"title\");"
+ },
+ {
+  "k": "89f98a0a78f3",
+  "text": "أدخل اسم الناشر للكتاب.",
+  "ctx": "if (x.publisher === \"\") fail(\"أدخل اسم الناشر للكتاب.\", \"publisher\");"
+ },
+ {
+  "k": "ce3df8396f38",
+  "text": "أدخل اسم الدورية.",
+  "ctx": "if (x.journal === \"\") fail(\"أدخل اسم الدورية.\", \"journal\");"
+ },
+ {
+  "k": "135995b56d47",
+  "text": "أدخل رابط الموقع.",
+  "ctx": "if (x.url === \"\") fail(\"أدخل رابط الموقع.\", \"url\");"
+ },
+ {
+  "k": "1db0b1cf3eab",
+  "text": "APA 7: اللقب، الحرف الأول من الاسم (السنة). العنوان. الناشر أو الدورية والرابط."
+ },
+ {
+  "k": "bfe7b56a19a3",
+  "text": "IEEE: الحرف الأول من الاسم ثم اللقب، والعنوان بين علامتي تنصيص، ثم الناشر أو الدورية والسنة."
+ },
+ {
+  "k": "7b2d4f00b9c0",
+  "text": "MLA 9: اللقب، الاسم الأول كاملاً، ثم العنوان والناشر أو الدورية والسنة."
+ }
+]

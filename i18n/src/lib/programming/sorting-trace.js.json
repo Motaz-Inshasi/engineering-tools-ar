@@ -1,0 +1,312 @@
+[
+ {
+  "k": "d379f3bcb5c8",
+  "text": "الفقاعات Bubble",
+  "ctx": "bubble: { label: \"الفقاعات Bubble\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"التبديلات (Swaps)\", head: [\"المرور\","
+ },
+ {
+  "k": "d045bef8e536",
+  "text": "نعم",
+  "ctx": "bubble: { label: \"الفقاعات Bubble\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"التبديلات (Swaps)\", head: [\"المرور\","
+ },
+ {
+  "k": "9bf13b759bec",
+  "text": "التبديلات (Swaps)",
+  "ctx": "bubble: { label: \"الفقاعات Bubble\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"التبديلات (Swaps)\", head: [\"المرور\","
+ },
+ {
+  "k": "cfebbd57089a",
+  "text": "المرور",
+  "ctx": "bubble: { label: \"الفقاعات Bubble\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"التبديلات (Swaps)\", head: [\"المرور\","
+ },
+ {
+  "k": "5b229eecb5e9",
+  "text": "المقارنات",
+  "ctx": "bubble: { label: \"الفقاعات Bubble\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"التبديلات (Swaps)\", head: [\"المرور\","
+ },
+ {
+  "k": "a5153cbdaf3d",
+  "text": "التبديلات",
+  "ctx": "bubble: { label: \"الفقاعات Bubble\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"التبديلات (Swaps)\", head: [\"المرور\","
+ },
+ {
+  "k": "2f0d07543fda",
+  "text": "القائمة بعد المرور",
+  "ctx": "bubble: { label: \"الفقاعات Bubble\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"التبديلات (Swaps)\", head: [\"المرور\","
+ },
+ {
+  "k": "af7431a3964d",
+  "text": "تمرّ الخوارزمية على القائمة مراراً، وفي كل مرور تقارن كل عنصر بجاره وتبدّلهما إذا كانا في غير ترتيبهما المطلوب. يصعد أكبر عنصر غير مرتب إلى نهاية القائمة في كل مرور، وتتوقف إذا مرّ دور كامل دون أي تبديل."
+ },
+ {
+  "k": "fe8a6b1cd788",
+  "text": "الاختيار Selection",
+  "ctx": "selection: { label: \"الاختيار Selection\", best: \"O(n²)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"لا\", counter: \"التبديلات (Swaps)\", head: [\"ال"
+ },
+ {
+  "k": "5c528d9fa396",
+  "text": "لا",
+  "ctx": "selection: { label: \"الاختيار Selection\", best: \"O(n²)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"لا\", counter: \"التبديلات (Swaps)\", head: [\"ال"
+ },
+ {
+  "k": "c53700b57023",
+  "text": "القيمة المختارة",
+  "ctx": "selection: { label: \"الاختيار Selection\", best: \"O(n²)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"لا\", counter: \"التبديلات (Swaps)\", head: [\"ال"
+ },
+ {
+  "k": "861d61091a07",
+  "text": "تبحث في الجزء غير المرتب عن أصغر عنصر (أو أكبرها في الترتيب التنازلي)، ثم تضعه في أول موضع غير مرتب بتبديل واحد على الأكثر."
+ },
+ {
+  "k": "ad71ea17a397",
+  "text": "الإدراج Insertion",
+  "ctx": "insertion: { label: \"الإدراج Insertion\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"الإزاحات (Shifts)\", head: [\"الخ"
+ },
+ {
+  "k": "92e500181aad",
+  "text": "الإزاحات (Shifts)",
+  "ctx": "insertion: { label: \"الإدراج Insertion\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"الإزاحات (Shifts)\", head: [\"الخ"
+ },
+ {
+  "k": "54aaef8e67c0",
+  "text": "الخطوة",
+  "ctx": "insertion: { label: \"الإدراج Insertion\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"الإزاحات (Shifts)\", head: [\"الخ"
+ },
+ {
+  "k": "a4b2c85ea1a2",
+  "text": "العنصر المُدرج",
+  "ctx": "insertion: { label: \"الإدراج Insertion\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"الإزاحات (Shifts)\", head: [\"الخ"
+ },
+ {
+  "k": "392b1c0deeb0",
+  "text": "الإزاحات",
+  "ctx": "insertion: { label: \"الإدراج Insertion\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"الإزاحات (Shifts)\", head: [\"الخ"
+ },
+ {
+  "k": "49aa4eab2ac5",
+  "text": "القائمة بعد الإدراج",
+  "ctx": "insertion: { label: \"الإدراج Insertion\", best: \"O(n)\", average: \"O(n²)\", worst: \"O(n²)\", space: \"O(1)\", stable: \"نعم\", counter: \"الإزاحات (Shifts)\", head: [\"الخ"
+ },
+ {
+  "k": "757e1da82c07",
+  "text": "تأخذ كل عنصر وتدرجه في موضعه داخل الجزء المرتب الذي على يساره، بإزاحة العناصر التي تأتي بعده في الترتيب خطوة إلى اليمين."
+ },
+ {
+  "k": "1fe05bddf94d",
+  "text": "الدمج Merge",
+  "ctx": "merge: { label: \"الدمج Merge\", best: \"O(n log n)\", average: \"O(n log n)\", worst: \"O(n log n)\", space: \"O(n)\", stable: \"نعم\", counter: \"الكتابات (Writes)\", head:"
+ },
+ {
+  "k": "146237c7d1d6",
+  "text": "الكتابات (Writes)",
+  "ctx": "merge: { label: \"الدمج Merge\", best: \"O(n log n)\", average: \"O(n log n)\", worst: \"O(n log n)\", space: \"O(n)\", stable: \"نعم\", counter: \"الكتابات (Writes)\", head:"
+ },
+ {
+  "k": "221cc76f1c8b",
+  "text": "النطاق",
+  "ctx": "merge: { label: \"الدمج Merge\", best: \"O(n log n)\", average: \"O(n log n)\", worst: \"O(n log n)\", space: \"O(n)\", stable: \"نعم\", counter: \"الكتابات (Writes)\", head:"
+ },
+ {
+  "k": "b58a8fe466dd",
+  "text": "اليسار",
+  "ctx": "merge: { label: \"الدمج Merge\", best: \"O(n log n)\", average: \"O(n log n)\", worst: \"O(n log n)\", space: \"O(n)\", stable: \"نعم\", counter: \"الكتابات (Writes)\", head:"
+ },
+ {
+  "k": "a57eead63e58",
+  "text": "اليمين",
+  "ctx": "merge: { label: \"الدمج Merge\", best: \"O(n log n)\", average: \"O(n log n)\", worst: \"O(n log n)\", space: \"O(n)\", stable: \"نعم\", counter: \"الكتابات (Writes)\", head:"
+ },
+ {
+  "k": "a78dfc5edcda",
+  "text": "بعد الدمج",
+  "ctx": "merge: { label: \"الدمج Merge\", best: \"O(n log n)\", average: \"O(n log n)\", worst: \"O(n log n)\", space: \"O(n)\", stable: \"نعم\", counter: \"الكتابات (Writes)\", head:"
+ },
+ {
+  "k": "8581debd11ce",
+  "text": "تقسم القائمة إلى نصفين بشكل متكرر حتى يصبح كل جزء عنصراً واحداً، ثم تدمج كل جزأين مرتبين في جزء مرتب أكبر."
+ },
+ {
+  "k": "bb055942ddb0",
+  "text": "السريع Quick (المحور آخر عنصر)",
+  "ctx": "quick: { label: \"السريع Quick (المحور آخر عنصر)\", best: \"O(n log n)\", average: \"O(n log n)\", worst: \"O(n²)\", space: \"O(log n) متوسطاً و O(n) في الأسوأ\", stable:"
+ },
+ {
+  "k": "610d97304b07",
+  "text": "O(log n) متوسطاً و O(n) في الأسوأ",
+  "ctx": "quick: { label: \"السريع Quick (المحور آخر عنصر)\", best: \"O(n log n)\", average: \"O(n log n)\", worst: \"O(n²)\", space: \"O(log n) متوسطاً و O(n) في الأسوأ\", stable:"
+ },
+ {
+  "k": "4161a97b3bf3",
+  "text": "المحور",
+  "ctx": "quick: { label: \"السريع Quick (المحور آخر عنصر)\", best: \"O(n log n)\", average: \"O(n log n)\", worst: \"O(n²)\", space: \"O(log n) متوسطاً و O(n) في الأسوأ\", stable:"
+ },
+ {
+  "k": "eac65eaaeca3",
+  "text": "موضع المحور النهائي",
+  "ctx": "quick: { label: \"السريع Quick (المحور آخر عنصر)\", best: \"O(n log n)\", average: \"O(n log n)\", worst: \"O(n²)\", space: \"O(log n) متوسطاً و O(n) في الأسوأ\", stable:"
+ },
+ {
+  "k": "238214ba5a1d",
+  "text": "القائمة بعد التقسيم",
+  "ctx": "quick: { label: \"السريع Quick (المحور آخر عنصر)\", best: \"O(n log n)\", average: \"O(n log n)\", worst: \"O(n²)\", space: \"O(log n) متوسطاً و O(n) في الأسوأ\", stable:"
+ },
+ {
+  "k": "4cc8a08868ca",
+  "text": "تختار المحور وهو آخر عنصر في النطاق، وتنقل العناصر التي تسبقه إلى يساره والتي تليه إلى يمينه، ثم تكرر العملية على الجزأين."
+ },
+ {
+  "k": "1804bea9b2ca",
+  "text": "تصاعدي",
+  "ctx": "const ORDERS = { asc: \"تصاعدي\", desc: \"تنازلي\" };"
+ },
+ {
+  "k": "de3f37dbd877",
+  "text": "تنازلي",
+  "ctx": "const ORDERS = { asc: \"تصاعدي\", desc: \"تنازلي\" };"
+ },
+ {
+  "k": "19ea69db4850",
+  "text": "تتبّع خطوة بخطوة كيف ترتّب خوارزميات الفقاعات والاختيار والإدراج والدمج والسريع قائمة أعداد، مع عدد المقارنات والتبديلات وجدول لكل مرور أو خطوة وتعقيدها الزمني والمكاني."
+ },
+ {
+  "k": "577a3c6894ef",
+  "text": "ترتيب",
+  "ctx": "keywords: [\"ترتيب\", \"خوارزمية الترتيب\", \"bubble sort\", \"selection sort\", \"insertion sort\", \"merge sort\", \"quick sort\", \"فقاعات\", \"دمج\", \"سريع\", \"إدراج\", \"اختيار"
+ },
+ {
+  "k": "ad4820db4d8c",
+  "text": "خوارزمية الترتيب",
+  "ctx": "keywords: [\"ترتيب\", \"خوارزمية الترتيب\", \"bubble sort\", \"selection sort\", \"insertion sort\", \"merge sort\", \"quick sort\", \"فقاعات\", \"دمج\", \"سريع\", \"إدراج\", \"اختيار"
+ },
+ {
+  "k": "bec18e8e2d57",
+  "text": "فقاعات",
+  "ctx": "keywords: [\"ترتيب\", \"خوارزمية الترتيب\", \"bubble sort\", \"selection sort\", \"insertion sort\", \"merge sort\", \"quick sort\", \"فقاعات\", \"دمج\", \"سريع\", \"إدراج\", \"اختيار"
+ },
+ {
+  "k": "738bccb09620",
+  "text": "دمج",
+  "ctx": "keywords: [\"ترتيب\", \"خوارزمية الترتيب\", \"bubble sort\", \"selection sort\", \"insertion sort\", \"merge sort\", \"quick sort\", \"فقاعات\", \"دمج\", \"سريع\", \"إدراج\", \"اختيار"
+ },
+ {
+  "k": "d624594696f5",
+  "text": "سريع",
+  "ctx": "keywords: [\"ترتيب\", \"خوارزمية الترتيب\", \"bubble sort\", \"selection sort\", \"insertion sort\", \"merge sort\", \"quick sort\", \"فقاعات\", \"دمج\", \"سريع\", \"إدراج\", \"اختيار"
+ },
+ {
+  "k": "a1e8928cc4e5",
+  "text": "إدراج",
+  "ctx": "keywords: [\"ترتيب\", \"خوارزمية الترتيب\", \"bubble sort\", \"selection sort\", \"insertion sort\", \"merge sort\", \"quick sort\", \"فقاعات\", \"دمج\", \"سريع\", \"إدراج\", \"اختيار"
+ },
+ {
+  "k": "e08ca265fdea",
+  "text": "اختيار",
+  "ctx": "keywords: [\"ترتيب\", \"خوارزمية الترتيب\", \"bubble sort\", \"selection sort\", \"insertion sort\", \"merge sort\", \"quick sort\", \"فقاعات\", \"دمج\", \"سريع\", \"إدراج\", \"اختيار"
+ },
+ {
+  "k": "262a588a4ef6",
+  "text": "عدد المقارنات في الاختيار",
+  "ctx": "{ label: \"عدد المقارنات في الاختيار\", tex: \"\\\\sum_{i=1}^{n-1}(n-i)=\\\\frac{n(n-1)}{2}\" },"
+ },
+ {
+  "k": "79856294bce6",
+  "text": "تعقيد الدمج",
+  "ctx": "{ label: \"تعقيد الدمج\", tex: \"O(n\\\\log n)\" }"
+ },
+ {
+  "k": "13704f77144c",
+  "text": "القائمة",
+  "ctx": "{ id: \"list\", label: \"القائمة\", type: \"text\", wide: true, default: \"5, 1, 4, 2, 8\", placeholder: \"5, 1, 4, 2, 8\", help: \"من 2 إلى 30 عدداً، مفصولة بفواصل أو مسا"
+ },
+ {
+  "k": "7d40fac41a8c",
+  "text": "من 2 إلى 30 عدداً، مفصولة بفواصل أو مسافات."
+ },
+ {
+  "k": "b5f1b8d93871",
+  "text": "الخوارزمية",
+  "ctx": "{ id: \"algo\", label: \"الخوارزمية\", type: \"select\", default: \"bubble\", options: [[\"bubble\", \"الفقاعات Bubble\"], [\"selection\", \"الاختيار Selection\"], [\"insertion\""
+ },
+ {
+  "k": "92cf48b87ab7",
+  "text": "ترتيب النتيجة",
+  "ctx": "{ id: \"order\", label: \"ترتيب النتيجة\", type: \"select\", default: \"asc\", options: [[\"asc\", \"تصاعدي\"], [\"desc\", \"تنازلي\"]] }"
+ },
+ {
+  "k": "9c9cc9d50824",
+  "text": "التبديلات (Swaps): 4",
+  "ctx": "example: { values: { list: \"5, 1, 4, 2, 8\", algo: \"bubble\", order: \"asc\" }, expect: [\"1, 2, 4, 5, 8\", \"التبديلات (Swaps): 4\"], note: \"مثال: فقاعات على 5, 1, 4, "
+ },
+ {
+  "k": "b2347b40669e",
+  "text": "مثال: فقاعات على 5, 1, 4, 2, 8 تصاعدياً، وتحتاج أربع تبديلات."
+ },
+ {
+  "k": "d86b05e54b46",
+  "text": "المدخل أطول من 200000 حرف.",
+  "ctx": "if (raw.length > MAX_CHARS) fail(\"المدخل أطول من 200000 حرف.\", \"list\");"
+ },
+ {
+  "k": "ad557e02dbe6",
+  "text": "القائمة بعد الترتيب",
+  "ctx": "{ label: \"القائمة بعد الترتيب\", value: sortedText, text: sortedText },"
+ },
+ {
+  "k": "343155db133c",
+  "text": "عدد المقارنات",
+  "ctx": "{ label: \"عدد المقارنات\", value: compText },"
+ },
+ {
+  "k": "b6b3a7cd4fd0",
+  "text": "التعقيد الزمني (أفضل / متوسط / أسوأ)",
+  "ctx": "{ label: \"التعقيد الزمني (أفضل / متوسط / أسوأ)\", value: `${info.best} / ${info.average} / ${info.worst}` },"
+ },
+ {
+  "k": "9eae3abd7e36",
+  "text": "التعقيد المكاني",
+  "ctx": "{ label: \"التعقيد المكاني\", value: info.space },"
+ },
+ {
+  "k": "8c7a7eb6c432",
+  "text": "مستقر (Stable)",
+  "ctx": "{ label: \"مستقر (Stable)\", value: info.stable }"
+ },
+ {
+  "k": "47d609614e84",
+  "text": "الخوارزمية: {%0}. {%1}",
+  "ctx": "`الخوارزمية: ${info.label}. ${info.description}`,"
+ },
+ {
+  "k": "1f75eeb8d672",
+  "text": "ترتيب النتيجة: {%0}.",
+  "ctx": "`ترتيب النتيجة: ${ORDERS[order]}.`,"
+ },
+ {
+  "k": "15a949f14263",
+  "text": "عدد المقارنات: {%0}.",
+  "ctx": "`عدد المقارنات: ${compText}.`,"
+ },
+ {
+  "k": "aeec7e1f5626",
+  "text": "التعقيد الزمني: أفضل حالة {%0}، متوسط {%1}، أسوأ حالة {%2}."
+ },
+ {
+  "k": "c87a6c5cb14d",
+  "text": "تتبّع خطوات الخوارزمية",
+  "ctx": "const blocks = [{ type: \"table\", caption: \"تتبّع خطوات الخوارزمية\", head: info.head, rows: shown, ltr: true }];"
+ },
+ {
+  "k": "3af1c5c8c1e3",
+  "text": "عُرضت أول {%0} خطوة من أصل {%1} خطوة.",
+  "ctx": "if (run.rows.length > MAX_ROWS) blocks.push({ type: \"note\", text: `عُرضت أول ${MAX_ROWS} خطوة من أصل ${run.rows.length} خطوة.`, tone: \"warn\" });"
+ },
+ {
+  "k": "8b5c3fd34d8a",
+  "text": "توقفت الخوارزمية مبكراً بعد المرور {%0} لأن هذا المرور لم يُجرِ أي تبديل، فالقائمة صارت مرتبة."
+ },
+ {
+  "k": "83925bb2fa60",
+  "text": "{%0} | {%1}: {%2} | المقارنات: {%3}",
+  "ctx": "copy: `${sortedText} | ${info.counter}: ${countText} | المقارنات: ${compText}`"
+ }
+]

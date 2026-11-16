@@ -1,0 +1,12 @@
+{
+ "c05cf431978c": "Simbol tidak dikenal «{%0}» dalam ekspresi logika.",
+ "2e0cec952000": "Masukkan ekspresi logika.",
+ "f9627357b56f": "Ekspresi logika belum lengkap.",
+ "99127c3577ff": "Ada tanda kurung buka yang belum ditutup.",
+ "c1e3b3333721": "Susunan ekspresi logika tidak benar.",
+ "fcd7d7b66007": "Ekspresi logika tidak dapat dipahami sepenuhnya, periksa tanda kurung dan simbolnya.",
+ "7ac036b128a8": "Semua kombinasi menghasilkan 1, sehingga fungsinya = 1.",
+ "7e097c014f67": "Setelah implikan esensial, masih ada minterm yang belum tercakup ({%0}), sehingga kami memilih himpunan implikan prima terkecil yang mencakupnya{%1}.",
+ "6ce6b83288aa": " dengan metode Petrick (pencarian menyeluruh)",
+ "95a92be8ac8d": " dengan metode serakah"
+}

@@ -1,0 +1,12 @@
+{
+  "c05cf431978c": "Unrecognized symbol «{%0}» in the logical expression.",
+  "2e0cec952000": "Enter a logical expression.",
+  "f9627357b56f": "The logical expression is incomplete.",
+  "99127c3577ff": "There is an open parenthesis that was not closed.",
+  "c1e3b3333721": "The logical expression has invalid syntax.",
+  "fcd7d7b66007": "The logical expression could not be fully parsed. Check the parentheses and symbols.",
+  "7ac036b128a8": "All combinations give 1, so the function = 1.",
+  "7e097c014f67": "After the essential prime implicants, some minterms remained uncovered ({%0}), so we chose the smallest set of prime implicants that covers them{%1}.",
+  "6ce6b83288aa": " using Petrick's method (exhaustive search)",
+  "95a92be8ac8d": " using a greedy method"
+}

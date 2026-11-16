@@ -1,0 +1,8 @@
+{
+ "efe61db9c4a5": "Transfer function",
+ "42a87a2123cc": "{%0} must be a rational function of s (a ratio of polynomials).",
+ "1d5c23e7cbe5": "{%0} is zero.",
+ "e336d0460b95": "{%0} must be a polynomial, not a fraction.",
+ "6716e08fbdd5": "The denominator of {%0} must contain s.",
+ "34e363f7e8a5": "The maximum degree is 12."
+}

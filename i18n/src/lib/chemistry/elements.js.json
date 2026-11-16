@@ -1,0 +1,592 @@
+[
+ {
+  "k": "f7a1b979fb9f",
+  "text": "هيدروجين",
+  "ctx": "{ z: 1, symbol: \"H\", en: \"Hydrogen\", ar: \"هيدروجين\", mass: 1.008, group: 1, period: 1, category: \"nonmetal\" },"
+ },
+ {
+  "k": "9eb010aa71c7",
+  "text": "هيليوم",
+  "ctx": "{ z: 2, symbol: \"He\", en: \"Helium\", ar: \"هيليوم\", mass: 4.0026, group: 18, period: 1, category: \"noble-gas\" },"
+ },
+ {
+  "k": "f276cbf164a9",
+  "text": "ليثيوم",
+  "ctx": "{ z: 3, symbol: \"Li\", en: \"Lithium\", ar: \"ليثيوم\", mass: 6.94, group: 1, period: 2, category: \"alkali\" },"
+ },
+ {
+  "k": "0db3292256d9",
+  "text": "بيريليوم",
+  "ctx": "{ z: 4, symbol: \"Be\", en: \"Beryllium\", ar: \"بيريليوم\", mass: 9.0122, group: 2, period: 2, category: \"alkaline-earth\" },"
+ },
+ {
+  "k": "1b93f1573439",
+  "text": "بورون",
+  "ctx": "{ z: 5, symbol: \"B\", en: \"Boron\", ar: \"بورون\", mass: 10.81, group: 13, period: 2, category: \"metalloid\" },"
+ },
+ {
+  "k": "a8549b1fab87",
+  "text": "كربون",
+  "ctx": "{ z: 6, symbol: \"C\", en: \"Carbon\", ar: \"كربون\", mass: 12.011, group: 14, period: 2, category: \"nonmetal\" },"
+ },
+ {
+  "k": "6a55395af746",
+  "text": "نيتروجين",
+  "ctx": "{ z: 7, symbol: \"N\", en: \"Nitrogen\", ar: \"نيتروجين\", mass: 14.007, group: 15, period: 2, category: \"nonmetal\" },"
+ },
+ {
+  "k": "bd3a068d22f5",
+  "text": "أكسجين",
+  "ctx": "{ z: 8, symbol: \"O\", en: \"Oxygen\", ar: \"أكسجين\", mass: 15.999, group: 16, period: 2, category: \"nonmetal\" },"
+ },
+ {
+  "k": "2c9221b22992",
+  "text": "فلور",
+  "ctx": "{ z: 9, symbol: \"F\", en: \"Fluorine\", ar: \"فلور\", mass: 18.998, group: 17, period: 2, category: \"halogen\" },"
+ },
+ {
+  "k": "9578eb180283",
+  "text": "نيون",
+  "ctx": "{ z: 10, symbol: \"Ne\", en: \"Neon\", ar: \"نيون\", mass: 20.18, group: 18, period: 2, category: \"noble-gas\" },"
+ },
+ {
+  "k": "9b33cbec2f71",
+  "text": "صوديوم",
+  "ctx": "{ z: 11, symbol: \"Na\", en: \"Sodium\", ar: \"صوديوم\", mass: 22.99, group: 1, period: 3, category: \"alkali\" },"
+ },
+ {
+  "k": "4b6ea2ebcb70",
+  "text": "مغنيسيوم",
+  "ctx": "{ z: 12, symbol: \"Mg\", en: \"Magnesium\", ar: \"مغنيسيوم\", mass: 24.305, group: 2, period: 3, category: \"alkaline-earth\" },"
+ },
+ {
+  "k": "41d302194b53",
+  "text": "ألومنيوم",
+  "ctx": "{ z: 13, symbol: \"Al\", en: \"Aluminium\", ar: \"ألومنيوم\", mass: 26.982, group: 13, period: 3, category: \"post-transition\" },"
+ },
+ {
+  "k": "1f0e943e99f5",
+  "text": "سيليكون",
+  "ctx": "{ z: 14, symbol: \"Si\", en: \"Silicon\", ar: \"سيليكون\", mass: 28.085, group: 14, period: 3, category: \"metalloid\" },"
+ },
+ {
+  "k": "8c58e3ee06d5",
+  "text": "فوسفور",
+  "ctx": "{ z: 15, symbol: \"P\", en: \"Phosphorus\", ar: \"فوسفور\", mass: 30.974, group: 15, period: 3, category: \"nonmetal\" },"
+ },
+ {
+  "k": "9d081cd26735",
+  "text": "كبريت",
+  "ctx": "{ z: 16, symbol: \"S\", en: \"Sulfur\", ar: \"كبريت\", mass: 32.06, group: 16, period: 3, category: \"nonmetal\" },"
+ },
+ {
+  "k": "ee3c17402a47",
+  "text": "كلور",
+  "ctx": "{ z: 17, symbol: \"Cl\", en: \"Chlorine\", ar: \"كلور\", mass: 35.45, group: 17, period: 3, category: \"halogen\" },"
+ },
+ {
+  "k": "33bc647ac182",
+  "text": "أرغون",
+  "ctx": "{ z: 18, symbol: \"Ar\", en: \"Argon\", ar: \"أرغون\", mass: 39.948, group: 18, period: 3, category: \"noble-gas\" },"
+ },
+ {
+  "k": "1080fc5b4808",
+  "text": "بوتاسيوم",
+  "ctx": "{ z: 19, symbol: \"K\", en: \"Potassium\", ar: \"بوتاسيوم\", mass: 39.098, group: 1, period: 4, category: \"alkali\" },"
+ },
+ {
+  "k": "9121b101fa24",
+  "text": "كالسيوم",
+  "ctx": "{ z: 20, symbol: \"Ca\", en: \"Calcium\", ar: \"كالسيوم\", mass: 40.078, group: 2, period: 4, category: \"alkaline-earth\" },"
+ },
+ {
+  "k": "c5831321ad52",
+  "text": "سكانديوم",
+  "ctx": "{ z: 21, symbol: \"Sc\", en: \"Scandium\", ar: \"سكانديوم\", mass: 44.956, group: 3, period: 4, category: \"transition\" },"
+ },
+ {
+  "k": "b5d269007c78",
+  "text": "تيتانيوم",
+  "ctx": "{ z: 22, symbol: \"Ti\", en: \"Titanium\", ar: \"تيتانيوم\", mass: 47.867, group: 4, period: 4, category: \"transition\" },"
+ },
+ {
+  "k": "c0c9d636022a",
+  "text": "فاناديوم",
+  "ctx": "{ z: 23, symbol: \"V\", en: \"Vanadium\", ar: \"فاناديوم\", mass: 50.942, group: 5, period: 4, category: \"transition\" },"
+ },
+ {
+  "k": "ffeca012ecf4",
+  "text": "كروم",
+  "ctx": "{ z: 24, symbol: \"Cr\", en: \"Chromium\", ar: \"كروم\", mass: 51.996, group: 6, period: 4, category: \"transition\" },"
+ },
+ {
+  "k": "a10047d30d39",
+  "text": "منغنيز",
+  "ctx": "{ z: 25, symbol: \"Mn\", en: \"Manganese\", ar: \"منغنيز\", mass: 54.938, group: 7, period: 4, category: \"transition\" },"
+ },
+ {
+  "k": "73b249d702bc",
+  "text": "حديد",
+  "ctx": "{ z: 26, symbol: \"Fe\", en: \"Iron\", ar: \"حديد\", mass: 55.845, group: 8, period: 4, category: \"transition\" },"
+ },
+ {
+  "k": "31c6265db25e",
+  "text": "كوبالت",
+  "ctx": "{ z: 27, symbol: \"Co\", en: \"Cobalt\", ar: \"كوبالت\", mass: 58.933, group: 9, period: 4, category: \"transition\" },"
+ },
+ {
+  "k": "81583b5c5ce3",
+  "text": "نيكل",
+  "ctx": "{ z: 28, symbol: \"Ni\", en: \"Nickel\", ar: \"نيكل\", mass: 58.693, group: 10, period: 4, category: \"transition\" },"
+ },
+ {
+  "k": "52ef9a19f215",
+  "text": "نحاس",
+  "ctx": "{ z: 29, symbol: \"Cu\", en: \"Copper\", ar: \"نحاس\", mass: 63.546, group: 11, period: 4, category: \"transition\" },"
+ },
+ {
+  "k": "21b0492b7a21",
+  "text": "زنك",
+  "ctx": "{ z: 30, symbol: \"Zn\", en: \"Zinc\", ar: \"زنك\", mass: 65.38, group: 12, period: 4, category: \"transition\" },"
+ },
+ {
+  "k": "fb31d42182d6",
+  "text": "غاليوم",
+  "ctx": "{ z: 31, symbol: \"Ga\", en: \"Gallium\", ar: \"غاليوم\", mass: 69.723, group: 13, period: 4, category: \"post-transition\" },"
+ },
+ {
+  "k": "236fec0b4aa2",
+  "text": "جرمانيوم",
+  "ctx": "{ z: 32, symbol: \"Ge\", en: \"Germanium\", ar: \"جرمانيوم\", mass: 72.63, group: 14, period: 4, category: \"metalloid\" },"
+ },
+ {
+  "k": "e02dfd5b7f1c",
+  "text": "زرنيخ",
+  "ctx": "{ z: 33, symbol: \"As\", en: \"Arsenic\", ar: \"زرنيخ\", mass: 74.922, group: 15, period: 4, category: \"metalloid\" },"
+ },
+ {
+  "k": "27b82ddc48a6",
+  "text": "سيلينيوم",
+  "ctx": "{ z: 34, symbol: \"Se\", en: \"Selenium\", ar: \"سيلينيوم\", mass: 78.971, group: 16, period: 4, category: \"nonmetal\" },"
+ },
+ {
+  "k": "981425fc144e",
+  "text": "بروم",
+  "ctx": "{ z: 35, symbol: \"Br\", en: \"Bromine\", ar: \"بروم\", mass: 79.904, group: 17, period: 4, category: \"halogen\" },"
+ },
+ {
+  "k": "b49681e378a3",
+  "text": "كريبتون",
+  "ctx": "{ z: 36, symbol: \"Kr\", en: \"Krypton\", ar: \"كريبتون\", mass: 83.798, group: 18, period: 4, category: \"noble-gas\" },"
+ },
+ {
+  "k": "421973bdeae0",
+  "text": "روبيديوم",
+  "ctx": "{ z: 37, symbol: \"Rb\", en: \"Rubidium\", ar: \"روبيديوم\", mass: 85.468, group: 1, period: 5, category: \"alkali\" },"
+ },
+ {
+  "k": "da2eb4e5d7aa",
+  "text": "سترونشيوم",
+  "ctx": "{ z: 38, symbol: \"Sr\", en: \"Strontium\", ar: \"سترونشيوم\", mass: 87.62, group: 2, period: 5, category: \"alkaline-earth\" },"
+ },
+ {
+  "k": "8e14a7f17810",
+  "text": "إيتريوم",
+  "ctx": "{ z: 39, symbol: \"Y\", en: \"Yttrium\", ar: \"إيتريوم\", mass: 88.906, group: 3, period: 5, category: \"transition\" },"
+ },
+ {
+  "k": "35b4570a9996",
+  "text": "زركونيوم",
+  "ctx": "{ z: 40, symbol: \"Zr\", en: \"Zirconium\", ar: \"زركونيوم\", mass: 91.224, group: 4, period: 5, category: \"transition\" },"
+ },
+ {
+  "k": "6fe8324572c7",
+  "text": "نيوبيوم",
+  "ctx": "{ z: 41, symbol: \"Nb\", en: \"Niobium\", ar: \"نيوبيوم\", mass: 92.906, group: 5, period: 5, category: \"transition\" },"
+ },
+ {
+  "k": "3d4ef7ee666a",
+  "text": "موليبدينوم",
+  "ctx": "{ z: 42, symbol: \"Mo\", en: \"Molybdenum\", ar: \"موليبدينوم\", mass: 95.95, group: 6, period: 5, category: \"transition\" },"
+ },
+ {
+  "k": "4337537ee018",
+  "text": "تكنيشيوم",
+  "ctx": "{ z: 43, symbol: \"Tc\", en: \"Technetium\", ar: \"تكنيشيوم\", mass: 98, group: 7, period: 5, category: \"transition\" },"
+ },
+ {
+  "k": "a092750c78d7",
+  "text": "روثينيوم",
+  "ctx": "{ z: 44, symbol: \"Ru\", en: \"Ruthenium\", ar: \"روثينيوم\", mass: 101.07, group: 8, period: 5, category: \"transition\" },"
+ },
+ {
+  "k": "d553fb5e8f07",
+  "text": "روديوم",
+  "ctx": "{ z: 45, symbol: \"Rh\", en: \"Rhodium\", ar: \"روديوم\", mass: 102.91, group: 9, period: 5, category: \"transition\" },"
+ },
+ {
+  "k": "02679aa93924",
+  "text": "بالاديوم",
+  "ctx": "{ z: 46, symbol: \"Pd\", en: \"Palladium\", ar: \"بالاديوم\", mass: 106.42, group: 10, period: 5, category: \"transition\" },"
+ },
+ {
+  "k": "25b087519b53",
+  "text": "فضة",
+  "ctx": "{ z: 47, symbol: \"Ag\", en: \"Silver\", ar: \"فضة\", mass: 107.87, group: 11, period: 5, category: \"transition\" },"
+ },
+ {
+  "k": "05a5b11b5920",
+  "text": "كادميوم",
+  "ctx": "{ z: 48, symbol: \"Cd\", en: \"Cadmium\", ar: \"كادميوم\", mass: 112.41, group: 12, period: 5, category: \"transition\" },"
+ },
+ {
+  "k": "18a065b35150",
+  "text": "إنديوم",
+  "ctx": "{ z: 49, symbol: \"In\", en: \"Indium\", ar: \"إنديوم\", mass: 114.82, group: 13, period: 5, category: \"post-transition\" },"
+ },
+ {
+  "k": "dfc8df5b3f93",
+  "text": "قصدير",
+  "ctx": "{ z: 50, symbol: \"Sn\", en: \"Tin\", ar: \"قصدير\", mass: 118.71, group: 14, period: 5, category: \"post-transition\" },"
+ },
+ {
+  "k": "13f88c4144f5",
+  "text": "أنتيمون",
+  "ctx": "{ z: 51, symbol: \"Sb\", en: \"Antimony\", ar: \"أنتيمون\", mass: 121.76, group: 15, period: 5, category: \"metalloid\" },"
+ },
+ {
+  "k": "1b1e77b78c0b",
+  "text": "تيلوريوم",
+  "ctx": "{ z: 52, symbol: \"Te\", en: \"Tellurium\", ar: \"تيلوريوم\", mass: 127.6, group: 16, period: 5, category: \"metalloid\" },"
+ },
+ {
+  "k": "d13dc5a96f6e",
+  "text": "يود",
+  "ctx": "{ z: 53, symbol: \"I\", en: \"Iodine\", ar: \"يود\", mass: 126.9, group: 17, period: 5, category: \"halogen\" },"
+ },
+ {
+  "k": "93cd5f3194ec",
+  "text": "زينون",
+  "ctx": "{ z: 54, symbol: \"Xe\", en: \"Xenon\", ar: \"زينون\", mass: 131.29, group: 18, period: 5, category: \"noble-gas\" },"
+ },
+ {
+  "k": "b2b3ee905ddf",
+  "text": "سيزيوم",
+  "ctx": "{ z: 55, symbol: \"Cs\", en: \"Caesium\", ar: \"سيزيوم\", mass: 132.91, group: 1, period: 6, category: \"alkali\" },"
+ },
+ {
+  "k": "6a19b8b70f4d",
+  "text": "باريوم",
+  "ctx": "{ z: 56, symbol: \"Ba\", en: \"Barium\", ar: \"باريوم\", mass: 137.33, group: 2, period: 6, category: \"alkaline-earth\" },"
+ },
+ {
+  "k": "f0520b423d7d",
+  "text": "لانثانوم",
+  "ctx": "{ z: 57, symbol: \"La\", en: \"Lanthanum\", ar: \"لانثانوم\", mass: 138.91, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "c3b45a99e9ad",
+  "text": "سيريوم",
+  "ctx": "{ z: 58, symbol: \"Ce\", en: \"Cerium\", ar: \"سيريوم\", mass: 140.12, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "531a4c83dbf7",
+  "text": "براسيوديميوم",
+  "ctx": "{ z: 59, symbol: \"Pr\", en: \"Praseodymium\", ar: \"براسيوديميوم\", mass: 140.91, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "64d49796d13b",
+  "text": "نيوديميوم",
+  "ctx": "{ z: 60, symbol: \"Nd\", en: \"Neodymium\", ar: \"نيوديميوم\", mass: 144.24, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "ee394adf657f",
+  "text": "بروميثيوم",
+  "ctx": "{ z: 61, symbol: \"Pm\", en: \"Promethium\", ar: \"بروميثيوم\", mass: 145, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "62d64be590c0",
+  "text": "ساماريوم",
+  "ctx": "{ z: 62, symbol: \"Sm\", en: \"Samarium\", ar: \"ساماريوم\", mass: 150.36, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "20e03f107e89",
+  "text": "يوروبيوم",
+  "ctx": "{ z: 63, symbol: \"Eu\", en: \"Europium\", ar: \"يوروبيوم\", mass: 151.96, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "63c8a393cc59",
+  "text": "غادولينيوم",
+  "ctx": "{ z: 64, symbol: \"Gd\", en: \"Gadolinium\", ar: \"غادولينيوم\", mass: 157.25, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "3178f59e967a",
+  "text": "تيربيوم",
+  "ctx": "{ z: 65, symbol: \"Tb\", en: \"Terbium\", ar: \"تيربيوم\", mass: 158.93, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "70db5ae7837c",
+  "text": "ديسبروسيوم",
+  "ctx": "{ z: 66, symbol: \"Dy\", en: \"Dysprosium\", ar: \"ديسبروسيوم\", mass: 162.5, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "1e063c61d238",
+  "text": "هولميوم",
+  "ctx": "{ z: 67, symbol: \"Ho\", en: \"Holmium\", ar: \"هولميوم\", mass: 164.93, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "684fe04b2dfe",
+  "text": "إربيوم",
+  "ctx": "{ z: 68, symbol: \"Er\", en: \"Erbium\", ar: \"إربيوم\", mass: 167.26, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "bee5560936f1",
+  "text": "ثوليوم",
+  "ctx": "{ z: 69, symbol: \"Tm\", en: \"Thulium\", ar: \"ثوليوم\", mass: 168.93, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "1596da33585b",
+  "text": "يتربيوم",
+  "ctx": "{ z: 70, symbol: \"Yb\", en: \"Ytterbium\", ar: \"يتربيوم\", mass: 173.05, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "1e41e922b51c",
+  "text": "لوتيتيوم",
+  "ctx": "{ z: 71, symbol: \"Lu\", en: \"Lutetium\", ar: \"لوتيتيوم\", mass: 174.97, group: null, period: 6, category: \"lanthanide\" },"
+ },
+ {
+  "k": "be54f63adcba",
+  "text": "هافنيوم",
+  "ctx": "{ z: 72, symbol: \"Hf\", en: \"Hafnium\", ar: \"هافنيوم\", mass: 178.49, group: 4, period: 6, category: \"transition\" },"
+ },
+ {
+  "k": "50b07fb6d5cc",
+  "text": "تانتالوم",
+  "ctx": "{ z: 73, symbol: \"Ta\", en: \"Tantalum\", ar: \"تانتالوم\", mass: 180.95, group: 5, period: 6, category: \"transition\" },"
+ },
+ {
+  "k": "82d7332eca73",
+  "text": "تنغستن",
+  "ctx": "{ z: 74, symbol: \"W\", en: \"Tungsten\", ar: \"تنغستن\", mass: 183.84, group: 6, period: 6, category: \"transition\" },"
+ },
+ {
+  "k": "9ffb07f11d7e",
+  "text": "رينيوم",
+  "ctx": "{ z: 75, symbol: \"Re\", en: \"Rhenium\", ar: \"رينيوم\", mass: 186.21, group: 7, period: 6, category: \"transition\" },"
+ },
+ {
+  "k": "6c9cf9e52cfd",
+  "text": "أوزميوم",
+  "ctx": "{ z: 76, symbol: \"Os\", en: \"Osmium\", ar: \"أوزميوم\", mass: 190.23, group: 8, period: 6, category: \"transition\" },"
+ },
+ {
+  "k": "d3c068a7fbcd",
+  "text": "إريديوم",
+  "ctx": "{ z: 77, symbol: \"Ir\", en: \"Iridium\", ar: \"إريديوم\", mass: 192.22, group: 9, period: 6, category: \"transition\" },"
+ },
+ {
+  "k": "23f9883e1a7d",
+  "text": "بلاتين",
+  "ctx": "{ z: 78, symbol: \"Pt\", en: \"Platinum\", ar: \"بلاتين\", mass: 195.08, group: 10, period: 6, category: \"transition\" },"
+ },
+ {
+  "k": "d76ed4f3cea0",
+  "text": "ذهب",
+  "ctx": "{ z: 79, symbol: \"Au\", en: \"Gold\", ar: \"ذهب\", mass: 196.97, group: 11, period: 6, category: \"transition\" },"
+ },
+ {
+  "k": "2f1fdf8fee09",
+  "text": "زئبق",
+  "ctx": "{ z: 80, symbol: \"Hg\", en: \"Mercury\", ar: \"زئبق\", mass: 200.59, group: 12, period: 6, category: \"transition\" },"
+ },
+ {
+  "k": "e55ef4dff32a",
+  "text": "ثاليوم",
+  "ctx": "{ z: 81, symbol: \"Tl\", en: \"Thallium\", ar: \"ثاليوم\", mass: 204.38, group: 13, period: 6, category: \"post-transition\" },"
+ },
+ {
+  "k": "c57d2f08d7e3",
+  "text": "رصاص",
+  "ctx": "{ z: 82, symbol: \"Pb\", en: \"Lead\", ar: \"رصاص\", mass: 207.2, group: 14, period: 6, category: \"post-transition\" },"
+ },
+ {
+  "k": "45f66da5a138",
+  "text": "بزموت",
+  "ctx": "{ z: 83, symbol: \"Bi\", en: \"Bismuth\", ar: \"بزموت\", mass: 208.98, group: 15, period: 6, category: \"post-transition\" },"
+ },
+ {
+  "k": "422d47748c71",
+  "text": "بولونيوم",
+  "ctx": "{ z: 84, symbol: \"Po\", en: \"Polonium\", ar: \"بولونيوم\", mass: 209, group: 16, period: 6, category: \"metalloid\" },"
+ },
+ {
+  "k": "c78a28566d42",
+  "text": "أستاتين",
+  "ctx": "{ z: 85, symbol: \"At\", en: \"Astatine\", ar: \"أستاتين\", mass: 210, group: 17, period: 6, category: \"halogen\" },"
+ },
+ {
+  "k": "36086fffd24a",
+  "text": "رادون",
+  "ctx": "{ z: 86, symbol: \"Rn\", en: \"Radon\", ar: \"رادون\", mass: 222, group: 18, period: 6, category: \"noble-gas\" },"
+ },
+ {
+  "k": "d2529115055d",
+  "text": "فرانسيوم",
+  "ctx": "{ z: 87, symbol: \"Fr\", en: \"Francium\", ar: \"فرانسيوم\", mass: 223, group: 1, period: 7, category: \"alkali\" },"
+ },
+ {
+  "k": "e8ac63e2bfd1",
+  "text": "راديوم",
+  "ctx": "{ z: 88, symbol: \"Ra\", en: \"Radium\", ar: \"راديوم\", mass: 226, group: 2, period: 7, category: \"alkaline-earth\" },"
+ },
+ {
+  "k": "f1bc35358965",
+  "text": "أكتينيوم",
+  "ctx": "{ z: 89, symbol: \"Ac\", en: \"Actinium\", ar: \"أكتينيوم\", mass: 227, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "55bfb446392f",
+  "text": "ثوريوم",
+  "ctx": "{ z: 90, symbol: \"Th\", en: \"Thorium\", ar: \"ثوريوم\", mass: 232.04, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "62d26182b99a",
+  "text": "بروتكتينيوم",
+  "ctx": "{ z: 91, symbol: \"Pa\", en: \"Protactinium\", ar: \"بروتكتينيوم\", mass: 231.04, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "69a3330a842c",
+  "text": "يورانيوم",
+  "ctx": "{ z: 92, symbol: \"U\", en: \"Uranium\", ar: \"يورانيوم\", mass: 238.03, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "8a6d2a7fdee3",
+  "text": "نبتونيوم",
+  "ctx": "{ z: 93, symbol: \"Np\", en: \"Neptunium\", ar: \"نبتونيوم\", mass: 237, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "eb76b9625edc",
+  "text": "بلوتونيوم",
+  "ctx": "{ z: 94, symbol: \"Pu\", en: \"Plutonium\", ar: \"بلوتونيوم\", mass: 244, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "d1df1abc7254",
+  "text": "أمريسيوم",
+  "ctx": "{ z: 95, symbol: \"Am\", en: \"Americium\", ar: \"أمريسيوم\", mass: 243, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "2f410b544920",
+  "text": "كوريوم",
+  "ctx": "{ z: 96, symbol: \"Cm\", en: \"Curium\", ar: \"كوريوم\", mass: 247, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "947e8c3e274f",
+  "text": "بركيليوم",
+  "ctx": "{ z: 97, symbol: \"Bk\", en: \"Berkelium\", ar: \"بركيليوم\", mass: 247, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "bbb0bd1f3281",
+  "text": "كاليفورنيوم",
+  "ctx": "{ z: 98, symbol: \"Cf\", en: \"Californium\", ar: \"كاليفورنيوم\", mass: 251, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "4eef29271ee4",
+  "text": "أينشتاينيوم",
+  "ctx": "{ z: 99, symbol: \"Es\", en: \"Einsteinium\", ar: \"أينشتاينيوم\", mass: 252, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "89ea7fd8566f",
+  "text": "فرميوم",
+  "ctx": "{ z: 100, symbol: \"Fm\", en: \"Fermium\", ar: \"فرميوم\", mass: 257, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "089d35ab01b6",
+  "text": "منديليفيوم",
+  "ctx": "{ z: 101, symbol: \"Md\", en: \"Mendelevium\", ar: \"منديليفيوم\", mass: 258, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "584c951220c8",
+  "text": "نوبليوم",
+  "ctx": "{ z: 102, symbol: \"No\", en: \"Nobelium\", ar: \"نوبليوم\", mass: 259, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "a364955ca775",
+  "text": "لورنسيوم",
+  "ctx": "{ z: 103, symbol: \"Lr\", en: \"Lawrencium\", ar: \"لورنسيوم\", mass: 266, group: null, period: 7, category: \"actinide\" },"
+ },
+ {
+  "k": "31727d583ba0",
+  "text": "رذرفورديوم",
+  "ctx": "{ z: 104, symbol: \"Rf\", en: \"Rutherfordium\", ar: \"رذرفورديوم\", mass: 267, group: 4, period: 7, category: \"transition\" },"
+ },
+ {
+  "k": "b5cad6b493f5",
+  "text": "دوبنيوم",
+  "ctx": "{ z: 105, symbol: \"Db\", en: \"Dubnium\", ar: \"دوبنيوم\", mass: 268, group: 5, period: 7, category: \"transition\" },"
+ },
+ {
+  "k": "d8b1faf47050",
+  "text": "سيبورغيوم",
+  "ctx": "{ z: 106, symbol: \"Sg\", en: \"Seaborgium\", ar: \"سيبورغيوم\", mass: 269, group: 6, period: 7, category: \"transition\" },"
+ },
+ {
+  "k": "935e9d8e263a",
+  "text": "بوريوم",
+  "ctx": "{ z: 107, symbol: \"Bh\", en: \"Bohrium\", ar: \"بوريوم\", mass: 270, group: 7, period: 7, category: \"transition\" },"
+ },
+ {
+  "k": "12885be31a44",
+  "text": "هاسيوم",
+  "ctx": "{ z: 108, symbol: \"Hs\", en: \"Hassium\", ar: \"هاسيوم\", mass: 277, group: 8, period: 7, category: \"transition\" },"
+ },
+ {
+  "k": "e4082fd5da9f",
+  "text": "مايتنريوم",
+  "ctx": "{ z: 109, symbol: \"Mt\", en: \"Meitnerium\", ar: \"مايتنريوم\", mass: 278, group: 9, period: 7, category: \"transition\" },"
+ },
+ {
+  "k": "8b78d518ed44",
+  "text": "دارمشتاتيوم",
+  "ctx": "{ z: 110, symbol: \"Ds\", en: \"Darmstadtium\", ar: \"دارمشتاتيوم\", mass: 281, group: 10, period: 7, category: \"transition\" },"
+ },
+ {
+  "k": "6d77c8ba163b",
+  "text": "رونتجنيوم",
+  "ctx": "{ z: 111, symbol: \"Rg\", en: \"Roentgenium\", ar: \"رونتجنيوم\", mass: 282, group: 11, period: 7, category: \"transition\" },"
+ },
+ {
+  "k": "accb87c7075c",
+  "text": "كوبرنيكيوم",
+  "ctx": "{ z: 112, symbol: \"Cn\", en: \"Copernicium\", ar: \"كوبرنيكيوم\", mass: 285, group: 12, period: 7, category: \"transition\" },"
+ },
+ {
+  "k": "68d2980430f9",
+  "text": "نيهونيوم",
+  "ctx": "{ z: 113, symbol: \"Nh\", en: \"Nihonium\", ar: \"نيهونيوم\", mass: 286, group: 13, period: 7, category: \"post-transition\" },"
+ },
+ {
+  "k": "047b59d01249",
+  "text": "فليروفيوم",
+  "ctx": "{ z: 114, symbol: \"Fl\", en: \"Flerovium\", ar: \"فليروفيوم\", mass: 289, group: 14, period: 7, category: \"post-transition\" },"
+ },
+ {
+  "k": "124ae2f17c2e",
+  "text": "موسكوفيوم",
+  "ctx": "{ z: 115, symbol: \"Mc\", en: \"Moscovium\", ar: \"موسكوفيوم\", mass: 290, group: 15, period: 7, category: \"post-transition\" },"
+ },
+ {
+  "k": "106db784dd0a",
+  "text": "ليفرموريوم",
+  "ctx": "{ z: 116, symbol: \"Lv\", en: \"Livermorium\", ar: \"ليفرموريوم\", mass: 293, group: 16, period: 7, category: \"post-transition\" },"
+ },
+ {
+  "k": "9ed7face7a33",
+  "text": "تينيسين",
+  "ctx": "{ z: 117, symbol: \"Ts\", en: \"Tennessine\", ar: \"تينيسين\", mass: 294, group: 17, period: 7, category: \"halogen\" },"
+ },
+ {
+  "k": "ccd4a1d49d89",
+  "text": "أوغانيسون",
+  "ctx": "{ z: 118, symbol: \"Og\", en: \"Oganesson\", ar: \"أوغانيسون\", mass: 294, group: 18, period: 7, category: \"noble-gas\" }"
+ }
+]

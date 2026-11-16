@@ -1,0 +1,22 @@
+{
+  "e6e65f097dcb": "Balances any chemical equation automatically by finding the smallest whole-number coefficients that conserve the number of atoms of each element, with an atom-check table for both sides and the algebraic solution method.",
+  "7a6328ef0ce2": "Balancing equations",
+  "632d157eab0b": "balancing a chemical equation",
+  "1dd63530b50e": "coefficients",
+  "cd6b5d1ac63f": "conservation of mass",
+  "363d68e354c7": "chemical reaction",
+  "57970091eb7f": "Conservation of atoms for each element",
+  "9384f499153c": "Equation",
+  "48baef80653e": "Separate the substances with + and the two sides with an arrow -> or =, such as Fe + O2 -> Fe2O3. Existing coefficients are ignored.",
+  "dce7fc6386d8": "Example: the reaction of potassium permanganate with hydrochloric acid.",
+  "e5afe53a081c": "Balanced equation",
+  "53abdb460f44": "We put an unknown coefficient in front of each substance: {%0}.",
+  "ed8253e03a90": "{%0} in front of {%1}",
+  "808552636f1d": "We write the atom conservation equation for each element:",
+  "2f8b548e6158": "We solve the linear system and choose the smallest positive whole numbers:",
+  "7d0e49c36b3d": "Balanced equation:",
+  "69e172a2a4bc": "Check: number of atoms on both sides",
+  "822741d8afd7": "Element",
+  "896d1ae5e97e": "Reactants",
+  "bc60a9a70e24": "Products"
+}

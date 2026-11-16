@@ -1,0 +1,153 @@
+[
+ {
+  "k": "6ddc0a146ecf",
+  "text": "حوّل بين مقاومة الثرمستور NTC ودرجة الحرارة بنموذج Beta أو معادلة Steinhart-Hart، واحسب معاملات Steinhart-Hart من ثلاث نقاط معايرة."
+ },
+ {
+  "k": "493b84fcc98b",
+  "text": "ثرمستور",
+  "ctx": "keywords: [\"ثرمستور\", \"thermistor\", \"NTC\", \"Steinhart-Hart\", \"ستاينهارت\", \"beta\", \"بيتا\", \"حساس حرارة\"],"
+ },
+ {
+  "k": "46f40b474f26",
+  "text": "ستاينهارت",
+  "ctx": "keywords: [\"ثرمستور\", \"thermistor\", \"NTC\", \"Steinhart-Hart\", \"ستاينهارت\", \"beta\", \"بيتا\", \"حساس حرارة\"],"
+ },
+ {
+  "k": "c7ab5f8faa16",
+  "text": "بيتا",
+  "ctx": "keywords: [\"ثرمستور\", \"thermistor\", \"NTC\", \"Steinhart-Hart\", \"ستاينهارت\", \"beta\", \"بيتا\", \"حساس حرارة\"],"
+ },
+ {
+  "k": "bc0e39fa7c91",
+  "text": "حساس حرارة",
+  "ctx": "keywords: [\"ثرمستور\", \"thermistor\", \"NTC\", \"Steinhart-Hart\", \"ستاينهارت\", \"beta\", \"بيتا\", \"حساس حرارة\"],"
+ },
+ {
+  "k": "768dd300bb4b",
+  "text": "نموذج Beta",
+  "ctx": "{ label: \"نموذج Beta\", tex: \"\\\\frac{1}{T} = \\\\frac{1}{T_0} + \\\\frac{1}{\\\\beta}\\\\ln\\\\frac{R}{R_0}\" },"
+ },
+ {
+  "k": "9fd18c820d28",
+  "text": "معادلة Steinhart-Hart (T بالكلفن)",
+  "ctx": "{ label: \"معادلة Steinhart-Hart (T بالكلفن)\", tex: \"\\\\frac{1}{T} = A + B\\\\ln R + C(\\\\ln R)^3\" }"
+ },
+ {
+  "k": "77f730a8dec3",
+  "text": "النموذج",
+  "ctx": "{ id: \"model\", label: \"النموذج\", type: \"select\", default: \"beta\", options: [[\"beta\", \"Beta\"], [\"sh\", \"Steinhart-Hart بمعاملات معروفة\"], [\"sh3\", \"Steinhart-Hart "
+ },
+ {
+  "k": "9ba2e7ef1a65",
+  "text": "Steinhart-Hart بمعاملات معروفة",
+  "ctx": "{ id: \"model\", label: \"النموذج\", type: \"select\", default: \"beta\", options: [[\"beta\", \"Beta\"], [\"sh\", \"Steinhart-Hart بمعاملات معروفة\"], [\"sh3\", \"Steinhart-Hart "
+ },
+ {
+  "k": "31805a69fa49",
+  "text": "Steinhart-Hart من 3 نقاط",
+  "ctx": "{ id: \"model\", label: \"النموذج\", type: \"select\", default: \"beta\", options: [[\"beta\", \"Beta\"], [\"sh\", \"Steinhart-Hart بمعاملات معروفة\"], [\"sh3\", \"Steinhart-Hart "
+ },
+ {
+  "k": "f57622182b15",
+  "text": "المطلوب",
+  "ctx": "{ id: \"dir\", label: \"المطلوب\", type: \"select\", default: \"r2t\", options: [[\"r2t\", \"الحرارة من المقاومة\"], [\"t2r\", \"المقاومة من الحرارة\"]] },"
+ },
+ {
+  "k": "16829fa85fbb",
+  "text": "الحرارة من المقاومة",
+  "ctx": "{ id: \"dir\", label: \"المطلوب\", type: \"select\", default: \"r2t\", options: [[\"r2t\", \"الحرارة من المقاومة\"], [\"t2r\", \"المقاومة من الحرارة\"]] },"
+ },
+ {
+  "k": "b74b535e6165",
+  "text": "المقاومة من الحرارة",
+  "ctx": "{ id: \"dir\", label: \"المطلوب\", type: \"select\", default: \"r2t\", options: [[\"r2t\", \"الحرارة من المقاومة\"], [\"t2r\", \"المقاومة من الحرارة\"]] },"
+ },
+ {
+  "k": "ad9559eb2e8d",
+  "text": "المقاومة",
+  "ctx": "{ id: \"R\", label: \"المقاومة\", unit: \"Ω\", type: \"number\", default: \"5k\", when: { dir: [\"r2t\"] } },"
+ },
+ {
+  "k": "6ca525dace06",
+  "text": "درجة الحرارة",
+  "ctx": "{ id: \"T\", label: \"درجة الحرارة\", unit: \"°C\", type: \"number\", default: \"50\", when: { dir: [\"t2r\"] } },"
+ },
+ {
+  "k": "3737ab93f98d",
+  "text": "R0 (عند T0)",
+  "ctx": "{ id: \"R0\", label: \"R0 (عند T0)\", unit: \"Ω\", type: \"number\", default: \"10k\", when: { model: [\"beta\"] } },"
+ },
+ {
+  "k": "e84aaa4b3c0d",
+  "text": "ثلاث نقاط معايرة: درجة الحرارة (°C) والمقاومة (Ω)"
+ },
+ {
+  "k": "43328d760550",
+  "text": "مثال: ثرمستور 10k (β = 3950) قيست مقاومته 5 kΩ."
+ },
+ {
+  "k": "cad2271842ca",
+  "text": "أدخل ثلاث نقاط بالضبط، نقطة في كل سطر: الحرارة ثم المقاومة."
+ },
+ {
+  "k": "235606388767",
+  "text": "حرارة النقطة {%0}",
+  "ctx": "const T = num({ t }, \"t\", `حرارة النقطة ${i + 1}`), R = num({ r }, \"r\", `مقاومة النقطة ${i + 1}`, { positive: true });"
+ },
+ {
+  "k": "d6867bee3f2a",
+  "text": "مقاومة النقطة {%0}",
+  "ctx": "const T = num({ t }, \"t\", `حرارة النقطة ${i + 1}`), R = num({ r }, \"r\", `مقاومة النقطة ${i + 1}`, { positive: true });"
+ },
+ {
+  "k": "45af936acc55",
+  "text": "نحوّل T0 إلى الكلفن: {%0} K.",
+  "ctx": "steps.push(`نحوّل T0 إلى الكلفن: ${fmt(T0K, 6)} K.`);"
+ },
+ {
+  "k": "4113d7cf357a",
+  "text": "نعوّض في نموذج Beta:",
+  "ctx": "steps.push({ text: \"نعوّض في نموذج Beta:\", tex: `\\\\frac{1}{T} = \\\\frac{1}{${ntex(T0K, 6)}} + \\\\frac{1}{${ntex(beta)}}\\\\ln\\\\frac{${ntex(R)}}{${ntex(R0)}} = ${nte"
+ },
+ {
+  "k": "c1113b081ce5",
+  "text": "نحل نموذج Beta للمقاومة:",
+  "ctx": "steps.push({ text: \"نحل نموذج Beta للمقاومة:\", tex: `R = R_0\\\\, e^{\\\\beta\\\\left(\\\\frac{1}{T} - \\\\frac{1}{T_0}\\\\right)} = ${ntex(R0)}\\\\, e^{${ntex(beta)}\\\\left(\\"
+ },
+ {
+  "k": "7af63d1c02e4",
+  "text": "النقاط الثلاث لا تحدد معاملات وحيدة (ربما مقاومتان متساويتان)."
+ },
+ {
+  "k": "1ff2b3ed010a",
+  "text": "نكوّن ثلاث معادلات خطية في A و B و C من نقاط المعايرة ونحلها:"
+ },
+ {
+  "k": "2280968befe5",
+  "text": "المعاملات أعطت درجة حرارة غير منطقية لهذه المقاومة."
+ },
+ {
+  "k": "07fa83af6e22",
+  "text": "نعوّض اللوغاريتم الطبيعي للمقاومة:",
+  "ctx": "steps.push({ text: \"نعوّض اللوغاريتم الطبيعي للمقاومة:\", tex: `\\\\ln R = ${ntex(L, 6)},\\\\quad \\\\frac{1}{T} = ${ntex(A, 5)} + ${ntex(B, 5)}(${ntex(L, 5)}) + ${nte"
+ },
+ {
+  "k": "8a30792fd78a",
+  "text": "المعاملات لا تعطي مقاومة صالحة لهذه الحرارة."
+ },
+ {
+  "k": "839f11b55d95",
+  "text": "نحل المعادلة التكعيبية في ln R بالصيغة المغلقة:"
+ },
+ {
+  "k": "cd9c651946bb",
+  "text": "بالكلفن",
+  "ctx": "? [{ label: \"درجة الحرارة\", value: `${fmt(outT, 4)} °C`, text: `T = ${fmt(outT, 4)} °C` }, { label: \"بالكلفن\", value: `${fmt(outT + K, 6)} K` }, { label: \"بالفه"
+ },
+ {
+  "k": "b16c4fa9e7fd",
+  "text": "بالفهرنهايت",
+  "ctx": "? [{ label: \"درجة الحرارة\", value: `${fmt(outT, 4)} °C`, text: `T = ${fmt(outT, 4)} °C` }, { label: \"بالكلفن\", value: `${fmt(outT + K, 6)} K` }, { label: \"بالفه"
+ }
+]

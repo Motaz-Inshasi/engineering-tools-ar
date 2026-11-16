@@ -1,0 +1,6 @@
+{
+  "7b3fe60d3d1b": "Division by the zero polynomial.",
+  "1ffd2107abbc": "The expression contains an undefined value.",
+  "3960288b942e": "Division by zero in the expression.",
+  "660ba00d844e": "The variable «{%0}» is unknown here. Use only the variable {%1}."
+}

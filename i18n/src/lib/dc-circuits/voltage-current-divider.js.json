@@ -1,0 +1,162 @@
+[
+ {
+  "k": "aa7494e1e963",
+  "text": "مقسم الجهد بمقاومتين مع أثر الحمل، ومقسم التيار لأي عدد من الفروع المتوازية، مع الخطوات والتحقق بقانوني كيرشوف."
+ },
+ {
+  "k": "5b600319e532",
+  "text": "مقسم جهد",
+  "ctx": "keywords: [\"مقسم جهد\", \"مقسم تيار\", \"voltage divider\", \"current divider\", \"تأثير الحمل\", \"loading\"],"
+ },
+ {
+  "k": "888fc5c72d7d",
+  "text": "مقسم تيار",
+  "ctx": "keywords: [\"مقسم جهد\", \"مقسم تيار\", \"voltage divider\", \"current divider\", \"تأثير الحمل\", \"loading\"],"
+ },
+ {
+  "k": "40171d7138c6",
+  "text": "تأثير الحمل",
+  "ctx": "keywords: [\"مقسم جهد\", \"مقسم تيار\", \"voltage divider\", \"current divider\", \"تأثير الحمل\", \"loading\"],"
+ },
+ {
+  "k": "bb0d006968be",
+  "text": "مقسم الجهد",
+  "ctx": "{ label: \"مقسم الجهد\", tex: \"V_{out} = V_{in}\\\\frac{R_2}{R_1 + R_2}\" },"
+ },
+ {
+  "k": "5e32fed95de5",
+  "text": "مقسم التيار",
+  "ctx": "{ label: \"مقسم التيار\", tex: \"I_k = I_T \\\\frac{G_k}{\\\\sum G_i} = I_T\\\\frac{1/R_k}{\\\\sum 1/R_i}\" }"
+ },
+ {
+  "k": "033626158b17",
+  "text": "النوع",
+  "ctx": "{ id: \"mode\", label: \"النوع\", type: \"select\", default: \"voltage\", options: [[\"voltage\", \"مقسم جهد\"], [\"current\", \"مقسم تيار\"]] },"
+ },
+ {
+  "k": "ffeb90e63161",
+  "text": "جهد الدخل Vin",
+  "ctx": "{ id: \"Vin\", label: \"جهد الدخل Vin\", unit: \"V\", type: \"number\", default: \"12\", when: { mode: [\"voltage\"] } },"
+ },
+ {
+  "k": "9f7483f5d49b",
+  "text": "R1 (العلوية)",
+  "ctx": "{ id: \"R1\", label: \"R1 (العلوية)\", unit: \"Ω\", type: \"number\", default: \"10k\", when: { mode: [\"voltage\"] } },"
+ },
+ {
+  "k": "73d1b52b93c0",
+  "text": "R2 (السفلية)",
+  "ctx": "{ id: \"R2\", label: \"R2 (السفلية)\", unit: \"Ω\", type: \"number\", default: \"4.7k\", when: { mode: [\"voltage\"] } },"
+ },
+ {
+  "k": "8343da02ce9b",
+  "text": "مقاومة الحمل على R2 (اختياري)",
+  "ctx": "{ id: \"RL\", label: \"مقاومة الحمل على R2 (اختياري)\", unit: \"Ω\", type: \"number\", when: { mode: [\"voltage\"] } },"
+ },
+ {
+  "k": "95194d0ae619",
+  "text": "التيار الكلي IT",
+  "ctx": "{ id: \"IT\", label: \"التيار الكلي IT\", unit: \"A\", type: \"number\", default: \"10m\", when: { mode: [\"current\"] } },"
+ },
+ {
+  "k": "abc832085043",
+  "text": "مقاومات الفروع المتوازية",
+  "ctx": "{ id: \"list\", label: \"مقاومات الفروع المتوازية\", unit: \"Ω\", type: \"text\", default: \"1k, 2.2k, 4.7k\", when: { mode: [\"current\"] } }"
+ },
+ {
+  "k": "c1beca0f9891",
+  "text": "مثال: مقسم 10k و 4.7k من 12 V، مع حمل 10k يخفض المخرج."
+ },
+ {
+  "k": "f6bf35a62fd7",
+  "text": "جهد الدخل",
+  "ctx": "const Vin = num(input, \"Vin\", \"جهد الدخل\");"
+ },
+ {
+  "k": "9cd513a27392",
+  "text": "مقاومة الحمل",
+  "ctx": "const RL = num(input, \"RL\", \"مقاومة الحمل\", { optional: true, positive: true });"
+ },
+ {
+  "k": "8b9ed84af66f",
+  "text": "بلا حمل:",
+  "ctx": "const steps = [{ text: \"بلا حمل:\", tex: `V_{out} = ${ntex(Vin)} \\\\times \\\\frac{${ntex(R2)}}{${ntex(R1)} + ${ntex(R2)}} = ${ntex(unloaded, 6)}\\\\ V` }];"
+ },
+ {
+  "k": "55c2d8d80d57",
+  "text": "الحمل يوازي R2 فيخفض مقاومتها الفعالة:",
+  "ctx": "steps.push({ text: \"الحمل يوازي R2 فيخفض مقاومتها الفعالة:\", tex: `R_2 \\\\parallel R_L = \\\\frac{${ntex(R2)} \\\\times ${ntex(RL)}}{${ntex(R2)} + ${ntex(RL)}} = ${n"
+ },
+ {
+  "k": "33bd50ca734f",
+  "text": "انخفض المخرج بنسبة {%0}% بسبب الحمل. لتقليل الأثر اجعل الحمل أكبر بعشر مرات على الأقل من R2."
+ },
+ {
+  "k": "4cd05a451965",
+  "text": "الجهد بلا حمل",
+  "ctx": "results.push({ label: \"الجهد بلا حمل\", value: eng(unloaded, \"V\", 4) });"
+ },
+ {
+  "k": "9885cd4f81c2",
+  "text": "تيار المقسم وتحقق KVL:",
+  "ctx": "steps.push({ text: \"تيار المقسم وتحقق KVL:\", tex: `I = \\\\frac{V_{in}}{R_1 + R_{2,eff}} = ${ntex(I, 6)}\\\\ A,\\\\quad I R_1 + V_{out} = ${ntex(I * R1 + Vout, 8)}\\\\ "
+ },
+ {
+  "k": "1425cbd33dd2",
+  "text": "جهد الخرج Vout",
+  "ctx": "results: [{ label: \"جهد الخرج Vout\", value: eng(Vout, \"V\", 4), text: `Vout = ${eng(Vout, \"V\", 4)}` }, ...results, { label: \"نسبة التقسيم\", value: Vout / Vin, si"
+ },
+ {
+  "k": "9598cbb7e949",
+  "text": "نسبة التقسيم",
+  "ctx": "results: [{ label: \"جهد الخرج Vout\", value: eng(Vout, \"V\", 4), text: `Vout = ${eng(Vout, \"V\", 4)}` }, ...results, { label: \"نسبة التقسيم\", value: Vout / Vin, si"
+ },
+ {
+  "k": "c0948198ce80",
+  "text": "تيار المقسم",
+  "ctx": "results: [{ label: \"جهد الخرج Vout\", value: eng(Vout, \"V\", 4), text: `Vout = ${eng(Vout, \"V\", 4)}` }, ...results, { label: \"نسبة التقسيم\", value: Vout / Vin, si"
+ },
+ {
+  "k": "f5953f2b440c",
+  "text": "القدرة في R1",
+  "ctx": "results: [{ label: \"جهد الخرج Vout\", value: eng(Vout, \"V\", 4), text: `Vout = ${eng(Vout, \"V\", 4)}` }, ...results, { label: \"نسبة التقسيم\", value: Vout / Vin, si"
+ },
+ {
+  "k": "1919ec613a91",
+  "text": "التيار الكلي",
+  "ctx": "const IT = num(input, \"IT\", \"التيار الكلي\");"
+ },
+ {
+  "k": "c4c85838d46b",
+  "text": "مقاومات الفروع",
+  "ctx": "const list = numList(input, \"list\", \"مقاومات الفروع\", { positive: true, min: 2, max: 20 });"
+ },
+ {
+  "k": "058e1c65f54f",
+  "text": "مجموع الموصليات:",
+  "ctx": "{ text: \"مجموع الموصليات:\", tex: `G_T = ${list.map((r) => `\\\\frac{1}{${ntex(r)}}`).join(\" + \")} = ${ntex(Gt, 6)}\\\\ S` },"
+ },
+ {
+  "k": "82150a9d5c74",
+  "text": "الجهد المشترك على الفروع:",
+  "ctx": "{ text: \"الجهد المشترك على الفروع:\", tex: `V = \\\\frac{I_T}{G_T} = ${ntex(V, 6)}\\\\ V` },"
+ },
+ {
+  "k": "426aaa8eda17",
+  "text": "تحقق KCL: مجموع تيارات الفروع = {%0}، ويساوي التيار الكلي."
+ },
+ {
+  "k": "36b029738752",
+  "text": "لفرعين فقط: $I_1 = I_T \\frac{R_2}{R_1 + R_2}$، أي أن الفرع ذا المقاومة الأصغر يأخذ التيار الأكبر."
+ },
+ {
+  "k": "bed76a379b72",
+  "text": "تيار الفرع {%0} (R = {%1})",
+  "ctx": "results: [...currents.map((c, k) => ({ label: `تيار الفرع ${k + 1} (R = ${eng(list[k], \"Ω\")})`, value: eng(c, \"A\", 4), text: `I${k + 1} = ${eng(c, \"A\", 4)}` }))"
+ },
+ {
+  "k": "8518a529c4a7",
+  "text": "الجهد المشترك",
+  "ctx": "results: [...currents.map((c, k) => ({ label: `تيار الفرع ${k + 1} (R = ${eng(list[k], \"Ω\")})`, value: eng(c, \"A\", 4), text: `I${k + 1} = ${eng(c, \"A\", 4)}` }))"
+ }
+]

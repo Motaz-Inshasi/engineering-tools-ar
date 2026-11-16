@@ -1,0 +1,358 @@
+[
+ {
+  "k": "550a06bd79d4",
+  "text": "سرعة الضوء في الفراغ",
+  "ctx": "{ name: \"سرعة الضوء في الفراغ\", sym: \"c\", value: \"299792458\", unit: \"m/s\", exact: true },"
+ },
+ {
+  "k": "5b7d0cd26c91",
+  "text": "ثابت بلانك",
+  "ctx": "{ name: \"ثابت بلانك\", sym: \"h\", value: \"6.62607015e-34\", unit: \"J·s\", exact: true },"
+ },
+ {
+  "k": "1c2ec4468c00",
+  "text": "الشحنة الأولية (شحنة الإلكترون)",
+  "ctx": "{ name: \"الشحنة الأولية (شحنة الإلكترون)\", sym: \"e\", value: \"1.602176634e-19\", unit: \"C\", exact: true },"
+ },
+ {
+  "k": "60259acafeaa",
+  "text": "ثابت بولتزمان",
+  "ctx": "{ name: \"ثابت بولتزمان\", sym: \"k_B\", value: \"1.380649e-23\", unit: \"J/K\", exact: true },"
+ },
+ {
+  "k": "d0ab4293369b",
+  "text": "عدد أفوجادرو",
+  "ctx": "{ name: \"عدد أفوجادرو\", sym: \"N_A\", value: \"6.02214076e23\", unit: \"1/mol\", exact: true },"
+ },
+ {
+  "k": "e82ca14d4089",
+  "text": "ثابت الغاز العام",
+  "ctx": "{ name: \"ثابت الغاز العام\", sym: \"R\", value: \"8.314462618\", unit: \"J/(mol·K)\", exact: true },"
+ },
+ {
+  "k": "5ecaaef381d9",
+  "text": "سماحية الفراغ",
+  "ctx": "{ name: \"سماحية الفراغ\", sym: \"\\\\varepsilon_0\", value: \"8.8541878128e-12\", unit: \"F/m\", exact: false },"
+ },
+ {
+  "k": "eb60cbf18d35",
+  "text": "نفاذية الفراغ",
+  "ctx": "{ name: \"نفاذية الفراغ\", sym: \"\\\\mu_0\", value: \"1.25663706212e-6\", unit: \"H/m\", exact: false },"
+ },
+ {
+  "k": "ce98b1dedb67",
+  "text": "كتلة الإلكترون",
+  "ctx": "{ name: \"كتلة الإلكترون\", sym: \"m_e\", value: \"9.1093837015e-31\", unit: \"kg\", exact: false },"
+ },
+ {
+  "k": "415e5e03c72d",
+  "text": "ثابت الجاذبية العام",
+  "ctx": "{ name: \"ثابت الجاذبية العام\", sym: \"G\", value: \"6.67430e-11\", unit: \"N·m²/kg²\", exact: false },"
+ },
+ {
+  "k": "a6e916ac68d9",
+  "text": "تسارع الجاذبية المعياري",
+  "ctx": "{ name: \"تسارع الجاذبية المعياري\", sym: \"g_n\", value: \"9.80665\", unit: \"m/s²\", exact: true },"
+ },
+ {
+  "k": "3d5df93ae526",
+  "text": "ثابت ستيفان-بولتزمان",
+  "ctx": "{ name: \"ثابت ستيفان-بولتزمان\", sym: \"\\\\sigma\", value: \"5.670374419e-8\", unit: \"W/(m²·K⁴)\", exact: true },"
+ },
+ {
+  "k": "3cf5f76b980b",
+  "text": "ممانعة الفراغ",
+  "ctx": "{ name: \"ممانعة الفراغ\", sym: \"Z_0\", value: \"376.730313668\", unit: \"Ω\", exact: false },"
+ },
+ {
+  "k": "0ee0b0041a21",
+  "text": "الجهد الحراري عند 25 °C",
+  "ctx": "{ name: \"الجهد الحراري عند 25 °C\", sym: \"V_T = kT/q\", value: \"0.025693\", unit: \"V\", exact: false },"
+ },
+ {
+  "k": "ee4c48ed27cf",
+  "text": "مقاومية النحاس عند 20 °C",
+  "ctx": "{ name: \"مقاومية النحاس عند 20 °C\", sym: \"\\\\rho_{Cu}\", value: \"1.68e-8\", unit: \"Ω·m\", exact: false }"
+ },
+ {
+  "k": "b26403a742bb",
+  "text": "قانون أوم والقدرة",
+  "ctx": "{ cat: \"dc\", name: \"قانون أوم والقدرة\", tex: \"V = IR,\\\\quad P = VI = I^2R = V^2/R\", tool: \"ohms-law\" },"
+ },
+ {
+  "k": "549081a89d39",
+  "text": "المقاومات على التوالي والتوازي",
+  "ctx": "{ cat: \"dc\", name: \"المقاومات على التوالي والتوازي\", tex: \"R_s = \\\\sum R_i,\\\\quad 1/R_p = \\\\sum 1/R_i\", tool: \"series-parallel-resistors\" },"
+ },
+ {
+  "k": "bb0d006968be",
+  "text": "مقسم الجهد",
+  "ctx": "{ cat: \"dc\", name: \"مقسم الجهد\", tex: \"V_{out} = V_{in}\\\\,R_2/(R_1 + R_2)\", tool: \"voltage-current-divider\" },"
+ },
+ {
+  "k": "66aaa2de5de8",
+  "text": "مقاومة السلك",
+  "ctx": "{ cat: \"dc\", name: \"مقاومة السلك\", tex: \"R = \\\\rho\\\\,L/A\", tool: \"ohms-law\" },"
+ },
+ {
+  "k": "feb4d58e7cce",
+  "text": "المفاعلة",
+  "ctx": "{ cat: \"ac\", name: \"المفاعلة\", tex: \"X_L = 2\\\\pi f L,\\\\quad X_C = 1/(2\\\\pi f C)\", tool: \"impedance\" },"
+ },
+ {
+  "k": "3116069f9e80",
+  "text": "تردد الرنين",
+  "ctx": "{ cat: \"ac\", name: \"تردد الرنين\", tex: \"f_0 = 1/(2\\\\pi\\\\sqrt{LC})\", tool: \"resonance\" },"
+ },
+ {
+  "k": "e43352868ac4",
+  "text": "القيمة الفعالة للجيبية",
+  "ctx": "{ cat: \"ac\", name: \"القيمة الفعالة للجيبية\", tex: \"V_{rms} = V_p/\\\\sqrt{2}\", tool: \"phasor\" },"
+ },
+ {
+  "k": "f7002868fa95",
+  "text": "القدرة المركبة",
+  "ctx": "{ cat: \"ac\", name: \"القدرة المركبة\", tex: \"S = VI^*,\\\\ P = VI\\\\cos\\\\theta,\\\\ Q = VI\\\\sin\\\\theta\", tool: \"complex-power\" },"
+ },
+ {
+  "k": "9232b8a6e825",
+  "text": "ثلاثي الطور",
+  "ctx": "{ cat: \"ac\", name: \"ثلاثي الطور\", tex: \"P = \\\\sqrt{3}V_L I_L\\\\cos\\\\theta\", tool: \"three-phase\" },"
+ },
+ {
+  "k": "1848a3077308",
+  "text": "الثابت الزمني",
+  "ctx": "{ cat: \"ac\", name: \"الثابت الزمني\", tex: \"\\\\tau = RC,\\\\quad \\\\tau = L/R\", tool: \"rc-rl-transient\" },"
+ },
+ {
+  "k": "e0896ebcb28a",
+  "text": "طاقة المكثف والملف",
+  "ctx": "{ cat: \"electronics\", name: \"طاقة المكثف والملف\", tex: \"W_C = \\\\tfrac12 CV^2,\\\\quad W_L = \\\\tfrac12 LI^2\", tool: \"capacitor-inductor-combination\" },"
+ },
+ {
+  "k": "694d67bc4561",
+  "text": "سعة المكثف المستوي",
+  "ctx": "{ cat: \"electronics\", name: \"سعة المكثف المستوي\", tex: \"C = \\\\varepsilon_0\\\\varepsilon_r A/d\", tool: \"capacitor-inductor-combination\" },"
+ },
+ {
+  "k": "620365a30a9b",
+  "text": "مكبر العمليات العاكس",
+  "ctx": "{ cat: \"electronics\", name: \"مكبر العمليات العاكس\", tex: \"A = -R_f/R_{in}\", tool: \"op-amp\" },"
+ },
+ {
+  "k": "00a73219b725",
+  "text": "المؤقت 555",
+  "ctx": "{ cat: \"electronics\", name: \"المؤقت 555\", tex: \"f = 1.44/((R_1 + 2R_2)C)\", tool: \"timer-555\" },"
+ },
+ {
+  "k": "d235d426e0f5",
+  "text": "معادلة الدايود (شوكلي)",
+  "ctx": "{ cat: \"electronics\", name: \"معادلة الدايود (شوكلي)\", tex: \"I = I_S\\\\left(e^{V/(nV_T)} - 1\\\\right)\", tool: \"rectifier-ripple\" },"
+ },
+ {
+  "k": "5e09ffa725ae",
+  "text": "الديسيبل",
+  "ctx": "{ cat: \"signals\", name: \"الديسيبل\", tex: \"dB = 20\\\\log_{10}(V_2/V_1) = 10\\\\log_{10}(P_2/P_1)\", tool: \"bode-plot\" },"
+ },
+ {
+  "k": "8bffb0758915",
+  "text": "شرط نايكويست",
+  "ctx": "{ cat: \"signals\", name: \"شرط نايكويست\", tex: \"f_s > 2 f_{max}\", tool: \"sampling-nyquist\" },"
+ },
+ {
+  "k": "f7a0d83599af",
+  "text": "SNR للمحول ADC",
+  "ctx": "{ cat: \"signals\", name: \"SNR للمحول ADC\", tex: \"SNR = 6.02N + 1.76\\\\ dB\", tool: \"adc\" },"
+ },
+ {
+  "k": "df0d62721918",
+  "text": "القانون العام للتربيعية",
+  "ctx": "{ cat: \"math\", name: \"القانون العام للتربيعية\", tex: \"x = (-b \\\\pm \\\\sqrt{b^2 - 4ac})/(2a)\", tool: \"quadratic\" },"
+ },
+ {
+  "k": "ee0e27af7f13",
+  "text": "صيغة أويلر",
+  "ctx": "{ cat: \"math\", name: \"صيغة أويلر\", tex: \"e^{j\\\\theta} = \\\\cos\\\\theta + j\\\\sin\\\\theta\", tool: \"complex-numbers\" },"
+ },
+ {
+  "k": "02d064770a14",
+  "text": "متطابقة فيثاغورس المثلثية",
+  "ctx": "{ cat: \"math\", name: \"متطابقة فيثاغورس المثلثية\", tex: \"\\\\sin^2\\\\theta + \\\\cos^2\\\\theta = 1\", tool: \"trigonometry\" }"
+ },
+ {
+  "k": "11fdef2dc5f8",
+  "text": "الكل",
+  "ctx": "const CATS = [[\"all\", \"الكل\"], [\"constants\", \"الثوابت الفيزيائية\"], [\"dc\", \"التيار المستمر\"], [\"ac\", \"التيار المتردد\"], [\"electronics\", \"الإلكترونيات\"], [\"signa"
+ },
+ {
+  "k": "7d51913b6e94",
+  "text": "الثوابت الفيزيائية",
+  "ctx": "const CATS = [[\"all\", \"الكل\"], [\"constants\", \"الثوابت الفيزيائية\"], [\"dc\", \"التيار المستمر\"], [\"ac\", \"التيار المتردد\"], [\"electronics\", \"الإلكترونيات\"], [\"signa"
+ },
+ {
+  "k": "063d735c9a48",
+  "text": "التيار المستمر",
+  "ctx": "const CATS = [[\"all\", \"الكل\"], [\"constants\", \"الثوابت الفيزيائية\"], [\"dc\", \"التيار المستمر\"], [\"ac\", \"التيار المتردد\"], [\"electronics\", \"الإلكترونيات\"], [\"signa"
+ },
+ {
+  "k": "a1ad9dbf4447",
+  "text": "التيار المتردد",
+  "ctx": "const CATS = [[\"all\", \"الكل\"], [\"constants\", \"الثوابت الفيزيائية\"], [\"dc\", \"التيار المستمر\"], [\"ac\", \"التيار المتردد\"], [\"electronics\", \"الإلكترونيات\"], [\"signa"
+ },
+ {
+  "k": "a867642d194c",
+  "text": "الإلكترونيات",
+  "ctx": "const CATS = [[\"all\", \"الكل\"], [\"constants\", \"الثوابت الفيزيائية\"], [\"dc\", \"التيار المستمر\"], [\"ac\", \"التيار المتردد\"], [\"electronics\", \"الإلكترونيات\"], [\"signa"
+ },
+ {
+  "k": "73ccbd3a3fc1",
+  "text": "الإشارات",
+  "ctx": "const CATS = [[\"all\", \"الكل\"], [\"constants\", \"الثوابت الفيزيائية\"], [\"dc\", \"التيار المستمر\"], [\"ac\", \"التيار المتردد\"], [\"electronics\", \"الإلكترونيات\"], [\"signa"
+ },
+ {
+  "k": "825de8950251",
+  "text": "الرياضيات",
+  "ctx": "const CATS = [[\"all\", \"الكل\"], [\"constants\", \"الثوابت الفيزيائية\"], [\"dc\", \"التيار المستمر\"], [\"ac\", \"التيار المتردد\"], [\"electronics\", \"الإلكترونيات\"], [\"signa"
+ },
+ {
+  "k": "7c7a2cba05f0",
+  "text": "مرجع سريع قابل للبحث للثوابت الفيزيائية (بقيم CODATA 2018 الدقيقة) وأهم قوانين الكهرباء والإلكترونيات والإشارات والرياضيات، مع رابط للأداة المناسبة لكل قانون."
+ },
+ {
+  "k": "23c62278b3aa",
+  "text": "قوانين",
+  "ctx": "keywords: [\"قوانين\", \"ثوابت\", \"ثوابت فيزيائية\", \"مرجع\", \"constants\", \"formulas\", \"سرعة الضوء\", \"بولتزمان\", \"cheat sheet\"],"
+ },
+ {
+  "k": "85fa5e39222b",
+  "text": "ثوابت",
+  "ctx": "keywords: [\"قوانين\", \"ثوابت\", \"ثوابت فيزيائية\", \"مرجع\", \"constants\", \"formulas\", \"سرعة الضوء\", \"بولتزمان\", \"cheat sheet\"],"
+ },
+ {
+  "k": "8aa7bc44c883",
+  "text": "ثوابت فيزيائية",
+  "ctx": "keywords: [\"قوانين\", \"ثوابت\", \"ثوابت فيزيائية\", \"مرجع\", \"constants\", \"formulas\", \"سرعة الضوء\", \"بولتزمان\", \"cheat sheet\"],"
+ },
+ {
+  "k": "7efb1ed49935",
+  "text": "مرجع",
+  "ctx": "keywords: [\"قوانين\", \"ثوابت\", \"ثوابت فيزيائية\", \"مرجع\", \"constants\", \"formulas\", \"سرعة الضوء\", \"بولتزمان\", \"cheat sheet\"],"
+ },
+ {
+  "k": "80639e32f28c",
+  "text": "سرعة الضوء",
+  "ctx": "keywords: [\"قوانين\", \"ثوابت\", \"ثوابت فيزيائية\", \"مرجع\", \"constants\", \"formulas\", \"سرعة الضوء\", \"بولتزمان\", \"cheat sheet\"],"
+ },
+ {
+  "k": "815aa0347c7b",
+  "text": "بولتزمان",
+  "ctx": "keywords: [\"قوانين\", \"ثوابت\", \"ثوابت فيزيائية\", \"مرجع\", \"constants\", \"formulas\", \"سرعة الضوء\", \"بولتزمان\", \"cheat sheet\"],"
+ },
+ {
+  "k": "d3d7d2d824e1",
+  "text": "مثال: الجهد الحراري للدايود",
+  "ctx": "formulas: [{ label: \"مثال: الجهد الحراري للدايود\", tex: \"V_T = \\\\frac{k_B T}{e} \\\\approx 25.7\\\\ mV\\\\ (25^\\\\circ C)\" }],"
+ },
+ {
+  "k": "7c75fec5c0f8",
+  "text": "التصنيف",
+  "ctx": "{ id: \"cat\", label: \"التصنيف\", type: \"select\", default: \"all\", options: CATS },"
+ },
+ {
+  "k": "dcd99fc75553",
+  "text": "بحث (اختياري)",
+  "ctx": "{ id: \"find\", label: \"بحث (اختياري)\", type: \"text\", placeholder: \"مثل: رنين، بولتزمان، مكثف\" }"
+ },
+ {
+  "k": "99c291c1ad4b",
+  "text": "مثل: رنين، بولتزمان، مكثف",
+  "ctx": "{ id: \"find\", label: \"بحث (اختياري)\", type: \"text\", placeholder: \"مثل: رنين، بولتزمان، مكثف\" }"
+ },
+ {
+  "k": "d0784203b889",
+  "text": "مثال: ابحث عن ثابت بولتزمان.",
+  "ctx": "example: { values: { cat: \"all\", find: \"بولتزمان\" }, expect: [\"1.380649e-23\"], note: \"مثال: ابحث عن ثابت بولتزمان.\" },"
+ },
+ {
+  "k": "7baedc016e52",
+  "text": "لا توجد نتائج مطابقة. جرّب كلمة أخرى أو اختر «الكل»."
+ },
+ {
+  "k": "396a6428b841",
+  "text": "الثوابت الفيزيائية (CODATA 2018)",
+  "ctx": "if (consts.length) blocks.push({ type: \"table\", caption: \"الثوابت الفيزيائية (CODATA 2018)\", head: [\"الثابت\", \"الرمز\", \"القيمة\", \"الوحدة\", \"دقيق؟\"], rows: const"
+ },
+ {
+  "k": "3a5a4689af1b",
+  "text": "الثابت",
+  "ctx": "if (consts.length) blocks.push({ type: \"table\", caption: \"الثوابت الفيزيائية (CODATA 2018)\", head: [\"الثابت\", \"الرمز\", \"القيمة\", \"الوحدة\", \"دقيق؟\"], rows: const"
+ },
+ {
+  "k": "9c64331d31ea",
+  "text": "الرمز",
+  "ctx": "if (consts.length) blocks.push({ type: \"table\", caption: \"الثوابت الفيزيائية (CODATA 2018)\", head: [\"الثابت\", \"الرمز\", \"القيمة\", \"الوحدة\", \"دقيق؟\"], rows: const"
+ },
+ {
+  "k": "1a39dcff5b40",
+  "text": "القيمة",
+  "ctx": "if (consts.length) blocks.push({ type: \"table\", caption: \"الثوابت الفيزيائية (CODATA 2018)\", head: [\"الثابت\", \"الرمز\", \"القيمة\", \"الوحدة\", \"دقيق؟\"], rows: const"
+ },
+ {
+  "k": "445014919981",
+  "text": "الوحدة",
+  "ctx": "if (consts.length) blocks.push({ type: \"table\", caption: \"الثوابت الفيزيائية (CODATA 2018)\", head: [\"الثابت\", \"الرمز\", \"القيمة\", \"الوحدة\", \"دقيق؟\"], rows: const"
+ },
+ {
+  "k": "824dd88ee96d",
+  "text": "دقيق؟",
+  "ctx": "if (consts.length) blocks.push({ type: \"table\", caption: \"الثوابت الفيزيائية (CODATA 2018)\", head: [\"الثابت\", \"الرمز\", \"القيمة\", \"الوحدة\", \"دقيق؟\"], rows: const"
+ },
+ {
+  "k": "8158e48f6d4c",
+  "text": "نعم (تعريفي)",
+  "ctx": "if (consts.length) blocks.push({ type: \"table\", caption: \"الثوابت الفيزيائية (CODATA 2018)\", head: [\"الثابت\", \"الرمز\", \"القيمة\", \"الوحدة\", \"دقيق؟\"], rows: const"
+ },
+ {
+  "k": "d5a0ffaf9c12",
+  "text": "مقيس",
+  "ctx": "if (consts.length) blocks.push({ type: \"table\", caption: \"الثوابت الفيزيائية (CODATA 2018)\", head: [\"الثابت\", \"الرمز\", \"القيمة\", \"الوحدة\", \"دقيق؟\"], rows: const"
+ },
+ {
+  "k": "063675c645ef",
+  "text": "القوانين",
+  "ctx": "if (forms.length) blocks.push({ type: \"table\", caption: \"القوانين\", head: [\"القانون\", \"الصيغة\", \"الأداة\"], rows: forms.map((f) => [f.name, { tex: f.tex }, { tex"
+ },
+ {
+  "k": "a0c3d17372bb",
+  "text": "القانون",
+  "ctx": "if (forms.length) blocks.push({ type: \"table\", caption: \"القوانين\", head: [\"القانون\", \"الصيغة\", \"الأداة\"], rows: forms.map((f) => [f.name, { tex: f.tex }, { tex"
+ },
+ {
+  "k": "ebcde1248e99",
+  "text": "الصيغة",
+  "ctx": "if (forms.length) blocks.push({ type: \"table\", caption: \"القوانين\", head: [\"القانون\", \"الصيغة\", \"الأداة\"], rows: forms.map((f) => [f.name, { tex: f.tex }, { tex"
+ },
+ {
+  "k": "22c485f0305b",
+  "text": "الأداة",
+  "ctx": "if (forms.length) blocks.push({ type: \"table\", caption: \"القوانين\", head: [\"القانون\", \"الصيغة\", \"الأداة\"], rows: forms.map((f) => [f.name, { tex: f.tex }, { tex"
+ },
+ {
+  "k": "d675ee9668e0",
+  "text": "الثوابت المعلّمة «تعريفي» قيمها دقيقة تماماً منذ إعادة تعريف وحدات SI عام 2019، والباقي قيم مقيسة بآخر توصيات CODATA."
+ },
+ {
+  "k": "7b4aab9babda",
+  "text": "اسم الأداة بجانب كل قانون هو الأداة في هذا الموقع التي تحسبه بالتفصيل."
+ },
+ {
+  "k": "f4126995ff9b",
+  "text": "عدد الثوابت المطابقة",
+  "ctx": "results: [{ label: \"عدد الثوابت المطابقة\", value: consts.length }, { label: \"عدد القوانين المطابقة\", value: forms.length }],"
+ },
+ {
+  "k": "802b0e575cf6",
+  "text": "عدد القوانين المطابقة",
+  "ctx": "results: [{ label: \"عدد الثوابت المطابقة\", value: consts.length }, { label: \"عدد القوانين المطابقة\", value: forms.length }],"
+ }
+]

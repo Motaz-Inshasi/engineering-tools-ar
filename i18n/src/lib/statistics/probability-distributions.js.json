@@ -1,0 +1,315 @@
+[
+ {
+  "k": "5f11d2f53d1b",
+  "text": "احسب الاحتمالات والقيم الحرجة للتوزيعات الشائعة: الطبيعي و t ومربع كاي وذي الحدين وبواسون والأسي والمنتظم، مع الرسم وتظليل المنطقة المطلوبة بدلاً من الجداول الإحصائية."
+ },
+ {
+  "k": "ffb288cdcb9c",
+  "text": "التوزيع الطبيعي",
+  "ctx": "keywords: [\"التوزيع الطبيعي\", \"جدول z\", \"توزيع t\", \"مربع كاي\", \"ذو الحدين\", \"بواسون\", \"التوزيع الأسي\", \"normal distribution\", \"binomial\", \"poisson\", \"القيمة الح"
+ },
+ {
+  "k": "0949f11cfb93",
+  "text": "جدول z",
+  "ctx": "keywords: [\"التوزيع الطبيعي\", \"جدول z\", \"توزيع t\", \"مربع كاي\", \"ذو الحدين\", \"بواسون\", \"التوزيع الأسي\", \"normal distribution\", \"binomial\", \"poisson\", \"القيمة الح"
+ },
+ {
+  "k": "c2f477304f8b",
+  "text": "توزيع t",
+  "ctx": "keywords: [\"التوزيع الطبيعي\", \"جدول z\", \"توزيع t\", \"مربع كاي\", \"ذو الحدين\", \"بواسون\", \"التوزيع الأسي\", \"normal distribution\", \"binomial\", \"poisson\", \"القيمة الح"
+ },
+ {
+  "k": "a47f1526dbf8",
+  "text": "مربع كاي",
+  "ctx": "keywords: [\"التوزيع الطبيعي\", \"جدول z\", \"توزيع t\", \"مربع كاي\", \"ذو الحدين\", \"بواسون\", \"التوزيع الأسي\", \"normal distribution\", \"binomial\", \"poisson\", \"القيمة الح"
+ },
+ {
+  "k": "c0083d07e54f",
+  "text": "ذو الحدين",
+  "ctx": "keywords: [\"التوزيع الطبيعي\", \"جدول z\", \"توزيع t\", \"مربع كاي\", \"ذو الحدين\", \"بواسون\", \"التوزيع الأسي\", \"normal distribution\", \"binomial\", \"poisson\", \"القيمة الح"
+ },
+ {
+  "k": "4b832de522e9",
+  "text": "بواسون",
+  "ctx": "keywords: [\"التوزيع الطبيعي\", \"جدول z\", \"توزيع t\", \"مربع كاي\", \"ذو الحدين\", \"بواسون\", \"التوزيع الأسي\", \"normal distribution\", \"binomial\", \"poisson\", \"القيمة الح"
+ },
+ {
+  "k": "7807e6346e02",
+  "text": "التوزيع الأسي",
+  "ctx": "keywords: [\"التوزيع الطبيعي\", \"جدول z\", \"توزيع t\", \"مربع كاي\", \"ذو الحدين\", \"بواسون\", \"التوزيع الأسي\", \"normal distribution\", \"binomial\", \"poisson\", \"القيمة الح"
+ },
+ {
+  "k": "fa97d790c6fe",
+  "text": "القيمة الحرجة",
+  "ctx": "keywords: [\"التوزيع الطبيعي\", \"جدول z\", \"توزيع t\", \"مربع كاي\", \"ذو الحدين\", \"بواسون\", \"التوزيع الأسي\", \"normal distribution\", \"binomial\", \"poisson\", \"القيمة الح"
+ },
+ {
+  "k": "fdfab237bfb2",
+  "text": "احتمال",
+  "ctx": "keywords: [\"التوزيع الطبيعي\", \"جدول z\", \"توزيع t\", \"مربع كاي\", \"ذو الحدين\", \"بواسون\", \"التوزيع الأسي\", \"normal distribution\", \"binomial\", \"poisson\", \"القيمة الح"
+ },
+ {
+  "k": "1d9ba3b27158",
+  "text": "التوزيع الطبيعي المعياري",
+  "ctx": "{ label: \"التوزيع الطبيعي المعياري\", tex: \"z = \\\\frac{x - \\\\mu}{\\\\sigma},\\\\qquad P(X \\\\le x) = \\\\Phi(z)\" },"
+ },
+ {
+  "k": "2e987499e5fe",
+  "text": "ذو الحدين وبواسون",
+  "ctx": "{ label: \"ذو الحدين وبواسون\", tex: \"P(X = k) = \\\\binom{n}{k} p^k (1-p)^{n-k},\\\\qquad P(X = k) = \\\\frac{\\\\lambda^k e^{-\\\\lambda}}{k!}\" }"
+ },
+ {
+  "k": "b19fa498dd8d",
+  "text": "التوزيع",
+  "ctx": "{ id: \"dist\", label: \"التوزيع\", type: \"select\", default: \"normal\", options: [[\"normal\", \"طبيعي\"], [\"t\", \"t (ستودنت)\"], [\"chi2\", \"مربع كاي χ²\"], [\"binomial\", \"ذو"
+ },
+ {
+  "k": "39feb47b08ce",
+  "text": "طبيعي",
+  "ctx": "{ id: \"dist\", label: \"التوزيع\", type: \"select\", default: \"normal\", options: [[\"normal\", \"طبيعي\"], [\"t\", \"t (ستودنت)\"], [\"chi2\", \"مربع كاي χ²\"], [\"binomial\", \"ذو"
+ },
+ {
+  "k": "7cee00e0135f",
+  "text": "t (ستودنت)",
+  "ctx": "{ id: \"dist\", label: \"التوزيع\", type: \"select\", default: \"normal\", options: [[\"normal\", \"طبيعي\"], [\"t\", \"t (ستودنت)\"], [\"chi2\", \"مربع كاي χ²\"], [\"binomial\", \"ذو"
+ },
+ {
+  "k": "be4585e3b48c",
+  "text": "مربع كاي χ²",
+  "ctx": "{ id: \"dist\", label: \"التوزيع\", type: \"select\", default: \"normal\", options: [[\"normal\", \"طبيعي\"], [\"t\", \"t (ستودنت)\"], [\"chi2\", \"مربع كاي χ²\"], [\"binomial\", \"ذو"
+ },
+ {
+  "k": "497c37f50af8",
+  "text": "أسي",
+  "ctx": "{ id: \"dist\", label: \"التوزيع\", type: \"select\", default: \"normal\", options: [[\"normal\", \"طبيعي\"], [\"t\", \"t (ستودنت)\"], [\"chi2\", \"مربع كاي χ²\"], [\"binomial\", \"ذو"
+ },
+ {
+  "k": "1abd09536f1f",
+  "text": "منتظم",
+  "ctx": "{ id: \"dist\", label: \"التوزيع\", type: \"select\", default: \"normal\", options: [[\"normal\", \"طبيعي\"], [\"t\", \"t (ستودنت)\"], [\"chi2\", \"مربع كاي χ²\"], [\"binomial\", \"ذو"
+ },
+ {
+  "k": "521dd7275d96",
+  "text": "الوسط μ",
+  "ctx": "{ id: \"mu\", label: \"الوسط μ\", type: \"number\", default: \"0\", when: { dist: [\"normal\"] } },"
+ },
+ {
+  "k": "3e6b0b79d77f",
+  "text": "الانحراف المعياري σ",
+  "ctx": "{ id: \"sigma\", label: \"الانحراف المعياري σ\", type: \"number\", default: \"1\", when: { dist: [\"normal\"] } },"
+ },
+ {
+  "k": "9ce9b2394281",
+  "text": "درجات الحرية",
+  "ctx": "{ id: \"df\", label: \"درجات الحرية\", type: \"number\", default: \"10\", when: { dist: [\"t\", \"chi2\"] } },"
+ },
+ {
+  "k": "8414081c9326",
+  "text": "عدد المحاولات n",
+  "ctx": "{ id: \"n\", label: \"عدد المحاولات n\", type: \"number\", default: \"10\", when: { dist: [\"binomial\"] } },"
+ },
+ {
+  "k": "e0683f76d61e",
+  "text": "احتمال النجاح p",
+  "ctx": "{ id: \"p\", label: \"احتمال النجاح p\", type: \"number\", default: \"0.5\", when: { dist: [\"binomial\"] } },"
+ },
+ {
+  "k": "2c5ae351e4aa",
+  "text": "المعدل λ",
+  "ctx": "{ id: \"lambda\", label: \"المعدل λ\", type: \"number\", default: \"3\", when: { dist: [\"poisson\", \"exponential\"] } },"
+ },
+ {
+  "k": "c9ccfeeb5299",
+  "text": "الحد الأدنى a",
+  "ctx": "{ id: \"a\", label: \"الحد الأدنى a\", type: \"number\", default: \"0\", when: { dist: [\"uniform\"] } },"
+ },
+ {
+  "k": "c8dd2bb1ea28",
+  "text": "الحد الأعلى b",
+  "ctx": "{ id: \"b\", label: \"الحد الأعلى b\", type: \"number\", default: \"10\", when: { dist: [\"uniform\"] } },"
+ },
+ {
+  "k": "f57622182b15",
+  "text": "المطلوب",
+  "ctx": "{ id: \"query\", label: \"المطلوب\", type: \"select\", default: \"le\", options: [[\"le\", \"P(X ≤ x)\"], [\"ge\", \"P(X ≥ x)\"], [\"eq\", \"P(X = x) للمتقطع\"], [\"between\", \"P(x₁ "
+ },
+ {
+  "k": "bbbd0082d80a",
+  "text": "P(X = x) للمتقطع",
+  "ctx": "{ id: \"query\", label: \"المطلوب\", type: \"select\", default: \"le\", options: [[\"le\", \"P(X ≤ x)\"], [\"ge\", \"P(X ≥ x)\"], [\"eq\", \"P(X = x) للمتقطع\"], [\"between\", \"P(x₁ "
+ },
+ {
+  "k": "54b71dcb455a",
+  "text": "القيمة x التي يكون عندها P(X ≤ x) = p",
+  "ctx": "{ id: \"query\", label: \"المطلوب\", type: \"select\", default: \"le\", options: [[\"le\", \"P(X ≤ x)\"], [\"ge\", \"P(X ≥ x)\"], [\"eq\", \"P(X = x) للمتقطع\"], [\"between\", \"P(x₁ "
+ },
+ {
+  "k": "d0719830d7a0",
+  "text": "القيمة x (أو x₁)",
+  "ctx": "{ id: \"x\", label: \"القيمة x (أو x₁)\", type: \"number\", default: \"1.96\", when: { query: [\"le\", \"ge\", \"eq\", \"between\"] } },"
+ },
+ {
+  "k": "85dc18b26631",
+  "text": "القيمة x₂",
+  "ctx": "{ id: \"x2\", label: \"القيمة x₂\", type: \"number\", default: \"2\", when: { query: [\"between\"] } },"
+ },
+ {
+  "k": "431d56aafd52",
+  "text": "الاحتمال p",
+  "ctx": "{ id: \"prob\", label: \"الاحتمال p\", type: \"number\", default: \"0.975\", when: { query: [\"inv\"] } }"
+ },
+ {
+  "k": "93e7617124f8",
+  "text": "مثال: نسبة من تقع درجة ذكائهم بين 85 و 115 إذا كان μ = 100 و σ = 15."
+ },
+ {
+  "k": "6fa2ff557feb",
+  "text": "الوسط",
+  "ctx": "const mu = num(input, \"mu\", \"الوسط\"), s = num(input, \"sigma\", \"الانحراف المعياري\", { positive: true });"
+ },
+ {
+  "k": "64c45d9a8761",
+  "text": "الانحراف المعياري",
+  "ctx": "const mu = num(input, \"mu\", \"الوسط\"), s = num(input, \"sigma\", \"الانحراف المعياري\", { positive: true });"
+ },
+ {
+  "k": "3ddb2a1c7ce5",
+  "text": "عدد المحاولات",
+  "ctx": "const n = num(input, \"n\", \"عدد المحاولات\", { integer: true, min: 1, max: 100000 }), p = num(input, \"p\", \"احتمال النجاح\", { min: 0, max: 1 });"
+ },
+ {
+  "k": "2d5aa1cfa063",
+  "text": "احتمال النجاح",
+  "ctx": "const n = num(input, \"n\", \"عدد المحاولات\", { integer: true, min: 1, max: 100000 }), p = num(input, \"p\", \"احتمال النجاح\", { min: 0, max: 1 });"
+ },
+ {
+  "k": "8a9f77c3ebfe",
+  "text": "الحد الأدنى",
+  "ctx": "const a = num(input, \"a\", \"الحد الأدنى\"), b = num(input, \"b\", \"الحد الأعلى\");"
+ },
+ {
+  "k": "b88f26be9870",
+  "text": "الحد الأعلى",
+  "ctx": "const a = num(input, \"a\", \"الحد الأدنى\"), b = num(input, \"b\", \"الحد الأعلى\");"
+ },
+ {
+  "k": "542d79d738d8",
+  "text": "الحد الأعلى b يجب أن يكون أكبر من a.",
+  "ctx": "if (!(b > a)) fail(\"الحد الأعلى b يجب أن يكون أكبر من a.\", \"b\");"
+ },
+ {
+  "k": "fc73b0900c85",
+  "text": "التوزيع المختار:",
+  "ctx": "const steps = [{ text: \"التوزيع المختار:\", tex: `X \\\\sim ${M.tex}` }];"
+ },
+ {
+  "k": "4ad0dc8ee6e2",
+  "text": "الاحتمال",
+  "ctx": "const p = num(input, \"prob\", \"الاحتمال\", { min: 0, max: 1 });"
+ },
+ {
+  "k": "f04130435bc0",
+  "text": "الاحتمال يجب أن يكون بين 0 و 1 (دون الطرفين)."
+ },
+ {
+  "k": "35fdff309d78",
+  "text": "في التوزيع المتقطع نبحث عن أصغر k يحقق P(X ≤ k) ≥ {%0}: k = {%1}، حيث P(X ≤ {%2}) = {%3}."
+ },
+ {
+  "k": "ba394da91595",
+  "text": "نعكس دالة التوزيع التراكمية:",
+  "ctx": "steps.push({ text: \"نعكس دالة التوزيع التراكمية:\", tex: `x = F^{-1}(${ntex(p)}) = ${ntex(ans, 6)}` });"
+ },
+ {
+  "k": "b4c85ec3c159",
+  "text": "أي أن:",
+  "ctx": "if (M.z) steps.push({ text: \"أي أن:\", tex: `z = ${ntex(D.normInv(p), 6)},\\\\quad x = \\\\mu + z\\\\sigma = ${ntex(ans, 6)}` });"
+ },
+ {
+  "k": "807601dbd942",
+  "text": "القيمة x",
+  "ctx": "const x = num(input, \"x\", \"القيمة x\");"
+ },
+ {
+  "k": "66fb7af4ccf2",
+  "text": "في التوزيع المتقطع يجب أن تكون x عدداً صحيحاً."
+ },
+ {
+  "k": "1f71ad7b1d3d",
+  "text": "P(X = x) تساوي صفراً دائماً في التوزيع المتصل. اختر P(X ≤ x) أو مجالاً."
+ },
+ {
+  "k": "6d518f69902f",
+  "text": "P(X ≥ x) = 1 − P(X ≤ x) لأن التوزيع متصل."
+ },
+ {
+  "k": "9120381ed162",
+  "text": "x₂ يجب أن تكون أكبر من أو تساوي x₁.",
+  "ctx": "if (!(x2 >= x)) fail(\"x₂ يجب أن تكون أكبر من أو تساوي x₁.\", \"x2\");"
+ },
+ {
+  "k": "cdf7cbb98fe8",
+  "text": "نطرح: P(X ≤ {%0}) − P(X ≤ {%1}).",
+  "ctx": "steps.push(M.disc ? `نطرح: P(X ≤ ${Math.floor(x2)}) − P(X ≤ ${Math.ceil(x) - 1}).` : \"نطرح: F(x₂) − F(x₁).\");"
+ },
+ {
+  "k": "51d5d6e1ca72",
+  "text": "نطرح: F(x₂) − F(x₁).",
+  "ctx": "steps.push(M.disc ? `نطرح: P(X ≤ ${Math.floor(x2)}) − P(X ≤ ${Math.ceil(x) - 1}).` : \"نطرح: F(x₂) − F(x₁).\");"
+ },
+ {
+  "k": "7f46222139f4",
+  "text": "نحوّل إلى القيمة المعيارية z:",
+  "ctx": "if (M.z) steps.push({ text: \"نحوّل إلى القيمة المعيارية z:\", tex: xs.map((v) => `z = \\\\frac{${ntex(v)} - \\\\mu}{\\\\sigma} = ${ntex(M.z(v), 5)}`).join(\",\\\\quad \") "
+ },
+ {
+  "k": "59d4f1f174eb",
+  "text": "من صيغة ذي الحدين:",
+  "ctx": "if (dist === \"binomial\" && q === \"eq\") steps.push({ text: \"من صيغة ذي الحدين:\", tex: `P(X = ${x}) = ${ntex(P, 6)}` });"
+ },
+ {
+  "k": "d60ab276cc96",
+  "text": "الاحتمال المطلوب:",
+  "ctx": "steps.push({ text: \"الاحتمال المطلوب:\", tex: `${label.replace(/≤/g, \"\\\\le \").replace(/≥/g, \"\\\\ge \")} = ${ntex(P, 6)}` });"
+ },
+ {
+  "k": "c3bb2cdbfbd0",
+  "text": "دالة الكتلة الاحتمالية",
+  "ctx": "blocks.push({ type: \"plot\", title: \"دالة الكتلة الاحتمالية\", xLabel: \"k\", yLabel: \"P(X = k)\", includeZero: true, series: [{ name: \"P(X = k)\", points: all, marke"
+ },
+ {
+  "k": "6736cc667680",
+  "text": "المنطقة المطلوبة",
+  "ctx": "blocks.push({ type: \"plot\", title: \"دالة الكتلة الاحتمالية\", xLabel: \"k\", yLabel: \"P(X = k)\", includeZero: true, series: [{ name: \"P(X = k)\", points: all, marke"
+ },
+ {
+  "k": "5c3ba978ec19",
+  "text": "دالة الكثافة الاحتمالية",
+  "ctx": "blocks.push({ type: \"plot\", title: \"دالة الكثافة الاحتمالية\", xLabel: \"x\", yLabel: \"f(x)\", includeZero: true, series: [{ name: \"f(x)\", points: pts }, ...(sel.le"
+ },
+ {
+  "k": "876925a98640",
+  "text": "القيمة الحرجة عند P(X ≤ x) = {%0}",
+  "ctx": "q === \"inv\" ? { label: `القيمة الحرجة عند P(X ≤ x) = ${fmt(P)}`, value: fmt(ans, 6), text: `x = ${fmt(ans, 6)}` } : { label, value: fmt(P, 6), text: `P = ${fmt("
+ },
+ {
+  "k": "df275c097282",
+  "text": "الوسط E[X]",
+  "ctx": "{ label: \"الوسط E[X]\", value: isFinite(M.mean) ? fmt(M.mean, 6) : \"غير معرّف\" },"
+ },
+ {
+  "k": "78f19e992f73",
+  "text": "غير معرّف",
+  "ctx": "{ label: \"الوسط E[X]\", value: isFinite(M.mean) ? fmt(M.mean, 6) : \"غير معرّف\" },"
+ },
+ {
+  "k": "faf0962a64b0",
+  "text": "التباين Var(X)",
+  "ctx": "{ label: \"التباين Var(X)\", value: isFinite(M.varc) ? fmt(M.varc, 6) : \"غير معرّف\" }"
+ },
+ {
+  "k": "0f9c5fdf4756",
+  "text": "بالنسبة المئوية",
+  "ctx": "if (q !== \"inv\") results.splice(1, 0, { label: \"بالنسبة المئوية\", value: `${fmt(100 * P, 5)}%` });"
+ }
+]

@@ -1,0 +1,282 @@
+[
+ {
+  "k": "e4d87ab93f8d",
+  "text": "أسود",
+  "ctx": "black: { ar: \"أسود\", digit: 0, mult: 1, tc: 250, hex: \"#000000\", fg: \"#ffffff\" },"
+ },
+ {
+  "k": "cd8d5b737db4",
+  "text": "بني",
+  "ctx": "brown: { ar: \"بني\", digit: 1, mult: 10, tol: 1, tc: 100, hex: \"#7b3f00\", fg: \"#ffffff\" },"
+ },
+ {
+  "k": "96cab1ba1b55",
+  "text": "أحمر",
+  "ctx": "red: { ar: \"أحمر\", digit: 2, mult: 100, tol: 2, tc: 50, hex: \"#d32f2f\", fg: \"#ffffff\" },"
+ },
+ {
+  "k": "cb52310b5304",
+  "text": "برتقالي",
+  "ctx": "orange: { ar: \"برتقالي\", digit: 3, mult: 1e3, tc: 15, hex: \"#f57c00\", fg: \"#000000\" },"
+ },
+ {
+  "k": "62b07216189a",
+  "text": "أصفر",
+  "ctx": "yellow: { ar: \"أصفر\", digit: 4, mult: 1e4, tc: 25, hex: \"#fdd835\", fg: \"#000000\" },"
+ },
+ {
+  "k": "a6b0763996cc",
+  "text": "أخضر",
+  "ctx": "green: { ar: \"أخضر\", digit: 5, mult: 1e5, tol: 0.5, tc: 20, hex: \"#388e3c\", fg: \"#ffffff\" },"
+ },
+ {
+  "k": "b2d33354b53c",
+  "text": "أزرق",
+  "ctx": "blue: { ar: \"أزرق\", digit: 6, mult: 1e6, tol: 0.25, tc: 10, hex: \"#1976d2\", fg: \"#ffffff\" },"
+ },
+ {
+  "k": "013ff80b0a98",
+  "text": "بنفسجي",
+  "ctx": "violet: { ar: \"بنفسجي\", digit: 7, mult: 1e7, tol: 0.1, tc: 5, hex: \"#7b1fa2\", fg: \"#ffffff\" },"
+ },
+ {
+  "k": "1a1680d56320",
+  "text": "رمادي",
+  "ctx": "grey: { ar: \"رمادي\", digit: 8, mult: 1e8, tol: 0.05, tc: 1, hex: \"#9e9e9e\", fg: \"#000000\" },"
+ },
+ {
+  "k": "ec42045b5b90",
+  "text": "أبيض",
+  "ctx": "white: { ar: \"أبيض\", digit: 9, mult: 1e9, hex: \"#ffffff\", fg: \"#000000\" },"
+ },
+ {
+  "k": "0b639abc0c7c",
+  "text": "ذهبي",
+  "ctx": "gold: { ar: \"ذهبي\", mult: 0.1, tol: 5, hex: \"#c9a227\", fg: \"#000000\" },"
+ },
+ {
+  "k": "1485ba4f8c58",
+  "text": "فضي",
+  "ctx": "silver: { ar: \"فضي\", mult: 0.01, tol: 10, hex: \"#c0c0c0\", fg: \"#000000\" },"
+ },
+ {
+  "k": "ba0236046728",
+  "text": "بلا شريط",
+  "ctx": "none: { ar: \"بلا شريط\", tol: 20, hex: \"transparent\", fg: \"inherit\" }"
+ },
+ {
+  "k": "9820c946941e",
+  "text": "اقرأ قيمة المقاومة من ألوان الأشرطة (4 أو 5 أو 6 أشرطة) أو حوّل أي قيمة إلى ألوانها، مع نسبة السماحية ومعامل الحرارة ومدى القيمة الفعلية."
+ },
+ {
+  "k": "a605e6c8b608",
+  "text": "ألوان المقاومات",
+  "ctx": "keywords: [\"ألوان المقاومات\", \"كود الألوان\", \"resistor color code\", \"أشرطة المقاومة\", \"قراءة المقاومة\", \"سماحية\"],"
+ },
+ {
+  "k": "e98a27870a79",
+  "text": "كود الألوان",
+  "ctx": "keywords: [\"ألوان المقاومات\", \"كود الألوان\", \"resistor color code\", \"أشرطة المقاومة\", \"قراءة المقاومة\", \"سماحية\"],"
+ },
+ {
+  "k": "308f3a1ac04e",
+  "text": "أشرطة المقاومة",
+  "ctx": "keywords: [\"ألوان المقاومات\", \"كود الألوان\", \"resistor color code\", \"أشرطة المقاومة\", \"قراءة المقاومة\", \"سماحية\"],"
+ },
+ {
+  "k": "c811584024cc",
+  "text": "قراءة المقاومة",
+  "ctx": "keywords: [\"ألوان المقاومات\", \"كود الألوان\", \"resistor color code\", \"أشرطة المقاومة\", \"قراءة المقاومة\", \"سماحية\"],"
+ },
+ {
+  "k": "278b60db3df2",
+  "text": "سماحية",
+  "ctx": "keywords: [\"ألوان المقاومات\", \"كود الألوان\", \"resistor color code\", \"أشرطة المقاومة\", \"قراءة المقاومة\", \"سماحية\"],"
+ },
+ {
+  "k": "edec41737643",
+  "text": "4 أشرطة: رقمان ثم المضاعف ثم السماحية",
+  "ctx": "{ label: \"4 أشرطة: رقمان ثم المضاعف ثم السماحية\", tex: \"R = (10 d_1 + d_2) \\\\times 10^{m}\" },"
+ },
+ {
+  "k": "509dd5df6655",
+  "text": "5 و 6 أشرطة: ثلاثة أرقام ثم المضاعف (والشريط السادس معامل الحرارة)"
+ },
+ {
+  "k": "63db08225f22",
+  "text": "الاتجاه",
+  "ctx": "{ id: \"mode\", label: \"الاتجاه\", type: \"select\", default: \"decode\", options: [[\"decode\", \"من الألوان إلى القيمة\"], [\"encode\", \"من القيمة إلى الألوان\"]] },"
+ },
+ {
+  "k": "88c0f63d64b9",
+  "text": "من الألوان إلى القيمة",
+  "ctx": "{ id: \"mode\", label: \"الاتجاه\", type: \"select\", default: \"decode\", options: [[\"decode\", \"من الألوان إلى القيمة\"], [\"encode\", \"من القيمة إلى الألوان\"]] },"
+ },
+ {
+  "k": "83d71b64d1c4",
+  "text": "من القيمة إلى الألوان",
+  "ctx": "{ id: \"mode\", label: \"الاتجاه\", type: \"select\", default: \"decode\", options: [[\"decode\", \"من الألوان إلى القيمة\"], [\"encode\", \"من القيمة إلى الألوان\"]] },"
+ },
+ {
+  "k": "03e4bcb3c498",
+  "text": "عدد الأشرطة",
+  "ctx": "{ id: \"bands\", label: \"عدد الأشرطة\", type: \"select\", default: \"4\", options: [[\"4\", \"4\"], [\"5\", \"5\"], [\"6\", \"6\"]] },"
+ },
+ {
+  "k": "24133e8ebd24",
+  "text": "الشريط 1",
+  "ctx": "{ id: \"b1\", label: \"الشريط 1\", type: \"select\", default: \"yellow\", options: OPT, when: { mode: [\"decode\"] } },"
+ },
+ {
+  "k": "afa7412cf22c",
+  "text": "الشريط 2",
+  "ctx": "{ id: \"b2\", label: \"الشريط 2\", type: \"select\", default: \"violet\", options: OPT, when: { mode: [\"decode\"] } },"
+ },
+ {
+  "k": "4e049f3b2996",
+  "text": "الشريط 3",
+  "ctx": "{ id: \"b3\", label: \"الشريط 3\", type: \"select\", default: \"red\", options: OPT, when: { mode: [\"decode\"] } },"
+ },
+ {
+  "k": "aff215df8980",
+  "text": "الشريط 4",
+  "ctx": "{ id: \"b4\", label: \"الشريط 4\", type: \"select\", default: \"gold\", options: OPT, when: { mode: [\"decode\"] } },"
+ },
+ {
+  "k": "766691687c76",
+  "text": "الشريط 5",
+  "ctx": "{ id: \"b5\", label: \"الشريط 5\", type: \"select\", default: \"brown\", options: OPT, when: { mode: [\"decode\"], bands: [\"5\", \"6\"] } },"
+ },
+ {
+  "k": "fe3583f348c5",
+  "text": "الشريط 6",
+  "ctx": "{ id: \"b6\", label: \"الشريط 6\", type: \"select\", default: \"red\", options: OPT, when: { mode: [\"decode\"], bands: [\"6\"] } },"
+ },
+ {
+  "k": "54f5519a4c6d",
+  "text": "قيمة المقاومة",
+  "ctx": "{ id: \"value\", label: \"قيمة المقاومة\", unit: \"Ω\", type: \"number\", default: \"4.7k\", when: { mode: [\"encode\"] } },"
+ },
+ {
+  "k": "787d7dfb9b70",
+  "text": "السماحية",
+  "ctx": "{ id: \"tol\", label: \"السماحية\", type: \"select\", default: \"5\", options: TOLS, when: { mode: [\"encode\"] } },"
+ },
+ {
+  "k": "9dac082e0330",
+  "text": "معامل الحرارة (6 أشرطة)",
+  "ctx": "{ id: \"tc\", label: \"معامل الحرارة (6 أشرطة)\", unit: \"ppm/K\", type: \"select\", default: \"50\", options: Object.values(COLORS).filter((c) => c.tc).map((c) => [Strin"
+ },
+ {
+  "k": "610633acd9fc",
+  "text": "مثال: أصفر، بنفسجي، أحمر، ذهبي = 47 × 100 = 4.7 kΩ ±5%."
+ },
+ {
+  "k": "2208032a7698",
+  "text": "اللون «{%0}» لا يصلح للشريط {%1} (شريط رقم)."
+ },
+ {
+  "k": "a28549971bdd",
+  "text": "اللون «{%0}» لا يصلح للمضاعف.",
+  "ctx": "if (!m || m.mult === undefined) fail(`اللون «${m ? m.ar : keys[nd]}» لا يصلح للمضاعف.`, `b${nd + 1}`);"
+ },
+ {
+  "k": "504207672f75",
+  "text": "اللون «{%0}» لا يصلح لشريط السماحية.",
+  "ctx": "if (!t || t.tol === undefined) fail(`اللون «${t ? t.ar : keys[nd + 1]}» لا يصلح لشريط السماحية.`, `b${nd + 2}`);"
+ },
+ {
+  "k": "b12dcde514cc",
+  "text": "اللون «{%0}» لا يصلح لمعامل الحرارة.",
+  "ctx": "if (!c || !c.tc) fail(`اللون «${c ? c.ar : keys[5]}» لا يصلح لمعامل الحرارة.`, \"b6\");"
+ },
+ {
+  "k": "845b842052a8",
+  "text": "القيمة خارج المدى الممكن تمثيله بالألوان (من 0.1 Ω إلى مئات الجيجا أوم)."
+ },
+ {
+  "k": "9d678f0a2847",
+  "text": "الشريط {%0}",
+  "ctx": "const keys = Array.from({ length: bands }, (_, i) => choice(input, `b${i + 1}`, `الشريط ${i + 1}`, Object.keys(COLORS), \"black\"));"
+ },
+ {
+  "k": "2e8f1704c350",
+  "text": "الأشرطة {%0} هي الأرقام {%1}.",
+  "ctx": "steps.push(`الأشرطة ${keys.slice(0, nd).map((k) => COLORS[k].ar).join(\" و\")} هي الأرقام ${keys.slice(0, nd).map((k) => COLORS[k].digit).join(\"\")}.`);"
+ },
+ {
+  "k": "6d4d0edbe679",
+  "text": " و",
+  "ctx": "steps.push(`الأشرطة ${keys.slice(0, nd).map((k) => COLORS[k].ar).join(\" و\")} هي الأرقام ${keys.slice(0, nd).map((k) => COLORS[k].digit).join(\"\")}.`);"
+ },
+ {
+  "k": "9775654bf443",
+  "text": "الشريط {%0} ({%1}) هو المضاعف × {%2}، فالقيمة = {%3} × {%4} = {%5}."
+ },
+ {
+  "k": "a4a8283f047c",
+  "text": "الشريط {%0} ({%1}) يعني سماحية ±{%2}%، فالقيمة الفعلية بين {%3} و {%4}."
+ },
+ {
+  "k": "7d7fce035e3d",
+  "text": "الشريط السادس ({%0}) يعني معامل حرارة {%1} ppm/K، أي تتغير المقاومة {%2} Ω لكل درجة."
+ },
+ {
+  "k": "1a39dcff5b40",
+  "text": "القيمة",
+  "ctx": "results: [{ label: \"القيمة\", value: text, text }, { label: \"أصغر قيمة\", value: eng(r.value * (1 - r.tol / 100), \"Ω\", 5) }, { label: \"أكبر قيمة\", value: eng(r.va"
+ },
+ {
+  "k": "af8db71c4596",
+  "text": "أصغر قيمة",
+  "ctx": "results: [{ label: \"القيمة\", value: text, text }, { label: \"أصغر قيمة\", value: eng(r.value * (1 - r.tol / 100), \"Ω\", 5) }, { label: \"أكبر قيمة\", value: eng(r.va"
+ },
+ {
+  "k": "c2b1f51b8335",
+  "text": "أكبر قيمة",
+  "ctx": "results: [{ label: \"القيمة\", value: text, text }, { label: \"أصغر قيمة\", value: eng(r.value * (1 - r.tol / 100), \"Ω\", 5) }, { label: \"أكبر قيمة\", value: eng(r.va"
+ },
+ {
+  "k": "5c64a988c723",
+  "text": "معامل الحرارة",
+  "ctx": "results: [{ label: \"القيمة\", value: text, text }, { label: \"أصغر قيمة\", value: eng(r.value * (1 - r.tol / 100), \"Ω\", 5) }, { label: \"أكبر قيمة\", value: eng(r.va"
+ },
+ {
+  "k": "ade2104b909e",
+  "text": "الأشرطة",
+  "ctx": "blocks: [{ type: \"table\", caption: \"الأشرطة\", head: keys.map((_, i) => `${i + 1}`), rows: [keys.map(swatch)] }],"
+ },
+ {
+  "k": "e309e83d1fb5",
+  "text": "اختر سماحية صحيحة.",
+  "ctx": "if (!Object.values(COLORS).some((c) => c.tol === tol)) fail(\"اختر سماحية صحيحة.\", \"tol\");"
+ },
+ {
+  "k": "04a07b239b17",
+  "text": "اختر معامل حرارة صحيحاً.",
+  "ctx": "if (bands === 6 && !Object.values(COLORS).some((c) => c.tc === tc)) fail(\"اختر معامل حرارة صحيحاً.\", \"tc\");"
+ },
+ {
+  "k": "5cd287ae9768",
+  "text": "نكتب القيمة {%0} بـ {%1} أرقام معنوية ومضاعف من قوى العشرة: {%2}."
+ },
+ {
+  "k": "c575fa81b90a",
+  "text": "القيمة لا تُمثَّل بدقة بـ {%0} أرقام، فقرّبناها إلى {%1}."
+ },
+ {
+  "k": "d1690fb0ea64",
+  "text": "الألوان بالترتيب: {%0}.",
+  "ctx": "steps.push(`الألوان بالترتيب: ${r.keys.map((k) => COLORS[k].ar).join(\"، \")}.`);"
+ },
+ {
+  "k": "31acd72287a1",
+  "text": "الألوان",
+  "ctx": "results: [{ label: \"الألوان\", value: text, text }, { label: \"القيمة الممثلة\", value: eng(r.exact, \"Ω\", 6) }],"
+ },
+ {
+  "k": "b555471683a3",
+  "text": "القيمة الممثلة",
+  "ctx": "results: [{ label: \"الألوان\", value: text, text }, { label: \"القيمة الممثلة\", value: eng(r.exact, \"Ω\", 6) }],"
+ }
+]

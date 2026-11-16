@@ -1,0 +1,7 @@
+{
+  "953ce1f3bc31": "Addition and subtraction require two matrices with the same dimensions.",
+  "a66e4db77967": "Cannot multiply: the number of columns of the first ({%0}) does not equal the number of rows of the second ({%1}).",
+  "9b3e0271714d": "The determinant is only computed for square matrices.",
+  "67fc31372e4f": "An inverse exists only for square matrices.",
+  "3a4bc298f50a": "Eigenvalues are only computed for square matrices."
+}

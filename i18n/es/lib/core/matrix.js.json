@@ -1,0 +1,7 @@
+{
+  "953ce1f3bc31": "La suma y la resta requieren dos matrices con las mismas dimensiones.",
+  "a66e4db77967": "No se puede multiplicar: el número de columnas de la primera ({%0}) no es igual al número de filas de la segunda ({%1}).",
+  "9b3e0271714d": "El determinante solo se calcula para matrices cuadradas.",
+  "67fc31372e4f": "La inversa solo existe para matrices cuadradas.",
+  "3a4bc298f50a": "Los valores propios solo se calculan para matrices cuadradas."
+}

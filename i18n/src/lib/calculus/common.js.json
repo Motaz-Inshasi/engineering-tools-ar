@@ -1,0 +1,16 @@
+[
+ {
+  "k": "2da816317bc6",
+  "text": "المتغير",
+  "ctx": "const v = str(input, key, \"المتغير\", { default: \"x\" }).trim();"
+ },
+ {
+  "k": "25644279acdd",
+  "text": "المتغير يجب أن يكون حرفاً إنجليزياً واحداً (غير e)."
+ },
+ {
+  "k": "61bd5c950596",
+  "text": "الدالة",
+  "ctx": "export function readExpr(input, key, v, label = \"الدالة\") {"
+ }
+]

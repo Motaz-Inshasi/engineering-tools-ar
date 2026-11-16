@@ -1,0 +1,247 @@
+[
+ {
+  "k": "0982dfcfb30c",
+  "text": "احسب معدل الأيض الأساسي والاحتياج اليومي من السعرات بمعادلتي Mifflin–St Jeor وHarris–Benedict، ثم الهدف حسب التخسيس أو الحفاظ أو الزيادة، مع توزيع البروتين والدهون والكربوهيدرات والماء."
+ },
+ {
+  "k": "ae329a29b7ce",
+  "text": "سعرات حرارية",
+  "ctx": "keywords: [\"سعرات حرارية\", \"BMR\", \"TDEE\", \"معدل الأيض\", \"Mifflin\", \"Harris-Benedict\", \"ماكرو\", \"احتياج الماء\", \"calories\"],"
+ },
+ {
+  "k": "663289f2fd08",
+  "text": "معدل الأيض",
+  "ctx": "keywords: [\"سعرات حرارية\", \"BMR\", \"TDEE\", \"معدل الأيض\", \"Mifflin\", \"Harris-Benedict\", \"ماكرو\", \"احتياج الماء\", \"calories\"],"
+ },
+ {
+  "k": "76bb7b26e3f5",
+  "text": "ماكرو",
+  "ctx": "keywords: [\"سعرات حرارية\", \"BMR\", \"TDEE\", \"معدل الأيض\", \"Mifflin\", \"Harris-Benedict\", \"ماكرو\", \"احتياج الماء\", \"calories\"],"
+ },
+ {
+  "k": "6cbbe6dd13c7",
+  "text": "احتياج الماء",
+  "ctx": "keywords: [\"سعرات حرارية\", \"BMR\", \"TDEE\", \"معدل الأيض\", \"Mifflin\", \"Harris-Benedict\", \"ماكرو\", \"احتياج الماء\", \"calories\"],"
+ },
+ {
+  "k": "ab2542cdcfe4",
+  "text": "BMR = 10w + 6.25h - 5a + \\begin{cases} 5 & \\text{ذكر} \\\\ -161 & \\text{أنثى} \\end{cases}"
+ },
+ {
+  "k": "ebccc21a8d08",
+  "text": "Harris–Benedict المعدلة",
+  "ctx": "{ label: \"Harris–Benedict المعدلة\", tex: \"BMR_{m} = 88.362 + 13.397w + 4.799h - 5.677a,\\\\quad BMR_{f} = 447.593 + 9.247w + 3.098h - 4.330a\" },"
+ },
+ {
+  "k": "b12c1e7b7047",
+  "text": "الاحتياج اليومي والهدف",
+  "ctx": "{ label: \"الاحتياج اليومي والهدف\", tex: \"TDEE = BMR \\\\times k_{activity},\\\\qquad \\\\text{Target} = TDEE + \\\\Delta\" }"
+ },
+ {
+  "k": "da582b1574d6",
+  "text": "الجنس",
+  "ctx": "{ id: \"sex\", label: \"الجنس\", type: \"select\", default: \"male\", options: [[\"male\", \"ذكر\"], [\"female\", \"أنثى\"]] },"
+ },
+ {
+  "k": "e58d947169ad",
+  "text": "ذكر",
+  "ctx": "{ id: \"sex\", label: \"الجنس\", type: \"select\", default: \"male\", options: [[\"male\", \"ذكر\"], [\"female\", \"أنثى\"]] },"
+ },
+ {
+  "k": "55ce050389c5",
+  "text": "أنثى",
+  "ctx": "{ id: \"sex\", label: \"الجنس\", type: \"select\", default: \"male\", options: [[\"male\", \"ذكر\"], [\"female\", \"أنثى\"]] },"
+ },
+ {
+  "k": "18bfd1efda1f",
+  "text": "العمر",
+  "ctx": "{ id: \"age\", label: \"العمر\", unit: \"سنة\", type: \"number\", default: \"25\", help: \"من 15 إلى 100 سنة.\" },"
+ },
+ {
+  "k": "f91a7c9817c8",
+  "text": "سنة",
+  "ctx": "{ id: \"age\", label: \"العمر\", unit: \"سنة\", type: \"number\", default: \"25\", help: \"من 15 إلى 100 سنة.\" },"
+ },
+ {
+  "k": "b4067ca11d94",
+  "text": "من 15 إلى 100 سنة.",
+  "ctx": "{ id: \"age\", label: \"العمر\", unit: \"سنة\", type: \"number\", default: \"25\", help: \"من 15 إلى 100 سنة.\" },"
+ },
+ {
+  "k": "1d0e8ef254da",
+  "text": "الوزن",
+  "ctx": "{ id: \"weight\", label: \"الوزن\", unit: \"kg\", type: \"number\", default: \"70\" },"
+ },
+ {
+  "k": "481c570194ed",
+  "text": "الطول",
+  "ctx": "{ id: \"height\", label: \"الطول\", unit: \"cm\", type: \"number\", default: \"175\" },"
+ },
+ {
+  "k": "59ff1103979a",
+  "text": "مستوى النشاط",
+  "ctx": "{ id: \"activity\", label: \"مستوى النشاط\", type: \"select\", default: \"1.55\", options: [[\"1.2\", \"خامل (1.2)\"], [\"1.375\", \"نشاط خفيف (1.375)\"], [\"1.55\", \"نشاط متوسط "
+ },
+ {
+  "k": "d0007cb3769b",
+  "text": "خامل (1.2)",
+  "ctx": "{ id: \"activity\", label: \"مستوى النشاط\", type: \"select\", default: \"1.55\", options: [[\"1.2\", \"خامل (1.2)\"], [\"1.375\", \"نشاط خفيف (1.375)\"], [\"1.55\", \"نشاط متوسط "
+ },
+ {
+  "k": "8b63208fdcb4",
+  "text": "نشاط خفيف (1.375)",
+  "ctx": "{ id: \"activity\", label: \"مستوى النشاط\", type: \"select\", default: \"1.55\", options: [[\"1.2\", \"خامل (1.2)\"], [\"1.375\", \"نشاط خفيف (1.375)\"], [\"1.55\", \"نشاط متوسط "
+ },
+ {
+  "k": "21d387231f9d",
+  "text": "نشاط متوسط (1.55)",
+  "ctx": "{ id: \"activity\", label: \"مستوى النشاط\", type: \"select\", default: \"1.55\", options: [[\"1.2\", \"خامل (1.2)\"], [\"1.375\", \"نشاط خفيف (1.375)\"], [\"1.55\", \"نشاط متوسط "
+ },
+ {
+  "k": "3a2ba88d3de4",
+  "text": "نشاط عالٍ (1.725)",
+  "ctx": "{ id: \"activity\", label: \"مستوى النشاط\", type: \"select\", default: \"1.55\", options: [[\"1.2\", \"خامل (1.2)\"], [\"1.375\", \"نشاط خفيف (1.375)\"], [\"1.55\", \"نشاط متوسط "
+ },
+ {
+  "k": "635210555f37",
+  "text": "نشاط عالٍ جداً (1.9)",
+  "ctx": "{ id: \"activity\", label: \"مستوى النشاط\", type: \"select\", default: \"1.55\", options: [[\"1.2\", \"خامل (1.2)\"], [\"1.375\", \"نشاط خفيف (1.375)\"], [\"1.55\", \"نشاط متوسط "
+ },
+ {
+  "k": "f0abcf221907",
+  "text": "الهدف",
+  "ctx": "{ id: \"goal\", label: \"الهدف\", type: \"select\", default: \"0\", options: [[\"-500\", \"تخسيس (−500 kcal)\"], [\"0\", \"الحفاظ على الوزن\"], [\"300\", \"زيادة الوزن (+300 kcal)"
+ },
+ {
+  "k": "e568d6a2bfdb",
+  "text": "تخسيس (−500 kcal)",
+  "ctx": "{ id: \"goal\", label: \"الهدف\", type: \"select\", default: \"0\", options: [[\"-500\", \"تخسيس (−500 kcal)\"], [\"0\", \"الحفاظ على الوزن\"], [\"300\", \"زيادة الوزن (+300 kcal)"
+ },
+ {
+  "k": "9e27ca9fc6ad",
+  "text": "الحفاظ على الوزن",
+  "ctx": "{ id: \"goal\", label: \"الهدف\", type: \"select\", default: \"0\", options: [[\"-500\", \"تخسيس (−500 kcal)\"], [\"0\", \"الحفاظ على الوزن\"], [\"300\", \"زيادة الوزن (+300 kcal)"
+ },
+ {
+  "k": "76143c688567",
+  "text": "زيادة الوزن (+300 kcal)",
+  "ctx": "{ id: \"goal\", label: \"الهدف\", type: \"select\", default: \"0\", options: [[\"-500\", \"تخسيس (−500 kcal)\"], [\"0\", \"الحفاظ على الوزن\"], [\"300\", \"زيادة الوزن (+300 kcal)"
+ },
+ {
+  "k": "49b4486ca97e",
+  "text": "مثال: ذكر 25 سنة، 70 kg، 175 cm، نشاط متوسط."
+ },
+ {
+  "k": "191d26bf0cc8",
+  "text": "معادلة Mifflin–St Jeor:",
+  "ctx": "{ text: \"معادلة Mifflin–St Jeor:\", tex: `BMR = 10w + 6.25h - 5a ${sign}` },"
+ },
+ {
+  "k": "2a7973ae680f",
+  "text": "بالتعويض:",
+  "ctx": "{ text: \"بالتعويض:\", tex: `BMR = 10 \\\\times ${ntex(w)} + 6.25 \\\\times ${ntex(h)} - 5 \\\\times ${ntex(age)} ${sign} = ${ntex(mifflin, 6)}\\\\ kcal` },"
+ },
+ {
+  "k": "4dd41cb81952",
+  "text": "الاحتياج اليومي مع النشاط:",
+  "ctx": "{ text: \"الاحتياج اليومي مع النشاط:\", tex: `TDEE = ${ntex(mifflin, 6)} \\\\times ${ntex(act)} = ${ntex(tdee, 6)}\\\\ kcal` },"
+ },
+ {
+  "k": "911b0ef8e2dd",
+  "text": "السعرات المستهدفة:",
+  "ctx": "{ text: \"السعرات المستهدفة:\", tex: `${ntex(tdee, 6)} ${goal < 0 ? \"-\" : \"+\"} ${ntex(Math.abs(goal))} = ${ntex(target, 6)}\\\\ kcal` },"
+ },
+ {
+  "k": "0eacfa260d4f",
+  "text": "توزيع الماكروز على السعرات المستهدفة (بروتين 4، دهون 9، كربوهيدرات 4 kcal لكل غرام):"
+ },
+ {
+  "k": "5a8f46c798dd",
+  "text": "الماء (35 mL لكل كغ):",
+  "ctx": "{ text: \"الماء (35 mL لكل كغ):\", tex: `${ntex(w)} \\\\times 35 = ${ntex(water, 6)}\\\\ mL` }"
+ },
+ {
+  "k": "2b3581265e58",
+  "text": "معدل الأيض الأساسي (Mifflin–St Jeor)",
+  "ctx": "{ label: \"معدل الأيض الأساسي (Mifflin–St Jeor)\", value: `${fmt(mifflin, 6)} kcal/يوم`, text: `BMR (Mifflin) = ${fmt(mifflin, 6)} kcal` },"
+ },
+ {
+  "k": "f8feb3293501",
+  "text": "{%0} kcal/يوم",
+  "ctx": "{ label: \"معدل الأيض الأساسي (Mifflin–St Jeor)\", value: `${fmt(mifflin, 6)} kcal/يوم`, text: `BMR (Mifflin) = ${fmt(mifflin, 6)} kcal` },"
+ },
+ {
+  "k": "b3e55fa892cb",
+  "text": "معدل الأيض الأساسي (Harris–Benedict)",
+  "ctx": "{ label: \"معدل الأيض الأساسي (Harris–Benedict)\", value: `${fmt(hb, 6)} kcal/يوم` },"
+ },
+ {
+  "k": "7a7653ab151e",
+  "text": "الاحتياج اليومي TDEE (Mifflin)",
+  "ctx": "{ label: \"الاحتياج اليومي TDEE (Mifflin)\", value: `${fmt(tdee, 6)} kcal/يوم` },"
+ },
+ {
+  "k": "47ae48d8aeaf",
+  "text": "السعرات المستهدفة (Mifflin)",
+  "ctx": "{ label: \"السعرات المستهدفة (Mifflin)\", value: `${fmt(target, 6)} kcal/يوم`, text: `الهدف = ${fmt(target, 6)} kcal` },"
+ },
+ {
+  "k": "0a681f30bb6b",
+  "text": "الهدف = {%0} kcal",
+  "ctx": "{ label: \"السعرات المستهدفة (Mifflin)\", value: `${fmt(target, 6)} kcal/يوم`, text: `الهدف = ${fmt(target, 6)} kcal` },"
+ },
+ {
+  "k": "3a3b7d7b56d0",
+  "text": "السعرات المستهدفة (Harris–Benedict)",
+  "ctx": "{ label: \"السعرات المستهدفة (Harris–Benedict)\", value: `${fmt(targetHb, 6)} kcal/يوم` },"
+ },
+ {
+  "k": "e11384d14185",
+  "text": "{%0} مل ({%1} لتر)",
+  "ctx": "{ label: \"احتياج الماء\", value: `${fmt(water, 4)} مل (${fmt(water / 1000, 3)} لتر)` }"
+ },
+ {
+  "k": "21e16b7fdc1e",
+  "text": "BMR (Mifflin) = {%0} kcal، الهدف اليومي = {%1} kcal، الماء {%2} لتر"
+ },
+ {
+  "k": "5dccfa6a42f5",
+  "text": "توزيع الماكروز للسعرات المستهدفة",
+  "ctx": "caption: \"توزيع الماكروز للسعرات المستهدفة\","
+ },
+ {
+  "k": "822741d8afd7",
+  "text": "العنصر",
+  "ctx": "head: [\"العنصر\", \"النسبة\", \"السعرات (kcal)\", \"الجرامات يومياً\"],"
+ },
+ {
+  "k": "6179573f5299",
+  "text": "النسبة",
+  "ctx": "head: [\"العنصر\", \"النسبة\", \"السعرات (kcal)\", \"الجرامات يومياً\"],"
+ },
+ {
+  "k": "9cabce877118",
+  "text": "السعرات (kcal)",
+  "ctx": "head: [\"العنصر\", \"النسبة\", \"السعرات (kcal)\", \"الجرامات يومياً\"],"
+ },
+ {
+  "k": "60cb12b4b33b",
+  "text": "الجرامات يومياً",
+  "ctx": "head: [\"العنصر\", \"النسبة\", \"السعرات (kcal)\", \"الجرامات يومياً\"],"
+ },
+ {
+  "k": "5aaab72f5974",
+  "text": "البروتين",
+  "ctx": "[\"البروتين\", \"25 %\", fmt(target * 0.25, 5), fmt(protein, 5) + \" g\"],"
+ },
+ {
+  "k": "b21fd4da73a1",
+  "text": "الدهون",
+  "ctx": "[\"الدهون\", \"30 %\", fmt(target * 0.30, 5), fmt(fat, 5) + \" g\"],"
+ },
+ {
+  "k": "bb0c81848b60",
+  "text": "الكربوهيدرات",
+  "ctx": "[\"الكربوهيدرات\", \"45 %\", fmt(target * 0.45, 5), fmt(carbs, 5) + \" g\"]"
+ }
+]

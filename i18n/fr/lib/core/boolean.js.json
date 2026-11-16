@@ -1,0 +1,12 @@
+{
+ "c05cf431978c": "Symbole incompréhensible «{%0}» dans l'expression logique.",
+ "2e0cec952000": "Saisissez une expression logique.",
+ "f9627357b56f": "L'expression logique est incomplète.",
+ "99127c3577ff": "Il y a une parenthèse ouvrante qui n'est pas fermée.",
+ "c1e3b3333721": "L'expression logique est mal formulée.",
+ "fcd7d7b66007": "L'expression logique n'a pas pu être entièrement analysée, vérifiez les parenthèses et les symboles.",
+ "7ac036b128a8": "Toutes les combinaisons donnent 1, donc la fonction = 1.",
+ "7e097c014f67": "Après les implicants premiers essentiels, des minterms non couverts subsistaient ({%0}) ; nous avons donc choisi le plus petit ensemble d'implicants premiers qui les couvre{%1}.",
+ "6ce6b83288aa": " par la méthode de Petrick (recherche exhaustive)",
+ "95a92be8ac8d": " par la méthode gloutonne"
+}
